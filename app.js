@@ -1,0 +1,418 @@
+const API_URL = "https://script.google.com/macros/s/AKfycbz2skJ1ynwAJ08M4GzIeOtaO38bj0L_iK6birPOG5NaihBB5pHgMhDRGRbH8A4_u9i4_g/exec";
+const LOGIN_STORAGE_KEY = "sparkcards:lastLogin";
+
+const state = {
+  lasid: "",
+  grade: "5",
+  subject: "Math",
+  dashboard: null,
+  cardsMeta: [],
+  activeCardId: null,
+  language: "en"
+};
+
+const els = {
+  lookupForm: document.getElementById("lookupForm"),
+  lasidInput: document.getElementById("lasidInput"),
+  gradeSelect: document.getElementById("gradeSelect"),
+  subjectSelect: document.getElementById("subjectSelect"),
+  lookupMessage: document.getElementById("lookupMessage"),
+  loginPanel: document.getElementById("loginPanel"),
+  dashboardPanel: document.getElementById("dashboardPanel"),
+  dashboardContext: document.getElementById("dashboardContext"),
+  percentMastered: document.getElementById("percentMastered"),
+  totalMastered: document.getElementById("totalMastered"),
+  chipGrid: document.getElementById("chipGrid"),
+  backButton: document.getElementById("backButton"),
+  studyAllButton: document.getElementById("studyAllButton"),
+  studyNeedsPracticeButton: document.getElementById("studyNeedsPracticeButton"),
+  unitSelect: document.getElementById("unitSelect"),
+  practicePanel: document.getElementById("practicePanel"),
+  closePracticeButton: document.getElementById("closePracticeButton"),
+  practiceTitle: document.getElementById("practiceTitle"),
+  practiceModeLabel: document.getElementById("practiceModeLabel"),
+  englishButton: document.getElementById("englishButton"),
+  spanishButton: document.getElementById("spanishButton"),
+  cardMissingMessage: document.getElementById("cardMissingMessage"),
+  questionImage: document.getElementById("questionImage"),
+  answerImage: document.getElementById("answerImage"),
+  studentAnswer: document.getElementById("studentAnswer"),
+  showAnswerButton: document.getElementById("showAnswerButton"),
+  practiceCountText: document.getElementById("practiceCountText")
+};
+
+els.lookupForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  state.lasid = els.lasidInput.value.trim();
+  state.grade = els.gradeSelect.value;
+  state.subject = els.subjectSelect.value;
+
+  saveLastLoginSelection();
+  await loadDashboard();
+});
+
+els.backButton.addEventListener("click", () => {
+  els.dashboardPanel.classList.add("hidden");
+  els.practicePanel.classList.add("hidden");
+  els.loginPanel.classList.remove("hidden");
+});
+
+els.closePracticeButton.addEventListener("click", () => {
+  els.practicePanel.classList.add("hidden");
+  els.dashboardPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+els.studyAllButton.addEventListener("click", () => {
+  const ids = Object.keys(state.dashboard?.cards || {});
+  openFirstAvailableCard(ids);
+});
+
+els.studyNeedsPracticeButton.addEventListener("click", () => {
+  const ids = Object.entries(state.dashboard?.cards || {})
+    .filter(([, score]) => score === 0 || score === 0.5)
+    .map(([cardId]) => cardId);
+
+  if (ids.length === 0) {
+    setMessage(els.lookupMessage, "You do not have any partial or incorrect cards right now.", "success");
+    return;
+  }
+
+  openFirstAvailableCard(ids);
+});
+
+els.unitSelect.addEventListener("change", () => {
+  const selectedUnit = els.unitSelect.value;
+  if (!selectedUnit) return;
+
+  const ids = state.cardsMeta
+    .filter(card => card.unit === selectedUnit)
+    .map(card => normalizeCardId(card.id));
+
+  openFirstAvailableCard(ids);
+});
+
+els.englishButton.addEventListener("click", () => {
+  state.language = "en";
+  els.englishButton.classList.add("active");
+  els.spanishButton.classList.remove("active");
+  renderPracticeCard();
+});
+
+els.spanishButton.addEventListener("click", () => {
+  state.language = "es";
+  els.spanishButton.classList.add("active");
+  els.englishButton.classList.remove("active");
+  renderPracticeCard();
+});
+
+els.questionImage.addEventListener("click", () => readCurrentCardAloud("question"));
+els.answerImage.addEventListener("click", () => readCurrentCardAloud("answer"));
+
+els.showAnswerButton.addEventListener("click", () => {
+  const cardId = state.activeCardId;
+  if (!cardId) return;
+
+  incrementPracticeCount(cardId);
+  els.answerImage.classList.remove("hidden");
+  updatePracticeCountText(cardId);
+});
+
+loadLastLoginSelection();
+
+async function loadDashboard() {
+  setMessage(els.lookupMessage, "Loading dashboard...", "");
+
+  try {
+    const [dashboardData, cardsMeta] = await Promise.all([
+      fetchDashboardData(),
+      fetchCardsMeta()
+    ]);
+
+    if (!dashboardData.found) {
+      throw new Error(dashboardData.error || "Could not find that student.");
+    }
+
+    state.dashboard = dashboardData;
+    state.cardsMeta = cardsMeta;
+
+    renderDashboard();
+
+    els.loginPanel.classList.add("hidden");
+    els.dashboardPanel.classList.remove("hidden");
+    els.practicePanel.classList.add("hidden");
+    setMessage(els.lookupMessage, "", "");
+  } catch (error) {
+    setMessage(els.lookupMessage, error.message, "error");
+  }
+}
+
+async function fetchDashboardData() {
+  const params = new URLSearchParams({
+    lasid: state.lasid,
+    grade: state.grade,
+    subject: state.subject
+  });
+
+  const response = await fetch(`${API_URL}?${params.toString()}`);
+
+  if (!response.ok) {
+    throw new Error("The dashboard could not connect to the spreadsheet.");
+  }
+
+  return response.json();
+}
+
+async function fetchCardsMeta() {
+  const path = getCardsJsonPath(state.grade, state.subject);
+
+  try {
+    const response = await fetch(path);
+    if (!response.ok) return [];
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function renderDashboard() {
+  const gradeLabel = `${state.grade}th Grade`;
+  els.dashboardContext.textContent = `${gradeLabel} · ${state.subject}`;
+  els.percentMastered.textContent = formatPercent(state.dashboard.percentMastered, state.dashboard.cards);
+  els.totalMastered.textContent = state.dashboard.totalCardsMastered === "" ? "--" : state.dashboard.totalCardsMastered;
+
+  renderUnitSelect();
+  renderChips(Object.keys(state.dashboard.cards || {}));
+}
+
+function renderChips(cardIds) {
+  els.chipGrid.innerHTML = "";
+
+  cardIds.forEach(cardId => {
+    const normalizedId = normalizeCardId(cardId);
+    const score = state.dashboard.cards[normalizedId];
+    const status = scoreToStatus(score);
+
+    const button = document.createElement("button");
+    button.className = `card-chip ${status}`;
+    button.textContent = normalizedId;
+    button.type = "button";
+    button.title = statusLabel(status);
+    button.addEventListener("click", () => openPracticeCard(normalizedId));
+
+    els.chipGrid.appendChild(button);
+  });
+}
+
+function renderUnitSelect() {
+  const units = [...new Set(state.cardsMeta.map(card => card.unit).filter(Boolean))];
+
+  els.unitSelect.innerHTML = `<option value="">Choose a unit</option>`;
+
+  units.forEach(unit => {
+    const option = document.createElement("option");
+    option.value = unit;
+    option.textContent = unit;
+    els.unitSelect.appendChild(option);
+  });
+}
+
+function openFirstAvailableCard(cardIds) {
+  if (!cardIds.length) return;
+  openPracticeCard(cardIds[0]);
+}
+
+function openPracticeCard(cardId) {
+  state.activeCardId = normalizeCardId(cardId);
+  state.language = "en";
+  els.englishButton.classList.add("active");
+  els.spanishButton.classList.remove("active");
+  els.practicePanel.classList.remove("hidden");
+  els.studentAnswer.value = "";
+  renderPracticeCard();
+  els.practicePanel.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderPracticeCard() {
+  const card = getActiveCardMeta();
+  const cardId = state.activeCardId;
+
+  els.practiceTitle.textContent = `Card ${cardId}`;
+  els.answerImage.classList.add("hidden");
+  els.questionImage.classList.add("hidden");
+  els.cardMissingMessage.textContent = "";
+  els.cardMissingMessage.className = "message";
+
+  if (!card) {
+    els.cardMissingMessage.textContent = "This study card is coming soon.";
+    updatePracticeCountText(cardId);
+    return;
+  }
+
+  const questionPath = getImagePath(card, "question");
+  const answerPath = getImagePath(card, "answer");
+
+  if (!questionPath || !answerPath) {
+    els.cardMissingMessage.textContent = "This study card is coming soon.";
+    updatePracticeCountText(cardId);
+    return;
+  }
+
+  if (state.language === "es" && (!card.questionImageEs || !card.answerImageEs)) {
+    els.cardMissingMessage.textContent = "Spanish version coming soon. Showing English for now.";
+  }
+
+  els.questionImage.src = questionPath;
+  els.answerImage.src = answerPath;
+  els.questionImage.classList.remove("hidden");
+
+  updatePracticeCountText(cardId);
+}
+
+function getImagePath(card, side) {
+  const baseFolder = getSubjectFolder(state.grade, state.subject);
+  const languageSuffix = state.language === "es" ? "Es" : "En";
+  const fallbackSuffix = "En";
+  const fieldName = side === "question" ? `questionImage${languageSuffix}` : `answerImage${languageSuffix}`;
+  const fallbackFieldName = side === "question" ? `questionImage${fallbackSuffix}` : `answerImage${fallbackSuffix}`;
+  const imagePath = card[fieldName] || card[fallbackFieldName];
+
+  return imagePath ? `${baseFolder}/${imagePath}` : "";
+}
+
+function readCurrentCardAloud(side = "question") {
+  const card = getActiveCardMeta();
+  if (!card || !window.speechSynthesis) return;
+
+  const text = getReadAloudText(card, side);
+
+  if (!text) {
+    els.cardMissingMessage.textContent = side === "answer"
+      ? "Answer read-aloud coming soon for this card."
+      : "Question read-aloud coming soon for this card.";
+    return;
+  }
+
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = state.language === "es" ? "es-US" : "en-US";
+  window.speechSynthesis.speak(utterance);
+}
+
+function getReadAloudText(card, side) {
+  const isSpanish = state.language === "es";
+
+  if (side === "answer") {
+    return isSpanish
+      ? (card.answerReadAloudEs || card.answerReadAloudEn || "")
+      : (card.answerReadAloudEn || "");
+  }
+
+  return isSpanish
+    ? (card.questionReadAloudEs || card.readAloudEs || card.questionReadAloudEn || card.readAloudEn || "")
+    : (card.questionReadAloudEn || card.readAloudEn || "");
+}
+
+function getActiveCardMeta() {
+  return state.cardsMeta.find(card => normalizeCardId(card.id) === state.activeCardId);
+}
+
+function getCardsJsonPath(grade, subject) {
+  return `${getSubjectFolder(grade, subject)}/cards.json`;
+}
+
+function getSubjectFolder(grade, subject) {
+  return `cards/grade${grade}/${subject.toLowerCase()}`;
+}
+
+function normalizeCardId(value) {
+  return String(value || "")
+    .trim()
+    .replace(/\)/g, "")
+    .replace(/\s+/g, "")
+    .toUpperCase();
+}
+
+function scoreToStatus(score) {
+  if (score === 1) return "mastered";
+  if (score === 0.5) return "partial";
+  if (score === 0) return "incorrect";
+  return "not-tested";
+}
+
+function statusLabel(status) {
+  if (status === "mastered") return "Mastered";
+  if (status === "partial") return "Partial";
+  if (status === "incorrect") return "Practice this";
+  return "Not tested yet";
+}
+
+function formatPercent(percent, cards) {
+  if (percent !== "" && percent !== null && percent !== undefined) {
+    return `${percent}%`;
+  }
+
+  const values = Object.values(cards || {}).filter(value => value !== "");
+  if (!values.length) return "--%";
+
+  const mastered = values.filter(value => value === 1).length;
+  return `${Math.round((mastered / values.length) * 100)}%`;
+}
+
+function getPracticeStorageKey(cardId) {
+  return `starPractice:${state.lasid}:${state.grade}:${state.subject}:${cardId}`;
+}
+
+function getPracticeCount(cardId) {
+  return Number(localStorage.getItem(getPracticeStorageKey(cardId)) || 0);
+}
+
+function incrementPracticeCount(cardId) {
+  const nextCount = getPracticeCount(cardId) + 1;
+  localStorage.setItem(getPracticeStorageKey(cardId), String(nextCount));
+}
+
+function updatePracticeCountText(cardId) {
+  const count = getPracticeCount(cardId);
+  els.practiceCountText.textContent = `Practiced: ${count} time${count === 1 ? "" : "s"} on this device`;
+}
+
+function saveLastLoginSelection() {
+  const data = {
+    lasid: state.lasid,
+    grade: state.grade,
+    subject: state.subject
+  };
+
+  localStorage.setItem(LOGIN_STORAGE_KEY, JSON.stringify(data));
+}
+
+function loadLastLoginSelection() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(LOGIN_STORAGE_KEY) || "null");
+    if (!saved) return;
+
+    if (saved.lasid) {
+      els.lasidInput.value = saved.lasid;
+      state.lasid = saved.lasid;
+    }
+
+    if (saved.grade) {
+      els.gradeSelect.value = saved.grade;
+      state.grade = saved.grade;
+    }
+
+    if (saved.subject) {
+      els.subjectSelect.value = saved.subject;
+      state.subject = saved.subject;
+    }
+  } catch (error) {
+    localStorage.removeItem(LOGIN_STORAGE_KEY);
+  }
+}
+
+function setMessage(element, text, type) {
+  element.textContent = text;
+  element.className = `message ${type || ""}`.trim();
+}
