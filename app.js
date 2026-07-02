@@ -122,8 +122,19 @@ els.showAnswerButton.addEventListener("click", () => {
     return;
   }
 
+  const answerPath = getCurrentAnswerPath();
+
   incrementPracticeCount(cardId);
-  els.answerImage.classList.remove("hidden");
+
+  if (!answerPath) {
+    els.answerImage.classList.add("hidden");
+    els.answerImage.removeAttribute("src");
+    els.cardMissingMessage.textContent = "Answer coming soon.";
+  } else {
+    els.answerImage.src = answerPath;
+    els.answerImage.classList.remove("hidden");
+  }
+
   els.showAnswerButton.textContent = "Try Again";
   els.nextProblemButton.classList.remove("hidden");
   updatePracticeCountText(cardId);
@@ -283,8 +294,10 @@ function openNextPracticeCard() {
 
 function resetCurrentCardForRetry() {
   els.answerImage.classList.add("hidden");
+  els.answerImage.removeAttribute("src");
   els.studentAnswer.value = "";
   resetPracticeButtons();
+  renderPracticeCard();
   els.studentAnswer.focus();
 }
 
@@ -351,8 +364,13 @@ function renderPracticeCard() {
 
   els.practiceTitle.textContent = `Card ${cardId}`;
   els.practiceModeLabel.textContent = getPracticeModeLabel();
-  els.answerImage.classList.add("hidden");
+
+  // Important: clear old images every time a new card opens.
+  // This prevents a missing card from accidentally showing the previous card's answer.
   els.questionImage.classList.add("hidden");
+  els.answerImage.classList.add("hidden");
+  els.questionImage.removeAttribute("src");
+  els.answerImage.removeAttribute("src");
   els.cardMissingMessage.textContent = "";
   els.cardMissingMessage.className = "message";
 
@@ -365,21 +383,31 @@ function renderPracticeCard() {
   const questionPath = getImagePath(card, "question");
   const answerPath = getImagePath(card, "answer");
 
-  if (!questionPath || !answerPath) {
-    els.cardMissingMessage.textContent = "This study card is coming soon.";
-    updatePracticeCountText(cardId);
-    return;
-  }
-
   if (state.language === "es" && (!card.questionImageEs || !card.answerImageEs)) {
     els.cardMissingMessage.textContent = "Spanish version coming soon. Showing English for now.";
   }
 
-  els.questionImage.src = questionPath;
-  els.answerImage.src = answerPath;
-  els.questionImage.classList.remove("hidden");
+  if (questionPath) {
+    els.questionImage.src = questionPath;
+    els.questionImage.classList.remove("hidden");
+  } else {
+    els.cardMissingMessage.textContent = "This study card is coming soon.";
+  }
+
+  // Do not show the answer yet. We only store the path now.
+  // If there is no answer image, the Show Answer button will say "Answer coming soon."
+  if (answerPath) {
+    els.answerImage.dataset.answerPath = answerPath;
+  } else {
+    delete els.answerImage.dataset.answerPath;
+  }
 
   updatePracticeCountText(cardId);
+}
+function getCurrentAnswerPath() {
+  const card = getActiveCardMeta();
+  if (!card) return "";
+  return getImagePath(card, "answer");
 }
 
 function getPracticeModeLabel() {
