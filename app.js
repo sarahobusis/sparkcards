@@ -8,6 +8,8 @@ const state = {
   dashboard: null,
   cardsMeta: [],
   activeCardId: null,
+  practiceMode: "dashboard",
+  practicePool: [],
   language: "en"
 };
 
@@ -38,6 +40,7 @@ const els = {
   answerImage: document.getElementById("answerImage"),
   studentAnswer: document.getElementById("studentAnswer"),
   showAnswerButton: document.getElementById("showAnswerButton"),
+  nextProblemButton: document.getElementById("nextProblemButton"),
   practiceCountText: document.getElementById("practiceCountText")
 };
 
@@ -65,7 +68,7 @@ els.closePracticeButton.addEventListener("click", () => {
 
 els.studyAllButton.addEventListener("click", () => {
   const ids = Object.keys(state.dashboard?.cards || {});
-  openFirstAvailableCard(ids);
+  startPracticeSet(ids, "all");
 });
 
 els.studyNeedsPracticeButton.addEventListener("click", () => {
@@ -78,7 +81,7 @@ els.studyNeedsPracticeButton.addEventListener("click", () => {
     return;
   }
 
-  openFirstAvailableCard(ids);
+  startPracticeSet(ids, "needsPractice");
 });
 
 els.unitSelect.addEventListener("change", () => {
@@ -89,7 +92,7 @@ els.unitSelect.addEventListener("change", () => {
     .filter(card => card.unit === selectedUnit)
     .map(card => normalizeCardId(card.id));
 
-  openFirstAvailableCard(ids);
+  startPracticeSet(ids, "unit");
 });
 
 els.englishButton.addEventListener("click", () => {
@@ -113,9 +116,22 @@ els.showAnswerButton.addEventListener("click", () => {
   const cardId = state.activeCardId;
   if (!cardId) return;
 
+  const answerIsShowing = !els.answerImage.classList.contains("hidden");
+
+  if (answerIsShowing) {
+    resetCurrentCardForRetry();
+    return;
+  }
+
   incrementPracticeCount(cardId);
   els.answerImage.classList.remove("hidden");
+  els.showAnswerButton.textContent = "Try Again";
+  els.nextProblemButton.classList.remove("hidden");
   updatePracticeCountText(cardId);
+});
+
+els.nextProblemButton.addEventListener("click", () => {
+  openNextPracticeCard();
 });
 
 loadLastLoginSelection();
@@ -218,20 +234,83 @@ function renderUnitSelect() {
   });
 }
 
-function openFirstAvailableCard(cardIds) {
-  if (!cardIds.length) return;
-  openPracticeCard(cardIds[0]);
+function startPracticeSet(cardIds, mode) {
+  const normalizedIds = [...new Set((cardIds || []).map(normalizeCardId).filter(Boolean))];
+
+  if (!normalizedIds.length) return;
+
+  state.practiceMode = mode;
+  state.practicePool = normalizedIds;
+  openPracticeCard(getRandomCardId(normalizedIds), mode);
 }
 
-function openPracticeCard(cardId) {
+function openPracticeCard(cardId, mode = "dashboard") {
   state.activeCardId = normalizeCardId(cardId);
+  state.practiceMode = mode;
+  state.practicePool = getDashboardCardIds();
   state.language = "en";
   els.englishButton.classList.add("active");
   els.spanishButton.classList.remove("active");
   els.practicePanel.classList.remove("hidden");
+  resetPracticeButtons();
   els.studentAnswer.value = "";
   renderPracticeCard();
   els.practicePanel.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function openNextPracticeCard() {
+  if (!state.activeCardId) return;
+
+  let nextCardId = "";
+
+  if (state.practiceMode === "dashboard") {
+    nextCardId = getNextDashboardCardId(state.activeCardId);
+  } else {
+    nextCardId = getRandomCardId(state.practicePool, state.activeCardId);
+  }
+
+  if (!nextCardId) return;
+
+  const currentMode = state.practiceMode;
+  const currentPool = [...state.practicePool];
+  openPracticeCard(nextCardId, currentMode);
+  state.practicePool = currentPool;
+  state.practiceMode = currentMode;
+}
+
+function resetCurrentCardForRetry() {
+  els.answerImage.classList.add("hidden");
+  els.studentAnswer.value = "";
+  resetPracticeButtons();
+  els.studentAnswer.focus();
+}
+
+function resetPracticeButtons() {
+  els.showAnswerButton.textContent = "Show Answer";
+  els.nextProblemButton.classList.add("hidden");
+}
+
+function getDashboardCardIds() {
+  return Object.keys(state.dashboard?.cards || {}).map(normalizeCardId);
+}
+
+function getNextDashboardCardId(currentCardId) {
+  const ids = getDashboardCardIds();
+  if (!ids.length) return "";
+
+  const currentIndex = ids.indexOf(normalizeCardId(currentCardId));
+  if (currentIndex === -1) return ids[0];
+
+  return ids[(currentIndex + 1) % ids.length];
+}
+
+function getRandomCardId(cardIds, excludeCardId = "") {
+  const ids = [...new Set((cardIds || []).map(normalizeCardId).filter(Boolean))];
+  if (!ids.length) return "";
+
+  const excluded = normalizeCardId(excludeCardId);
+  const choices = ids.length > 1 ? ids.filter(id => id !== excluded) : ids;
+  return choices[Math.floor(Math.random() * choices.length)];
 }
 
 function renderPracticeCard() {
