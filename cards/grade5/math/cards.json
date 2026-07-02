@@ -1,7 +1,7 @@
 [
   {
     "id": "1A",
-    "unit": "Unit 1: Operations",
+    "unit": "Unit 1",
     "title": "Addition and Subtraction",
     "questionImageEn": "images/1A_Q_en.png",
     "answerImageEn": "images/1A_A_en.png",
@@ -15,7 +15,7 @@
   },
   {
     "id": "1B",
-    "unit": "Unit 1: Operations",
+    "unit": "Unit 1",
     "title": "Multiplication",
     "questionImageEn": "images/1B_Q_en.png",
     "answerImageEn": "images/1B_A_en.png",
@@ -29,7 +29,7 @@
   },
   {
     "id": "1C",
-    "unit": "Unit 1: Operations",
+    "unit": "Unit 1",
     "title": "Division",
     "questionImageEn": "images/1C_Q_en.png",
     "answerImageEn": "images/1C_A_en.png",
@@ -43,7 +43,7 @@
   },
   {
     "id": "1D",
-    "unit": "Unit 1: Operations",
+    "unit": "Unit 1",
     "title": "Operation Answers",
     "questionImageEn": "images/1D_Q_en.png",
     "answerImageEn": "images/1D_A_en.png",

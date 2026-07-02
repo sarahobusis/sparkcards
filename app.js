@@ -88,9 +88,8 @@ els.unitSelect.addEventListener("change", () => {
   const selectedUnit = els.unitSelect.value;
   if (!selectedUnit) return;
 
-  const ids = state.cardsMeta
-    .filter(card => card.unit === selectedUnit)
-    .map(card => normalizeCardId(card.id));
+  const ids = getDashboardCardIds()
+    .filter(cardId => getUnitForCardId(cardId) === selectedUnit);
 
   startPracticeSet(ids, "unit");
 });
@@ -222,7 +221,13 @@ function renderChips(cardIds) {
 }
 
 function renderUnitSelect() {
-  const units = [...new Set(state.cardsMeta.map(card => card.unit).filter(Boolean))];
+  // Build units from the spreadsheet/dashboard card IDs, not just cards.json.
+  // This makes every unit available even before all card images are uploaded.
+  const units = [...new Set(
+    getDashboardCardIds()
+      .map(getUnitForCardId)
+      .filter(Boolean)
+  )].sort(sortUnitLabels);
 
   els.unitSelect.innerHTML = `<option value="">Choose a unit</option>`;
 
@@ -241,13 +246,13 @@ function startPracticeSet(cardIds, mode) {
 
   state.practiceMode = mode;
   state.practicePool = normalizedIds;
-  openPracticeCard(getRandomCardId(normalizedIds), mode);
+  openPracticeCard(getRandomCardId(normalizedIds), mode, normalizedIds);
 }
 
-function openPracticeCard(cardId, mode = "dashboard") {
+function openPracticeCard(cardId, mode = "dashboard", practicePool = null) {
   state.activeCardId = normalizeCardId(cardId);
   state.practiceMode = mode;
-  state.practicePool = getDashboardCardIds();
+  state.practicePool = Array.isArray(practicePool) ? practicePool : getDashboardCardIds();
   state.language = "en";
   els.englishButton.classList.add("active");
   els.spanishButton.classList.remove("active");
@@ -273,9 +278,7 @@ function openNextPracticeCard() {
 
   const currentMode = state.practiceMode;
   const currentPool = [...state.practicePool];
-  openPracticeCard(nextCardId, currentMode);
-  state.practicePool = currentPool;
-  state.practiceMode = currentMode;
+  openPracticeCard(nextCardId, currentMode, currentPool);
 }
 
 function resetCurrentCardForRetry() {
@@ -292,6 +295,35 @@ function resetPracticeButtons() {
 
 function getDashboardCardIds() {
   return Object.keys(state.dashboard?.cards || {}).map(normalizeCardId);
+}
+
+function getUnitForCardId(cardId) {
+  const normalizedId = normalizeCardId(cardId);
+  const cardMeta = state.cardsMeta.find(card => normalizeCardId(card.id) === normalizedId);
+
+  if (cardMeta && cardMeta.unit) {
+    return normalizeUnitLabel(cardMeta.unit);
+  }
+
+  const match = normalizedId.match(/^(\d+)/);
+  return match ? `Unit ${Number(match[1])}` : "Other";
+}
+
+function normalizeUnitLabel(unit) {
+  const text = String(unit || "").trim();
+  const match = text.match(/unit\s*(\d+)/i);
+  return match ? `Unit ${Number(match[1])}` : text;
+}
+
+function sortUnitLabels(a, b) {
+  const aMatch = String(a).match(/unit\s*(\d+)/i);
+  const bMatch = String(b).match(/unit\s*(\d+)/i);
+
+  if (aMatch && bMatch) {
+    return Number(aMatch[1]) - Number(bMatch[1]);
+  }
+
+  return String(a).localeCompare(String(b));
 }
 
 function getNextDashboardCardId(currentCardId) {
@@ -318,6 +350,7 @@ function renderPracticeCard() {
   const cardId = state.activeCardId;
 
   els.practiceTitle.textContent = `Card ${cardId}`;
+  els.practiceModeLabel.textContent = getPracticeModeLabel();
   els.answerImage.classList.add("hidden");
   els.questionImage.classList.add("hidden");
   els.cardMissingMessage.textContent = "";
@@ -347,6 +380,15 @@ function renderPracticeCard() {
   els.questionImage.classList.remove("hidden");
 
   updatePracticeCountText(cardId);
+}
+
+function getPracticeModeLabel() {
+  if (state.practiceMode === "all") return "Study All";
+  if (state.practiceMode === "needsPractice") return "Study Partial / Incorrect";
+  if (state.practiceMode === "unit") {
+    return els.unitSelect.value ? `Study ${els.unitSelect.value}` : "Study by Unit";
+  }
+  return "Practice Mode";
 }
 
 function getImagePath(card, side) {
