@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spark Academy STAR Card Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Spark Academy</p>
+      <h1>STAR Card Dashboard</h1>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="panel login-panel" id="loginPanel">
+      <h2>Find Your STAR Cards</h2>
+      <p class="helper">Enter your lunch number, then choose your grade and subject.</p>
+
+      <form id="lookupForm" class="lookup-form">
+        <label>
+          Lunch number / LASID
+          <input id="lasidInput" name="lasid" type="text" inputmode="numeric" autocomplete="off" required />
+        </label>
+
+        <label>
+          Grade
+          <select id="gradeSelect" name="grade" required>
+            <option value="5">5th Grade</option>
+            <option value="6">6th Grade</option>
+            <option value="7">7th Grade</option>
+            <option value="8">8th Grade</option>
+          </select>
+        </label>
+
+        <label>
+          Subject
+          <select id="subjectSelect" name="subject" required>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+          </select>
+        </label>
+
+        <button type="submit" class="primary-button">Load Dashboard</button>
+      </form>
+
+      <p id="lookupMessage" class="message" role="status"></p>
+    </section>
+
+    <section class="panel dashboard-panel hidden" id="dashboardPanel">
+      <div class="dashboard-topline">
+        <button id="backButton" class="small-button">← Back</button>
+        <div>
+          <p class="eyebrow" id="dashboardContext">5th Grade · Math</p>
+          <h2>Your STAR Card Dashboard</h2>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Cards Mastered</span>
+          <span class="stat-number" id="percentMastered">--%</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Total Mastered</span>
+          <span class="stat-number" id="totalMastered">--</span>
+        </div>
+      </div>
+
+      <div class="legend" aria-label="Color key">
+        <span><b class="dot mastered"></b> Mastered</span>
+        <span><b class="dot partial"></b> Partial</span>
+        <span><b class="dot incorrect"></b> Practice this</span>
+        <span><b class="dot not-tested"></b> Not tested</span>
+      </div>
+
+      <div class="study-actions">
+        <button id="studyAllButton" class="secondary-button">Study All</button>
+        <button id="studyNeedsPracticeButton" class="secondary-button">Study Partial / Incorrect</button>
+        <label class="unit-select-label">
+          Study by Unit
+          <select id="unitSelect">
+            <option value="">Choose a unit</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="chipGrid" class="chip-grid" aria-label="STAR card results"></div>
+    </section>
+
+    <section class="panel practice-panel hidden" id="practicePanel">
+      <div class="practice-header">
+        <button id="closePracticeButton" class="small-button">← Dashboard</button>
+        <div>
+          <p class="eyebrow" id="practiceModeLabel">Practice Mode</p>
+          <h2 id="practiceTitle">Card</h2>
+        </div>
+      </div>
+
+      <div class="language-row">
+        <button id="englishButton" class="language-button active">English</button>
+        <button id="spanishButton" class="language-button">Spanish</button>
+      </div>
+
+      <div id="cardMissingMessage" class="message"></div>
+
+      <div class="card-viewer">
+        <img id="questionImage" alt="Question side of STAR card" class="card-image hidden" />
+        <img id="answerImage" alt="Answer side of STAR card" class="card-image hidden" />
+      </div>
+
+      <div class="answer-box">
+        <label>
+          Type your answer
+          <textarea id="studentAnswer" rows="3" placeholder="Type your thinking here..."></textarea>
+        </label>
+        <button id="showAnswerButton" class="primary-button">Show Answer</button>
+        <p id="practiceCountText" class="helper"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

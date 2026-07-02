@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1A",
+    "unit": "Unit 1: Operations",
+    "title": "Addition and Subtraction",
+    "questionImageEn": "images/1A_Q_en.png",
+    "answerImageEn": "images/1A_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "readAloudEn": "What is addition? What is subtraction?",
+    "readAloudEs": "",
+    "acceptedAnswers": []
+  },
+  {
+    "id": "1B",
+    "unit": "Unit 1: Operations",
+    "title": "Multiplication",
+    "questionImageEn": "images/1B_Q_en.png",
+    "answerImageEn": "images/1B_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "readAloudEn": "What is multiplication? What is the multiplication version of five plus five plus five?",
+    "readAloudEs": "",
+    "acceptedAnswers": []
+  },
+  {
+    "id": "1C",
+    "unit": "Unit 1: Operations",
+    "title": "Division",
+    "questionImageEn": "images/1C_Q_en.png",
+    "answerImageEn": "images/1C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "readAloudEn": "What is division? What symbols show division?",
+    "readAloudEs": "",
+    "acceptedAnswers": []
+  },
+  {
+    "id": "1D",
+    "unit": "Unit 1: Operations",
+    "title": "Operation Answers",
+    "questionImageEn": "images/1D_Q_en.png",
+    "answerImageEn": "images/1D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "readAloudEn": "What are the following called? Answer to a subtraction problem. Answer to a division problem. Answer to an addition problem. Answer to a multiplication problem.",
+    "readAloudEs": "",
+    "acceptedAnswers": []
+  }
+]
