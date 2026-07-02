@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1A",
+    "unit": "Unit 1: Operations",
+    "title": "Addition and Subtraction",
+    "questionImageEn": "images/1A_Q_en.png",
+    "answerImageEn": "images/1A_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What is addition? What is subtraction?",
+    "answerReadAloudEn": "Addition means putting together two amounts to find the total. Subtraction means taking away or finding the difference.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "1B",
+    "unit": "Unit 1: Operations",
+    "title": "Multiplication",
+    "questionImageEn": "images/1B_Q_en.png",
+    "answerImageEn": "images/1B_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What is multiplication? What is the multiplication version of five plus five plus five?",
+    "answerReadAloudEn": "Multiplication means repeated addition of the same number. The multiplication version of five plus five plus five is three times five.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "1C",
+    "unit": "Unit 1: Operations",
+    "title": "Division",
+    "questionImageEn": "images/1C_Q_en.png",
+    "answerImageEn": "images/1C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What is division? What symbols show division?",
+    "answerReadAloudEn": "Division means breaking a total into equal groups. Division can be shown with the division sign, a slash, or a fraction bar.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "1D",
+    "unit": "Unit 1: Operations",
+    "title": "Operation Answers",
+    "questionImageEn": "images/1D_Q_en.png",
+    "answerImageEn": "images/1D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What are the following called? Answer to a subtraction problem. Answer to a division problem. Answer to an addition problem. Answer to a multiplication problem.",
+    "answerReadAloudEn": "The answer to a subtraction problem is the difference. The answer to a division problem is the quotient. The answer to an addition problem is the sum. The answer to a multiplication problem is the product.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  }
+]
