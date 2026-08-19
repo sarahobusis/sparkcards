@@ -2,7 +2,7 @@ const API_URL = "https://script.google.com/macros/s/AKfycbz2skJ1ynwAJ08M4GzIeOta
 const LOGIN_STORAGE_KEY = "sparkcards:lastLogin";
 
 const state = {
-  lasid: "",
+  starCardId: "",
   grade: "5",
   subject: "Math",
   dashboard: null,
@@ -47,7 +47,7 @@ const els = {
 els.lookupForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  state.lasid = els.lasidInput.value.trim();
+  state.starCardId = els.lasidInput.value.trim();
   state.grade = els.gradeSelect.value;
   state.subject = els.subjectSelect.value;
 
@@ -175,7 +175,7 @@ async function loadDashboard() {
 
 async function fetchDashboardData() {
   const params = new URLSearchParams({
-    lasid: state.lasid,
+    starCardId: state.starCardId,
     grade: state.grade,
     subject: state.subject
   });
@@ -510,7 +510,7 @@ function formatPercent(percent, cards) {
 }
 
 function getPracticeStorageKey(cardId) {
-  return `starPractice:${state.lasid}:${state.grade}:${state.subject}:${cardId}`;
+  return `starPractice:${state.starCardId}:${state.grade}:${state.subject}:${cardId}`;
 }
 
 function getPracticeCount(cardId) {
@@ -529,7 +529,7 @@ function updatePracticeCountText(cardId) {
 
 function saveLastLoginSelection() {
   const data = {
-    lasid: state.lasid,
+    starCardId: state.starCardId,
     grade: state.grade,
     subject: state.subject
   };
@@ -542,9 +542,10 @@ function loadLastLoginSelection() {
     const saved = JSON.parse(localStorage.getItem(LOGIN_STORAGE_KEY) || "null");
     if (!saved) return;
 
-    if (saved.lasid) {
-      els.lasidInput.value = saved.lasid;
-      state.lasid = saved.lasid;
+    const savedId = saved.starCardId || saved.lasid;
+    if (savedId) {
+      els.lasidInput.value = savedId;
+      state.starCardId = savedId;
     }
 
     if (saved.grade) {
