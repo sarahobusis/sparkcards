@@ -264,14 +264,26 @@ function openPracticeCard(cardId, mode = "dashboard", practicePool = null) {
   state.activeCardId = normalizeCardId(cardId);
   state.practiceMode = mode;
   state.practicePool = Array.isArray(practicePool) ? practicePool : getDashboardCardIds();
-  state.language = "en";
-  els.englishButton.classList.add("active");
-  els.spanishButton.classList.remove("active");
+
+  // Keep the student's current language choice when moving between cards.
+  // Previously this reset to English every time a new card opened.
+  syncLanguageButtons();
+
   els.practicePanel.classList.remove("hidden");
   resetPracticeButtons();
   els.studentAnswer.value = "";
   renderPracticeCard();
   els.practicePanel.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function syncLanguageButtons() {
+  if (state.language === "es") {
+    els.spanishButton.classList.add("active");
+    els.englishButton.classList.remove("active");
+  } else {
+    els.englishButton.classList.add("active");
+    els.spanishButton.classList.remove("active");
+  }
 }
 
 function openNextPracticeCard() {
@@ -468,7 +480,8 @@ function getActiveCardMeta() {
 }
 
 function getCardsJsonPath(grade, subject) {
-  return `${getSubjectFolder(grade, subject)}/cards.json`;
+  // Cache-bust cards.json so new Spanish image fields appear quickly after GitHub updates.
+  return `${getSubjectFolder(grade, subject)}/cards.json?v=${Date.now()}`;
 }
 
 function getSubjectFolder(grade, subject) {
