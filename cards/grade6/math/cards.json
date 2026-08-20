@@ -5,13 +5,13 @@
     "title": "Addition and Subtraction",
     "questionImageEn": "images/0A_Q_en.png",
     "answerImageEn": "images/0A_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/0A_Q_es.png",
+    "answerImageEs": "images/0A_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is addition? What is subtraction?",
     "answerReadAloudEn": "Addition means combining two amounts to find the total. Subtraction means taking away or finding the difference.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Qué es la suma? ¿Qué es la resta?",
+    "answerReadAloudEs": "La suma consiste en combinar dos cantidades para obtener el total. La resta consiste en quitar o hallar la diferencia."
   },
   {
     "id": "0B",
@@ -19,13 +19,13 @@
     "title": "Multiplication",
     "questionImageEn": "images/0B_Q_en.png",
     "answerImageEn": "images/0B_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/0B_Q_es.png",
+    "answerImageEs": "images/0B_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is multiplication? What is the multiplication version of 5 plus 5 plus 5?",
     "answerReadAloudEn": "Multiplication is repeated addition of the same number. The multiplication version of 5 plus 5 plus 5 is 3 times 5.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Qué es la multiplicación? ¿Cuál es la versión multiplicativa de 5 más 5 más 5?",
+    "answerReadAloudEs": "Suma repetida del mismo número. 3 por 5."
   },
   {
     "id": "0C",
@@ -33,13 +33,13 @@
     "title": "Division",
     "questionImageEn": "images/0C_Q_en.png",
     "answerImageEn": "images/0C_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/0C_Q_es.png",
+    "answerImageEs": "images/0C_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is division? What are the 3 ways to show division?",
     "answerReadAloudEn": "Division is breaking a total into equal groups. The three ways to show division are the division symbol, a slash, and a fraction bar.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Qué es la división? ¿Cuáles son las tres formas de representar la división?",
+    "answerReadAloudEs": "Dividir un total en grupos iguales. Las tres formas de representar la división son el símbolo de división, una barra inclinada y una barra de fracción."
   },
   {
     "id": "0D",
@@ -47,13 +47,13 @@
     "title": "Operation Answer Names",
     "questionImageEn": "images/0D_Q_en.png",
     "answerImageEn": "images/0D_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/0D_Q_es.png",
+    "answerImageEs": "images/0D_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What are the names of the answers to each of these types of problems?",
     "answerReadAloudEn": "For addition, the answer is called the sum. For subtraction, the answer is called the difference. For multiplication, the answer is called the product. For division, the answer is called the quotient.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Cómo se llaman las respuestas a cada uno de estos tipos de problemas?",
+    "answerReadAloudEs": "En suma, la respuesta se llama suma. En resta, la respuesta se llama diferencia. En multiplicación, la respuesta se llama producto. En división, la respuesta se llama cociente."
   },
   {
     "id": "0E",
@@ -61,12 +61,12 @@
     "title": "Graphing Coordinates",
     "questionImageEn": "images/0E_Q_en.png",
     "answerImageEn": "images/0E_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/0E_Q_es.png",
+    "answerImageEs": "images/0E_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "Explain how you can graph coordinates, like 3, 5.",
     "answerReadAloudEn": "Start at 0, 0. Move to the right 3 spaces. Then move up 5 spaces. Draw a dot there.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "Explique cómo se pueden representar gráficamente las coordenadas. Por ejemplo: 3, 5.",
+    "answerReadAloudEs": "Comienza en 0, 0. Muévete hacia la derecha 3 espacios. Luego muévete hacia arriba 5 espacios. Dibuja un punto."
   }
 ]
