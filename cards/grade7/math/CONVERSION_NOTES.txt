@@ -1,0 +1,9 @@
+7th Grade Math conversion notes
+Source: 7Math.ALL Foldable 26-27.pdf
+
+Cards created: 50
+Images created: 100
+
+- Renamed duplicate/unclear label 0H on page 3, card 3 -> 0I
+- Renamed duplicate/unclear label 5A on page 13, card 1 -> 5A2
+- Renamed duplicate/unclear label 7D on page 19, card 3 -> 7E
