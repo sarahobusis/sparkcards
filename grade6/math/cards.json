@@ -1,0 +1,72 @@
+[
+  {
+    "id": "0A",
+    "unit": "Unit 0",
+    "title": "Addition and Subtraction",
+    "questionImageEn": "images/0A_Q_en.png",
+    "answerImageEn": "images/0A_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What is addition? What is subtraction?",
+    "answerReadAloudEn": "Addition means combining two amounts to find the total. Subtraction means taking away or finding the difference.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "0B",
+    "unit": "Unit 0",
+    "title": "Multiplication",
+    "questionImageEn": "images/0B_Q_en.png",
+    "answerImageEn": "images/0B_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What is multiplication? What is the multiplication version of 5 plus 5 plus 5?",
+    "answerReadAloudEn": "Multiplication is repeated addition of the same number. The multiplication version of 5 plus 5 plus 5 is 3 times 5.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "0C",
+    "unit": "Unit 0",
+    "title": "Division",
+    "questionImageEn": "images/0C_Q_en.png",
+    "answerImageEn": "images/0C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What is division? What are the 3 ways to show division?",
+    "answerReadAloudEn": "Division is breaking a total into equal groups. The three ways to show division are the division symbol, a slash, and a fraction bar.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "0D",
+    "unit": "Unit 0",
+    "title": "Operation Answer Names",
+    "questionImageEn": "images/0D_Q_en.png",
+    "answerImageEn": "images/0D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What are the names of the answers to each of these types of problems?",
+    "answerReadAloudEn": "For addition, the answer is called the sum. For subtraction, the answer is called the difference. For multiplication, the answer is called the product. For division, the answer is called the quotient.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "0E",
+    "unit": "Unit 0",
+    "title": "Graphing Coordinates",
+    "questionImageEn": "images/0E_Q_en.png",
+    "answerImageEn": "images/0E_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Explain how you can graph coordinates, like 3, 5.",
+    "answerReadAloudEn": "Start at 0, 0. Move to the right 3 spaces. Then move up 5 spaces. Draw a dot there.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  }
+]
