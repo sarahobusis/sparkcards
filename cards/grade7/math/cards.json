@@ -7,10 +7,11 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "questionReadAloudEn": "What is a fraction?",
-    "answerReadAloudEn": "A fraction is a number that shows a part of a whole",
+    "answerReadAloudEn": "A fraction is a\n number that shows a\n part of a whole",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "0B",
@@ -19,11 +20,12 @@
     "answerImageEn": "images/0B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "1.\u200bWhat does the top number tell you? 2.\u200bWhat does the bottom number tell you?",
-    "answerReadAloudEn": "1.\u200bHow many equal parts you have (numerator) 2.\u200bHow many equal parts make up the whole (denominator)",
+    "questionReadAloudEn": "1.​What does the\n top number tell you?\n 2.​What does the\n bottom number tell\n you?",
+    "answerReadAloudEn": "1.​How many equal parts\n you have (numerator)\n 2.​How many equal parts\n make up the whole\n (denominator)",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "0C",
@@ -32,11 +34,12 @@
     "answerImageEn": "images/0C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "",
+    "questionReadAloudEn": "y\n0c)",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "0D",
@@ -46,10 +49,11 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "questionReadAloudEn": "",
-    "answerReadAloudEn": "Because denominators are DIFFERENT, 1st Find the LCM 2nd Make equal fractions with the LCM as the denominators + 3rd Add numerators, keep denominators 12 20 + 5 20 = 17 20",
+    "answerReadAloudEn": "Because denominators are DIFFERENT,\n1st Find the LCM\n2nd Make equal fractions with\nthe LCM as the denominators\n +\n3rd Add numerators, keep\ndenominators\n 12 5 17\n + = 20 20 20",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "0E",
@@ -59,10 +63,11 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "questionReadAloudEn": "",
-    "answerReadAloudEn": "Multiply straight across simplify, if needed",
+    "answerReadAloudEn": "Multiply straight across\n simplify, if needed",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "0F",
@@ -71,11 +76,12 @@
     "answerImageEn": "images/0F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "1)\u200bHow do we simplify fractions?",
-    "answerReadAloudEn": "1.\u200bTo simplify fractions, divide the top and the bottom by the same number.",
+    "questionReadAloudEn": "1)​How do we simplify fractions?",
+    "answerReadAloudEn": "1.​To simplify fractions, divide the\n top and the bottom by the\n same number.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "0G",
@@ -84,11 +90,12 @@
     "answerImageEn": "images/0G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "How do we convert a mixed number into an improper fraction? Example:",
+    "questionReadAloudEn": "How do we convert a mixed number\ninto an improper fraction?\n Example:",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "0H",
@@ -97,11 +104,12 @@
     "answerImageEn": "images/0H_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "How do we change an improper fraction into a mixed number? Example: 10 7",
-    "answerReadAloudEn": "Divide the numerator (top) by the denominator (bottom). Write your remainder as a fraction.",
+    "questionReadAloudEn": "How do we change an\nimproper fraction into a mixed\nnumber?\n Example: 10\n 7",
+    "answerReadAloudEn": "Divide the numerator (top) by\nthe denominator (bottom). Write\nyour remainder as a fraction.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "0I",
@@ -111,10 +119,11 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "questionReadAloudEn": "How do we divide fractions?",
-    "answerReadAloudEn": "To divide fractions 1 4 \u00f7 3 8 Keep Change Flip \u2193 \u2193 \u2193 1 4 \u00d7 8 3 then multiply straight across",
+    "answerReadAloudEn": "To divide fractions\n 1 3\n ÷ 4 8\n Keep Change Flip\n ↓ ↓ ↓\n 1 8\n × 4 3\n then multiply\n straight across",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "1A",
@@ -123,11 +132,12 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "Before solving, how would you simplify these problems? 1.\u200b 5 + \u22123 2.\u200b \u22127 \u2212 \u22122",
-    "answerReadAloudEn": "1.\u200b simplifies to 5 + \u22123 \u21a9 5 \u22123 2.\u200b simplifies to \u22127 \u2212 \u22122 \u21a9 \u22127 + 2",
+    "questionReadAloudEn": "Before solving, how would\nyou simplify these problems?\n 1.​ 5 + −3\n 2.​ −7 − −2",
+    "answerReadAloudEn": "1.​ 5 + −3 simplifies to\n 5 −3 ↩\n 2.​ −7 − −2 simplifies to\n −7 + 2 ↩",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "1B",
@@ -136,11 +146,12 @@
     "answerImageEn": "images/1B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "Use a number line to model this problem: \u22126 + 4",
-    "answerReadAloudEn": "\u22126 + 4 The answer is -2",
+    "questionReadAloudEn": "Use a number line to model this\nproblem:\n −6 + 4",
+    "answerReadAloudEn": "−6 + 4\n The answer is -2",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "1C",
@@ -149,11 +160,12 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "Use a number line to model this problem: \u22123 + \u22122",
-    "answerReadAloudEn": "\u22123 + \u22122 The answer is -5",
+    "questionReadAloudEn": "Use a number line to model\nthis problem:\n −3 + −2",
+    "answerReadAloudEn": "−3 + −2\n The answer is -5",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "1D",
@@ -162,11 +174,12 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "Use a number line to model this problem: \u22124 \u2212 \u22127",
-    "answerReadAloudEn": "\u22124 \u2212 \u22127 \\ The answer is 3",
+    "questionReadAloudEn": "Use a number line to model\nthis problem:\n −4 − −7",
+    "answerReadAloudEn": "−4 − −7\n\\\n The answer is 3",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "1E",
@@ -175,11 +188,12 @@
     "answerImageEn": "images/1E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "Following the rules for multiplying and dividing with negatives, are these answers positive or negative? 1.\u200b x \u22121 2 3 4 = 2.\u200b x \u2212\ud835\udc4e \u2212\ud835\udc4f= 3.\u200b 4. 8 \u00f7 \u22121. 2 = 4.\u200b 323 \u00f7 2 =",
-    "answerReadAloudEn": "Multiply and divide normally. If signs match, positive. If signs don\u2019t match, negative. 1.\u200b x NEGATIVE \u22121 2 3 4 = 2.\u200b x POSITIVE \u2212\ud835\udc4e \u2212\ud835\udc4f= 3.\u200b NEGATIVE 4. 8 \u00f7 \u22121. 2 = 4.\u200b POSITIVE 323 \u00f7 2 =",
+    "questionReadAloudEn": "Following the rules for multiplying and\n dividing with negatives, are these\n answers positive or negative?\n 1.​ −1 x 3 = 2 4\n 2.​ −𝑎 x −𝑏=\n 3.​ 4. 8 ÷ −1. 2 =\n 4.​ 323 ÷ 2 =",
+    "answerReadAloudEn": "Multiply and divide normally.\n If signs match, positive.\n If signs don’t match, negative.\n 1.​ −1 x 3 = NEGATIVE 2 4\n 2.​ −𝑎 x −𝑏= POSITIVE\n 3.​ 4. 8 ÷ −1. 2 = NEGATIVE\n 4.​ 323 ÷ 2 = POSITIVE",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "1F",
@@ -192,7 +206,8 @@
     "answerReadAloudEn": "",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "2A",
@@ -201,11 +216,12 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "1.\u200bWhat do the absolute value lines mean? 2.\u200b How are the following problems different?",
-    "answerReadAloudEn": "1.\u200bDistance from zero, ALWAYS POSITIVE 2.\u200b For :Solve the inside, then take the absolute value. For : :Find the absolute value of -2, then solve.",
+    "questionReadAloudEn": "1.​What do the\n absolute value lines\n mean?\n 2.​ How are the following\n problems different?",
+    "answerReadAloudEn": "1.​Distance from zero, ALWAYS\n POSITIVE\n 2.​ For :Solve the\n inside, then take the absolute\n value.\n For : :Find the\nabsolute value of -2, then solve.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "2B",
@@ -214,11 +230,12 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "How can you simplify an expression like this one: 4\ud835\udc65+ 3 + 2\ud835\udc65 + 5",
-    "answerReadAloudEn": "Combine like terms Same variables go together, Normal numbers go together 4\ud835\udc65 + 3 + 2\ud835\udc65 + 5 \u2193 6\ud835\udc65 + 8",
+    "questionReadAloudEn": "How can you simplify an\n expression like this one:\n 4𝑥+ 3 + 2𝑥 + 5",
+    "answerReadAloudEn": "Combine like terms\n Same variables go together,\n Normal numbers go together\n 4𝑥 + 3 + 2𝑥 + 5\n ↓\n 6𝑥 + 8",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "3A",
@@ -227,11 +244,12 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "What does it mean to solve an equation?",
-    "answerReadAloudEn": "Solving an equation means finding the value of the variable that will make the left side equal the right side.",
+    "questionReadAloudEn": "What does it mean to solve an\n equation?",
+    "answerReadAloudEn": "Solving an equation means finding\nthe value of the variable that will\nmake the left side equal the right\nside.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "3B",
@@ -244,7 +262,8 @@
     "answerReadAloudEn": "",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "3C",
@@ -253,11 +272,12 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "How do you solve a 2 step equation like this? 6\ud835\udc65+ 3 = 27",
-    "answerReadAloudEn": "1st) Subtract 3 from both sides 2nd) Divide both sides by 6",
+    "questionReadAloudEn": "How do you solve a 2 step equation\n like this?\n 6𝑥+ 3 = 27",
+    "answerReadAloudEn": "1st) Subtract 3 from both sides\n 2nd) Divide both sides by 6",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "3D",
@@ -266,11 +286,12 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "How do you read each of these inequality symbols? 1.\u200b< 2.\u200b> 3.\u200b\u2264 4.\u200b\u2265",
-    "answerReadAloudEn": "1.\u200bLess than < 2.\u200bGreater than > 3.\u200bLess than or equal to \u2264 4.\u200bGreater than or equal to \u2265",
+    "questionReadAloudEn": "How do you read each of\nthese inequality symbols?\n 1.​<\n 2.​>\n 3.​≤\n 4.​≥",
+    "answerReadAloudEn": "1.​Less than <\n 2.​Greater than >\n 3.​Less than or equal to ≤\n 4.​Greater than or equal to ≥",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "3E",
@@ -279,11 +300,12 @@
     "answerImageEn": "images/3E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "What is the difference between an inequality and an equation? 4\ud835\udc65+ 7 \u2265 20",
-    "answerReadAloudEn": "\\ Inequalities have lots of answers; equations only have one answer.",
+    "questionReadAloudEn": "What is the difference between\n an inequality and an equation?\n 4𝑥+ 7 ≥ 20",
+    "answerReadAloudEn": "\\\nInequalities have lots of\nanswers; equations only\nhave one answer.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
   },
   {
     "id": "3F",
@@ -292,10 +314,389 @@
     "answerImageEn": "images/3F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "questionReadAloudEn": "Write an inequality for each number line below: 1.\u200b 2.\u200b 3.\u200b",
-    "answerReadAloudEn": "1.\u200b \ud835\udc65< 6 2.\u200b \ud835\udc65\u22646 3.\u200b \ud835\udc65> 8",
+    "questionReadAloudEn": "Write an inequality for\neach number line below:\n 1.​\n 2.​\n 3.​",
+    "answerReadAloudEn": "1.​ 𝑥< 6\n 2.​ 𝑥≤6\n 3.​ 𝑥> 8",
     "questionReadAloudEs": "",
     "answerReadAloudEs": "",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "title": ""
+  },
+  {
+    "id": "4A",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4A_Q_en.png",
+    "answerImageEn": "images/4A_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Define or draw the\nfollowing parts of a circle:\n 1.​Radius:\n 2.​Diameter:\n 3.​Circumference:\n 4.​Area:",
+    "answerReadAloudEn": "1.​Radius:\n center to the outside\n 2.​Diameter: Side to side\n through the center.\n 3.​Circumference: the\n outside “perimeter” of\n a circle.\n 4.​Area: the inside of a\n circle.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "4B",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4B_Q_en.png",
+    "answerImageEn": "images/4B_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Fill in the circle tool:\n R\n D\n ​\n C\n A",
+    "answerReadAloudEn": "",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "4C",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4C_Q_en.png",
+    "answerImageEn": "images/4C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What are two ways you\n can write your answer\n with pi?",
+    "answerReadAloudEn": "1.​By using the symbol π\n ex) 10π\n 2.​Estimated with 3.14\n ex) 10 x 3. 14 = 31. 4",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "4D",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4D_Q_en.png",
+    "answerImageEn": "images/4D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Explain how you round\n a number to the\n hundredths place\n 8.562",
+    "answerReadAloudEn": "1st: Find the hundredths place\n2nd: Look one digit to the right\n3rd: If that digits 5 or more up\nthe score, 4 or less let it rest\n ↓\n 8.562\n Rounded = 8.56",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "5A",
+    "unit": "Unit 5",
+    "title": "",
+    "questionImageEn": "images/5A_Q_en.png",
+    "answerImageEn": "images/5A_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What is a proportional relationship?",
+    "answerReadAloudEn": "A relationship where you are\nconstantly multiplying by the same\nnumber.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "5B",
+    "unit": "Unit 5",
+    "title": "",
+    "questionImageEn": "images/5B_Q_en.png",
+    "answerImageEn": "images/5B_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "The table below is proportional.\n How do you find the\n Constant Of Proportionality\n in a table?\n How do you\n find the\n missing y\n value in this\n table?\n How do you\n find the\n missing x value in this\n table?",
+    "answerReadAloudEn": "𝑦\n 1.​ To find the C.O.P, divide\n 𝑥\n 2.​ 6 x C.O.P = y\n 3.​ 80 ÷ C.O.P = x",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "5C",
+    "unit": "Unit 5",
+    "title": "",
+    "questionImageEn": "images/5C_Q_en.png",
+    "answerImageEn": "images/5C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "1.​Sketch or describe\n what a proportional graph\n looks like\n 2.​Describe how to find the C.O.P\n from a proportional graph",
+    "answerReadAloudEn": "1.​A straight line that goes through\n the origin (0,0)\n 2.​Pick a point on the line and divide\n y by x (hint: when x=1, this is easiest!)",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "5D",
+    "unit": "Unit 5",
+    "title": "",
+    "questionImageEn": "images/5D_Q_en.png",
+    "answerImageEn": "images/5D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Where can you find the\nConstant of Proportionality\n in an equation?\n 1\n 𝑦= 𝑥 5",
+    "answerReadAloudEn": "y y\n5d)\n The C.O.P is the\n number in front of the variable",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "5E",
+    "unit": "Unit 5",
+    "title": "",
+    "questionImageEn": "images/5E_Q_en.png",
+    "answerImageEn": "images/5E_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What are 3 main ways to\nrepresent a proportional\nrelationship?",
+    "answerReadAloudEn": "Graph, Equation, Table",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "6A",
+    "unit": "Unit 6",
+    "title": "",
+    "questionImageEn": "images/6A_Q_en.png",
+    "answerImageEn": "images/6A_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "6\n 1.​What is the definition of\n percent? ​\n 2.​How do you write 34% as a\n fraction?",
+    "answerReadAloudEn": "1.​ A percent is a fraction out\n of 100\n 2.​ 34% is",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "6B",
+    "unit": "Unit 6",
+    "title": "",
+    "questionImageEn": "images/6B_Q_en.png",
+    "answerImageEn": "images/6B_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "How can you find the\npercent of a number?\n Ex: Find 20% of $80",
+    "answerReadAloudEn": "​\nChange the percent into a\ndecimal and multiply it by the\nnumber.\nEx:",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "6C",
+    "unit": "Unit 6",
+    "title": "",
+    "questionImageEn": "images/6C_Q_en.png",
+    "answerImageEn": "images/6C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "If you need to find a\n percent in a real life\n situation how do you\n do it?\nExample: Carlos got 17 out of 20\nquestions right on his science test.\nWhat percent did he get right?",
+    "answerReadAloudEn": "1st) Find the fraction\n2nd) Part divided by whole\n3rd) Decimal times 100",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "6D",
+    "unit": "Unit 6",
+    "title": "",
+    "questionImageEn": "images/6D_Q_en.png",
+    "answerImageEn": "images/6D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Below is a problem where you need to\nfind a percent increase. Explain how to\nsolve it:\nYou go to a restaurant and your food\ncosts $30. You want to add a 15% tip.\nWhat is the total amount you will pay?",
+    "answerReadAloudEn": "To calculate % increase:\n1st: Find the percent of the number\n ↓\n2nd Add whole +\n $30 + $4.50 = $34.50",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "6E",
+    "unit": "Unit 6",
+    "title": "",
+    "questionImageEn": "images/6E_Q_en.png",
+    "answerImageEn": "images/6E_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "How do you find the total after a\n % decrease?\n Example: 20% discount on $30",
+    "answerReadAloudEn": "To calculate % decrease:\n1st) Find the percent of the number\n ↓\n2nd) Subtract whole –\n $30 - $6 = $24",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "6F",
+    "unit": "Unit 6",
+    "title": "",
+    "questionImageEn": "images/6F_Q_en.png",
+    "answerImageEn": "images/6F_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "How do you convert a ….\nFraction to Decimal:\nDecimal to Percent:\nPercent to Fraction:",
+    "answerReadAloudEn": "How do you convert a ….\nFraction to Decimal: Numerator ÷ Demoniator\nDecimal to Percent: Decimal ✖ 100\nPercent to Fraction: Percent over 100",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "7A",
+    "unit": "Unit 7",
+    "title": "",
+    "questionImageEn": "images/7A_Q_en.png",
+    "answerImageEn": "images/7A_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "1.)​ Describe and sketch a\n complementary angle\n 2.)​ Describe and sketch a\n supplementary angle.\n 3.)​ Describe and sketch a\n vertical angle.",
+    "answerReadAloudEn": "1.​ Complementary angles add\n up to 90°\n 2.​Supplementary angles add up\n to 180°\n 3.​Vertical angles are opposite\n angles that are equal.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "7B",
+    "unit": "Unit 7",
+    "title": "",
+    "questionImageEn": "images/7B_Q_en.png",
+    "answerImageEn": "images/7B_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What do the interior angles of any\ntriangle in the world add up to?",
+    "answerReadAloudEn": "The three angles in any\n triangle add up to 180.\n x + y + z = 180°",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "7C",
+    "unit": "Unit 7",
+    "title": "",
+    "questionImageEn": "images/7C_Q_en.png",
+    "answerImageEn": "images/7C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "How can you tell if\nthree lines can form a triangle?\nLike these lines:\n _____\n ________\n _____________",
+    "answerReadAloudEn": "The two smallest sides added\ntogether have to be bigger than\nthe longest side.\nThese lines would form a triangle!\n_____\n________\n_____________",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "7D",
+    "unit": "Unit 7",
+    "title": "",
+    "questionImageEn": "images/7D_Q_en.png",
+    "answerImageEn": "images/7D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What is the difference between\nvolume and surface area?",
+    "answerReadAloudEn": "Volume = The number of cubes that\nfit inside a 3D shape\nSurface Area = The area of all the\nflat sides of a 3D shape",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "7E",
+    "unit": "Unit 7",
+    "title": "",
+    "questionImageEn": "images/7E_Q_en.png",
+    "answerImageEn": "images/7E_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "",
+    "answerReadAloudEn": "To find the area of a…\n ●​ Rectangle: Length x Width​\n ●​ Triangle: Base x Height ÷ 2\n ●​ Compound shapes:\n 1.Break into shapes you know\n 2.Find the area of each\n 3.Add all areas together",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "8A",
+    "unit": "Unit 8",
+    "title": "",
+    "questionImageEn": "images/8A_Q_en.png",
+    "answerImageEn": "images/8A_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "1.​ What is\n probability?\n 2.​ How do you find\n probability?",
+    "answerReadAloudEn": "1.​Probability is the chance\n something will happen\n 2.​To find probability, write a\n fraction:",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "8B",
+    "unit": "Unit 8",
+    "title": "",
+    "questionImageEn": "images/8B_Q_en.png",
+    "answerImageEn": "images/8B_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "If you spin this spinner\n40 times how can you\npredict how many\ntimes (probability)\n you’ll land on C?",
+    "answerReadAloudEn": "Multiply the Probability x total tries\n ¼ x 40= 10 times",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "8C",
+    "unit": "Unit 8",
+    "title": "",
+    "questionImageEn": "images/8C_Q_en.png",
+    "answerImageEn": "images/8C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "1.​What is the\n difference between a\n population and a sample?\n 2.​Why take a sample instead of\n surveying the whole\n population?",
+    "answerReadAloudEn": "1.​ POPULATION: The whole group you are\n studying\n SAMPLE: a small group selected from\n the population\n2.​ Surveying a sample is more efficient!",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "8D",
+    "unit": "Unit 8",
+    "title": "",
+    "questionImageEn": "images/8D_Q_en.png",
+    "answerImageEn": "images/8D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What makes a sample\n representative and not\n biased?",
+    "answerReadAloudEn": "Representative samples:\n 1.​ Sample is FROM the population\n 2.​ Sample is as BIG as possible\n 3.​ Sample is RANDOM\nBiased samples are not fair or favor one group",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "8E",
+    "unit": "Unit 8",
+    "title": "",
+    "questionImageEn": "images/8E_Q_en.png",
+    "answerImageEn": "images/8E_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "1)​What is a measure of center?\n Give 2 examples\n2)​What is a measure of variability?\n Give 2 examples",
+    "answerReadAloudEn": "p g p\n8e)\n1)​Measures of center: represent\n the typical value of the data\n set\n Examples: mean, median, mode\n2)​Measure of variability:\n measures how spread out your\n data is.\n Examples: Range, MAD, IQR",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "8F",
+    "unit": "Unit 8",
+    "title": "",
+    "questionImageEn": "images/8F_Q_en.png",
+    "answerImageEn": "images/8F_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "",
+    "answerReadAloudEn": "1) To calculate Mean(average):\n 1st) Add all the numbers\n 2nd) Divide by how many numbers\n you have\n2) To calculate median:\n 1st) Put the numbers in order from\n least to greatest\n 2nd) Choose the middle number\n If there is a tie between two numbers in the\n middle, add them and divide by 2",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "8G",
+    "unit": "Unit 8",
+    "title": "",
+    "questionImageEn": "images/8G_Q_en.png",
+    "answerImageEn": "images/8G_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "You win a game if you:\n ●​ Flip a coin to heads\n ●​ Spin this spinner and land on A\nSketch a tree diagram and write how\nmany possible outcomes there are\nin this situation.",
+    "answerReadAloudEn": "There are 8 possible outcomes",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
   }
 ]
