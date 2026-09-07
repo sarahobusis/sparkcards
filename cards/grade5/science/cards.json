@@ -5,13 +5,13 @@
     "title": "Sun as a Star",
     "questionImageEn": "images/1A_Q_en.png",
     "answerImageEn": "images/1A_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/1A_Q_es.png",
+    "answerImageEs": "images/1A_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "The Sun is a star!\nWhy does the sun look bigger and\nbrighter than the other stars?\n )",
     "answerReadAloudEn": "The Sun is much closer to Earth than\nall the other stars.\n )",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¡El Sol es una estrella!\n¿Por qué el Sol parece más grande y\nbrillante que las demás estrellas?",
+    "answerReadAloudEs": "El Sol está mucho más cerca de la\nTierra que todas las demás estrellas."
   },
   {
     "id": "1B",
@@ -19,13 +19,13 @@
     "title": "Earth Gravity",
     "questionImageEn": "images/1B_Q_en.png",
     "answerImageEn": "images/1B_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/1B_Q_es.png",
+    "answerImageEs": "images/1B_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is Earth’s gravity?",
     "answerReadAloudEn": "An invisible force pulls all objects\ntoward the Earth’s center.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Qué es la gravedad de la\nTierra?",
+    "answerReadAloudEs": "Una fuerza invisible que atrae\ntodos los objetos hacia el centro de\nla Tierra."
   },
   {
     "id": "1C",
@@ -33,13 +33,13 @@
     "title": "Day and Night",
     "questionImageEn": "images/1C_Q_en.png",
     "answerImageEn": "images/1C_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/1C_Q_es.png",
+    "answerImageEs": "images/1C_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "1.​What causes day and night on\n Earth?\n 2.​Which part of the Earth has\n day and which part has night?",
     "answerReadAloudEn": "1.​Day and night happen because\n the Earth spins (rotates).\n 2.​ The part of Earth that is facing\n the Sun has day, and the part\n that is facing away has night.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "1.​¿Qué causa el día y la\n noche en la Tierra?\n 2.​¿En cuál parte de la Tierra\n es de día y en cuál parte es\n de noche?",
+    "answerReadAloudEs": "1.​El día y la noche ocurren\n porque la Tierra rota.\n 2.​Es de día en la parte de la\n Tierra que está frente al Sol,\n y de noche en la parte que\n está de espaldas al Sol."
   },
   {
     "id": "1D",
@@ -47,13 +47,13 @@
     "title": "Orbit and Year",
     "questionImageEn": "images/1D_Q_en.png",
     "answerImageEn": "images/1D_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/1D_Q_es.png",
+    "answerImageEs": "images/1D_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "1.​How does the Sun’s gravity affect\n the Earth?\n 2.​Why is a year 365 days long?",
     "answerReadAloudEn": "1.​The Sun’s gravity causes the Earth\n to go around (revolve) the Sun.\n 2.​It takes 365 days for Earth to go all\n the way around the Sun.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "1.​¿Cómo afecta la gravedad del Sol\n a la Tierra?\n 2.​¿Por qué un año tiene 365 días?",
+    "answerReadAloudEs": "1.​La gravedad del Sol hace que la\n Tierra gire o de la vuelta al Sol.\n 2.​La Tierra tarda 365 días en dar\n una vuelta completa alrededor del\n Sol."
   },
   {
     "id": "1E",
@@ -61,13 +61,13 @@
     "title": "Sky Changes",
     "questionImageEn": "images/1E_Q_en.png",
     "answerImageEn": "images/1E_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/1E_Q_es.png",
+    "answerImageEs": "images/1E_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "Why do we see the Sun, Moon, and\nstars in different places in the sky\nat different times?",
     "answerReadAloudEn": "We see these objects in different\nplaces in the sky because the Earth\nis both spinning (rotating) and\nmoving around (revolving) the\nSun.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Por qué vemos el Sol, la Luna y las\nestrellas en diferentes lugares del\ncielo en diferentes momentos?",
+    "answerReadAloudEs": "Vemos estos objetos en diferentes\nlugares del cielo porque la Tierra\nestá rotando y también se está\nmoviendo alrededor del Sol\n(girando)."
   },
   {
     "id": "1F",
@@ -75,13 +75,13 @@
     "title": "Seasonal Shadows",
     "questionImageEn": "images/1F_Q_en.png",
     "answerImageEn": "images/1F_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/1F_Q_es.png",
+    "answerImageEs": "images/1F_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "Why are shadows shorter in the\nsummer than in the winter?",
     "answerReadAloudEn": "In the summer, the Sun is higher in\nthe sky, so it makes shorter\nshadows. That’s also why days are\nlonger in the summer.\n(In the winter it is the opposite. The Sun is lower in the\nsky and so the shadows are longer and the days are\nshorter.)",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Por qué las sombras son más\ncortas en verano que en invierno?",
+    "answerReadAloudEs": "En verano, el sol está más alto en\nel cielo, por lo que las sombras\nson más cortas. Por eso también\nlos días son más largos en verano.\n(En invierno ocurre lo contrario. El sol está más bajo en el\ncielo, por lo que las sombras son más largas y los días son\nmás cortos)."
   },
   {
     "id": "2A",
@@ -89,13 +89,13 @@
     "title": "Properties of Substances",
     "questionImageEn": "images/2A_Q_en.png",
     "answerImageEn": "images/2A_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2A_Q_es.png",
+    "answerImageEs": "images/2A_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "List at least three properties we can use to describe and compare substances.",
-    "answerReadAloudEn": "Properties include color, hardness, shininess, magnetism, conductivity, and solubility.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "We can describe and compare different\nsubstances using their properties.\nList at least 3 properties we can\nuse to describe and compare\nsubstances.",
+    "answerReadAloudEn": "●​ Color\n●​ Hardness (how easy it is to scratch)\n●​ Shininess (reflectivity)\n●​ If they attract magnets (magnetism)\n●​ If they carry heat or electricity\n (conductivity)\n●​ If they dissolve in water (solubility)",
+    "questionReadAloudEs": "Podemos describir y comparar diferentes\nsustancias utilizando sus propiedades.\nEnumera al menos tres\npropiedades que podamos\nutilizar para describir y comparar\nsustancias.",
+    "answerReadAloudEs": "●​ Color\n●​ Dureza (facilidad con la que se raya)\n●​ Brillo (reflectividad)\n●​ Si atraen imanes (magnetismo)\n●​ Si conducen el calor o la electricidad\n (conductividad)\n●​ Si se disuelven en agua (solubilidad)"
   },
   {
     "id": "2B",
@@ -103,13 +103,13 @@
     "title": "States of Matter",
     "questionImageEn": "images/2B_Q_en.png",
     "answerImageEn": "images/2B_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2B_Q_es.png",
+    "answerImageEs": "images/2B_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What are the three states of matter on Earth and how do their particles behave?",
-    "answerReadAloudEn": "Solids have particles packed closely that only vibrate. Liquids have particles that move around more and are a little spread out. Gases have particles that move quickly and are very far apart.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "What are the three states of matter\non Earth and how do their particles\nbehave?",
+    "answerReadAloudEn": "1.​ Solid: particles are packed closely and\n only vibrate.\n 2.​ Liquid: particles move around more\n and are a little spread out.\n 3.​ Gas: particles move quickly and are\n very far apart",
+    "questionReadAloudEs": "¿Cuáles son los tres estados de la\nmateria en la Tierra y cómo se\ncomportan sus partículas?",
+    "answerReadAloudEs": "g ( )\n2b)\n 1.​ Sólido: las partículas están muy juntas y\n solo vibran.\n 2.​ Líquido: las partículas se mueven más y\n están un poco más separadas.\n 3.​ Gas: las partículas se mueven\n rápidamente y están muy separadas\n entre sí."
   },
   {
     "id": "2C",
@@ -117,13 +117,13 @@
     "title": "Phase Change",
     "questionImageEn": "images/2C_Q_en.png",
     "answerImageEn": "images/2C_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2C_Q_es.png",
+    "answerImageEs": "images/2C_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is a phase change?",
-    "answerReadAloudEn": "A phase change is when matter changes from one state to another.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "answerReadAloudEn": "A phase change is when matter\n changes from one state to\n another.",
+    "questionReadAloudEs": "¿Qué es un cambio de fase?",
+    "answerReadAloudEs": "Un cambio de fase es cuando la materia\npasa de un estado a otro."
   },
   {
     "id": "2D",
@@ -131,13 +131,13 @@
     "title": "Heating and Cooling Matter",
     "questionImageEn": "images/2D_Q_en.png",
     "answerImageEn": "images/2D_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2D_Q_es.png",
+    "answerImageEs": "images/2D_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What happens when you add heat to a substance? What happens when you take away heat from a substance?",
-    "answerReadAloudEn": "Adding heat can make solids melt into liquids and liquids evaporate into gases. Taking away heat can make gases condense into liquids and liquids freeze into solids.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "1.​ What happens when you add heat\n to a substance?\n 2.​ What happens when you take away\n heat from a substance?\n2 )",
+    "answerReadAloudEn": "1.​ Adding heat can make solids melt into\n liquids and liquids evaporate into\n gases.\n 2.​ Taking away heat can make gases\n condense into liquids and liquids\n freeze into solids.\n2 )",
+    "questionReadAloudEs": "1.​ ¿Qué sucede cuando se aplica calor\n a una sustancia?\n 2.​ ¿Qué sucede cuando se elimina el\n calor de una sustancia?",
+    "answerReadAloudEs": "1.​ Al añadir calor, los sólidos se funden y se\n convierten en líquidos, y los líquidos se\n evaporan y se convierten en gases.\n 2.​ Al eliminar el calor, los gases se condensan\n y se convierten en líquidos, y los líquidos\n se congelan y se convierten en sólidos."
   },
   {
     "id": "2E",
@@ -145,13 +145,13 @@
     "title": "Gases",
     "questionImageEn": "images/2E_Q_en.png",
     "answerImageEn": "images/2E_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2E_Q_es.png",
+    "answerImageEs": "images/2E_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What is special about gases compared to the other states of matter?",
-    "answerReadAloudEn": "Gas particles always take up the amount of space available. They expand to fill a space or come closer together when compressed.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "What is special about gases compared to\nthe other states of matter?\n f)",
+    "answerReadAloudEn": "Gas particles always take up the amount\nof space available. So they will expand as\nyou blow up a balloon or they will come\nclose together when you compress them\nin a small space.\n f)",
+    "questionReadAloudEs": "¿Qué tienen de especial los gases en\ncomparación con los demás estados de la\nmateria?\n )",
+    "answerReadAloudEs": "Las partículas de gas siempre ocupan todo el\nespacio disponible. Por lo tanto, se expanden al\ninflar un globo o se acercan entre sí cuando se\nlas comprime en un espacio pequeño.\n )"
   },
   {
     "id": "2F",
@@ -159,13 +159,13 @@
     "title": "Conservation of Mass",
     "questionImageEn": "images/2F_Q_en.png",
     "answerImageEn": "images/2F_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2F_Q_es.png",
+    "answerImageEs": "images/2F_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What happens to the mass of matter when it changes form or mixes with something else?",
-    "answerReadAloudEn": "The mass stays the same as long as it is in a closed system. Matter can change form, but it does not disappear.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "What happens to the mass of matter\nwhen it changes form or mixes with\nsomething else?\n )",
+    "answerReadAloudEn": "The mass stays the same as long as it's in\na closed system (like a container with a\nlid).\nMatter can change form, but it doesn’t\ndisappear.\n )",
+    "questionReadAloudEs": "¿Qué pasa con la masa de la materia\ncuando cambia de forma o se mezcla\ncon otra cosa?",
+    "answerReadAloudEs": "La masa se queda igual mientras esté en un\nsistema cerrado (como un tarro con tapa).\nLa materia puede cambiar de forma, pero no\ndesaparece."
   },
   {
     "id": "2G",
@@ -173,13 +173,13 @@
     "title": "Mixture vs Chemical Reaction",
     "questionImageEn": "images/2G_Q_en.png",
     "answerImageEn": "images/2G_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2G_Q_es.png",
+    "answerImageEs": "images/2G_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What is the difference between a mixture and a chemical reaction?",
-    "answerReadAloudEn": "A mixture combines substances that can be separated back. A chemical reaction combines substances and makes a new substance that cannot be separated easily.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "What is the difference between a\nmixture and chemical reaction?",
+    "answerReadAloudEn": "A mixture is when you combine two or more\nsubstances and you can separate them back.\n (Ex. If you mix sand and water together you can separate them again)\nA chemical reaction is when you combine\ntwo or more substances and it makes a new\nsubstance that you can’t separate easily.\n(Ex. If you mix baking soda and vinegar it bubbles up and you can’t\nseparate the baking soda out).",
+    "questionReadAloudEs": "¿Cuál es la diferencia entre una\nmezcla y una reacción química?",
+    "answerReadAloudEs": "Una mezcla se produce cuando se combinan\ndos o más sustancias y es posible volver a\nsepararlas.\n(Por ejemplo, si mezclas arena y agua, puedes volver a separarlas).\nUna reacción química ocurre cuando se\ncombinan dos o más sustancias y se forma una\nnueva sustancia que no se puede separar\nfácilmente.\n(Por ejemplo, si mezclas bicarbonato de sodio y vinagre, se forman\nburbujas y no puedes separar el bicarbonato de sodio)."
   },
   {
     "id": "3A",
@@ -187,13 +187,13 @@
     "title": "Water Cycle Steps",
     "questionImageEn": "images/3A_Q_en.png",
     "answerImageEn": "images/3A_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3A_Q_es.png",
+    "answerImageEs": "images/3A_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "Identify the different steps of the water cycle in the picture.",
+    "questionReadAloudEn": "Identify the different steps of the\nwater cycle in the picture.",
     "answerReadAloudEn": "The water cycle includes evaporation, condensation, precipitation, absorption, and runoff.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "Identifica los diferentes pasos del\nciclo del agua en la imagen.",
+    "answerReadAloudEs": "Condensación\n Precipitacion\n Evaporación\n Absorción\n Escorrentía"
   },
   {
     "id": "3B",
@@ -201,13 +201,13 @@
     "title": "Saltwater and Freshwater",
     "questionImageEn": "images/3B_Q_en.png",
     "answerImageEn": "images/3B_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3B_Q_es.png",
+    "answerImageEs": "images/3B_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What are the major places we can find saltwater on Earth? What are the major places we can find freshwater on Earth?",
-    "answerReadAloudEn": "Saltwater is found in oceans, seas, gulfs, and bays. Freshwater is found in rivers, lakes, groundwater, and glaciers or polar ice caps.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "1.​What are the 4 major places\n we can find salt water on\n Earth?\n 2.​What are the 4 major places\n we can find freshwater on\n Earth?",
+    "answerReadAloudEn": "1.​We can find saltwater in\n oceans, seas, gulfs, and bays.\n 2.​We can find freshwater in\n rivers, lakes, groundwater, and\n glaciers/polar ice caps.",
+    "questionReadAloudEs": "1.​¿Cuáles son los 4 lugares\n principales donde podemos\n encontrar agua salada en la\n Tierra?\n 2.​¿Cuáles son los 4 lugares\n principales donde podemos\n encontrar agua dulce en la\n Tierra?",
+    "answerReadAloudEs": "1.​Podemos encontrar agua\n salada en océanos, mares,\n golfos y bahías.\n 2.​Podemos encontrar agua\n dulce en ríos, lagos, aguas\n subterráneas y glaciares o\n casquetes polares."
   },
   {
     "id": "3C",
@@ -215,13 +215,13 @@
     "title": "Drinkable Water",
     "questionImageEn": "images/3C_Q_en.png",
     "answerImageEn": "images/3C_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3C_Q_es.png",
+    "answerImageEs": "images/3C_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "Most of Earth is covered with water, but we cannot drink most of it. What are the two reasons?",
-    "answerReadAloudEn": "Most water on Earth is saltwater that we cannot drink. Most freshwater is frozen in glaciers and polar ice caps.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "Most of the Earth is covered with\nwater but we cannot drink most of\nit. What are the two reasons that\nthis is true?",
+    "answerReadAloudEn": "1.​Most of the water on Earth is\n saltwater that we cannot\n drink.\n 2.​Most of the freshwater on\n earth is frozen in glaciers and\n the polar ice caps.",
+    "questionReadAloudEs": "La mayor parte de la Tierra está\ncubierta de agua, pero no podemos\nbeber la mayor parte de ella. ¿Cuáles\nson las dos razones por las que esto\nes cierto?",
+    "answerReadAloudEs": "1.​La mayor parte del agua de la\n Tierra es agua salada que no\n podemos beber.\n 2.​La mayor parte del agua dulce\n de la Tierra está congelada en\n glaciares y en los casquetes\n polares."
   },
   {
     "id": "3D",
@@ -229,13 +229,13 @@
     "title": "Reducing Water Pollution",
     "questionImageEn": "images/3D_Q_en.png",
     "answerImageEn": "images/3D_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3D_Q_es.png",
+    "answerImageEs": "images/3D_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What are three ways humans can help stop pollution of Earth’s water cycle?",
-    "answerReadAloudEn": "Humans can use water treatment plants, reduce runoff from farms by creating natural filters, and reduce pollution and litter on the ground.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "What are 3 ways that humans can\nhelp stop pollution of Earth’s water\ncycle?",
+    "answerReadAloudEn": "1.​Water Treatment Plants\n 2.​Reduce runoff from farms by\n creating natural filters\n 3.​Reduce pollution and litter on\n the ground",
+    "questionReadAloudEs": "¿De qué 3 maneras pueden los seres\nhumanos ayudar a detener la\ncontaminación del ciclo del agua en\nla Tierra?",
+    "answerReadAloudEs": "1.​Plantas de tratamiento de agua\n 2.​Reducir la escorrentía de las\n granjas mediante la creación de\n filtros naturales\n 3.​Reducir la contaminación y la\n basura en el suelo"
   },
   {
     "id": "3E",
@@ -243,13 +243,13 @@
     "title": "Water Filters",
     "questionImageEn": "images/3E_Q_en.png",
     "answerImageEn": "images/3E_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3E_Q_es.png",
+    "answerImageEs": "images/3E_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What should you think about when deciding what materials to use to make a water filter? How can you tell if a water filter is working?",
-    "answerReadAloudEn": "You should consider the size of the particles you are trying to filter out. You can tell it is working if the water is clear.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "Water filters are used by humans to clean\nwater.\n 1.​What should you think about\n when deciding what materials\n to use to make a water filter?\n (Do not list the materials)\n 2.​How can you tell if a water\n filter is working?",
+    "answerReadAloudEn": "1. You should consider the size of\nthe particles you are trying to filter\nout.\n2. The water is clear.",
+    "questionReadAloudEs": "Los filtros de agua se utilizan para purificar\nel agua.\n 1.​¿Qué se debe tener en cuenta al\n elegir materiales para fabricar\n un filtro de agua?\n(No incluyas la lista de materiales).\n 2.​¿Cómo puedes saber si un filtro\n de agua funciona\n correctamente?",
+    "answerReadAloudEs": "1. Deberías considerar el tamaño de\nlas partículas que deseas filtrar.\n2. El agua está clara."
   },
   {
     "id": "4A",
@@ -257,13 +257,13 @@
     "title": "Photosynthesis",
     "questionImageEn": "images/4A_Q_en.png",
     "answerImageEn": "images/4A_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/4A_Q_es.png",
+    "answerImageEs": "images/4A_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "How do plants make their own food and grow? What is this process called?",
-    "answerReadAloudEn": "Plants use sunlight, air, and water to make sugar in their leaves. This process is called photosynthesis.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "1.​How do plants make their own\n food and grow?\n 2.​What is this process called?",
+    "answerReadAloudEn": "1.​Plants use sunlight, air, and\n water to make sugar in their\n leaves.\n 2.​This process is called\n photosynthesis.",
+    "questionReadAloudEs": "1.​¿Cómo producen su propio\n alimento y crecen las plantas?\n 2.​¿Cómo se llama este proceso?",
+    "answerReadAloudEs": "1.​Las plantas utilizan la luz solar, el\n aire y el agua para producir\n azúcar en sus hojas.\n 2.​Este proceso se llama fotosíntesis."
   },
   {
     "id": "4B",
@@ -271,13 +271,13 @@
     "title": "Organism Energy",
     "questionImageEn": "images/4B_Q_en.png",
     "answerImageEn": "images/4B_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/4B_Q_es.png",
+    "answerImageEs": "images/4B_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "Describe how producers, consumers, and decomposers get their energy.",
-    "answerReadAloudEn": "Producers make their own energy through photosynthesis. Consumers get energy by eating other organisms. Decomposers get energy by breaking down dead plants and animals.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "Describe how each of the 3 types of\norganisms get their energy\n 1.​Producers\n 2.​Consumers\n 3.​Decomposers",
+    "answerReadAloudEn": "1.​Producers make their own\n energy through photosynthesis\n (ex. plants)\n 2.​Consumers get their energy by\n eating other organisms.\n 3.​Decomposers get their energy\n from breaking down dead\n plants and animals",
+    "questionReadAloudEs": "Describe cómo cada uno de los 3\ntipos de organismos obtienen su\nenergía.\n 1.​Productores\n 2.​Consumidores\n 3.​Descomponedores",
+    "answerReadAloudEs": "1.​ Los productores generan su\n propia energía mediante la\n fotosíntesis (por ejemplo, las\n plantas).\n 2.​Los consumidores obtienen su\n energía al comer otros\n organismos.\n 3.​Los descomponedores obtienen\n su energía de la descomposición\n de plantas y animales muertos."
   },
   {
     "id": "4C",
@@ -285,12 +285,12 @@
     "title": "Matter in Ecosystems",
     "questionImageEn": "images/4C_Q_en.png",
     "answerImageEn": "images/4C_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/4C_Q_es.png",
+    "answerImageEs": "images/4C_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "Finish this chart to show how matter moves through an ecosystem.",
+    "questionReadAloudEn": "Finish this chart to show how matter\nmoves through an ecosystem.",
     "answerReadAloudEn": "Matter moves from producers to consumers to decomposers and back to soil and air.",
-    "questionReadAloudEs": "",
+    "questionReadAloudEs": "Completa este diagrama para mostrar\ncómo se mueve la materia a través de un\necosistema.",
     "answerReadAloudEs": ""
   },
   {
@@ -299,13 +299,13 @@
     "title": "Energy Starts",
     "questionImageEn": "images/4D_Q_en.png",
     "answerImageEn": "images/4D_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/4D_Q_es.png",
+    "answerImageEs": "images/4D_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "Where does energy begin in an ecosystem? Explain why.",
-    "answerReadAloudEn": "Energy begins with the Sun because the Sun gives energy to producers to make their own food, which starts the cycle of energy through an ecosystem.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "Where does energy begin in an\necosystem? Explain why.",
+    "answerReadAloudEn": "Energy begins with the Sun\nbecause the sun gives energy to\nproducers to make their own food -\n(which starts the cycle of energy through an ecosystem)",
+    "questionReadAloudEs": "¿Dónde comienza la energía en un\necosistema? Explique por qué.",
+    "answerReadAloudEs": "La energía comienza con el Sol, ya\nque le da energía a los productores\npara que produzcan su propio\nalimento\n(lo que inicia el ciclo de la energía a través de un\necosistema)."
   },
   {
     "id": "4E",
@@ -313,13 +313,13 @@
     "title": "Animal Energy Uses",
     "questionImageEn": "images/4E_Q_en.png",
     "answerImageEn": "images/4E_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/4E_Q_es.png",
+    "answerImageEs": "images/4E_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What are two examples of how animals use the energy they get from food?",
-    "answerReadAloudEn": "Animals use energy from food to grow, move, stay warm, repair their bodies, and reproduce.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "What are two examples of how\nanimals use the energy they get\nfrom food?\n f)",
+    "answerReadAloudEn": "Animals use energy from food to:\n ●​Grow\n ●​Move\n ●​Stay warm\n ●​Repair their bodies\n ●​Reproduce (Have babies)\n f)",
+    "questionReadAloudEs": "¿Cuáles son dos ejemplos de cómo\nlos animales utilizan la energía que\nobtienen de los alimentos?",
+    "answerReadAloudEs": "Los animales utilizan la energía de los\nalimentos para:\n ●​ Crecer\n ●​ Moverse\n ●​ Mantenerse calientes\n ●​ Reparar sus cuerpos\n ●​ Reproducirse (tener crías)"
   },
   {
     "id": "4F",
@@ -327,13 +327,13 @@
     "title": "Composter",
     "questionImageEn": "images/4F_Q_en.png",
     "answerImageEn": "images/4F_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/4F_Q_es.png",
+    "answerImageEs": "images/4F_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What is a composter? What are the four major qualities of a good composter?",
-    "answerReadAloudEn": "A composter is a device created by humans to help break down food scraps into soil. A good composter lets air in, keeps the right amount of moisture, is easy to open, and keeps pests out.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "1.​What is a composter?\n 2.​What are the 4 major qualities\n of a good composter?",
+    "answerReadAloudEn": "1.​A composter is a device created\n by humans to help break down\n food scraps into soil.\n 2.​A good composter:\n 1)​Lets air in\n 2)​Keeps the right amount of\n moisture\n 3)​Is easy to open\n 4)​Keeps pests (like mice) out",
+    "questionReadAloudEs": "1.​¿Qué es un compostador?\n 2.​¿Cuáles son las 4 cualidades\n principales de un buen\n compostador?",
+    "answerReadAloudEs": "1.​Un compostador es un\n dispositivo creado por los seres\n humanos para ayudar a\n descomponer los restos de\n comida y convertirlos en tierra.\n 2.​Un buen compostador:\n 1)​Deja entrar el aire.\n 2)​Mantiene la cantidad\n adecuada de humedad.\n 3)​Es fácil de abrir.\n 4)​Mantiene alejadas a las\n plagas (como los ratones)."
   },
   {
     "id": "5A",
@@ -344,8 +344,8 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What is the engineering design process?",
-    "answerReadAloudEn": "The engineering design process is the set of steps engineers follow when creating solutions to solve a problem.",
+    "questionReadAloudEn": "What is the engineering design\nprocess?",
+    "answerReadAloudEn": "The engineering design process is\nthe set of steps engineers follow\nwhen creating solutions to solve a\nproblem",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -358,8 +358,8 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What are criteria and constraints?",
-    "answerReadAloudEn": "Criteria are the things that make it a good solution. Constraints are what you are allowed to work with.",
+    "questionReadAloudEn": "When developing possible solutions to a\nproblem, engineers need to consider the\ncriteria and constraints of their design\nsolution.\nWhat are criteria and constraints?",
+    "answerReadAloudEn": "Criteria = The things that make it a\ngood solution\nConstraints = What you are\nallowed to work with",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   }
