@@ -106,8 +106,8 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "Write three thousand six hundred fifty-two in expanded form.",
-    "answerReadAloudEn": "Three thousand six hundred fifty-two equals three thousand plus six hundred plus fifty plus two.",
+    "questionReadAloudEn": "Write 3,652 in expanded form",
+    "answerReadAloudEn": "3,652 =\n 3000 + 600 + 50 + 2",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -121,7 +121,7 @@
     "answerImageEs": "",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What are the steps to long division?",
-    "answerReadAloudEn": "To do long division: divide, multiply, subtract, bring over.",
+    "answerReadAloudEn": "To do long division:\n 1.​Divide\n 2.​Multiply\n 3.​Subtract\n 4.​Bring over",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
