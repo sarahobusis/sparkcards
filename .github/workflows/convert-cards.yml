@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: convert-star-cards
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   convert:
@@ -25,6 +25,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Sync with latest main
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -50,7 +56,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          find cards -type f \( -name "*.png" -o -name "cards.json" \) -print0 | xargs -0 git add
+          git add cards/**/*.png cards/**/*.json
 
           if git diff --cached --quiet; then
             echo "No converted card changes to commit."
@@ -59,6 +65,9 @@ jobs:
 
           git commit -m "Convert incoming star card PDFs"
 
-          git pull --rebase --autostash origin main
+          git pull --rebase --autostash origin main || {
+            echo "Could not rebase cleanly. Another edit probably changed cards.json at the same time."
+            exit 1
+          }
 
           git push origin main
