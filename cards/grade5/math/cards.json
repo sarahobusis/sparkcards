@@ -9,7 +9,7 @@
     "answerImageEs": "",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is addition? What is subtraction?",
-    "answerReadAloudEn": "Addition means putting together two amounts to find the total. Subtraction means taking away or finding the difference.",
+    "answerReadAloudEn": "1.​ Addition means putting together\n two amounts to find the total\n 2. Subtraction means taking away or",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -22,8 +22,8 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What is multiplication? What is the multiplication version of five plus five plus five?",
-    "answerReadAloudEn": "Multiplication means repeated addition of the same number. The multiplication version of five plus five plus five is three times five.",
+    "questionReadAloudEn": "1.​What is multiplication?\n 2.​What is the multiplication\n version of 5 + 5 + 5?",
+    "answerReadAloudEn": "1)​ Repeated addition of the same\n number\n 2)​",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -50,8 +50,8 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "What are the following called? Answer to a subtraction problem. Answer to a division problem. Answer to an addition problem. Answer to a multiplication problem.",
-    "answerReadAloudEn": "The answer to a subtraction problem is the difference. The answer to a division problem is the quotient. The answer to an addition problem is the sum. The answer to a multiplication problem is the product.",
+    "questionReadAloudEn": "What are the following called:\n 1)​ Answer to a subtraction problem\n 2)​ Answer to division problem\n 3)​ Answer to an addition problem\n 4)​ Answer to a multiplication problem",
+    "answerReadAloudEn": "1)​Difference\n 2)​Quotient\n 3)​Sum\n 4)​Product",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -388,6 +388,20 @@
     "acceptedAnswers": [],
     "questionReadAloudEn": "Label the origin, x axis, and y axis.",
     "answerReadAloudEn": "The origin is the point zero comma zero. The x axis goes left and right. The y axis goes up and down.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "CARD2",
+    "unit": "Unit",
+    "title": "",
+    "questionImageEn": "images/CARD2_Q_en.png",
+    "answerImageEn": "images/CARD2_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "",
+    "answerReadAloudEn": "2. Subtraction means taking away or\n`\n finding the difference",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   }
