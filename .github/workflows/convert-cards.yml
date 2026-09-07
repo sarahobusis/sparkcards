@@ -1,0 +1,46 @@
+name: Convert Star Cards
+
+on:
+  push:
+    paths:
+      - "incoming/**/*.pdf"
+      - "incoming/**/*.csv"
+      - "tools/card_converter.py"
+      - ".github/workflows/convert-cards.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow pymupdf
+
+      - name: Convert incoming card PDFs
+        run: |
+          python tools/card_converter.py
+
+      - name: Commit converted card files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Convert incoming star card PDFs"
+          file_pattern: "cards/**/*.png cards/**/*.json"
