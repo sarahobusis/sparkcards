@@ -75,7 +75,16 @@ class CropBox:
     a_box_img: Tuple[int, int, int, int]
     q_box_pdf: fitz.Rect
     a_box_pdf: fitz.Rect
+  
+RENDER_SCALE = 2.5
 
+PAD_LEFT = 20
+PAD_RIGHT = 20
+PAD_TOP = 40
+PAD_BOTTOM = 24
+
+MIN_HLINE_DARK_FRACTION = 0.40
+MIN_VLINE_DARK_FRACTION = 0.40
 
 def normalize_card_id(value: str) -> str:
     value = str(value or "").strip().replace(")", "")
