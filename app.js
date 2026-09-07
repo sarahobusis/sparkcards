@@ -1,5 +1,6 @@
 const API_URL = "https://script.google.com/macros/s/AKfycbz2skJ1ynwAJ08M4GzIeOtaO38bj0L_iK6birPOG5NaihBB5pHgMhDRGRbH8A4_u9i4_g/exec";
 const LOGIN_STORAGE_KEY = "sparkcards:lastLogin";
+const GUEST_STAR_CARD_ID = "0";
 
 const state = {
   starCardId: "",
@@ -67,11 +68,16 @@ els.closePracticeButton.addEventListener("click", () => {
 });
 
 els.studyAllButton.addEventListener("click", () => {
-  const ids = Object.keys(state.dashboard?.cards || {});
+  const ids = getDisplayCardIds();
   startPracticeSet(ids, "all");
 });
 
 els.studyNeedsPracticeButton.addEventListener("click", () => {
+  if (isGuestMode()) {
+    setMessage(els.lookupMessage, "Type your own STAR Card ID to see partial or incorrect cards.", "success");
+    return;
+  }
+
   const ids = Object.entries(state.dashboard?.cards || {})
     .filter(([, score]) => score === 0 || score === 0.5)
     .map(([cardId]) => cardId);
@@ -88,7 +94,7 @@ els.unitSelect.addEventListener("change", () => {
   const selectedUnit = els.unitSelect.value;
   if (!selectedUnit) return;
 
-  const ids = getDashboardCardIds()
+  const ids = getDisplayCardIds()
     .filter(cardId => getUnitForCardId(cardId) === selectedUnit);
 
   startPracticeSet(ids, "unit");
@@ -150,10 +156,14 @@ async function loadDashboard() {
   setMessage(els.lookupMessage, "Loading dashboard...", "");
 
   try {
-    const [dashboardData, cardsMeta] = await Promise.all([
-      fetchDashboardData(),
-      fetchCardsMeta()
-    ]);
+    const cardsMeta = await fetchCardsMeta();
+    let dashboardData;
+
+    if (isGuestMode()) {
+      dashboardData = buildGuestDashboard(cardsMeta);
+    } else {
+      dashboardData = await fetchDashboardData();
+    }
 
     if (!dashboardData.found) {
       throw new Error(dashboardData.error || "Could not find that student.");
@@ -202,14 +212,49 @@ async function fetchCardsMeta() {
   }
 }
 
+function isGuestMode() {
+  return normalizeStudentId(state.starCardId) === GUEST_STAR_CARD_ID;
+}
+
+function normalizeStudentId(value) {
+  return String(value || "").trim();
+}
+
+function buildGuestDashboard(cardsMeta) {
+  const cards = {};
+
+  (cardsMeta || []).forEach(card => {
+    const cardId = normalizeCardId(card.id);
+    if (cardId) cards[cardId] = "";
+  });
+
+  return {
+    found: true,
+    guestMode: true,
+    grade: state.grade,
+    subject: state.subject,
+    percentMastered: "",
+    totalCardsMastered: "",
+    cards
+  };
+}
+
 function renderDashboard() {
   const gradeLabel = `${state.grade}th Grade`;
-  els.dashboardContext.textContent = `${gradeLabel} · ${state.subject}`;
-  els.percentMastered.textContent = formatPercent(state.dashboard.percentMastered, state.dashboard.cards);
-  els.totalMastered.textContent = state.dashboard.totalCardsMastered === "" ? "--" : state.dashboard.totalCardsMastered;
+  els.dashboardContext.textContent = isGuestMode()
+    ? `${gradeLabel} · ${state.subject} · All Cards`
+    : `${gradeLabel} · ${state.subject}`;
+
+  els.percentMastered.textContent = isGuestMode()
+    ? "--"
+    : formatPercent(state.dashboard.percentMastered, state.dashboard.cards);
+
+  els.totalMastered.textContent = isGuestMode()
+    ? "--"
+    : (state.dashboard.totalCardsMastered === "" ? "--" : state.dashboard.totalCardsMastered);
 
   renderUnitSelect();
-  renderChips(Object.keys(state.dashboard.cards || {}));
+  renderChips(getDisplayCardIds());
 }
 
 function renderChips(cardIds) {
@@ -232,10 +277,10 @@ function renderChips(cardIds) {
 }
 
 function renderUnitSelect() {
-  // Build units from the spreadsheet/dashboard card IDs, not just cards.json.
-  // This makes every unit available even before all card images are uploaded.
+  // Build units from the website card order when cards.json exists.
+  // Fall back to dashboard cards only if cards.json is missing.
   const units = [...new Set(
-    getDashboardCardIds()
+    getDisplayCardIds()
       .map(getUnitForCardId)
       .filter(Boolean)
   )].sort(sortUnitLabels);
@@ -263,7 +308,7 @@ function startPracticeSet(cardIds, mode) {
 function openPracticeCard(cardId, mode = "dashboard", practicePool = null) {
   state.activeCardId = normalizeCardId(cardId);
   state.practiceMode = mode;
-  state.practicePool = Array.isArray(practicePool) ? practicePool : getDashboardCardIds();
+  state.practicePool = Array.isArray(practicePool) ? practicePool : getDisplayCardIds();
 
   // Keep the student's current language choice when moving between cards.
   // Previously this reset to English every time a new card opened.
@@ -322,6 +367,17 @@ function getDashboardCardIds() {
   return Object.keys(state.dashboard?.cards || {}).map(normalizeCardId);
 }
 
+function getWebsiteCardIds() {
+  return (state.cardsMeta || [])
+    .map(card => normalizeCardId(card.id))
+    .filter(Boolean);
+}
+
+function getDisplayCardIds() {
+  const websiteIds = getWebsiteCardIds();
+  return websiteIds.length ? websiteIds : getDashboardCardIds();
+}
+
 function getUnitForCardId(cardId) {
   const normalizedId = normalizeCardId(cardId);
   const cardMeta = state.cardsMeta.find(card => normalizeCardId(card.id) === normalizedId);
@@ -352,7 +408,7 @@ function sortUnitLabels(a, b) {
 }
 
 function getNextDashboardCardId(currentCardId) {
-  const ids = getDashboardCardIds();
+  const ids = getDisplayCardIds();
   if (!ids.length) return "";
 
   const currentIndex = ids.indexOf(normalizeCardId(currentCardId));
