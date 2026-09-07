@@ -1,1 +1,0 @@
-This placeholder keeps the images folder visible in GitHub. You can delete it later after adding real images.
