@@ -9,7 +9,7 @@
     "answerImageEs": "images/1A_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is addition? What is subtraction?",
-    "answerReadAloudEn": "1.​ Addition means putting together\n two amounts to find the total\n 2. Subtraction means taking away or",
+    "answerReadAloudEn": "1.​ Addition means putting together\n two amounts to find the total\n 2. Subtraction means taking away or\n`\n finding the difference",
     "questionReadAloudEs": "1.​¿Qué es la suma?\n 2.​¿Qué es la resta?",
     "answerReadAloudEs": "1.​ La suma consiste en juntar dos\n cantidades para hallar el total.\n 2. La resta significa quitar o\ncalcular la diferencia."
   },
@@ -177,7 +177,7 @@
     "answerImageEs": "",
     "acceptedAnswers": [],
     "questionReadAloudEn": "How do you calculate\nthe volume of a\nrectangular prism?",
-    "answerReadAloudEn": "Volume =\nLength x Width x Height\n 5 x 4 x 7\n =140",
+    "answerReadAloudEn": ")\n3d)\nVolume =\nLength x Width x Height\n 5 x 4 x 7\n =140",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -420,6 +420,34 @@
     "answerReadAloudEs": ""
   },
   {
+    "id": "7C",
+    "unit": "Unit 7",
+    "title": "",
+    "questionImageEn": "images/7C_Q_en.png",
+    "answerImageEn": "images/7C_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "All of these shapes can be\ncalled quadrilaterals. Why?",
+    "answerReadAloudEn": "They have 4 sides.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "7D",
+    "unit": "Unit 7",
+    "title": "",
+    "questionImageEn": "images/7D_Q_en.png",
+    "answerImageEn": "images/7D_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "All 3 of these shapes can be called\nparallelograms. Why?",
+    "answerReadAloudEn": "Parallelograms have:\n - 4 sides\n - opposite sides are parallel",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
     "id": "7E",
     "unit": "Unit 7",
     "title": "",
@@ -444,6 +472,20 @@
     "acceptedAnswers": [],
     "questionReadAloudEn": "This shape can be called a square. Why?",
     "answerReadAloudEn": "A square has:\n -​ 4 equal sides\n -​ 4 right angles",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "CARD1",
+    "unit": "Unit",
+    "title": "",
+    "questionImageEn": "images/CARD1_Q_en.png",
+    "answerImageEn": "images/CARD1_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "p\n 10,000 ?\n ? 103\n1,000,000,000 ?",
+    "answerReadAloudEn": "p\n 10,000 104\n 1,000 103\n1,000,000,000 109",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },

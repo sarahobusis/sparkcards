@@ -36,8 +36,8 @@
     "questionImageEs": "",
     "answerImageEs": "",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "1.​Explain how you can find the\n slope from the graph below.\n 2.​Explain how you find the\n starting point from the graph",
-    "answerReadAloudEn": "1.​\n a.​Find two points on the graph\n b.​Count rise (how far up or down)\n c.​Count run (how far left or right)\n ∆𝑦\n d.​Write slope as fraction: ∆",
+    "questionReadAloudEn": "1.​Explain how you can find the\n slope from the graph below.\n 2.​Explain how you find the\n starting point from the graph\n below.",
+    "answerReadAloudEn": "1.​\n a.​Find two points on the graph\n b.​Count rise (how far up or down)\n c.​Count run (how far left or right)\n ∆𝑦\n d.​Write slope as fraction: ∆𝑥\n 2. Find the number where the\n graphed line crosses y-axis\n Example: in this picture (0,2)",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -80,6 +80,20 @@
     "acceptedAnswers": [],
     "questionReadAloudEn": "In the situation graphed below:\n 1) What does the slope represent?\n 2) What does the starting point\n represent?",
     "answerReadAloudEn": "1)​The slope shows how much\n the plant is growing over time:\n ℎ𝑒𝑖𝑔ℎ𝑡 (𝑐𝑚)\n 𝑡𝑖𝑚𝑒(𝑑𝑎𝑦𝑠)\n 2)​The height of the plant at day\n zero",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "3G",
+    "unit": "Unit 3",
+    "title": "",
+    "questionImageEn": "images/3G_Q_en.png",
+    "answerImageEn": "images/3G_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "What does the graph of this\nequation look like?\n 1\n 𝑦= 𝑥 + 2 3",
+    "answerReadAloudEn": "A straight line that:\n ●​ touches the y-axis at 2\n ●​ has a slope of ⅓\n (every time it goes up by 1, it goes over by 3)",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   }
