@@ -341,13 +341,13 @@
     "title": "Engineering Design Process",
     "questionImageEn": "images/5A_Q_en.png",
     "answerImageEn": "images/5A_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/5A_Q_es.png",
+    "answerImageEs": "images/5A_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is the engineering design\nprocess?",
     "answerReadAloudEn": "The engineering design process is\nthe set of steps engineers follow\nwhen creating solutions to solve a\nproblem",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿En qué consiste el proceso de\ndiseño de ingeniería?",
+    "answerReadAloudEs": "El proceso de diseño de ingeniería\nes el conjunto de pasos que siguen\nlos ingenieros al crear soluciones\npara resolver un problema"
   },
   {
     "id": "5B",
@@ -355,12 +355,12 @@
     "title": "Criteria and Constraints",
     "questionImageEn": "images/5B_Q_en.png",
     "answerImageEn": "images/5B_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/5B_Q_es.png",
+    "answerImageEs": "images/5B_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "When developing possible solutions to a\nproblem, engineers need to consider the\ncriteria and constraints of their design\nsolution.\nWhat are criteria and constraints?",
     "answerReadAloudEn": "Criteria = The things that make it a\ngood solution\nConstraints = What you are\nallowed to work with",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "Al desarrollar posibles soluciones a un\nproblema, los ingenieros deben tener en\ncuenta los criterios y las restricciones de su\nsolución de diseño.\n¿Qué son los criterios y las\nrestricciones?",
+    "answerReadAloudEs": "Criterios = Los aspectos que la\nconvierten en una buena solución\nRestricciones = Lo que se te\npermite utilizar"
   }
 ]
