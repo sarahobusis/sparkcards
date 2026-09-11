@@ -262,3 +262,78 @@ button {
   gap: 10px;
   margin-top: 12px;
 }
+
+/***** CLASS LEADERBOARD *****/
+
+.leaderboard-link-button {
+  margin-top: 16px;
+}
+
+.leaderboard-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.leaderboard-updated {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.leaderboard-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fbfcff;
+}
+
+.leaderboard-row.rank-1 { background: #fff7db; border-color: var(--yellow); }
+.leaderboard-row.rank-2 { background: #f4f6f9; border-color: #c9d2de; }
+.leaderboard-row.rank-3 { background: #fdeee2; border-color: #f0c19a; }
+
+.leaderboard-rank {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--blue-dark);
+}
+
+.leaderboard-name {
+  display: grid;
+  gap: 2px;
+}
+
+.leaderboard-homeroom {
+  font-weight: 700;
+}
+
+.leaderboard-grade {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.leaderboard-percent {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--blue);
+}
+
+@media (max-width: 800px) {
+  .leaderboard-filters {
+    flex-direction: column;
+  }
+}

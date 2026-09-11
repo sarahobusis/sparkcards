@@ -48,6 +48,8 @@
       </form>
 
       <p id="lookupMessage" class="message" role="status"></p>
+
+      <button type="button" id="openLeaderboardButton" class="small-button leaderboard-link-button">🏆 Class Leaderboard</button>
     </section>
 
     <section class="panel dashboard-panel hidden" id="dashboardPanel">
@@ -123,6 +125,45 @@
         </div>
         <p id="practiceCountText" class="helper"></p>
       </div>
+    </section>
+
+    <section class="panel leaderboard-panel hidden" id="leaderboardPanel">
+      <div class="dashboard-topline">
+        <button id="closeLeaderboardButton" class="small-button">← Back</button>
+        <div>
+          <p class="eyebrow">Spark Academy</p>
+          <h2>Class Leaderboard</h2>
+        </div>
+      </div>
+
+      <p class="helper">Homeroom averages only — no individual student names or scores are shown.</p>
+
+      <div class="leaderboard-filters">
+        <label>
+          Grade
+          <select id="leaderboardGradeFilter">
+            <option value="">All Grades</option>
+            <option value="5">5th Grade</option>
+            <option value="6">6th Grade</option>
+            <option value="7">7th Grade</option>
+            <option value="8">8th Grade</option>
+          </select>
+        </label>
+        <label>
+          Subject
+          <select id="leaderboardSubjectFilter">
+            <option value="">All Subjects</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+          </select>
+        </label>
+      </div>
+
+      <p id="leaderboardMessage" class="message" role="status"></p>
+      <p id="leaderboardUpdatedText" class="leaderboard-updated"></p>
+
+      <ol id="leaderboardList" class="leaderboard-list"></ol>
     </section>
   </main>
 
