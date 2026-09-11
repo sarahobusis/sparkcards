@@ -642,6 +642,9 @@ const leaderboardEls = {
   openButton: document.getElementById("openLeaderboardButton"),
   panel: document.getElementById("leaderboardPanel"),
   closeButton: document.getElementById("closeLeaderboardButton"),
+  viewHomeroomButton: document.getElementById("leaderboardViewHomeroomButton"),
+  viewGradeButton: document.getElementById("leaderboardViewGradeButton"),
+  gradeFilterWrapper: document.getElementById("leaderboardGradeFilterWrapper"),
   gradeFilter: document.getElementById("leaderboardGradeFilter"),
   subjectFilter: document.getElementById("leaderboardSubjectFilter"),
   list: document.getElementById("leaderboardList"),
@@ -649,13 +652,34 @@ const leaderboardEls = {
   updatedText: document.getElementById("leaderboardUpdatedText")
 };
 
+const leaderboardState = {
+  view: "homeroom", // "homeroom" or "grade"
+  lastData: null
+};
+
 function initLeaderboard() {
   if (!leaderboardEls.openButton) return; // leaderboard markup isn't on this page
 
   leaderboardEls.openButton.addEventListener("click", openLeaderboard);
   leaderboardEls.closeButton.addEventListener("click", closeLeaderboard);
+  leaderboardEls.viewHomeroomButton.addEventListener("click", () => setLeaderboardView("homeroom"));
+  leaderboardEls.viewGradeButton.addEventListener("click", () => setLeaderboardView("grade"));
   leaderboardEls.gradeFilter.addEventListener("change", loadLeaderboard);
   leaderboardEls.subjectFilter.addEventListener("change", loadLeaderboard);
+}
+
+function setLeaderboardView(view) {
+  leaderboardState.view = view;
+
+  leaderboardEls.viewHomeroomButton.classList.toggle("active", view === "homeroom");
+  leaderboardEls.viewGradeButton.classList.toggle("active", view === "grade");
+  leaderboardEls.gradeFilterWrapper.classList.toggle("hidden", view === "grade");
+
+  if (leaderboardState.lastData) {
+    renderLeaderboard(leaderboardState.lastData);
+  } else {
+    loadLeaderboard();
+  }
 }
 
 function openLeaderboard() {
@@ -688,6 +712,7 @@ async function loadLeaderboard() {
       return;
     }
 
+    leaderboardState.lastData = data;
     renderLeaderboard(data);
   } catch (error) {
     leaderboardEls.message.textContent = "Could not load the leaderboard. Please try again.";
@@ -695,13 +720,21 @@ async function loadLeaderboard() {
 }
 
 function renderLeaderboard(data) {
-  leaderboardEls.message.textContent = data.homerooms.length ? "" : "No homeroom data yet.";
-
   const updated = new Date(data.generatedAt);
   leaderboardEls.updatedText.textContent =
     `Updated ${updated.toLocaleDateString()} at ${updated.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
 
-  leaderboardEls.list.innerHTML = data.homerooms.map((entry, index) => {
+  if (leaderboardState.view === "grade") {
+    renderGradeComparison(data.grades || []);
+  } else {
+    renderHomeroomLeaderboard(data.homerooms || []);
+  }
+}
+
+function renderHomeroomLeaderboard(homerooms) {
+  leaderboardEls.message.textContent = homerooms.length ? "" : "No homeroom data yet.";
+
+  leaderboardEls.list.innerHTML = homerooms.map((entry, index) => {
     const rank = index + 1;
     const medal = rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : rank;
 
@@ -711,6 +744,27 @@ function renderLeaderboard(data) {
         <span class="leaderboard-name">
           <span class="leaderboard-homeroom">${escapeHtml(entry.homeroom)}</span>
           <span class="leaderboard-grade">${escapeHtml(gradeLabelClient(entry.grade))}</span>
+        </span>
+        <span class="leaderboard-percent">${entry.percentCorrect}%</span>
+      </li>
+    `;
+  }).join("");
+}
+
+function renderGradeComparison(grades) {
+  leaderboardEls.message.textContent = grades.length ? "" : "No grade data yet.";
+
+  leaderboardEls.list.innerHTML = grades.map((entry, index) => {
+    const rank = index + 1;
+    const medal = rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : rank;
+    const studentCount = entry.studentCount === 1 ? "1 student" : `${entry.studentCount} students`;
+
+    return `
+      <li class="leaderboard-row rank-${rank <= 3 ? rank : "other"}">
+        <span class="leaderboard-rank">${medal}</span>
+        <span class="leaderboard-name">
+          <span class="leaderboard-homeroom">${escapeHtml(gradeLabelClient(entry.grade))}</span>
+          <span class="leaderboard-grade">${escapeHtml(studentCount)}</span>
         </span>
         <span class="leaderboard-percent">${entry.percentCorrect}%</span>
       </li>
