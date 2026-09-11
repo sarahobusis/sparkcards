@@ -198,20 +198,9 @@ function buildLeaderboardData(grade, subject) {
         const homeroom = String(row[HOMEROOM_COL - 1] || "").trim();
         if (!homeroom) return;
 
-        let points = 0;
-        let counted = 0;
+        const studentPercent = computeStudentPercent(row, cardHeaders, firstCardCol);
+        if (studentPercent === null) return; // student hasn't attempted anything yet
 
-        cardHeaders.forEach((cardId, index) => {
-          if (!cardId) return;
-          const score = normalizeScore(row[firstCardCol - 1 + index]);
-          if (score === "") return; // blank cards don't count toward the average
-          points += score;
-          counted += 1;
-        });
-
-        if (counted === 0) return; // student hasn't attempted anything yet
-
-        const studentPercent = (points / counted) * 100;
         const key = g + "|" + homeroom;
 
         if (!homeroomTotals[key]) {
@@ -240,8 +229,81 @@ function buildLeaderboardData(grade, subject) {
       subject: subject || "All Subjects"
     },
     generatedAt: new Date().toISOString(),
-    homerooms: homerooms
+    homerooms: homerooms,
+    grades: buildGradeComparisonData(subject) // always spans all grades, regardless of the grade filter
   };
+}
+
+function computeStudentPercent(row, cardHeaders, firstCardCol) {
+  let points = 0;
+  let counted = 0;
+
+  cardHeaders.forEach((cardId, index) => {
+    if (!cardId) return;
+    const score = normalizeScore(row[firstCardCol - 1 + index]);
+    if (score === "") return; // blank cards don't count toward the average
+    points += score;
+    counted += 1;
+  });
+
+  if (counted === 0) return null;
+  return (points / counted) * 100;
+}
+
+function buildGradeComparisonData(subject) {
+  const subjects = subject ? [subject] : ALLOWED_SUBJECTS;
+  const gradeTotals = {};
+
+  Object.keys(SPREADSHEETS_BY_GRADE).forEach(g => {
+    const spreadsheetId = SPREADSHEETS_BY_GRADE[g];
+    if (!spreadsheetId) return;
+
+    const ss = SpreadsheetApp.openById(spreadsheetId);
+
+    subjects.forEach(subj => {
+      const sheet = ss.getSheetByName(subj);
+      if (!sheet) return;
+
+      const lastRow = sheet.getLastRow();
+      const lastCol = sheet.getLastColumn();
+      if (lastRow < FIRST_STUDENT_ROW) return;
+
+      const headerValues = sheet.getRange(HEADER_ROW, 1, 1, lastCol).getValues()[0];
+      const firstCardCol = findFirstCardCol(headerValues);
+      if (!firstCardCol) return;
+
+      const cardHeaders = sheet
+        .getRange(HEADER_ROW, firstCardCol, 1, lastCol - firstCardCol + 1)
+        .getValues()[0]
+        .map(normalizeCardId);
+
+      const rows = sheet
+        .getRange(FIRST_STUDENT_ROW, 1, lastRow - FIRST_STUDENT_ROW + 1, lastCol)
+        .getValues();
+
+      rows.forEach(row => {
+        const studentPercent = computeStudentPercent(row, cardHeaders, firstCardCol);
+        if (studentPercent === null) return;
+
+        if (!gradeTotals[g]) {
+          gradeTotals[g] = { grade: g, sumPercent: 0, studentCount: 0 };
+        }
+
+        gradeTotals[g].sumPercent += studentPercent;
+        gradeTotals[g].studentCount += 1;
+      });
+    });
+  });
+
+  const gradeAverages = Object.values(gradeTotals).map(entry => ({
+    grade: entry.grade,
+    studentCount: entry.studentCount,
+    percentCorrect: Math.round(entry.sumPercent / entry.studentCount)
+  }));
+
+  gradeAverages.sort((a, b) => b.percentCorrect - a.percentCorrect);
+
+  return gradeAverages;
 }
 
 function gradeLabel(grade) {

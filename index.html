@@ -138,8 +138,13 @@
 
       <p class="helper">Homeroom averages only — no individual student names or scores are shown.</p>
 
+      <div class="leaderboard-view-toggle language-row">
+        <button type="button" id="leaderboardViewHomeroomButton" class="language-button active">By Homeroom</button>
+        <button type="button" id="leaderboardViewGradeButton" class="language-button">By Grade</button>
+      </div>
+
       <div class="leaderboard-filters">
-        <label>
+        <label id="leaderboardGradeFilterWrapper">
           Grade
           <select id="leaderboardGradeFilter">
             <option value="">All Grades</option>
