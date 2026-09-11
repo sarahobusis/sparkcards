@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SparkCards — Leaderboard Mockup</title>
+<style>
+  :root {
+    --blue: #0f5fb8;
+    --blue-dark: #0b3f79;
+    --yellow: #ffd35a;
+    --bg: #f5f7fb;
+    --panel: #ffffff;
+    --text: #18202a;
+    --muted: #5f6b7a;
+    --border: #d9e0ea;
+    --green: #42b66b;
+    --amber: #f7c948;
+    --red: #ef5b5b;
+    --gray: #c5ccd6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .site-header {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: white;
+    padding: 24px;
+  }
+  .site-header h1 { margin: 0; }
+  .eyebrow {
+    margin: 0 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 700;
+  }
+  .page-shell {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px 48px;
+  }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(22, 34, 51, 0.08);
+    padding: 24px;
+  }
+  .dashboard-topline {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 6px;
+  }
+  .panel h2 { margin: 0; }
+  .small-button {
+    border: 0;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #edf3fb;
+    color: var(--blue-dark);
+  }
+  .helper {
+    color: var(--muted);
+    line-height: 1.4;
+    margin-top: 4px;
+  }
+  .leaderboard-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 18px 0;
+  }
+  .leaderboard-filters label {
+    display: grid;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .leaderboard-filters select {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: inherit;
+    background: white;
+    min-width: 160px;
+  }
+  .leaderboard-updated {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  .leaderboard-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .leaderboard-row {
+    display: grid;
+    grid-template-columns: 44px 1fr auto;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: #fbfcff;
+    transition: transform 0.15s ease;
+  }
+  .leaderboard-row.rank-1 { background: #fff7db; border-color: var(--yellow); }
+  .leaderboard-row.rank-2 { background: #f4f6f9; border-color: #c9d2de; }
+  .leaderboard-row.rank-3 { background: #fdeee2; border-color: #f0c19a; }
+  .leaderboard-rank {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--blue-dark);
+  }
+  .leaderboard-name { display: grid; gap: 2px; }
+  .leaderboard-homeroom { font-weight: 700; font-size: 16px; }
+  .leaderboard-grade { font-size: 13px; color: var(--muted); }
+  .leaderboard-percent {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--blue);
+  }
+  .leaderboard-bar-track {
+    grid-column: 1 / -1;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--border);
+    overflow: hidden;
+    margin-top: 2px;
+  }
+  .leaderboard-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--blue), var(--blue-dark));
+    border-radius: 999px;
+  }
+  .rank-1 .leaderboard-bar-fill { background: linear-gradient(90deg, var(--yellow), #e0a800); }
+  .privacy-note {
+    font-size: 13px;
+    color: var(--muted);
+    background: #edf3fb;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <p class="eyebrow">Spark Academy</p>
+  <h1>STAR Card Dashboard</h1>
+</header>
+
+<main class="page-shell">
+  <section class="panel">
+    <div class="dashboard-topline">
+      <button class="small-button">← Back</button>
+      <div>
+        <p class="eyebrow">Spark Academy</p>
+        <h2>🏆 Class Leaderboard</h2>
+      </div>
+    </div>
+    <p class="helper">Homeroom averages only — no individual student names or scores are ever shown.</p>
+
+    <div class="leaderboard-filters">
+      <label>
+        Grade
+        <select id="gradeFilter">
+          <option value="">All Grades</option>
+          <option value="5">5th Grade</option>
+          <option value="6">6th Grade</option>
+          <option value="7">7th Grade</option>
+          <option value="8">8th Grade</option>
+        </select>
+      </label>
+      <label>
+        Subject
+        <select id="subjectFilter">
+          <option value="">All Subjects</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="History">History</option>
+        </select>
+      </label>
+    </div>
+
+    <p class="leaderboard-updated" id="updatedText">Updated just now</p>
+
+    <ol class="leaderboard-list" id="leaderboardList"></ol>
+  </section>
+</main>
+
+<script>
+  // Mock data standing in for what the Apps Script leaderboard endpoint will return.
+  const MOCK_DATA = [
+    { grade: "5", homeroom: "Ms. Alvarez — 5A", subject: "Math", studentCount: 22, percentCorrect: 91 },
+    { grade: "6", homeroom: "Mr. Chen — 6B", subject: "Math", studentCount: 24, percentCorrect: 88 },
+    { grade: "7", homeroom: "Ms. Patel — 7A", subject: "Science", studentCount: 21, percentCorrect: 85 },
+    { grade: "5", homeroom: "Mr. Donnelly — 5B", subject: "Science", studentCount: 23, percentCorrect: 82 },
+    { grade: "8", homeroom: "Ms. Rivera — 8C", subject: "History", studentCount: 25, percentCorrect: 79 },
+    { grade: "6", homeroom: "Mr. Silva — 6A", subject: "History", studentCount: 20, percentCorrect: 76 },
+    { grade: "7", homeroom: "Ms. Nguyen — 7B", subject: "Math", studentCount: 24, percentCorrect: 73 },
+    { grade: "8", homeroom: "Mr. Foster — 8A", subject: "Science", studentCount: 22, percentCorrect: 69 },
+    { grade: "5", homeroom: "Ms. Ortiz — 5C", subject: "History", studentCount: 21, percentCorrect: 64 },
+    { grade: "6", homeroom: "Ms. Blake — 6C", subject: "Math", studentCount: 19, percentCorrect: 58 }
+  ];
+
+  const gradeLabels = { "5": "5th Grade", "6": "6th Grade", "7": "7th Grade", "8": "8th Grade" };
+
+  const gradeFilter = document.getElementById("gradeFilter");
+  const subjectFilter = document.getElementById("subjectFilter");
+  const list = document.getElementById("leaderboardList");
+  const updatedText = document.getElementById("updatedText");
+
+  function render() {
+    const grade = gradeFilter.value;
+    const subject = subjectFilter.value;
+
+    const filtered = MOCK_DATA
+      .filter(row => !grade || row.grade === grade)
+      .filter(row => !subject || row.subject === subject)
+      .sort((a, b) => b.percentCorrect - a.percentCorrect);
+
+    list.innerHTML = filtered.map((row, index) => {
+      const rank = index + 1;
+      const medal = rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : rank;
+      const rankClass = rank <= 3 ? `rank-${rank}` : "";
+
+      return `
+        <li class="leaderboard-row ${rankClass}">
+          <span class="leaderboard-rank">${medal}</span>
+          <span class="leaderboard-name">
+            <span class="leaderboard-homeroom">${row.homeroom}</span>
+            <span class="leaderboard-grade">${gradeLabels[row.grade]}</span>
+          </span>
+          <span class="leaderboard-percent">${row.percentCorrect}%</span>
+          <span class="leaderboard-bar-track">
+            <span class="leaderboard-bar-fill" style="width:${row.percentCorrect}%"></span>
+          </span>
+        </li>
+      `;
+    }).join("") || `<p class="helper">No homerooms match this filter yet.</p>`;
+
+    const now = new Date();
+    updatedText.textContent = `Updated ${now.toLocaleDateString()} at ${now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
+  }
+
+  gradeFilter.addEventListener("change", render);
+  subjectFilter.addEventListener("change", render);
+  render();
+</script>
+
+</body>
+</html>
