@@ -635,3 +635,98 @@ function setMessage(element, text, type) {
   element.textContent = text;
   element.className = `message ${type || ""}`.trim();
 }
+
+/***** CLASS LEADERBOARD *****/
+
+const leaderboardEls = {
+  openButton: document.getElementById("openLeaderboardButton"),
+  panel: document.getElementById("leaderboardPanel"),
+  closeButton: document.getElementById("closeLeaderboardButton"),
+  gradeFilter: document.getElementById("leaderboardGradeFilter"),
+  subjectFilter: document.getElementById("leaderboardSubjectFilter"),
+  list: document.getElementById("leaderboardList"),
+  message: document.getElementById("leaderboardMessage"),
+  updatedText: document.getElementById("leaderboardUpdatedText")
+};
+
+function initLeaderboard() {
+  if (!leaderboardEls.openButton) return; // leaderboard markup isn't on this page
+
+  leaderboardEls.openButton.addEventListener("click", openLeaderboard);
+  leaderboardEls.closeButton.addEventListener("click", closeLeaderboard);
+  leaderboardEls.gradeFilter.addEventListener("change", loadLeaderboard);
+  leaderboardEls.subjectFilter.addEventListener("change", loadLeaderboard);
+}
+
+function openLeaderboard() {
+  document.getElementById("loginPanel")?.classList.add("hidden");
+  document.getElementById("dashboardPanel")?.classList.add("hidden");
+  document.getElementById("practicePanel")?.classList.add("hidden");
+  leaderboardEls.panel.classList.remove("hidden");
+  loadLeaderboard();
+}
+
+function closeLeaderboard() {
+  leaderboardEls.panel.classList.add("hidden");
+  document.getElementById("loginPanel")?.classList.remove("hidden");
+}
+
+async function loadLeaderboard() {
+  const grade = leaderboardEls.gradeFilter.value;
+  const subject = leaderboardEls.subjectFilter.value;
+
+  leaderboardEls.message.textContent = "Loading leaderboard...";
+  leaderboardEls.list.innerHTML = "";
+
+  try {
+    const url = `${API_URL}?action=leaderboard&grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}`;
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (!data.found) {
+      leaderboardEls.message.textContent = data.error || "Could not load the leaderboard.";
+      return;
+    }
+
+    renderLeaderboard(data);
+  } catch (error) {
+    leaderboardEls.message.textContent = "Could not load the leaderboard. Please try again.";
+  }
+}
+
+function renderLeaderboard(data) {
+  leaderboardEls.message.textContent = data.homerooms.length ? "" : "No homeroom data yet.";
+
+  const updated = new Date(data.generatedAt);
+  leaderboardEls.updatedText.textContent =
+    `Updated ${updated.toLocaleDateString()} at ${updated.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
+
+  leaderboardEls.list.innerHTML = data.homerooms.map((entry, index) => {
+    const rank = index + 1;
+    const medal = rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : rank;
+
+    return `
+      <li class="leaderboard-row rank-${rank <= 3 ? rank : "other"}">
+        <span class="leaderboard-rank">${medal}</span>
+        <span class="leaderboard-name">
+          <span class="leaderboard-homeroom">${escapeHtml(entry.homeroom)}</span>
+          <span class="leaderboard-grade">${escapeHtml(gradeLabelClient(entry.grade))}</span>
+        </span>
+        <span class="leaderboard-percent">${entry.percentCorrect}%</span>
+      </li>
+    `;
+  }).join("");
+}
+
+function gradeLabelClient(grade) {
+  const map = { "5": "5th Grade", "6": "6th Grade", "7": "7th Grade", "8": "8th Grade" };
+  return map[grade] || "All Grades";
+}
+
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = String(text || "");
+  return div.innerHTML;
+}
+
+document.addEventListener("DOMContentLoaded", initLeaderboard);
