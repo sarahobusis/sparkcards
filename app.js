@@ -588,11 +588,14 @@ async function checkStudentAnswer() {
   let gradeResult;
   try {
     gradeResult = await gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups);
+    console.log("[answer-check] graded by embedding model", gradeResult);
   } catch (err) {
     // The in-browser model couldn't load (offline, or the network blocks
     // its CDN/model download) — fall back to local keyword matching so
     // feedback still works.
+    console.warn("[answer-check] embedding model unavailable, falling back to keyword matching:", err);
     gradeResult = gradeAnswerLocally(studentAnswer, acceptedAnswerGroups);
+    console.log("[answer-check] graded by keyword fallback", gradeResult);
   }
 
   els.checkAnswerButton.disabled = false;
