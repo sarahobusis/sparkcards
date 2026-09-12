@@ -374,6 +374,17 @@ def table_crop_intervals(horizontal: List[int]) -> List[Tuple[int, int, bool]]:
         else:
             i += 1
 
+    if not intervals:
+        # No header row was found anywhere on this page. This happens when a
+        # table continues onto a later page without redrawing the QUESTION/
+        # ANSWER header strip, so there is no short header gap to anchor on.
+        # Fall back to treating each pair of consecutive lines directly as a
+        # card row border.
+        for i in range(len(lines) - 1):
+            top, bottom = lines[i], lines[i + 1]
+            if bottom - top >= MIN_CARD_HEIGHT_PX:
+                intervals.append((top, bottom, False))
+
     return intervals
 
 
