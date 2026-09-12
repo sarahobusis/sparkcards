@@ -407,3 +407,9 @@ button {
     flex-wrap: wrap;
   }
 }
+
+/***** TYPED ANSWER FEEDBACK *****/
+
+#answerFeedbackMessage.correct { color: #0f7a3b; font-weight: 700; }
+#answerFeedbackMessage.partial { color: #8a6100; font-weight: 700; }
+#answerFeedbackMessage.incorrect { color: #b00020; font-weight: 700; }
