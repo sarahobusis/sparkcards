@@ -934,6 +934,32 @@ async function fetchCardsMetaFor(grade, subject) {
   }
 }
 
+function groupCardsByUnit(cardsMeta) {
+  const groups = new Map();
+
+  [...cardsMeta]
+    .sort((a, b) => normalizeCardId(a.id).localeCompare(normalizeCardId(b.id), undefined, { numeric: true }))
+    .forEach(card => {
+      const cardId = normalizeCardId(card.id);
+      if (!cardId) return;
+
+      const unit = normalizeUnitLabel(card.unit) || getUnitForCardId(cardId);
+      if (!groups.has(unit)) groups.set(unit, []);
+      groups.get(unit).push(cardId);
+    });
+
+  return [...groups.entries()]
+    .map(([unit, cardIds]) => ({ unit, cardIds }))
+    .sort((a, b) => sortUnitLabels(a.unit, b.unit));
+}
+
+function getUnitVisibilityState(cardIds, hiddenSet) {
+  const hiddenCount = cardIds.filter(cardId => hiddenSet.has(cardId)).length;
+  if (hiddenCount === 0) return "visible";
+  if (hiddenCount === cardIds.length) return "hidden";
+  return "mixed";
+}
+
 function renderTeacherCards() {
   if (!teacherState.cardsMeta.length) {
     teacherEls.cardList.innerHTML = "";
@@ -944,67 +970,131 @@ function renderTeacherCards() {
   setMessage(teacherEls.manageMessage, "", "");
 
   const hiddenSet = new Set(teacherState.hiddenCardIds.map(normalizeCardId));
-  const sortedCards = [...teacherState.cardsMeta].sort((a, b) =>
-    normalizeCardId(a.id).localeCompare(normalizeCardId(b.id), undefined, { numeric: true })
-  );
+  const unitGroups = groupCardsByUnit(teacherState.cardsMeta);
 
-  teacherEls.cardList.innerHTML = sortedCards.map(card => {
-    const cardId = normalizeCardId(card.id);
-    const isHidden = hiddenSet.has(cardId);
-    const unitLabel = normalizeUnitLabel(card.unit) || getUnitForCardId(cardId);
+  teacherEls.cardList.innerHTML = unitGroups.map(({ unit, cardIds }) => {
+    const unitState = getUnitVisibilityState(cardIds, hiddenSet);
+    const nextHidden = unitState === "visible";
 
-    return `
-      <div class="teacher-card-row">
-        <span class="teacher-card-id">${escapeHtml(cardId)}</span>
-        <span class="teacher-card-unit">${escapeHtml(unitLabel)}</span>
+    const statusText = unitState === "hidden"
+      ? "Hidden from Students"
+      : unitState === "mixed"
+        ? "Some Cards Hidden"
+        : "Visible to Students";
+
+    const actionText = unitState === "visible"
+      ? "Hide Unit"
+      : unitState === "mixed"
+        ? "Show Remaining"
+        : "Show Unit";
+
+    const pills = cardIds.map(cardId => {
+      const isHidden = hiddenSet.has(cardId);
+      return `
         <button
           type="button"
-          class="visibility-toggle ${isHidden ? "toggle-hidden" : "toggle-visible"}"
+          class="teacher-card-pill ${isHidden ? "toggle-hidden" : "toggle-visible"}"
           data-card-id="${escapeHtml(cardId)}"
-        >${isHidden ? "Hidden from Students" : "Visible to Students"}</button>
+        >${escapeHtml(cardId)}</button>
+      `;
+    }).join("");
+
+    return `
+      <div class="teacher-unit-group">
+        <button
+          type="button"
+          class="teacher-unit-bar unit-${unitState}"
+          data-card-ids="${escapeHtml(cardIds.join(","))}"
+          data-next-hidden="${nextHidden}"
+        >
+          <span>${escapeHtml(unit)} — ${escapeHtml(statusText)}</span>
+          <span>${escapeHtml(actionText)}</span>
+        </button>
+        <div class="teacher-unit-cards">${pills}</div>
       </div>
     `;
   }).join("");
 
-  teacherEls.cardList.querySelectorAll(".visibility-toggle").forEach(button => {
-    button.addEventListener("click", () => toggleCardVisibility(button));
+  teacherEls.cardList.querySelectorAll(".teacher-unit-bar").forEach(bar => {
+    bar.addEventListener("click", () => toggleUnitVisibility(bar));
+  });
+
+  teacherEls.cardList.querySelectorAll(".teacher-card-pill").forEach(pill => {
+    pill.addEventListener("click", () => toggleCardVisibility(pill));
   });
 }
 
-async function toggleCardVisibility(button) {
-  const cardId = button.dataset.cardId;
-  const nextHidden = !button.classList.contains("toggle-hidden");
+async function requestSetCardVisibility(cardId, hidden) {
+  const response = await fetch(API_URL, {
+    method: "POST",
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify({
+      action: "setCardVisibility",
+      password: teacherState.password,
+      grade: teacherEls.gradeSelect.value,
+      subject: teacherEls.subjectSelect.value,
+      cardId: cardId,
+      hidden: hidden
+    })
+  });
+  return response.json();
+}
 
-  button.disabled = true;
+function applyHiddenState(cardIds, hidden) {
+  const hiddenSet = new Set(teacherState.hiddenCardIds.map(normalizeCardId));
+  cardIds.forEach(cardId => {
+    if (hidden) hiddenSet.add(cardId);
+    else hiddenSet.delete(cardId);
+  });
+  teacherState.hiddenCardIds = [...hiddenSet];
+}
+
+async function toggleCardVisibility(pill) {
+  const cardId = pill.dataset.cardId;
+  const nextHidden = !pill.classList.contains("toggle-hidden");
+
+  pill.disabled = true;
 
   try {
-    const response = await fetch(API_URL, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({
-        action: "setCardVisibility",
-        password: teacherState.password,
-        grade: teacherEls.gradeSelect.value,
-        subject: teacherEls.subjectSelect.value,
-        cardId: cardId,
-        hidden: nextHidden
-      })
-    });
-    const data = await response.json();
+    const data = await requestSetCardVisibility(cardId, nextHidden);
 
     if (!data.found) {
       setMessage(teacherEls.manageMessage, data.error || "Could not update that card.", "error");
       return;
     }
 
-    button.classList.toggle("toggle-hidden", nextHidden);
-    button.classList.toggle("toggle-visible", !nextHidden);
-    button.textContent = nextHidden ? "Hidden from Students" : "Visible to Students";
-    setMessage(teacherEls.manageMessage, "", "");
+    applyHiddenState([cardId], nextHidden);
+    renderTeacherCards();
   } catch (error) {
     setMessage(teacherEls.manageMessage, "Could not update that card. Please try again.", "error");
   } finally {
-    button.disabled = false;
+    pill.disabled = false;
+  }
+}
+
+async function toggleUnitVisibility(bar) {
+  const cardIds = bar.dataset.cardIds.split(",").filter(Boolean);
+  const nextHidden = bar.dataset.nextHidden === "true";
+
+  bar.disabled = true;
+  setMessage(teacherEls.manageMessage, nextHidden ? "Hiding unit..." : "Showing unit...", "");
+
+  try {
+    const results = await Promise.all(cardIds.map(cardId => requestSetCardVisibility(cardId, nextHidden)));
+    const failed = results.find(result => !result.found);
+
+    if (failed) {
+      setMessage(teacherEls.manageMessage, failed.error || "Could not update this unit.", "error");
+    } else {
+      setMessage(teacherEls.manageMessage, "", "");
+    }
+
+    applyHiddenState(cardIds, nextHidden);
+    renderTeacherCards();
+  } catch (error) {
+    setMessage(teacherEls.manageMessage, "Could not update this unit. Please try again.", "error");
+  } finally {
+    bar.disabled = false;
   }
 }
 

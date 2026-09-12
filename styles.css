@@ -342,49 +342,68 @@ button {
 
 .teacher-card-list {
   display: grid;
-  gap: 10px;
+  gap: 22px;
   margin-top: 16px;
 }
 
-.teacher-card-row {
+.teacher-unit-group {
+  display: grid;
+  gap: 10px;
+}
+
+.teacher-unit-bar {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 12px 16px;
-  border: 1px solid var(--border);
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
   border-radius: 14px;
-  background: #fbfcff;
+  font-size: 15px;
+  text-align: left;
 }
 
-.teacher-card-id {
-  font-weight: 900;
-  min-width: 48px;
-}
-
-.teacher-card-unit {
-  color: var(--muted);
-  flex: 1;
-}
-
-.visibility-toggle {
-  border-radius: 999px;
-  padding: 8px 16px;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-.visibility-toggle.toggle-visible {
+.teacher-unit-bar.unit-visible {
   background: #d9f2e1;
   color: #0f7a3b;
 }
 
-.visibility-toggle.toggle-hidden {
+.teacher-unit-bar.unit-hidden {
+  background: #f3d9d9;
+  color: #b00020;
+}
+
+.teacher-unit-bar.unit-mixed {
+  background: #fdf1d6;
+  color: #8a6100;
+}
+
+.teacher-unit-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 6px;
+}
+
+.teacher-card-pill {
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.teacher-card-pill.toggle-visible {
+  background: #d9f2e1;
+  color: #0f7a3b;
+}
+
+.teacher-card-pill.toggle-hidden {
   background: #f3d9d9;
   color: #b00020;
 }
 
 @media (max-width: 800px) {
-  .teacher-card-row {
+  .teacher-unit-bar {
     flex-wrap: wrap;
   }
 }
