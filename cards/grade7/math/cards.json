@@ -495,13 +495,13 @@
     "title": "",
     "questionImageEn": "images/6D_Q_en.png",
     "answerImageEn": "images/6D_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/6D_Q_es.png",
+    "answerImageEs": "images/6D_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "Below is a problem where you need to\nfind a percent increase. Explain how to\nsolve it:\nYou go to a restaurant and your food\ncosts $30. You want to add a 15% tip.\nWhat is the total amount you will pay?",
     "answerReadAloudEn": "To calculate % increase:\n1st: Find the percent of the number\n ↓\n2nd Add whole +\n $30 + $4.50 = $34.50",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Cómo se calcula el\ntotal después de un\naumento del %?\n Ejemplo: 15% de propina\n Example: 15% tip",
+    "answerReadAloudEs": "Para calcular el % de aumento:\n1st) Hallar el porcentaje del número\n ↓\n2nd) Sumar entero +\n $30 + $4.50 = $34.50"
   },
   {
     "id": "6E",
@@ -509,13 +509,13 @@
     "title": "",
     "questionImageEn": "images/6E_Q_en.png",
     "answerImageEn": "images/6E_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/6E_Q_es.png",
+    "answerImageEs": "images/6E_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "How do you find the total after a\n % decrease?\n Example: 20% discount on $30",
     "answerReadAloudEn": "To calculate % decrease:\n1st) Find the percent of the number\n ↓\n2nd) Subtract whole –\n $30 - $6 = $24",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Cómo encontrar el total\n después de un % de\n disminución?\n Ejemplo: 20% de descuento",
+    "answerReadAloudEs": "Para calcular el % de disminución:\n1st) Hallar el porcentaje del número\n ↓\n2nd) Restar entero -\n $30 - $6 = $24"
   },
   {
     "id": "6F",
@@ -523,13 +523,13 @@
     "title": "",
     "questionImageEn": "images/6F_Q_en.png",
     "answerImageEn": "images/6F_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/6F_Q_es.png",
+    "answerImageEs": "images/6F_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "How do you convert a ….\nFraction to Decimal:\nDecimal to Percent:\nPercent to Fraction:",
     "answerReadAloudEn": "How do you convert a ….\nFraction to Decimal: Numerator ÷ Demoniator\nDecimal to Percent: Decimal ✖ 100\nPercent to Fraction: Percent over 100",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Cómo se convierte un…\nFracción a decimal:\nDecimal a porcentaje:\nPorcentaje a fracción:",
+    "answerReadAloudEs": "Fracción a decimal: numerador ÷\ndenominador\nDecimal a porcentaje: decimal × 100\nPorcentaje a fracción: porcentaje\nsobre 100"
   },
   {
     "id": "7A",
