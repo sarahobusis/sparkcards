@@ -563,7 +563,7 @@ function getActiveCardMeta() {
   return state.cardsMeta.find(card => normalizeCardId(card.id) === state.activeCardId);
 }
 
-function checkStudentAnswer() {
+async function checkStudentAnswer() {
   const cardId = state.activeCardId;
   if (!cardId) return;
 
@@ -582,8 +582,25 @@ function checkStudentAnswer() {
     return;
   }
 
-  const { result, matchedCount, totalCount } = gradeAnswerLocally(studentAnswer, acceptedAnswerGroups);
-  renderAnswerFeedback(result, matchedCount, totalCount);
+  els.checkAnswerButton.disabled = true;
+  setMessage(els.answerFeedbackMessage, "Checking your answer…", "");
+
+  let gradeResult;
+  try {
+    gradeResult = await gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups);
+  } catch (err) {
+    // The in-browser model couldn't load (offline, or the network blocks
+    // its CDN/model download) — fall back to local keyword matching so
+    // feedback still works.
+    gradeResult = gradeAnswerLocally(studentAnswer, acceptedAnswerGroups);
+  }
+
+  els.checkAnswerButton.disabled = false;
+
+  // The student may have moved to a different card while this was checking.
+  if (state.activeCardId !== cardId) return;
+
+  renderAnswerFeedback(gradeResult.result, gradeResult.matchedCount, gradeResult.totalCount);
 }
 
 function renderAnswerFeedback(result, matchedCount, totalCount) {
@@ -594,13 +611,14 @@ function renderAnswerFeedback(result, matchedCount, totalCount) {
   setMessage(els.answerFeedbackMessage, `${icon} ${label}${detail}`, result);
 }
 
-/***** LOCAL ANSWER MATCHING (no network / AI call) *****/
+/***** LOCAL KEYWORD-MATCHING (fallback, no network / AI call) *****/
 //
-// Each card's acceptedAnswers field (populated ahead of time, not at grading
-// time) is a list of "concept groups": acceptedAnswers[i] is an array of
-// alternate phrasings that all mean the same one idea. A student's typed
-// answer is graded by how many of those concepts it covers — matching every
-// synonym in a group is not required, just one phrasing per group.
+// This is the fallback grader, used only if the embedding model below can't
+// load. Each card's acceptedAnswers field (populated ahead of time, not at
+// grading time) is a list of "concept groups": acceptedAnswers[i] is an
+// array of alternate phrasings that all mean the same one idea. A student's
+// typed answer is graded by how many of those concepts it covers — matching
+// every synonym in a group is not required, just one phrasing per group.
 
 const MATCH_STOPWORDS = new Set([
   "a", "an", "the", "is", "are", "was", "were", "of", "to", "in", "on",
@@ -689,6 +707,77 @@ function levenshteinDistance(a, b) {
   }
 
   return dp[a.length][b.length];
+}
+
+/***** EMBEDDING-BASED ANSWER MATCHING (primary grader, still no live API) *****/
+//
+// Loads a small sentence-embedding model directly in the browser, once
+// (Xenova/all-MiniLM-L6-v2, ~25MB, cached by the browser after the first
+// visit), and grades a typed answer by cosine similarity to each concept's
+// accepted phrasings instead of counting overlapping keywords. This
+// generalizes to paraphrases the keyword matcher misses (e.g. "splitting
+// into equal groups" for division) without needing every phrasing to be
+// hand-authored. There is still no ongoing AI dependency: the model is a
+// one-time static download, not a per-check API call.
+
+const EMBEDDING_MODEL_ID = "Xenova/all-MiniLM-L6-v2";
+const EMBEDDING_LIBRARY_URL = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
+const EMBEDDING_SIMILARITY_THRESHOLD = 0.55;
+
+let embeddingExtractorPromise = null;
+const embeddingVectorCache = new Map();
+
+function getEmbeddingExtractor() {
+  if (!embeddingExtractorPromise) {
+    embeddingExtractorPromise = (async () => {
+      const { pipeline, env } = await import(EMBEDDING_LIBRARY_URL);
+      env.allowLocalModels = false;
+      return pipeline("feature-extraction", EMBEDDING_MODEL_ID, { quantized: true });
+    })().catch(err => {
+      embeddingExtractorPromise = null; // allow a retry on the next check
+      throw err;
+    });
+  }
+  return embeddingExtractorPromise;
+}
+
+function cosineSimilarity(a, b) {
+  let dot = 0;
+  for (let i = 0; i < a.length; i++) dot += a[i] * b[i];
+  return dot; // both vectors are L2-normalized, so the dot product is the cosine similarity
+}
+
+async function embedTexts(extractor, texts) {
+  const uncached = texts.filter(text => !embeddingVectorCache.has(text));
+
+  if (uncached.length) {
+    const output = await extractor(uncached, { pooling: "mean", normalize: true });
+    const dim = output.dims[output.dims.length - 1];
+    uncached.forEach((text, i) => {
+      embeddingVectorCache.set(text, Array.from(output.data.slice(i * dim, (i + 1) * dim)));
+    });
+  }
+
+  return texts.map(text => embeddingVectorCache.get(text));
+}
+
+async function gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups) {
+  const extractor = await getEmbeddingExtractor();
+  const [studentVector] = await embedTexts(extractor, [studentAnswer]);
+
+  const totalCount = acceptedAnswerGroups.length;
+  let matchedCount = 0;
+
+  for (const group of acceptedAnswerGroups) {
+    const phraseVectors = await embedTexts(extractor, group);
+    const bestSimilarity = Math.max(...phraseVectors.map(vector => cosineSimilarity(studentVector, vector)));
+    if (bestSimilarity >= EMBEDDING_SIMILARITY_THRESHOLD) matchedCount++;
+  }
+
+  const ratio = totalCount ? matchedCount / totalCount : 0;
+  const result = ratio >= 1 ? "correct" : ratio > 0 ? "partial" : "incorrect";
+
+  return { result, matchedCount, totalCount };
 }
 
 function getCardsJsonPath(grade, subject) {
