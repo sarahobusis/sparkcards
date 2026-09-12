@@ -563,7 +563,7 @@ function getActiveCardMeta() {
   return state.cardsMeta.find(card => normalizeCardId(card.id) === state.activeCardId);
 }
 
-async function checkStudentAnswer() {
+function checkStudentAnswer() {
   const cardId = state.activeCardId;
   if (!cardId) return;
 
@@ -575,52 +575,120 @@ async function checkStudentAnswer() {
   }
 
   const card = getActiveCardMeta();
-  const correctAnswerText = card ? getReadAloudText(card, "answer") : "";
+  const acceptedAnswerGroups = card ? getAcceptedAnswerGroups(card) : [];
 
-  if (!correctAnswerText) {
+  if (!acceptedAnswerGroups.length) {
     setMessage(els.answerFeedbackMessage, "Answer feedback isn't available for this card yet.", "");
     return;
   }
 
-  const questionText = getReadAloudText(card, "question");
-
-  els.checkAnswerButton.disabled = true;
-  setMessage(els.answerFeedbackMessage, "Checking your answer...", "");
-
-  try {
-    const response = await fetch(API_URL, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({
-        action: "gradeAnswer",
-        cardId: cardId,
-        language: state.language,
-        questionText: questionText,
-        correctAnswerText: correctAnswerText,
-        studentAnswer: studentAnswer
-      })
-    });
-    const data = await response.json();
-
-    if (!data.found) {
-      setMessage(els.answerFeedbackMessage, data.error || "Could not check that answer. Please try again.", "error");
-      return;
-    }
-
-    renderAnswerFeedback(data.result, data.feedback);
-  } catch (error) {
-    setMessage(els.answerFeedbackMessage, "Could not check that answer. Please try again.", "error");
-  } finally {
-    els.checkAnswerButton.disabled = false;
-  }
+  const { result, matchedCount, totalCount } = gradeAnswerLocally(studentAnswer, acceptedAnswerGroups);
+  renderAnswerFeedback(result, matchedCount, totalCount);
 }
 
-function renderAnswerFeedback(result, feedback) {
+function renderAnswerFeedback(result, matchedCount, totalCount) {
   const icon = result === "correct" ? "✅" : result === "partial" ? "🟡" : "❌";
-  const label = result === "correct" ? "Correct!" : result === "partial" ? "Partially correct." : "Not quite.";
-  const statusClass = result === "correct" ? "correct" : result === "partial" ? "partial" : "incorrect";
+  const label = result === "correct" ? "Correct!" : result === "partial" ? "Partially correct." : "Not quite — try again.";
+  const detail = totalCount > 1 ? ` (${matchedCount}/${totalCount} parts)` : "";
 
-  setMessage(els.answerFeedbackMessage, `${icon} ${label} ${feedback || ""}`.trim(), statusClass);
+  setMessage(els.answerFeedbackMessage, `${icon} ${label}${detail}`, result);
+}
+
+/***** LOCAL ANSWER MATCHING (no network / AI call) *****/
+//
+// Each card's acceptedAnswers field (populated ahead of time, not at grading
+// time) is a list of "concept groups": acceptedAnswers[i] is an array of
+// alternate phrasings that all mean the same one idea. A student's typed
+// answer is graded by how many of those concepts it covers — matching every
+// synonym in a group is not required, just one phrasing per group.
+
+const MATCH_STOPWORDS = new Set([
+  "a", "an", "the", "is", "are", "was", "were", "of", "to", "in", "on",
+  "for", "and", "or", "it", "this", "that", "be", "by", "with", "as", "at",
+  "you", "your", "we", "can", "will", "there"
+]);
+
+function getAcceptedAnswerGroups(card) {
+  const groups = state.language === "es" && Array.isArray(card.acceptedAnswersEs) && card.acceptedAnswersEs.length
+    ? card.acceptedAnswersEs
+    : card.acceptedAnswers;
+
+  return Array.isArray(groups) ? groups.filter(group => Array.isArray(group) && group.length) : [];
+}
+
+function gradeAnswerLocally(studentAnswer, acceptedAnswerGroups) {
+  const studentTokens = tokenizeForMatching(studentAnswer);
+  const totalCount = acceptedAnswerGroups.length;
+
+  const matchedCount = acceptedAnswerGroups.filter(synonyms =>
+    synonyms.some(phrase => phraseMatches(studentTokens, tokenizeForMatching(phrase)))
+  ).length;
+
+  const ratio = totalCount ? matchedCount / totalCount : 0;
+  const result = ratio >= 1 ? "correct" : ratio > 0 ? "partial" : "incorrect";
+
+  return { result, matchedCount, totalCount };
+}
+
+function normalizeForMatching(text) {
+  return String(text || "")
+    .toLowerCase()
+    .replace(/,/g, "")
+    .replace(/(\d)\.(\d)/g, "$1<DECIMAL>$2") // protect real decimal points, e.g. "8.56"
+    .replace(/[^a-z0-9\sáéíóúñü^/=+*-]/g, " ") // any other period is sentence punctuation, not part of a number
+    .replace(/<DECIMAL>/g, ".")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tokenizeForMatching(text) {
+  return normalizeForMatching(text).split(" ").filter(Boolean);
+}
+
+function isNumericToken(token) {
+  return /^[0-9]+(\.[0-9]+)?$/.test(token);
+}
+
+function tokensMatch(a, b) {
+  if (a === b) return true;
+  if (isNumericToken(a) || isNumericToken(b)) return false; // numbers must match exactly
+  if (a.length < 4 || b.length < 4) return false; // avoid false positives on short words
+  const maxDistance = a.length <= 6 ? 1 : 2;
+  return levenshteinDistance(a, b) <= maxDistance;
+}
+
+function phraseMatches(studentTokens, phraseTokens) {
+  const significantWords = phraseTokens.filter(token => !MATCH_STOPWORDS.has(token));
+  if (!significantWords.length) return false;
+
+  const matchedWords = significantWords.filter(word =>
+    studentTokens.some(studentToken => tokensMatch(word, studentToken))
+  );
+
+  const requiredMatches = significantWords.length <= 2
+    ? significantWords.length
+    : Math.ceil(significantWords.length * 0.8);
+
+  return matchedWords.length >= requiredMatches;
+}
+
+function levenshteinDistance(a, b) {
+  const rows = a.length + 1;
+  const cols = b.length + 1;
+  const dp = Array.from({ length: rows }, () => new Array(cols).fill(0));
+
+  for (let i = 0; i < rows; i++) dp[i][0] = i;
+  for (let j = 0; j < cols; j++) dp[0][j] = j;
+
+  for (let i = 1; i < rows; i++) {
+    for (let j = 1; j < cols; j++) {
+      dp[i][j] = a[i - 1] === b[j - 1]
+        ? dp[i - 1][j - 1]
+        : 1 + Math.min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]);
+    }
+  }
+
+  return dp[a.length][b.length];
 }
 
 function getCardsJsonPath(grade, subject) {

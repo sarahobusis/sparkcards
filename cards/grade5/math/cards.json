@@ -7,7 +7,14 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "images/1A_Q_es.png",
     "answerImageEs": "images/1A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["addition means putting together two amounts", "addition combines two numbers to find the total", "adding is joining two amounts together", "putting numbers together to find the total"],
+      ["subtraction means taking away", "subtraction means finding the difference", "subtraction is taking one number away from another"]
+    ],
+    "acceptedAnswersEs": [
+      ["la suma es juntar dos cantidades", "sumar es juntar cantidades para hallar el total", "la suma junta numeros para hallar el total"],
+      ["la resta es quitar", "la resta es calcular la diferencia", "restar es quitar un numero de otro"]
+    ],
     "questionReadAloudEn": "",
     "answerReadAloudEn": "1.​ Addition means putting together\n two amounts to find the total\n 2. Subtraction means taking away or\n`\n finding the difference",
     "questionReadAloudEs": "1.​¿Qué es la suma?\n 2.​¿Qué es la resta?",
@@ -21,7 +28,12 @@
     "answerImageEn": "images/1B_A_en.png",
     "questionImageEs": "images/1B_Q_es.png",
     "answerImageEs": "images/1B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["repeated addition of the same number", "adding the same number over and over", "multiplication is repeated addition"]
+    ],
+    "acceptedAnswersEs": [
+      ["suma repetida del mismo numero", "sumar el mismo numero varias veces", "la multiplicacion es una suma repetida"]
+    ],
     "questionReadAloudEn": "1.​What is multiplication?\n 2.​What is the multiplication\n version of 5 + 5 + 5?",
     "answerReadAloudEn": "1)​ Repeated addition of the same\n number\n 2)​",
     "questionReadAloudEs": "1.​¿Qué es la multiplicación?\n 2.​¿Cuál es la forma de\n multiplicar 5 + 5 + 5?",
@@ -49,7 +61,18 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "images/1D_Q_es.png",
     "answerImageEs": "images/1D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["difference", "answer to a subtraction problem", "subtraction answer"],
+      ["quotient", "answer to a division problem", "division answer"],
+      ["sum", "answer to an addition problem", "addition answer", "total"],
+      ["product", "answer to a multiplication problem", "multiplication answer"]
+    ],
+    "acceptedAnswersEs": [
+      ["diferencia"],
+      ["cociente"],
+      ["suma", "total"],
+      ["producto"]
+    ],
     "questionReadAloudEn": "What are the following called:\n 1)​ Answer to a subtraction problem\n 2)​ Answer to division problem\n 3)​ Answer to an addition problem\n 4)​ Answer to a multiplication problem",
     "answerReadAloudEn": "1)​Difference\n 2)​Quotient\n 3)​Sum\n 4)​Product",
     "questionReadAloudEs": "¿Cómo se llaman los siguientes:\n 1)​ Respuesta a un problema de resta\n 2)​ Respuesta al problema de división\n 3)​ Respuesta a un problema de suma\n 4)​ Respuesta a un problema de\n multiplicación",
@@ -63,7 +86,18 @@
     "answerImageEn": "images/1E_A_en.png",
     "questionImageEs": "images/1E_Q_es.png",
     "answerImageEs": "images/1E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["parentheses", "pemdas"],
+      ["exponents", "pemdas"],
+      ["multiplication or division left to right", "multiply or divide left to right", "pemdas"],
+      ["addition or subtraction left to right", "add or subtract left to right", "pemdas"]
+    ],
+    "acceptedAnswersEs": [
+      ["parentesis", "pemdas"],
+      ["exponentes", "pemdas"],
+      ["multiplicacion o division de izquierda a derecha", "pemdas"],
+      ["suma o resta de izquierda a derecha", "pemdas"]
+    ],
     "questionReadAloudEn": "How do you solve a math\n problem with more than one\n operation?\n Ex: (3 – 1) x 5 + 12 ÷ 4",
     "answerReadAloudEn": "Use the order of operations:\n PEMDAS\n 1)​Parentheses ( )\n 3\n 2)​Exponents 4\n 3)​Multiplication or Division x ÷\n (left to right)\n 4)​Addition or Subtraction + –\n (left to right)",
     "questionReadAloudEs": "¿Cómo se resuelve un\n problema matemático con\n más de una operación?\n Ex: (3 – 1) x 5 + 12 ÷ 4",
@@ -77,7 +111,12 @@
     "answerImageEn": "images/1F_A_en.png",
     "questionImageEs": "images/1F_Q_es.png",
     "answerImageEs": "images/1F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["1000", "10 x 10 x 10", "10*10*10", "10 multiplied by itself 3 times", "ten to the third power", "10 to the 3rd power", "ten cubed"]
+    ],
+    "acceptedAnswersEs": [
+      ["1000", "10 x 10 x 10", "10*10*10", "10 multiplicado por si mismo tres veces", "diez al cubo", "10 a la tercera potencia"]
+    ],
     "questionReadAloudEn": "3\n What does 10 mean?",
     "answerReadAloudEn": "3\n 10 means that 10 is being\n multiplied by itself 3 times.\n 10 × 10 × 10 = 1000",
     "questionReadAloudEs": "¿Qué\n 3\n significa 10 ?",
@@ -91,7 +130,18 @@
     "answerImageEn": "images/1G_A_en.png",
     "questionImageEs": "images/1G_Q_es.png",
     "answerImageEs": "images/1G_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["12 inches", "one foot equals 12 inches", "1 foot is 12 inches"],
+      ["3 feet", "one yard equals 3 feet", "1 yard is 3 feet"],
+      ["16 ounces", "one pound equals 16 ounces", "1 pound is 16 ounces"],
+      ["1000 milliliters", "one liter equals 1000 milliliters", "1 liter is 1000 milliliters"]
+    ],
+    "acceptedAnswersEs": [
+      ["12 pulgadas", "un pie es 12 pulgadas"],
+      ["3 pies", "una yarda es 3 pies"],
+      ["16 onzas", "una libra es 16 onzas"],
+      ["1000 mililitros", "un litro es 1000 mililitros"]
+    ],
     "questionReadAloudEn": "1.​ 1 foot = _? _ inches\n 2.​ 1 yard = ? feet\n 3.​ 1 pound = ? ounces\n 4.​ 1 liter = ? milliliters",
     "answerReadAloudEn": "1.​ 1 foot = _12 _ inches\n 2.​ 1 yard = 3 feet\n 3.​ 1 pound = 16 ounces\n 4.​ 1 liter = 1000 milliliters",
     "questionReadAloudEs": "1.​ 1 pie = _? _ pulgadas\n 2.​ 1 yarda = ? pies\n 3.​ 1 libra = ? onzas\n 4.​ 1 litro = ? mililitros",
@@ -105,7 +155,9 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["3000 + 600 + 50 + 2", "3000+600+50+2"]
+    ],
     "questionReadAloudEn": "Write 3,652 in expanded form",
     "answerReadAloudEn": "3,652 =\n 3000 + 600 + 50 + 2",
     "questionReadAloudEs": "",
@@ -119,7 +171,12 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["divide"],
+      ["multiply"],
+      ["subtract"],
+      ["bring down", "bring over", "bring the next number down"]
+    ],
     "questionReadAloudEn": "What are the steps to long division?",
     "answerReadAloudEn": "To do long division:\n 1.​Divide\n 2.​Multiply\n 3.​Subtract\n 4.​Bring over",
     "questionReadAloudEs": "",
@@ -133,7 +190,11 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["quadrilateral has 4 sides"],
+      ["rectangle has 4 sides and 4 right angles"],
+      ["square has 4 equal sides and 4 right angles"]
+    ],
     "questionReadAloudEn": "Describe these shapes:\n 1.​Quadrilateral\n 2.​Rectangle\n 3.​Square",
     "answerReadAloudEn": "1.​ Quadrilateral: 4 sides\n 2.​ Rectangle: 4 sides, 4 right angles\n 3.​ Square: 4 equal sides, 4 right angles",
     "questionReadAloudEs": "",
@@ -147,7 +208,10 @@
     "answerImageEn": "images/3B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["parallelogram has 4 parallel sides"],
+      ["rhombus has 4 equal parallel sides", "rhombus has 4 equal sides"]
+    ],
     "questionReadAloudEn": "Describe these shapes:\n 1.​Parallelogram\n 2.​Rhombus",
     "answerReadAloudEn": "1.​ Parallelogram: 4 parallel sides\n 2.​ Rhombus: 4 equal parallel sides ​",
     "questionReadAloudEs": "",
@@ -161,7 +225,10 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["volume is the amount of space inside a 3d shape", "space inside a shape", "amount of space something takes up"],
+      ["cubic units", "cubic inches", "cubed units"]
+    ],
     "questionReadAloudEn": "1.​What is volume?\n 2.​How is volume\n measured?",
     "answerReadAloudEn": "1.​Volume is the amount of\n space inside a 3d shape.\n 2.​Cubic units (like cubic\n inches)",
     "questionReadAloudEs": "",
@@ -175,7 +242,9 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["length x width x height", "length times width times height", "l x w x h", "140"]
+    ],
     "questionReadAloudEn": "How do you calculate\nthe volume of a\nrectangular prism?",
     "answerReadAloudEn": ")\n3d)\nVolume =\nLength x Width x Height\n 5 x 4 x 7\n =140",
     "questionReadAloudEs": "",
@@ -189,7 +258,11 @@
     "answerImageEn": "images/4A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a fraction is a number representing a part of a whole", "a fraction represents part of a whole"],
+      ["numerator", "top number"],
+      ["denominator", "bottom number"]
+    ],
     "questionReadAloudEn": "1.​What is a fraction? ​\n 2.​What is the top called?\n 3.​What is the bottom called?",
     "answerReadAloudEn": "1.​ A fraction is a number\n representing a\n 2.​ The top is the numerator\n 3.​ The bottom is the denominator",
     "questionReadAloudEs": "",
@@ -203,7 +276,10 @@
     "answerImageEn": "images/4B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["3 equal parts out of 5 total parts", "3 out of 5 parts"],
+      ["3 divided by 5", "3 ÷ 5"]
+    ],
     "questionReadAloudEn": "What are the 2 main ways to interpret\nthe fraction 3\n 5",
     "answerReadAloudEn": "1) 3 equal parts out of\n 5 total parts\n2) 3 ÷ 5",
     "questionReadAloudEs": "",
@@ -231,7 +307,9 @@
     "answerImageEn": "images/4D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["divide the top and bottom by the same number", "divide numerator and denominator by the same number"]
+    ],
     "questionReadAloudEn": "​\n How do you SIMPLIFY fractions?",
     "answerReadAloudEn": "To simplify fractions\n divide the top and bottom by the\n same number",
     "questionReadAloudEs": "",
@@ -245,7 +323,9 @@
     "answerImageEn": "images/4E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["multiply straight across", "multiply numerators together and denominators together", "multiply top times top and bottom times bottom"]
+    ],
     "questionReadAloudEn": "How do you MULTIPLY fractions?\n Ex: 2 x 4\n 3 5",
     "answerReadAloudEn": "To multiply fractions\n multiply straight across",
     "questionReadAloudEs": "",
@@ -259,7 +339,9 @@
     "answerImageEn": "images/4F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["keep change flip", "keep the first fraction change the sign to multiply and flip the second fraction", "multiply by the reciprocal"]
+    ],
     "questionReadAloudEn": "How do you DIVIDE fractions?\n Ex: 2 ÷ 4 3 5",
     "answerReadAloudEn": "To divide fractions,\n Keep, Change, Flip\n 2 4\n ÷ 3 5\n 2 5\n × 3 4",
     "questionReadAloudEs": "",
@@ -273,7 +355,11 @@
     "answerImageEn": "images/4G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["skip count by the denominators until you find a match", "find a common denominator"],
+      ["skip count by the numerators", "multiply the numerator by the same factor"],
+      ["add the numerators and keep the denominator", "add numerators keep the denominator the same"]
+    ],
     "questionReadAloudEn": "How do you add (or subtract)\n fractions?\n 4 1\n​ ​ ​ + ​ ​\n 9 3",
     "answerReadAloudEn": "1.​ Skip count by the denominators\n until you find a match\n 2.​ Skip count by the numerators\n 3.​ Add numerators, keep\n denominators",
     "questionReadAloudEs": "",
@@ -287,7 +373,10 @@
     "answerImageEn": "images/4H_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["multiplying by a number smaller than 1 gives a smaller number", "if you multiply by a fraction less than one the answer is smaller"],
+      ["multiplying by a number bigger than 1 gives a bigger number", "if you multiply by a number greater than one the answer is bigger"]
+    ],
     "questionReadAloudEn": "1. Explain how you know that\n 7 x 4 = less than 7\n 9\n2. Explain how you know that\n 11 x 5 = bigger than 11 2",
     "answerReadAloudEn": "1.​If you multiply by a number\n smaller than 1, you will get a\n smaller number.\n 2.​If you multiply by a number\n bigger than 1, you will get a\n bigger number.",
     "questionReadAloudEs": "",
@@ -301,7 +390,9 @@
     "answerImageEn": "images/5A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a shortcut way to write a fraction with a denominator of 10 100 or 1000", "another way to write a fraction with a denominator of 10 or 100", "decimals represent fractions with denominators of 10 100 or 1000"]
+    ],
     "questionReadAloudEn": "What is a decimal?",
     "answerReadAloudEn": "A shortcut way to write a\n fraction with a denominators of\n 10,100,etc",
     "questionReadAloudEs": "",
@@ -315,7 +406,10 @@
     "answerImageEn": "images/5B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["82.7 rounds to 83", "83"],
+      ["8.562 rounds to 8.56", "8.56"]
+    ],
     "questionReadAloudEn": "Explain how you would round in these\n2 problems:\n 1)​Round 82.7 to ones place\n 2)​Round 8.562 to the hundredths\n place",
     "answerReadAloudEn": "1)Circle ones place: 82.7\n 83\n2. Circle the hundredths place: 8.562\n 8.56",
     "questionReadAloudEs": "",
@@ -329,7 +423,13 @@
     "answerImageEn": "images/5C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["parentheses", "pemdas"],
+      ["exponents", "pemdas"],
+      ["multiplication or division left to right", "pemdas"],
+      ["addition or subtraction left to right", "pemdas"],
+      ["use it when a problem has more than one operation", "when there is more than one operation in a problem"]
+    ],
     "questionReadAloudEn": "●​List the order of\n operations:\n ●​When do you use the order\n of operations?",
     "answerReadAloudEn": "1)​Parentheses\n 2)​Exponents\n 3)​Multiplication or Division (from left\n to right)\n 4)​Addition or Subtraction (from left to\n right)\n ●​ You use the order of operations\n every time a problem has more\n than one operation.\n Ex) 5 + 3 x 6",
     "questionReadAloudEs": "",
@@ -357,7 +457,12 @@
     "answerImageEn": "images/7A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["start at the origin", "start at 0 0", "start at (0,0)"],
+      ["move to the right the number of spaces for x", "move right"],
+      ["move up the number of spaces for y", "move up"],
+      ["draw a dot there", "plot the point", "put a point there"]
+    ],
     "questionReadAloudEn": "Explain how you can\ngraph coordinates?\nLike: (3,4)",
     "answerReadAloudEn": "●​ Start at (0,0)\n ●​ Move to the right 3\n spaces\n ●​ Then move up 4\n spaces\n ●​ Draw a dot there",
     "questionReadAloudEs": "",
@@ -385,7 +490,9 @@
     "answerImageEn": "images/7C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["4 sides", "they have four sides", "quadrilaterals have 4 sides"]
+    ],
     "questionReadAloudEn": "All of these shapes can be\ncalled quadrilaterals. Why?",
     "answerReadAloudEn": "They have 4 sides.",
     "questionReadAloudEs": "",
@@ -399,7 +506,10 @@
     "answerImageEn": "images/7D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["4 sides"],
+      ["opposite sides are parallel"]
+    ],
     "questionReadAloudEn": "All 3 of these shapes can be called\nparallelograms. Why?",
     "answerReadAloudEn": "Parallelograms have:\n - 4 sides\n - opposite sides are parallel",
     "questionReadAloudEs": "",
@@ -413,7 +523,10 @@
     "answerImageEn": "images/7E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["4 equal sides"],
+      ["opposite sides are parallel"]
+    ],
     "questionReadAloudEn": "Both of these shapes can be called\n rhombuses. Why?",
     "answerReadAloudEn": "Rhombuses have:\n -​ 4 equal sides\n -​ Opposite sides are\n parallel",
     "questionReadAloudEs": "",
@@ -427,7 +540,10 @@
     "answerImageEn": "images/7F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["4 equal sides"],
+      ["4 right angles"]
+    ],
     "questionReadAloudEn": "This shape can be called a square. Why?",
     "answerReadAloudEn": "A square has:\n -​ 4 equal sides\n -​ 4 right angles",
     "questionReadAloudEs": "",
