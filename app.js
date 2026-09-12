@@ -41,6 +41,8 @@ const els = {
   questionImage: document.getElementById("questionImage"),
   answerImage: document.getElementById("answerImage"),
   studentAnswer: document.getElementById("studentAnswer"),
+  checkAnswerButton: document.getElementById("checkAnswerButton"),
+  answerFeedbackMessage: document.getElementById("answerFeedbackMessage"),
   showAnswerButton: document.getElementById("showAnswerButton"),
   nextProblemButton: document.getElementById("nextProblemButton"),
   practiceCountText: document.getElementById("practiceCountText")
@@ -117,6 +119,8 @@ els.spanishButton.addEventListener("click", () => {
 
 els.questionImage.addEventListener("click", () => readCurrentCardAloud("question"));
 els.answerImage.addEventListener("click", () => readCurrentCardAloud("answer"));
+
+els.checkAnswerButton.addEventListener("click", checkStudentAnswer);
 
 els.showAnswerButton.addEventListener("click", () => {
   const cardId = state.activeCardId;
@@ -464,6 +468,7 @@ function renderPracticeCard() {
   els.answerImage.removeAttribute("src");
   els.cardMissingMessage.textContent = "";
   els.cardMissingMessage.className = "message";
+  setMessage(els.answerFeedbackMessage, "", "");
 
   if (!card) {
     els.cardMissingMessage.textContent = "This study card is coming soon.";
@@ -556,6 +561,66 @@ function getReadAloudText(card, side) {
 
 function getActiveCardMeta() {
   return state.cardsMeta.find(card => normalizeCardId(card.id) === state.activeCardId);
+}
+
+async function checkStudentAnswer() {
+  const cardId = state.activeCardId;
+  if (!cardId) return;
+
+  const studentAnswer = els.studentAnswer.value.trim();
+
+  if (!studentAnswer) {
+    setMessage(els.answerFeedbackMessage, "Type your answer first, then check it.", "error");
+    return;
+  }
+
+  const card = getActiveCardMeta();
+  const correctAnswerText = card ? getReadAloudText(card, "answer") : "";
+
+  if (!correctAnswerText) {
+    setMessage(els.answerFeedbackMessage, "Answer feedback isn't available for this card yet.", "");
+    return;
+  }
+
+  const questionText = getReadAloudText(card, "question");
+
+  els.checkAnswerButton.disabled = true;
+  setMessage(els.answerFeedbackMessage, "Checking your answer...", "");
+
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        action: "gradeAnswer",
+        cardId: cardId,
+        language: state.language,
+        questionText: questionText,
+        correctAnswerText: correctAnswerText,
+        studentAnswer: studentAnswer
+      })
+    });
+    const data = await response.json();
+
+    if (!data.found) {
+      setMessage(els.answerFeedbackMessage, data.error || "Could not check that answer. Please try again.", "error");
+      return;
+    }
+
+    renderAnswerFeedback(data.result, data.feedback);
+  } catch (error) {
+    setMessage(els.answerFeedbackMessage, "Could not check that answer. Please try again.", "error");
+  } finally {
+    els.checkAnswerButton.disabled = false;
+  }
+}
+
+function renderAnswerFeedback(result, feedback) {
+  const icon = result === "correct" ? "✅" : result === "partial" ? "🟡" : "❌";
+  const label = result === "correct" ? "Correct!" : result === "partial" ? "Partially correct." : "Not quite.";
+  const statusClass = result === "correct" ? "correct" : result === "partial" ? "partial" : "incorrect";
+
+  setMessage(els.answerFeedbackMessage, `${icon} ${label} ${feedback || ""}`.trim(), statusClass);
 }
 
 function getCardsJsonPath(grade, subject) {

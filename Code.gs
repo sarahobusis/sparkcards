@@ -100,6 +100,23 @@ function doPost(e) {
       return jsonResponse({ found: true });
     }
 
+    if (params.action === "gradeAnswer") {
+      const studentAnswer = String(params.studentAnswer || "").trim();
+      const correctAnswerText = String(params.correctAnswerText || "").trim();
+      const questionText = String(params.questionText || "").trim();
+      const language = params.language === "es" ? "es" : "en";
+
+      if (!studentAnswer) {
+        return jsonResponse({ found: false, error: "Type an answer first." });
+      }
+
+      if (!correctAnswerText) {
+        return jsonResponse({ found: false, error: "Answer feedback is not available for this card yet." });
+      }
+
+      return jsonResponse(gradeStudentAnswer(questionText, correctAnswerText, studentAnswer, language));
+    }
+
     return jsonResponse({ found: false, error: "Unknown action." });
 
   } catch (err) {
@@ -291,6 +308,103 @@ function setCardVisibility(grade, subject, cardId, hidden) {
   } finally {
     lock.releaseLock();
   }
+}
+
+/***** TYPED ANSWER FEEDBACK *****/
+//
+// Grades a student's typed answer with Claude instead of an exact-match or
+// similarity check: spelling is often bad, math notation is hard to type,
+// and there are many valid ways to phrase a correct explanation. The API
+// key never reaches the browser — it lives in this script's Script
+// Properties (Project Settings > Script Properties in the Apps Script
+// editor), not in this file, so it never ends up in the GitHub repo.
+
+const ANTHROPIC_MODEL = "claude-opus-5";
+
+function gradeStudentAnswer(questionText, correctAnswerText, studentAnswer, language) {
+  const apiKey = PropertiesService.getScriptProperties().getProperty("ANTHROPIC_API_KEY");
+
+  if (!apiKey) {
+    return {
+      found: false,
+      error: "Answer feedback isn't set up yet. Ask your teacher to add the Anthropic API key."
+    };
+  }
+
+  const feedbackLanguageInstruction = language === "es"
+    ? "Write the feedback in Spanish."
+    : "Write the feedback in English.";
+
+  const systemPrompt = [
+    "You are grading a student's short typed answer for a K-8 study flashcard app.",
+    "Be encouraging and lenient when judging correctness:",
+    "- Ignore spelling, capitalization, punctuation, and grammar mistakes entirely.",
+    "- Students often type math notation imperfectly (for example \"10^3\", \"10 to the 3rd power\", \"1/2\", and \"0.5\" can all be equivalent). Treat mathematically equivalent expressions as the same.",
+    "- There are often multiple valid ways to phrase a correct explanation. Judge whether the student's answer conveys the same idea as the reference answer, not whether the wording matches.",
+    "- If the question has multiple parts and the student only got some of them right, use \"partial\".",
+    "- If the answer is blank, off-topic, or shows a clear misunderstanding, use \"incorrect\".",
+    "- If the student's answer correctly conveys the key idea(s), use \"correct\", even if it is brief or phrased very differently from the reference answer.",
+    feedbackLanguageInstruction + " Keep the feedback to one short, warm sentence (no more than 20 words). Do not quote or reveal the reference answer's exact wording in the feedback — the student can already reveal the full answer with a separate button."
+  ].join("\n");
+
+  const userPrompt =
+    "Question:\n" + (questionText || "(not provided)") +
+    "\n\nReference answer:\n" + correctAnswerText +
+    "\n\nStudent's typed answer:\n" + studentAnswer;
+
+  const payload = {
+    model: ANTHROPIC_MODEL,
+    max_tokens: 2048,
+    system: systemPrompt,
+    messages: [{ role: "user", content: userPrompt }],
+    output_config: {
+      effort: "low",
+      format: {
+        type: "json_schema",
+        schema: {
+          type: "object",
+          properties: {
+            result: { type: "string", enum: ["correct", "partial", "incorrect"] },
+            feedback: { type: "string" }
+          },
+          required: ["result", "feedback"],
+          additionalProperties: false
+        }
+      }
+    }
+  };
+
+  const response = UrlFetchApp.fetch("https://api.anthropic.com/v1/messages", {
+    method: "post",
+    contentType: "application/json",
+    headers: {
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01"
+    },
+    payload: JSON.stringify(payload),
+    muteHttpExceptions: true
+  });
+
+  const statusCode = response.getResponseCode();
+
+  if (statusCode !== 200) {
+    return { found: false, error: "Could not check that answer right now. Please try again." };
+  }
+
+  const body = JSON.parse(response.getContentText());
+  const textBlock = (body.content || []).find(block => block.type === "text");
+
+  if (!textBlock) {
+    return { found: false, error: "Could not check that answer right now. Please try again." };
+  }
+
+  const parsed = JSON.parse(textBlock.text);
+
+  return {
+    found: true,
+    result: parsed.result,
+    feedback: parsed.feedback
+  };
 }
 
 /***** CLASS LEADERBOARD *****/
