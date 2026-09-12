@@ -764,16 +764,45 @@ async function embedTexts(extractor, texts) {
   return texts.map(text => embeddingVectorCache.get(text));
 }
 
+function splitAnswerIntoSegments(text) {
+  // A single sentence-embedding vector represents the WHOLE input's meaning
+  // blended together, so if a student covers two different concepts in one
+  // sentence (e.g. "putting together, taking away" for a 2-part question),
+  // embedding it as one blob can land "between" both concepts and match
+  // neither well. Splitting into segments lets each concept get matched
+  // against whichever part of the answer actually addresses it. The split
+  // is deliberately conservative about periods (so "8.56" isn't cut into
+  // "8" and "56") and always keeps the full original answer as a candidate
+  // too, so single-concept and full-sentence answers are unaffected.
+  const original = String(text || "").trim();
+  if (!original) return [];
+
+  const parts = original
+    .split(/[,;\n]+|\.(?=\s|$)|\band\b/i)
+    .map(part => part.trim())
+    .filter(Boolean);
+
+  const segments = new Set(parts);
+  segments.add(original);
+  return [...segments];
+}
+
 async function gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups) {
   const extractor = await getEmbeddingExtractor();
-  const [studentVector] = await embedTexts(extractor, [studentAnswer]);
+  const segments = splitAnswerIntoSegments(studentAnswer);
+  const segmentVectors = await embedTexts(extractor, segments);
 
   const totalCount = acceptedAnswerGroups.length;
   let matchedCount = 0;
 
   for (const group of acceptedAnswerGroups) {
     const phraseVectors = await embedTexts(extractor, group);
-    const bestSimilarity = Math.max(...phraseVectors.map(vector => cosineSimilarity(studentVector, vector)));
+    let bestSimilarity = -1;
+    for (const segmentVector of segmentVectors) {
+      for (const phraseVector of phraseVectors) {
+        bestSimilarity = Math.max(bestSimilarity, cosineSimilarity(segmentVector, phraseVector));
+      }
+    }
     if (bestSimilarity >= EMBEDDING_SIMILARITY_THRESHOLD) matchedCount++;
   }
 
