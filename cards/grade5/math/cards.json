@@ -8,12 +8,12 @@
     "questionImageEs": "images/1A_Q_es.png",
     "answerImageEs": "images/1A_A_es.png",
     "acceptedAnswers": [
-      ["addition means putting together two amounts", "addition combines two numbers to find the total", "adding is joining two amounts together", "putting numbers together to find the total"],
-      ["subtraction means taking away", "subtraction means finding the difference", "subtraction is taking one number away from another"]
+      ["addition means putting together two amounts", "addition combines two numbers to find the total", "adding is joining two amounts together", "putting numbers together to find the total", "putting together", "combining two numbers", "joining amounts together", "putting two amounts together"],
+      ["subtraction means taking away", "subtraction means finding the difference", "subtraction is taking one number away from another", "taking away", "finding the difference"]
     ],
     "acceptedAnswersEs": [
-      ["la suma es juntar dos cantidades", "sumar es juntar cantidades para hallar el total", "la suma junta numeros para hallar el total"],
-      ["la resta es quitar", "la resta es calcular la diferencia", "restar es quitar un numero de otro"]
+      ["la suma es juntar dos cantidades", "sumar es juntar cantidades para hallar el total", "la suma junta numeros para hallar el total", "juntar", "juntar cantidades", "combinar numeros"],
+      ["la resta es quitar", "la resta es calcular la diferencia", "restar es quitar un numero de otro", "quitar", "hallar la diferencia"]
     ],
     "questionReadAloudEn": "",
     "answerReadAloudEn": "1.​ Addition means putting together\n two amounts to find the total\n 2. Subtraction means taking away or\n`\n finding the difference",
@@ -29,10 +29,10 @@
     "questionImageEs": "images/1B_Q_es.png",
     "answerImageEs": "images/1B_A_es.png",
     "acceptedAnswers": [
-      ["repeated addition of the same number", "adding the same number over and over", "multiplication is repeated addition"]
+      ["repeated addition of the same number", "adding the same number over and over", "multiplication is repeated addition", "repeated addition", "adding the same number many times", "adding a number over and over"]
     ],
     "acceptedAnswersEs": [
-      ["suma repetida del mismo numero", "sumar el mismo numero varias veces", "la multiplicacion es una suma repetida"]
+      ["suma repetida del mismo numero", "sumar el mismo numero varias veces", "la multiplicacion es una suma repetida", "suma repetida"]
     ],
     "questionReadAloudEn": "1.​What is multiplication?\n 2.​What is the multiplication\n version of 5 + 5 + 5?",
     "answerReadAloudEn": "1)​ Repeated addition of the same\n number\n 2)​",
