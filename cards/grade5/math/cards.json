@@ -29,15 +29,17 @@
     "questionImageEs": "images/1B_Q_es.png",
     "answerImageEs": "images/1B_A_es.png",
     "acceptedAnswers": [
-      ["repeated addition of the same number", "adding the same number over and over", "multiplication is repeated addition", "repeated addition", "adding the same number many times", "adding a number over and over"]
+      ["repeated addition of the same number", "adding the same number over and over", "multiplication is repeated addition", "repeated addition", "adding the same number many times", "adding a number over and over"],
+      ["3 x 5", "3x5", "3*5", "3 times 5", "5 x 3", "5x3", "5*3", "5 times 3"]
     ],
     "acceptedAnswersEs": [
-      ["suma repetida del mismo numero", "sumar el mismo numero varias veces", "la multiplicacion es una suma repetida", "suma repetida"]
+      ["suma repetida del mismo numero", "sumar el mismo numero varias veces", "la multiplicacion es una suma repetida", "suma repetida"],
+      ["3 x 5", "3x5", "3*5", "3 veces 5", "5 x 3", "5x3", "5*3", "5 veces 3"]
     ],
     "questionReadAloudEn": "1.​What is multiplication?\n 2.​What is the multiplication\n version of 5 + 5 + 5?",
-    "answerReadAloudEn": "1)​ Repeated addition of the same\n number\n 2)​",
+    "answerReadAloudEn": "1)​ Repeated addition of the same\n number\n 2)​ 3 × 5",
     "questionReadAloudEs": "1.​¿Qué es la multiplicación?\n 2.​¿Cuál es la forma de\n multiplicar 5 + 5 + 5?",
-    "answerReadAloudEs": "1)​ Suma repetida del mismo\n número\n 2)​"
+    "answerReadAloudEs": "1)​ Suma repetida del mismo\n número\n 2)​ 3 × 5"
   },
   {
     "id": "1C",
