@@ -15,6 +15,10 @@ const FIRST_STUDENT_ROW = 4;
 const STAR_CARD_ID_COL = 2; // B
 const HOMEROOM_COL = 6; // F
 
+// Card visibility (teacher dashboard)
+const CARD_VISIBILITY_SHEET_NAME = "CardVisibility";
+const TEACHER_PASSWORD = "sparkstaff";
+
 function doGet(e) {
   try {
     const params = e.parameter || {};
@@ -24,6 +28,20 @@ function doGet(e) {
       const subject = cleanSubject(params.subject);  // "" means "all subjects"
       const result = getLeaderboardData(grade, subject);
       return jsonResponse(result);
+    }
+
+    if (params.action === "cardVisibility") {
+      const grade = cleanGrade(params.grade);
+      const subject = cleanSubject(params.subject);
+
+      if (!grade || !subject) {
+        return jsonResponse({ found: false, error: "Missing grade or subject." });
+      }
+
+      return jsonResponse({
+        found: true,
+        hiddenCardIds: getHiddenCardIds(grade, subject)
+      });
     }
 
     // New name is starCardId. Keeping lasid as a backup makes old links/tests not totally break.
@@ -40,6 +58,49 @@ function doGet(e) {
 
     const result = getStudentDashboardData(starCardId, grade, subject);
     return jsonResponse(result);
+
+  } catch (err) {
+    return jsonResponse({
+      found: false,
+      error: String(err && err.message ? err.message : err)
+    });
+  }
+}
+
+function doPost(e) {
+  try {
+    const params = JSON.parse((e.postData && e.postData.contents) || "{}");
+
+    if (params.action === "checkTeacherPassword") {
+      if (params.password !== TEACHER_PASSWORD) {
+        return jsonResponse({ found: false, error: "Incorrect password." });
+      }
+      return jsonResponse({ found: true });
+    }
+
+    if (params.action === "setCardVisibility") {
+      if (params.password !== TEACHER_PASSWORD) {
+        return jsonResponse({ found: false, error: "Incorrect password." });
+      }
+
+      const grade = cleanGrade(params.grade);
+      const subject = cleanSubject(params.subject);
+      const cardId = normalizeCardId(params.cardId);
+      const hidden = !!params.hidden;
+
+      if (!grade || !subject || !cardId) {
+        return jsonResponse({ found: false, error: "Missing grade, subject, or cardId." });
+      }
+
+      if (!SPREADSHEETS_BY_GRADE[grade]) {
+        return jsonResponse({ found: false, error: "No spreadsheet is connected for grade " + grade + " yet." });
+      }
+
+      setCardVisibility(grade, subject, cardId, hidden);
+      return jsonResponse({ found: true });
+    }
+
+    return jsonResponse({ found: false, error: "Unknown action." });
 
   } catch (err) {
     return jsonResponse({
@@ -130,6 +191,12 @@ function getStudentDashboardData(starCardId, grade, subject) {
     cards[cardId] = normalizeScore(rawValue);
   });
 
+  // Hide cards the teacher has toggled off, without touching the sheet's
+  // own columns or scores — a hidden card just doesn't show up here.
+  getHiddenCardIds(grade, subject).forEach(hiddenId => {
+    delete cards[hiddenId];
+  });
+
   return {
     found: true,
     grade: grade,
@@ -142,6 +209,77 @@ function getStudentDashboardData(starCardId, grade, subject) {
       : "",
     cards: cards
   };
+}
+
+/***** TEACHER DASHBOARD: CARD VISIBILITY *****/
+//
+// Visibility state lives in its own "CardVisibility" tab per grade
+// spreadsheet (columns: Subject, CardId, Hidden), completely separate from
+// the Math/Science/History tabs. This is deliberate: every uploaded card
+// keeps its own column and scores on the subject tabs whether or not a
+// teacher has hidden it from students.
+
+function getOrCreateVisibilitySheet(ss) {
+  let sheet = ss.getSheetByName(CARD_VISIBILITY_SHEET_NAME);
+
+  if (!sheet) {
+    sheet = ss.insertSheet(CARD_VISIBILITY_SHEET_NAME);
+    sheet.getRange(1, 1, 1, 3).setValues([["Subject", "CardId", "Hidden"]]);
+  }
+
+  return sheet;
+}
+
+function getHiddenCardIds(grade, subject) {
+  const spreadsheetId = SPREADSHEETS_BY_GRADE[grade];
+  if (!spreadsheetId) return [];
+
+  const ss = SpreadsheetApp.openById(spreadsheetId);
+  const sheet = ss.getSheetByName(CARD_VISIBILITY_SHEET_NAME);
+  if (!sheet) return [];
+
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) return [];
+
+  const values = sheet.getRange(2, 1, lastRow - 1, 3).getValues();
+  const hiddenCardIds = [];
+
+  values.forEach(row => {
+    const rowSubject = cleanSubject(row[0]);
+    const cardId = normalizeCardId(row[1]);
+    const isHidden = row[2] === true || String(row[2]).trim().toLowerCase() === "true";
+
+    if (rowSubject === subject && cardId && isHidden) {
+      hiddenCardIds.push(cardId);
+    }
+  });
+
+  return hiddenCardIds;
+}
+
+function setCardVisibility(grade, subject, cardId, hidden) {
+  const spreadsheetId = SPREADSHEETS_BY_GRADE[grade];
+  if (!spreadsheetId) return;
+
+  const ss = SpreadsheetApp.openById(spreadsheetId);
+  const sheet = getOrCreateVisibilitySheet(ss);
+  const lastRow = sheet.getLastRow();
+
+  if (lastRow >= 2) {
+    const values = sheet.getRange(2, 1, lastRow - 1, 2).getValues();
+
+    for (let i = 0; i < values.length; i++) {
+      const rowSubject = cleanSubject(values[i][0]);
+      const rowCardId = normalizeCardId(values[i][1]);
+
+      if (rowSubject === subject && rowCardId === cardId) {
+        sheet.getRange(i + 2, 3).setValue(hidden);
+        return;
+      }
+    }
+  }
+
+  sheet.appendRow([subject, cardId, hidden]);
 }
 
 /***** CLASS LEADERBOARD *****/

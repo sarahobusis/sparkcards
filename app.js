@@ -8,6 +8,7 @@ const state = {
   subject: "Math",
   dashboard: null,
   cardsMeta: [],
+  hiddenCardIds: [],
   activeCardId: null,
   practiceMode: "dashboard",
   practicePool: [],
@@ -156,11 +157,15 @@ async function loadDashboard() {
   setMessage(els.lookupMessage, "Loading dashboard...", "");
 
   try {
-    const cardsMeta = await fetchCardsMeta();
+    const [cardsMeta, hiddenCardIds] = await Promise.all([
+      fetchCardsMeta(),
+      fetchHiddenCardIds(state.grade, state.subject)
+    ]);
+
     let dashboardData;
 
     if (isGuestMode()) {
-      dashboardData = buildGuestDashboard(cardsMeta);
+      dashboardData = buildGuestDashboard(cardsMeta, hiddenCardIds);
     } else {
       dashboardData = await fetchDashboardData();
     }
@@ -171,6 +176,7 @@ async function loadDashboard() {
 
     state.dashboard = dashboardData;
     state.cardsMeta = cardsMeta;
+    state.hiddenCardIds = hiddenCardIds;
 
     renderDashboard();
 
@@ -220,12 +226,13 @@ function normalizeStudentId(value) {
   return String(value || "").trim();
 }
 
-function buildGuestDashboard(cardsMeta) {
+function buildGuestDashboard(cardsMeta, hiddenCardIds) {
+  const hiddenSet = new Set((hiddenCardIds || []).map(normalizeCardId));
   const cards = {};
 
   (cardsMeta || []).forEach(card => {
     const cardId = normalizeCardId(card.id);
-    if (cardId) cards[cardId] = "";
+    if (cardId && !hiddenSet.has(cardId)) cards[cardId] = "";
   });
 
   return {
@@ -237,6 +244,19 @@ function buildGuestDashboard(cardsMeta) {
     totalCardsMastered: "",
     cards
   };
+}
+
+async function fetchHiddenCardIds(grade, subject) {
+  const url = `${API_URL}?action=cardVisibility&grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}`;
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) return [];
+    const data = await response.json();
+    return data.found ? (data.hiddenCardIds || []) : [];
+  } catch (error) {
+    return [];
+  }
 }
 
 function renderDashboard() {
@@ -368,9 +388,12 @@ function getDashboardCardIds() {
 }
 
 function getWebsiteCardIds() {
+  const hiddenSet = new Set((state.hiddenCardIds || []).map(normalizeCardId));
+
   return (state.cardsMeta || [])
     .map(card => normalizeCardId(card.id))
-    .filter(Boolean);
+    .filter(Boolean)
+    .filter(cardId => !hiddenSet.has(cardId));
 }
 
 function getDisplayCardIds() {
@@ -784,3 +807,205 @@ function escapeHtml(text) {
 }
 
 document.addEventListener("DOMContentLoaded", initLeaderboard);
+
+/***** TEACHER DASHBOARD *****/
+
+const teacherEls = {
+  openButton: document.getElementById("openTeacherButton"),
+  panel: document.getElementById("teacherPanel"),
+  closeButton: document.getElementById("closeTeacherButton"),
+  loginView: document.getElementById("teacherLoginView"),
+  loginForm: document.getElementById("teacherLoginForm"),
+  passwordInput: document.getElementById("teacherPasswordInput"),
+  loginMessage: document.getElementById("teacherLoginMessage"),
+  manageView: document.getElementById("teacherManageView"),
+  gradeSelect: document.getElementById("teacherGradeSelect"),
+  subjectSelect: document.getElementById("teacherSubjectSelect"),
+  manageMessage: document.getElementById("teacherManageMessage"),
+  cardList: document.getElementById("teacherCardList")
+};
+
+const teacherState = {
+  password: "",
+  cardsMeta: [],
+  hiddenCardIds: []
+};
+
+function initTeacherDashboard() {
+  if (!teacherEls.openButton) return; // teacher markup isn't on this page
+
+  teacherEls.openButton.addEventListener("click", openTeacherDashboard);
+  teacherEls.closeButton.addEventListener("click", closeTeacherDashboard);
+  teacherEls.loginForm.addEventListener("submit", handleTeacherLogin);
+  teacherEls.gradeSelect.addEventListener("change", loadTeacherCards);
+  teacherEls.subjectSelect.addEventListener("change", loadTeacherCards);
+}
+
+function openTeacherDashboard() {
+  document.getElementById("loginPanel")?.classList.add("hidden");
+  document.getElementById("dashboardPanel")?.classList.add("hidden");
+  document.getElementById("practicePanel")?.classList.add("hidden");
+  document.getElementById("leaderboardPanel")?.classList.add("hidden");
+  teacherEls.panel.classList.remove("hidden");
+
+  if (teacherState.password) {
+    showTeacherManageView();
+  } else {
+    showTeacherLoginView();
+  }
+}
+
+function closeTeacherDashboard() {
+  teacherEls.panel.classList.add("hidden");
+  document.getElementById("loginPanel")?.classList.remove("hidden");
+}
+
+function showTeacherLoginView() {
+  teacherEls.loginView.classList.remove("hidden");
+  teacherEls.manageView.classList.add("hidden");
+  teacherEls.passwordInput.value = "";
+  setMessage(teacherEls.loginMessage, "", "");
+}
+
+function showTeacherManageView() {
+  teacherEls.loginView.classList.add("hidden");
+  teacherEls.manageView.classList.remove("hidden");
+  loadTeacherCards();
+}
+
+async function handleTeacherLogin(event) {
+  event.preventDefault();
+  const password = teacherEls.passwordInput.value;
+
+  setMessage(teacherEls.loginMessage, "Checking password...", "");
+
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({ action: "checkTeacherPassword", password })
+    });
+    const data = await response.json();
+
+    if (!data.found) {
+      setMessage(teacherEls.loginMessage, data.error || "Incorrect password.", "error");
+      return;
+    }
+
+    teacherState.password = password;
+    showTeacherManageView();
+  } catch (error) {
+    setMessage(teacherEls.loginMessage, "Could not check the password. Please try again.", "error");
+  }
+}
+
+async function loadTeacherCards() {
+  const grade = teacherEls.gradeSelect.value;
+  const subject = teacherEls.subjectSelect.value;
+
+  setMessage(teacherEls.manageMessage, "Loading cards...", "");
+  teacherEls.cardList.innerHTML = "";
+
+  try {
+    const [cardsMeta, hiddenCardIds] = await Promise.all([
+      fetchCardsMetaFor(grade, subject),
+      fetchHiddenCardIds(grade, subject)
+    ]);
+
+    teacherState.cardsMeta = cardsMeta;
+    teacherState.hiddenCardIds = hiddenCardIds;
+
+    renderTeacherCards();
+  } catch (error) {
+    setMessage(teacherEls.manageMessage, "Could not load cards. Please try again.", "error");
+  }
+}
+
+async function fetchCardsMetaFor(grade, subject) {
+  const path = `${getSubjectFolder(grade, subject)}/cards.json?v=${Date.now()}`;
+
+  try {
+    const response = await fetch(path);
+    if (!response.ok) return [];
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function renderTeacherCards() {
+  if (!teacherState.cardsMeta.length) {
+    teacherEls.cardList.innerHTML = "";
+    setMessage(teacherEls.manageMessage, "No cards found for this grade and subject yet.", "");
+    return;
+  }
+
+  setMessage(teacherEls.manageMessage, "", "");
+
+  const hiddenSet = new Set(teacherState.hiddenCardIds.map(normalizeCardId));
+  const sortedCards = [...teacherState.cardsMeta].sort((a, b) =>
+    normalizeCardId(a.id).localeCompare(normalizeCardId(b.id), undefined, { numeric: true })
+  );
+
+  teacherEls.cardList.innerHTML = sortedCards.map(card => {
+    const cardId = normalizeCardId(card.id);
+    const isHidden = hiddenSet.has(cardId);
+    const unitLabel = normalizeUnitLabel(card.unit) || getUnitForCardId(cardId);
+
+    return `
+      <div class="teacher-card-row">
+        <span class="teacher-card-id">${escapeHtml(cardId)}</span>
+        <span class="teacher-card-unit">${escapeHtml(unitLabel)}</span>
+        <button
+          type="button"
+          class="visibility-toggle ${isHidden ? "toggle-hidden" : "toggle-visible"}"
+          data-card-id="${escapeHtml(cardId)}"
+        >${isHidden ? "Hidden from Students" : "Visible to Students"}</button>
+      </div>
+    `;
+  }).join("");
+
+  teacherEls.cardList.querySelectorAll(".visibility-toggle").forEach(button => {
+    button.addEventListener("click", () => toggleCardVisibility(button));
+  });
+}
+
+async function toggleCardVisibility(button) {
+  const cardId = button.dataset.cardId;
+  const nextHidden = !button.classList.contains("toggle-hidden");
+
+  button.disabled = true;
+
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        action: "setCardVisibility",
+        password: teacherState.password,
+        grade: teacherEls.gradeSelect.value,
+        subject: teacherEls.subjectSelect.value,
+        cardId: cardId,
+        hidden: nextHidden
+      })
+    });
+    const data = await response.json();
+
+    if (!data.found) {
+      setMessage(teacherEls.manageMessage, data.error || "Could not update that card.", "error");
+      return;
+    }
+
+    button.classList.toggle("toggle-hidden", nextHidden);
+    button.classList.toggle("toggle-visible", !nextHidden);
+    button.textContent = nextHidden ? "Hidden from Students" : "Visible to Students";
+    setMessage(teacherEls.manageMessage, "", "");
+  } catch (error) {
+    setMessage(teacherEls.manageMessage, "Could not update that card. Please try again.", "error");
+  } finally {
+    button.disabled = false;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", initTeacherDashboard);

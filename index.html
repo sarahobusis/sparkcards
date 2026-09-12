@@ -50,6 +50,7 @@
       <p id="lookupMessage" class="message" role="status"></p>
 
       <button type="button" id="openLeaderboardButton" class="small-button leaderboard-link-button">🏆 Class Leaderboard</button>
+      <button type="button" id="openTeacherButton" class="small-button leaderboard-link-button">🧑‍🏫 Teacher Dashboard</button>
     </section>
 
     <section class="panel dashboard-panel hidden" id="dashboardPanel">
@@ -169,6 +170,59 @@
       <p id="leaderboardUpdatedText" class="leaderboard-updated"></p>
 
       <ol id="leaderboardList" class="leaderboard-list"></ol>
+    </section>
+
+    <section class="panel teacher-panel hidden" id="teacherPanel">
+      <div class="dashboard-topline">
+        <button id="closeTeacherButton" class="small-button">← Back</button>
+        <div>
+          <p class="eyebrow">Spark Academy</p>
+          <h2>Teacher Dashboard</h2>
+        </div>
+      </div>
+
+      <div id="teacherLoginView">
+        <p class="helper">Enter the staff password to manage which cards students can see.</p>
+
+        <form id="teacherLoginForm" class="lookup-form">
+          <label>
+            Staff Password
+            <input id="teacherPasswordInput" type="password" autocomplete="off" required />
+          </label>
+
+          <button type="submit" class="primary-button">Sign In</button>
+        </form>
+
+        <p id="teacherLoginMessage" class="message" role="status"></p>
+      </div>
+
+      <div id="teacherManageView" class="hidden">
+        <p class="helper">Toggle a card off to hide it from students until you've covered it in class. This never changes the spreadsheet — every uploaded card keeps its own column and scores, even while hidden.</p>
+
+        <div class="leaderboard-filters">
+          <label>
+            Grade
+            <select id="teacherGradeSelect">
+              <option value="5">5th Grade</option>
+              <option value="6">6th Grade</option>
+              <option value="7">7th Grade</option>
+              <option value="8">8th Grade</option>
+            </select>
+          </label>
+          <label>
+            Subject
+            <select id="teacherSubjectSelect">
+              <option value="Math">Math</option>
+              <option value="Science">Science</option>
+              <option value="History">History</option>
+            </select>
+          </label>
+        </div>
+
+        <p id="teacherManageMessage" class="message" role="status"></p>
+
+        <div id="teacherCardList" class="teacher-card-list"></div>
+      </div>
     </section>
   </main>
 
