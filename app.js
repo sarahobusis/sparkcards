@@ -667,7 +667,7 @@ function phraseMatches(studentTokens, phraseTokens) {
 
   const requiredMatches = significantWords.length <= 2
     ? significantWords.length
-    : Math.ceil(significantWords.length * 0.8);
+    : Math.min(4, Math.ceil(significantWords.length * 0.6));
 
   return matchedWords.length >= requiredMatches;
 }
