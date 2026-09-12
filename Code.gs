@@ -261,25 +261,36 @@ function setCardVisibility(grade, subject, cardId, hidden) {
   const spreadsheetId = SPREADSHEETS_BY_GRADE[grade];
   if (!spreadsheetId) return;
 
-  const ss = SpreadsheetApp.openById(spreadsheetId);
-  const sheet = getOrCreateVisibilitySheet(ss);
-  const lastRow = sheet.getLastRow();
+  // The teacher dashboard can toggle a whole unit at once, which fires one
+  // request per card in parallel. Without a lock, two concurrent requests
+  // could both miss each other's row and append duplicates for different
+  // cards at the same time.
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
 
-  if (lastRow >= 2) {
-    const values = sheet.getRange(2, 1, lastRow - 1, 2).getValues();
+  try {
+    const ss = SpreadsheetApp.openById(spreadsheetId);
+    const sheet = getOrCreateVisibilitySheet(ss);
+    const lastRow = sheet.getLastRow();
 
-    for (let i = 0; i < values.length; i++) {
-      const rowSubject = cleanSubject(values[i][0]);
-      const rowCardId = normalizeCardId(values[i][1]);
+    if (lastRow >= 2) {
+      const values = sheet.getRange(2, 1, lastRow - 1, 2).getValues();
 
-      if (rowSubject === subject && rowCardId === cardId) {
-        sheet.getRange(i + 2, 3).setValue(hidden);
-        return;
+      for (let i = 0; i < values.length; i++) {
+        const rowSubject = cleanSubject(values[i][0]);
+        const rowCardId = normalizeCardId(values[i][1]);
+
+        if (rowSubject === subject && rowCardId === cardId) {
+          sheet.getRange(i + 2, 3).setValue(hidden);
+          return;
+        }
       }
     }
-  }
 
-  sheet.appendRow([subject, cardId, hidden]);
+    sheet.appendRow([subject, cardId, hidden]);
+  } finally {
+    lock.releaseLock();
+  }
 }
 
 /***** CLASS LEADERBOARD *****/
