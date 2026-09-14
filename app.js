@@ -582,19 +582,26 @@ async function checkStudentAnswer() {
     return;
   }
 
+  // Some questions ask for "at least N of M" options (e.g. "name 3 properties"
+  // out of 6 possible) rather than every listed concept. acceptedAnswersMinMatch
+  // is optional; when absent, every group is required (existing behavior).
+  const requiredMatchCount = Number.isInteger(card?.acceptedAnswersMinMatch)
+    ? card.acceptedAnswersMinMatch
+    : undefined;
+
   els.checkAnswerButton.disabled = true;
   setMessage(els.answerFeedbackMessage, "Checking your answer…", "");
 
   let gradeResult;
   try {
-    gradeResult = await gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups);
+    gradeResult = await gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups, requiredMatchCount);
     console.log("[answer-check] graded by embedding model", gradeResult);
   } catch (err) {
     // The in-browser model couldn't load (offline, or the network blocks
     // its CDN/model download) — fall back to local keyword matching so
     // feedback still works.
     console.warn("[answer-check] embedding model unavailable, falling back to keyword matching:", err);
-    gradeResult = gradeAnswerLocally(studentAnswer, acceptedAnswerGroups);
+    gradeResult = gradeAnswerLocally(studentAnswer, acceptedAnswerGroups, requiredMatchCount);
     console.log("[answer-check] graded by keyword fallback", gradeResult);
   }
 
@@ -637,18 +644,23 @@ function getAcceptedAnswerGroups(card) {
   return Array.isArray(groups) ? groups.filter(group => Array.isArray(group) && group.length) : [];
 }
 
-function gradeAnswerLocally(studentAnswer, acceptedAnswerGroups) {
+function gradeAnswerLocally(studentAnswer, acceptedAnswerGroups, requiredMatchCount) {
   const studentTokens = tokenizeForMatching(studentAnswer);
-  const totalCount = acceptedAnswerGroups.length;
+  const groupsTotal = acceptedAnswerGroups.length;
+  const required = requiredMatchCount > 0 && requiredMatchCount <= groupsTotal ? requiredMatchCount : groupsTotal;
 
   const matchedCount = acceptedAnswerGroups.filter(synonyms =>
     synonyms.some(phrase => phraseMatches(studentTokens, tokenizeForMatching(phrase)))
   ).length;
 
-  const ratio = totalCount ? matchedCount / totalCount : 0;
+  // "At least N of M" questions (e.g. "name 3 of these 6 properties") cap
+  // both the credited match count and the denominator at N, so a student
+  // who names exactly the required number sees "correct", not "partial".
+  const cappedMatched = Math.min(matchedCount, required);
+  const ratio = required ? cappedMatched / required : 0;
   const result = ratio >= 1 ? "correct" : ratio > 0 ? "partial" : "incorrect";
 
-  return { result, matchedCount, totalCount };
+  return { result, matchedCount: cappedMatched, totalCount: required };
 }
 
 function normalizeForMatching(text) {
@@ -787,12 +799,13 @@ function splitAnswerIntoSegments(text) {
   return [...segments];
 }
 
-async function gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups) {
+async function gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups, requiredMatchCount) {
   const extractor = await getEmbeddingExtractor();
   const segments = splitAnswerIntoSegments(studentAnswer);
   const segmentVectors = await embedTexts(extractor, segments);
 
-  const totalCount = acceptedAnswerGroups.length;
+  const groupsTotal = acceptedAnswerGroups.length;
+  const required = requiredMatchCount > 0 && requiredMatchCount <= groupsTotal ? requiredMatchCount : groupsTotal;
   let matchedCount = 0;
 
   for (const group of acceptedAnswerGroups) {
@@ -806,10 +819,13 @@ async function gradeAnswerByEmbedding(studentAnswer, acceptedAnswerGroups) {
     if (bestSimilarity >= EMBEDDING_SIMILARITY_THRESHOLD) matchedCount++;
   }
 
-  const ratio = totalCount ? matchedCount / totalCount : 0;
+  // "At least N of M" questions cap both the credited match count and the
+  // denominator at N — see gradeAnswerLocally for the same rule.
+  const cappedMatched = Math.min(matchedCount, required);
+  const ratio = required ? cappedMatched / required : 0;
   const result = ratio >= 1 ? "correct" : ratio > 0 ? "partial" : "incorrect";
 
-  return { result, matchedCount, totalCount };
+  return { result, matchedCount: cappedMatched, totalCount: required };
 }
 
 function getCardsJsonPath(grade, subject) {
