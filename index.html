@@ -201,14 +201,6 @@
       </div>
 
       <div id="teacherManageView" class="hidden">
-        <div class="teacher-setting-row">
-          <div>
-            <strong>Class Leaderboard</strong>
-            <p class="helper">Turn off to hide the leaderboard for all students, across every grade and subject.</p>
-          </div>
-          <button type="button" id="leaderboardToggleButton" class="small-button">Leaderboard: On</button>
-        </div>
-
         <p class="helper">Toggle a card off to hide it from students until you've covered it in class. This never changes the spreadsheet — every uploaded card keeps its own column and scores, even while hidden.</p>
 
         <div class="leaderboard-filters">
@@ -231,17 +223,25 @@
           </label>
         </div>
 
+        <p id="teacherManageMessage" class="message" role="status"></p>
+
+        <div id="teacherCardList" class="teacher-card-list"></div>
+
         <div class="teacher-setting-row">
           <div>
-            <strong>Answer Checking</strong>
+            <strong>Class Leaderboard</strong>
+            <p class="helper">Turn off to hide the leaderboard for all students, across every grade and subject.</p>
+          </div>
+          <button type="button" id="leaderboardToggleButton" class="small-button">Leaderboard: On</button>
+        </div>
+
+        <div class="teacher-setting-row teacher-setting-row-subtle">
+          <div>
+            <strong>Answer Checking (experimental)</strong>
             <p class="helper">Turn off to hide "Check My Answer" for this grade and subject only. Students can still use Show Answer.</p>
           </div>
           <button type="button" id="checkingToggleButton" class="small-button">Checking: On</button>
         </div>
-
-        <p id="teacherManageMessage" class="message" role="status"></p>
-
-        <div id="teacherCardList" class="teacher-card-list"></div>
       </div>
     </section>
   </main>
