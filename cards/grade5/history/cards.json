@@ -7,11 +7,16 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "images/1A_Q_es.png",
     "answerImageEs": "images/1A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["native peoples", "native americans", "indigenous peoples", "native people"]
+    ],
     "questionReadAloudEn": "Who lived in North America\nbefore settlers took it over?",
     "answerReadAloudEn": "Native Peoples",
     "questionReadAloudEs": "¿Quiénes vivían en\nNorteamérica antes de que los\ncolonos se apoderaran de ella?",
-    "answerReadAloudEs": "Pueblos nativos"
+    "answerReadAloudEs": "Pueblos nativos",
+    "acceptedAnswersEs": [
+      ["pueblos nativos", "nativos americanos", "pueblos indigenas"]
+    ]
   },
   {
     "id": "1B",
@@ -21,11 +26,18 @@
     "answerImageEn": "images/1B_A_en.png",
     "questionImageEs": "images/1B_Q_es.png",
     "answerImageEs": "images/1B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["to make money", "to earn money", "for money", "economic reasons"],
+      ["to have their own religion", "for religious freedom", "to practice their own religion", "religious freedom"]
+    ],
     "questionReadAloudEn": "What are two reasons people\nfrom England moved to North\nAmerica?",
     "answerReadAloudEn": "1. To make money\n2. To have their own religion",
     "questionReadAloudEs": "Cuáles son dos¿Razones por las\nque la gente de Inglaterra se\nmudó a Norteamérica?",
-    "answerReadAloudEs": "1.Para hacer dinero\n2.Tener su propia religión"
+    "answerReadAloudEs": "1.Para hacer dinero\n2.Tener su propia religión",
+    "acceptedAnswersEs": [
+      ["para hacer dinero", "para ganar dinero", "por dinero"],
+      ["tener su propia religion", "para tener libertad religiosa", "para practicar su propia religion", "libertad religiosa"]
+    ]
   },
   {
     "id": "1C",
@@ -35,11 +47,16 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "images/1C_Q_es.png",
     "answerImageEs": "images/1C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["territory that is controlled by another country", "land controlled by another country", "a territory ruled by another country", "land ruled by a different country"]
+    ],
     "questionReadAloudEn": "What is a colony?",
     "answerReadAloudEn": "Territory that is controlled by\nanother country.",
     "questionReadAloudEs": "¿Qué es una colonia?",
-    "answerReadAloudEs": "Territorio controlado por otro\npaís."
+    "answerReadAloudEs": "Territorio controlado por otro\npaís.",
+    "acceptedAnswersEs": [
+      ["territorio controlado por otro pais", "tierra controlada por otro pais", "un territorio gobernado por otro pais"]
+    ]
   },
   {
     "id": "1D",
@@ -49,7 +66,11 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "images/1D_Q_es.png",
     "answerImageEs": "images/1D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["new england"],
+      ["middle", "middle colonies"],
+      ["southern", "southern colonies"]
+    ],
     "questionReadAloudEn": "Label the three regions of the\noriginal colonies.",
     "answerReadAloudEn": "The three regions are New England, Middle, and Southern.",
     "questionReadAloudEs": "Etiqueta las tres regiones de las\ncolonias originales.",
@@ -63,11 +84,18 @@
     "answerImageEn": "images/1E_A_en.png",
     "questionImageEs": "images/1E_Q_es.png",
     "answerImageEs": "images/1E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the north made money with industry", "the north used industry to make money", "the northern region made money through industry", "north made money from industry"],
+      ["the south made money with agriculture", "the south used agriculture to make money", "the southern region made money through farming", "south made money from farming", "south made money from agriculture"]
+    ],
     "questionReadAloudEn": "How did the Northern and\nSouthern regions make money?",
     "answerReadAloudEn": "The North made money with\nindustry.\nThe South made money with\nagriculture.",
     "questionReadAloudEs": "¿Cómo generaban ingresos las\nregiones del norte y del sur?",
-    "answerReadAloudEs": "El Norte ganó dinero\nconindustria.\nEl Sur ganó dinero\nconagricultura."
+    "answerReadAloudEs": "El Norte ganó dinero\nconindustria.\nEl Sur ganó dinero\nconagricultura.",
+    "acceptedAnswersEs": [
+      ["el norte gano dinero con industria", "el norte hizo dinero con la industria"],
+      ["el sur gano dinero con agricultura", "el sur hizo dinero con la agricultura"]
+    ]
   },
   {
     "id": "1F",
@@ -77,11 +105,16 @@
     "answerImageEn": "images/1F_A_en.png",
     "questionImageEs": "images/1F_Q_es.png",
     "answerImageEs": "images/1F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a system where one person owns and controls another person", "when one person owns and controls another person", "owning and controlling another person", "one person owning another person"]
+    ],
     "questionReadAloudEn": "What is slavery?",
     "answerReadAloudEn": "A system where one person\nowns and controls another\nperson.",
     "questionReadAloudEs": "¿Qué es la esclavitud?",
-    "answerReadAloudEs": "Un sistema dondeUna persona\nposee y controla a otra."
+    "answerReadAloudEs": "Un sistema dondeUna persona\nposee y controla a otra.",
+    "acceptedAnswersEs": [
+      ["un sistema donde una persona posee y controla a otra", "cuando una persona posee y controla a otra", "poseer y controlar a otra persona"]
+    ]
   },
   {
     "id": "2A",
@@ -91,7 +124,9 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["england", "britain", "great britain", "the british"]
+    ],
     "questionReadAloudEn": "What country controlled the\nThirteen Colonies?\n )",
     "answerReadAloudEn": "England\n )",
     "questionReadAloudEs": "",
@@ -119,7 +154,9 @@
     "answerImageEn": "images/2C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the official document that announced the 13 colonies separated from britain", "the document that declared the colonies independent from britain", "document announcing independence from britain", "declared the colonies free from britain"]
+    ],
     "questionReadAloudEn": "What was the Declaration of\nIndependence?",
     "answerReadAloudEn": "The official document that\nannounced the 13 colonies\nseparated from Britain",
     "questionReadAloudEs": "",
@@ -133,7 +170,10 @@
     "answerImageEn": "images/2E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the colonists wanted independence from britain", "wanting freedom from britain", "independence from britain", "to be free from british rule"],
+      ["to have their own government", "wanting their own government", "self government", "to govern themselves"]
+    ],
     "questionReadAloudEn": "What was the American\nRevolution fought over?",
     "answerReadAloudEn": "The colonists wanted\nindependence from Britain\nand to have their own\ngovernment.",
     "questionReadAloudEs": "",
@@ -147,7 +187,9 @@
     "answerImageEn": "images/2F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the boston massacre", "the boston tea party", "paul reveres ride", "boston massacre", "boston tea party", "paul revere's ride"]
+    ],
     "questionReadAloudEn": "Name an important event that\nhappened during the American\nRevolution.",
     "answerReadAloudEn": "●​The Boston Massacre\n ●​The Boston Tea Party\n ●​Paul Revere’s Ride",
     "questionReadAloudEs": "",
@@ -161,7 +203,9 @@
     "answerImageEn": "images/2G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["they created a new country called the united states of america", "they formed the united states of america", "the united states of america was created", "created the usa", "formed a new country called the united states"]
+    ],
     "questionReadAloudEn": "What happened after the\ncolonists won the American\nRevolution?",
     "answerReadAloudEn": "●​Paul Revere s Ride\n2g)\nThey created a new country\ncalled the United States of\nAmerica.",
     "questionReadAloudEs": "",
