@@ -26,6 +26,17 @@ body {
   background: linear-gradient(135deg, var(--blue), var(--blue-dark));
   color: white;
   padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.header-teacher-button {
+  font-size: 13px;
+  padding: 8px 14px;
+  white-space: nowrap;
 }
 
 .site-header h1,
