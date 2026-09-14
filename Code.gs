@@ -19,11 +19,22 @@ const HOMEROOM_COL = 6; // F
 const CARD_VISIBILITY_SHEET_NAME = "CardVisibility";
 const TEACHER_PASSWORD = "sparkstaff";
 
+// Per grade/subject "answer checking" toggle (teacher dashboard)
+const SETTINGS_SHEET_NAME = "Settings";
+
+// Global leaderboard on/off toggle, stored as a script property since it
+// isn't scoped to any one grade's spreadsheet.
+const LEADERBOARD_ENABLED_PROPERTY = "leaderboardEnabled";
+
 function doGet(e) {
   try {
     const params = e.parameter || {};
 
     if (params.action === "leaderboard") {
+      if (!isLeaderboardEnabled()) {
+        return jsonResponse({ found: false, error: "The leaderboard is currently turned off.", leaderboardEnabled: false });
+      }
+
       const grade = cleanGrade(params.grade);       // "" means "all grades"
       const subject = cleanSubject(params.subject);  // "" means "all subjects"
       const result = getLeaderboardData(grade, subject);
@@ -40,7 +51,15 @@ function doGet(e) {
 
       return jsonResponse({
         found: true,
-        hiddenCardIds: getHiddenCardIds(grade, subject)
+        hiddenCardIds: getHiddenCardIds(grade, subject),
+        checkingEnabled: isCheckingEnabled(grade, subject)
+      });
+    }
+
+    if (params.action === "settings") {
+      return jsonResponse({
+        found: true,
+        leaderboardEnabled: isLeaderboardEnabled()
       });
     }
 
@@ -97,6 +116,36 @@ function doPost(e) {
       }
 
       setCardVisibility(grade, subject, cardId, hidden);
+      return jsonResponse({ found: true });
+    }
+
+    if (params.action === "setCheckingEnabled") {
+      if (params.password !== TEACHER_PASSWORD) {
+        return jsonResponse({ found: false, error: "Incorrect password." });
+      }
+
+      const grade = cleanGrade(params.grade);
+      const subject = cleanSubject(params.subject);
+      const enabled = !!params.enabled;
+
+      if (!grade || !subject) {
+        return jsonResponse({ found: false, error: "Missing grade or subject." });
+      }
+
+      if (!SPREADSHEETS_BY_GRADE[grade]) {
+        return jsonResponse({ found: false, error: "No spreadsheet is connected for grade " + grade + " yet." });
+      }
+
+      setCheckingEnabled(grade, subject, enabled);
+      return jsonResponse({ found: true });
+    }
+
+    if (params.action === "setLeaderboardEnabled") {
+      if (params.password !== TEACHER_PASSWORD) {
+        return jsonResponse({ found: false, error: "Incorrect password." });
+      }
+
+      setLeaderboardEnabled(!!params.enabled);
       return jsonResponse({ found: true });
     }
 
@@ -291,6 +340,90 @@ function setCardVisibility(grade, subject, cardId, hidden) {
   } finally {
     lock.releaseLock();
   }
+}
+
+/***** TEACHER DASHBOARD: ANSWER CHECKING TOGGLE *****/
+//
+// Same pattern as card visibility above, but a separate "Settings" tab
+// (columns: Subject, CheckingEnabled) since this isn't about individual
+// cards. A subject with no row here defaults to checking ON, so existing
+// grades/subjects are unaffected until a teacher explicitly turns one off.
+
+function getOrCreateSettingsSheet(ss) {
+  let sheet = ss.getSheetByName(SETTINGS_SHEET_NAME);
+
+  if (!sheet) {
+    sheet = ss.insertSheet(SETTINGS_SHEET_NAME);
+    sheet.getRange(1, 1, 1, 2).setValues([["Subject", "CheckingEnabled"]]);
+  }
+
+  return sheet;
+}
+
+function isCheckingEnabled(grade, subject) {
+  const spreadsheetId = SPREADSHEETS_BY_GRADE[grade];
+  if (!spreadsheetId) return true;
+
+  const ss = SpreadsheetApp.openById(spreadsheetId);
+  const sheet = ss.getSheetByName(SETTINGS_SHEET_NAME);
+  if (!sheet) return true;
+
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) return true;
+
+  const values = sheet.getRange(2, 1, lastRow - 1, 2).getValues();
+
+  for (let i = 0; i < values.length; i++) {
+    if (cleanSubject(values[i][0]) === subject) {
+      const raw = values[i][1];
+      return !(raw === false || String(raw).trim().toLowerCase() === "false");
+    }
+  }
+
+  return true; // no row for this subject yet -> checking stays on
+}
+
+function setCheckingEnabled(grade, subject, enabled) {
+  const spreadsheetId = SPREADSHEETS_BY_GRADE[grade];
+  if (!spreadsheetId) return;
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+
+  try {
+    const ss = SpreadsheetApp.openById(spreadsheetId);
+    const sheet = getOrCreateSettingsSheet(ss);
+    const lastRow = sheet.getLastRow();
+
+    if (lastRow >= 2) {
+      const values = sheet.getRange(2, 1, lastRow - 1, 1).getValues();
+
+      for (let i = 0; i < values.length; i++) {
+        if (cleanSubject(values[i][0]) === subject) {
+          sheet.getRange(i + 2, 2).setValue(enabled);
+          return;
+        }
+      }
+    }
+
+    sheet.appendRow([subject, enabled]);
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+/***** TEACHER DASHBOARD: LEADERBOARD TOGGLE *****/
+//
+// Global, not scoped to a grade or subject, so it lives in script
+// properties rather than any one grade's spreadsheet.
+
+function isLeaderboardEnabled() {
+  const value = PropertiesService.getScriptProperties().getProperty(LEADERBOARD_ENABLED_PROPERTY);
+  return value !== "false"; // unset -> on by default
+}
+
+function setLeaderboardEnabled(enabled) {
+  PropertiesService.getScriptProperties().setProperty(LEADERBOARD_ENABLED_PROPERTY, enabled ? "true" : "false");
 }
 
 /***** CLASS LEADERBOARD *****/
