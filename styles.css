@@ -436,6 +436,28 @@ button {
   color: #b00020;
 }
 
+.teacher-setting-row-subtle {
+  margin-top: 28px;
+  padding: 10px 14px;
+  background: transparent;
+  border-style: dashed;
+}
+
+.teacher-setting-row-subtle strong {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.teacher-setting-row-subtle .helper {
+  font-size: 12px;
+}
+
+.teacher-setting-row-subtle button {
+  font-size: 13px;
+  padding: 8px 14px;
+}
+
 /***** TYPED ANSWER FEEDBACK *****/
 
 #answerFeedbackMessage.correct { color: #0f7a3b; font-weight: 700; }
