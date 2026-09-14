@@ -12,7 +12,9 @@ const state = {
   activeCardId: null,
   practiceMode: "dashboard",
   practicePool: [],
-  language: "en"
+  language: "en",
+  checkingEnabled: true, // for the currently loaded grade/subject
+  leaderboardEnabled: true // global, not grade/subject scoped
 };
 
 const els = {
@@ -40,6 +42,7 @@ const els = {
   cardMissingMessage: document.getElementById("cardMissingMessage"),
   questionImage: document.getElementById("questionImage"),
   answerImage: document.getElementById("answerImage"),
+  answerInputGroup: document.getElementById("answerInputGroup"),
   studentAnswer: document.getElementById("studentAnswer"),
   checkAnswerButton: document.getElementById("checkAnswerButton"),
   answerFeedbackMessage: document.getElementById("answerFeedbackMessage"),
@@ -161,15 +164,15 @@ async function loadDashboard() {
   setMessage(els.lookupMessage, "Loading dashboard...", "");
 
   try {
-    const [cardsMeta, hiddenCardIds] = await Promise.all([
+    const [cardsMeta, gradeSubjectSettings] = await Promise.all([
       fetchCardsMeta(),
-      fetchHiddenCardIds(state.grade, state.subject)
+      fetchGradeSubjectSettings(state.grade, state.subject)
     ]);
 
     let dashboardData;
 
     if (isGuestMode()) {
-      dashboardData = buildGuestDashboard(cardsMeta, hiddenCardIds);
+      dashboardData = buildGuestDashboard(cardsMeta, gradeSubjectSettings.hiddenCardIds);
     } else {
       dashboardData = await fetchDashboardData();
     }
@@ -180,7 +183,8 @@ async function loadDashboard() {
 
     state.dashboard = dashboardData;
     state.cardsMeta = cardsMeta;
-    state.hiddenCardIds = hiddenCardIds;
+    state.hiddenCardIds = gradeSubjectSettings.hiddenCardIds;
+    state.checkingEnabled = gradeSubjectSettings.checkingEnabled;
 
     renderDashboard();
 
@@ -250,16 +254,22 @@ function buildGuestDashboard(cardsMeta, hiddenCardIds) {
   };
 }
 
-async function fetchHiddenCardIds(grade, subject) {
+async function fetchGradeSubjectSettings(grade, subject) {
   const url = `${API_URL}?action=cardVisibility&grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}`;
+  const fallback = { hiddenCardIds: [], checkingEnabled: true };
 
   try {
     const response = await fetch(url);
-    if (!response.ok) return [];
+    if (!response.ok) return fallback;
     const data = await response.json();
-    return data.found ? (data.hiddenCardIds || []) : [];
+    if (!data.found) return fallback;
+
+    return {
+      hiddenCardIds: data.hiddenCardIds || [],
+      checkingEnabled: data.checkingEnabled !== false
+    };
   } catch (error) {
-    return [];
+    return fallback;
   }
 }
 
@@ -460,6 +470,11 @@ function renderPracticeCard() {
   els.practiceTitle.textContent = `Card ${cardId}`;
   els.practiceModeLabel.textContent = getPracticeModeLabel();
 
+  // A teacher can turn off typed-answer checking for this grade/subject;
+  // when off, hide the input and Check button but leave Show Answer alone.
+  els.answerInputGroup.classList.toggle("hidden", !state.checkingEnabled);
+  els.checkAnswerButton.classList.toggle("hidden", !state.checkingEnabled);
+
   // Important: clear old images every time a new card opens.
   // This prevents a missing card from accidentally showing the previous card's answer.
   els.questionImage.classList.add("hidden");
@@ -564,6 +579,8 @@ function getActiveCardMeta() {
 }
 
 async function checkStudentAnswer() {
+  if (!state.checkingEnabled) return; // button should already be hidden; this is a safety net
+
   const cardId = state.activeCardId;
   if (!cardId) return;
 
@@ -959,6 +976,24 @@ function initLeaderboard() {
   leaderboardEls.viewGradeButton.addEventListener("click", () => setLeaderboardView("grade"));
   leaderboardEls.gradeFilter.addEventListener("change", loadLeaderboard);
   leaderboardEls.subjectFilter.addEventListener("change", loadLeaderboard);
+
+  loadGlobalSettings();
+}
+
+async function loadGlobalSettings() {
+  try {
+    const response = await fetch(`${API_URL}?action=settings`);
+    const data = await response.json();
+    state.leaderboardEnabled = data.found ? data.leaderboardEnabled !== false : true;
+  } catch (error) {
+    state.leaderboardEnabled = true;
+  }
+
+  syncLeaderboardButtonVisibility();
+}
+
+function syncLeaderboardButtonVisibility() {
+  leaderboardEls.openButton.classList.toggle("hidden", !state.leaderboardEnabled);
 }
 
 function setLeaderboardView(view) {
@@ -976,6 +1011,8 @@ function setLeaderboardView(view) {
 }
 
 function openLeaderboard() {
+  if (!state.leaderboardEnabled) return; // button should already be hidden; this is a safety net
+
   document.getElementById("loginPanel")?.classList.add("hidden");
   document.getElementById("dashboardPanel")?.classList.add("hidden");
   document.getElementById("practicePanel")?.classList.add("hidden");
@@ -1092,13 +1129,17 @@ const teacherEls = {
   gradeSelect: document.getElementById("teacherGradeSelect"),
   subjectSelect: document.getElementById("teacherSubjectSelect"),
   manageMessage: document.getElementById("teacherManageMessage"),
-  cardList: document.getElementById("teacherCardList")
+  cardList: document.getElementById("teacherCardList"),
+  leaderboardToggleButton: document.getElementById("leaderboardToggleButton"),
+  checkingToggleButton: document.getElementById("checkingToggleButton")
 };
 
 const teacherState = {
   password: "",
   cardsMeta: [],
-  hiddenCardIds: []
+  hiddenCardIds: [],
+  leaderboardEnabled: true,
+  checkingEnabled: true
 };
 
 function initTeacherDashboard() {
@@ -1109,6 +1150,8 @@ function initTeacherDashboard() {
   teacherEls.loginForm.addEventListener("submit", handleTeacherLogin);
   teacherEls.gradeSelect.addEventListener("change", loadTeacherCards);
   teacherEls.subjectSelect.addEventListener("change", loadTeacherCards);
+  teacherEls.leaderboardToggleButton.addEventListener("click", toggleLeaderboardEnabled);
+  teacherEls.checkingToggleButton.addEventListener("click", toggleCheckingEnabled);
 }
 
 function openTeacherDashboard() {
@@ -1140,7 +1183,91 @@ function showTeacherLoginView() {
 function showTeacherManageView() {
   teacherEls.loginView.classList.add("hidden");
   teacherEls.manageView.classList.remove("hidden");
+  loadTeacherGlobalSettings();
   loadTeacherCards();
+}
+
+async function loadTeacherGlobalSettings() {
+  try {
+    const response = await fetch(`${API_URL}?action=settings`);
+    const data = await response.json();
+    teacherState.leaderboardEnabled = data.found ? data.leaderboardEnabled !== false : true;
+  } catch (error) {
+    teacherState.leaderboardEnabled = true;
+  }
+
+  renderLeaderboardToggle();
+}
+
+function renderLeaderboardToggle() {
+  const enabled = teacherState.leaderboardEnabled;
+  teacherEls.leaderboardToggleButton.textContent = enabled ? "Leaderboard: On" : "Leaderboard: Off";
+  teacherEls.leaderboardToggleButton.classList.toggle("setting-on", enabled);
+  teacherEls.leaderboardToggleButton.classList.toggle("setting-off", !enabled);
+}
+
+async function toggleLeaderboardEnabled() {
+  const nextEnabled = !teacherState.leaderboardEnabled;
+  teacherEls.leaderboardToggleButton.disabled = true;
+
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({ action: "setLeaderboardEnabled", password: teacherState.password, enabled: nextEnabled })
+    });
+    const data = await response.json();
+
+    if (!data.found) {
+      setMessage(teacherEls.manageMessage, data.error || "Could not update the leaderboard setting.", "error");
+      return;
+    }
+
+    teacherState.leaderboardEnabled = nextEnabled;
+    state.leaderboardEnabled = nextEnabled; // reflect immediately in this same tab too
+    renderLeaderboardToggle();
+    syncLeaderboardButtonVisibility();
+  } catch (error) {
+    setMessage(teacherEls.manageMessage, "Could not update the leaderboard setting. Please try again.", "error");
+  } finally {
+    teacherEls.leaderboardToggleButton.disabled = false;
+  }
+}
+
+function renderCheckingToggle() {
+  const enabled = teacherState.checkingEnabled;
+  teacherEls.checkingToggleButton.textContent = enabled ? "Checking: On" : "Checking: Off";
+  teacherEls.checkingToggleButton.classList.toggle("setting-on", enabled);
+  teacherEls.checkingToggleButton.classList.toggle("setting-off", !enabled);
+}
+
+async function toggleCheckingEnabled() {
+  const grade = teacherEls.gradeSelect.value;
+  const subject = teacherEls.subjectSelect.value;
+  const nextEnabled = !teacherState.checkingEnabled;
+
+  teacherEls.checkingToggleButton.disabled = true;
+
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({ action: "setCheckingEnabled", password: teacherState.password, grade, subject, enabled: nextEnabled })
+    });
+    const data = await response.json();
+
+    if (!data.found) {
+      setMessage(teacherEls.manageMessage, data.error || "Could not update the checking setting.", "error");
+      return;
+    }
+
+    teacherState.checkingEnabled = nextEnabled;
+    renderCheckingToggle();
+  } catch (error) {
+    setMessage(teacherEls.manageMessage, "Could not update the checking setting. Please try again.", "error");
+  } finally {
+    teacherEls.checkingToggleButton.disabled = false;
+  }
 }
 
 async function handleTeacherLogin(event) {
@@ -1177,15 +1304,17 @@ async function loadTeacherCards() {
   teacherEls.cardList.innerHTML = "";
 
   try {
-    const [cardsMeta, hiddenCardIds] = await Promise.all([
+    const [cardsMeta, gradeSubjectSettings] = await Promise.all([
       fetchCardsMetaFor(grade, subject),
-      fetchHiddenCardIds(grade, subject)
+      fetchGradeSubjectSettings(grade, subject)
     ]);
 
     teacherState.cardsMeta = cardsMeta;
-    teacherState.hiddenCardIds = hiddenCardIds;
+    teacherState.hiddenCardIds = gradeSubjectSettings.hiddenCardIds;
+    teacherState.checkingEnabled = gradeSubjectSettings.checkingEnabled;
 
     renderTeacherCards();
+    renderCheckingToggle();
   } catch (error) {
     setMessage(teacherEls.manageMessage, "Could not load cards. Please try again.", "error");
   }

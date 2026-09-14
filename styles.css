@@ -408,6 +408,34 @@ button {
   }
 }
 
+.teacher-setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fbfcff;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.teacher-setting-row .helper {
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+
+.teacher-setting-row button.setting-on {
+  background: #d9f2e1;
+  color: #0f7a3b;
+}
+
+.teacher-setting-row button.setting-off {
+  background: #f3d9d9;
+  color: #b00020;
+}
+
 /***** TYPED ANSWER FEEDBACK *****/
 
 #answerFeedbackMessage.correct { color: #0f7a3b; font-weight: 700; }
