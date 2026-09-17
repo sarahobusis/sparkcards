@@ -47,13 +47,13 @@
     "title": "",
     "questionImageEn": "images/2A_Q_en.png",
     "answerImageEn": "images/2A_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2A_Q_es.png",
+    "answerImageEs": "images/2A_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "1.​Who controlled the American\n colonies?\n 2.​Why were the colonists angry?",
     "answerReadAloudEn": "1.​The British monarchy\n 2.​Colonists had no power to make\n laws or control taxes",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "1.​¿Quién controlaba las colonias\n americanas?\n 2.​¿Por qué estaban enojados los\n colonos?",
+    "answerReadAloudEs": "1.​La monarquía británica\n 2.​Los colonos no tenían poder para\n crear leyes ni controlar los\n impuestos."
   },
   {
     "id": "2B",
@@ -61,13 +61,13 @@
     "title": "",
     "questionImageEn": "images/2B_Q_en.png",
     "answerImageEn": "images/2B_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2B_Q_es.png",
+    "answerImageEs": "images/2B_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "What is the main purpose in the\nDeclaration of Independence?",
     "answerReadAloudEn": "Tells the British Monarchy that the\nColonists want their own government",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "¿Qué es el? ¿Cuál es el propósito\nprincipal de la Declaración de\nIndependencia?",
+    "answerReadAloudEs": "Le comunica a la monarquía británica\nque los colonos desean tener su propio\ngobierno."
   },
   {
     "id": "2C",
@@ -75,13 +75,13 @@
     "title": "",
     "questionImageEn": "images/2C_Q_en.png",
     "answerImageEn": "images/2C_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2C_Q_es.png",
+    "answerImageEs": "images/2C_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "1.​Who fought the\n Revolutionary War?\n 2.​What happened after the war?",
     "answerReadAloudEn": "1.​Britain and the colonists\n 2.​The United States became its own\n nation with a Representative\n Democracy",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "1.​¿Quiénes lucharon en la\n Revolución?¿Y la guerra?\n 2.​Qué ¿Sucedió después de la guerra?",
+    "answerReadAloudEs": "1.​Gran Bretaña y los colonos\n 2.​Estados Unidos se convirtió en una\n nación independiente con una\n democracia representativa."
   },
   {
     "id": "2D",
@@ -89,13 +89,13 @@
     "title": "",
     "questionImageEn": "images/2D_Q_en.png",
     "answerImageEn": "images/2D_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2D_Q_es.png",
+    "answerImageEs": "images/2D_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "Name that Founding Father!\n 1)​Who was the first president of the\n United States?\n 2)​Who wrote the Declaration of\n Independence?\n 3)​Who wrote the Constitution?",
     "answerReadAloudEn": "1)​George Washington\n 2)​Thomas Jefferson\n 3)​James Madison",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "norte¡Nombra a ese Padre\nFundador!\n 1)​¿Quién fue el primer presidente\n de los Estados Unidos?\n 2)​¿Quién escribió la Declaración de\n Independencia?\n 3)​¿Quién redactó la Constitución?",
+    "answerReadAloudEs": "1)​George Washington\n 2)​Thomas Jefferson\n 3)​James Madison"
   },
   {
     "id": "2E",
@@ -103,13 +103,13 @@
     "title": "",
     "questionImageEn": "images/2E_Q_en.png",
     "answerImageEn": "images/2E_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2E_Q_es.png",
+    "answerImageEs": "images/2E_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "1.​What were the Articles of\n Confederation?\n 2.​Why did they fail?",
     "answerReadAloudEn": "1.​The first rulebook for the U.S.\n Government\n 2.​They gave too much freedom to\n state government and not enough\n power to the federal government",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "1.​¿Qué eran los Artículos de la\n Confederación?\n 2.​¿Por qué fracasaron?",
+    "answerReadAloudEs": "1.​El primer reglamento del\n Gobierno de los Estados Unidos\n 2.​Le dieron demasiada libertad al\n gobierno estatal y no suficiente\n poder al gobierno federal."
   },
   {
     "id": "2F",
@@ -117,13 +117,13 @@
     "title": "",
     "questionImageEn": "images/2F_Q_en.png",
     "answerImageEn": "images/2F_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/2F_Q_es.png",
+    "answerImageEs": "images/2F_A_es.png",
     "acceptedAnswers": [],
     "questionReadAloudEn": "America’s first two political parties\nwere the Federalists and Anti-Federalists.\nBriefly describe each of their beliefs\nabout government.",
     "answerReadAloudEn": "●​ Federalists: supported a strong\n federal government and the\n Constitution\n ●​ Anti-Federalists: supported more\n power for the states and pushed\n to have a Bills of Rights to protect\n individual freedoms",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEs": "Los dos primeros partidos políticos\nde Estados Unidos fueron losfederalistasy\nAntifederalistas.\nDescriba brevemente las creencias de\ncada uno de ellos sobre el gobierno.",
+    "answerReadAloudEs": "●​ Federalistas:apoyó unfuerte\n federalgobierno y la Constitución\n ●​ Antifederalistas:apoyadomás\n potencia para el sestados y\n presionaron para tener una\n Declaración de Derechospara\n proteger a las personaslibertades"
   },
   {
     "id": "2G",
