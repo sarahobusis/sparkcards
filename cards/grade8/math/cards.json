@@ -7,7 +7,12 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["translation is a slide", "slide"],
+      ["reflection is a flip", "flip"],
+      ["rotation is a turn", "turn"],
+      ["dilation is a shrink or grow", "shrink or grow", "changes the size"]
+    ],
     "questionReadAloudEn": "What are the 4 kinds of\ngeometric\ntransformations and\nwhat do they do?",
     "answerReadAloudEn": "1.​Translation – Slide\n 2.​Reflection – Flip\n 3.​Rotations – Turn\n 4.​Dilation – Shrink/Grow\n ` (different size)",
     "questionReadAloudEs": "",
@@ -21,7 +26,12 @@
     "answerImageEn": "images/1B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["translation"],
+      ["dilation"],
+      ["reflection"],
+      ["rotation"]
+    ],
     "questionReadAloudEn": "Below there are images that show the 4 types\nof transformations.\nName what transformation is happening in\neach.\n1.\n2.\n3.\n4.",
     "answerReadAloudEn": "1.​ Translation\n 2.​ Dilation\n 3.​ Reflection\n 4.​ Rotation",
     "questionReadAloudEs": "",
@@ -35,7 +45,10 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["congruent means the shapes have the exact same shape size and angles", "same shape size and angles"],
+      ["rotations reflections and translations", "rotation reflection translation"]
+    ],
     "questionReadAloudEn": "1.​What does it mean if\n shapes are congruent?\n 2.​What are the transformations\n that keep shapes congruent?",
     "answerReadAloudEn": "1.​Congruent means the shapes\n have the exact same shape,\n size, and angles.\n 2.​Rotations, Reflections and\n Translations",
     "questionReadAloudEs": "",
@@ -49,7 +62,9 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["similar shapes must have the same exact shape and angles but can be different sizes", "same shape and angles but different sizes"]
+    ],
     "questionReadAloudEn": "What does it\nmean if two shapes\nare similar?",
     "answerReadAloudEn": "Similar shapes must\nhave the same exact\nshape and angles,\nbut can be different\nsizes.",
     "questionReadAloudEs": "",
@@ -63,7 +78,10 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a scale factor is the number you multiply by to make a shape bigger or smaller", "the number you multiply by to resize a shape"],
+      ["a scale factor of one fourth makes the shape smaller and a scale factor of 4 makes the shape 4 times as big", "fractions shrink the shape, numbers greater than 1 make it bigger"]
+    ],
     "questionReadAloudEn": "1.​ What is a scale\n factor?\n 2.​ What is the\n difference between a\n scale factor of ¼ and\n 4?",
     "answerReadAloudEn": "1.​ A scale factor is the\n number you multiply\n by to make a shape\n bigger or smaller\n 2.​\n ●​ ¼ makes the shape ¼\n the size (smaller)\n ●​ 4 makes the shape 4\n times as big",
     "questionReadAloudEs": "",
@@ -91,7 +109,11 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["graph"],
+      ["equation"],
+      ["table"]
+    ],
     "questionReadAloudEn": "What are the 3 main\nways to represent an\nalgebraic relationship?",
     "answerReadAloudEn": "Graph, Equation, Table",
     "questionReadAloudEs": "",
@@ -105,7 +127,10 @@
     "answerImageEn": "images/3B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["m is the slope", "m"],
+      ["b is the starting point", "b"]
+    ],
     "questionReadAloudEn": "1)​What is the “recipe” for an\n equation that represents a\n linear relationship?\n 2)​What letter is the slope?\n 3)​What letter is the starting\n point?",
     "answerReadAloudEn": "1)​\n 2)​“M” is the slope\n 3)​“B” is the starting point",
     "questionReadAloudEs": "",
@@ -119,7 +144,10 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["find two points on the graph count the rise and the run and write slope as a fraction", "rise over run between two points"],
+      ["find the number where the graphed line crosses the y axis", "where the line crosses the y-axis"]
+    ],
     "questionReadAloudEn": "1.​Explain how you can find the\n slope from the graph below.\n 2.​Explain how you find the\n starting point from the graph\n below.",
     "answerReadAloudEn": "1.​\n a.​Find two points on the graph\n b.​Count rise (how far up or down)\n c.​Count run (how far left or right)\n ∆𝑦\n d.​Write slope as fraction: ∆𝑥\n 2. Find the number where the\n graphed line crosses y-axis\n Example: in this picture (0,2)",
     "questionReadAloudEs": "",
@@ -133,7 +161,10 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["make a fraction showing the change in y over the change in x", "rise over run from the table"],
+      ["the number when x equals 0", "the starting point is the y value when x is 0"]
+    ],
     "questionReadAloudEn": "1.​Explain how you find the slope\n from the table below?\n 2.​Explain how you find the\n starting point from the table\n below\nExample)",
     "answerReadAloudEn": "1. Make a fraction showing\nexample:\n Slope = 2\n 3\n2. The number next to when x = 0\n Starting point: 4",
     "questionReadAloudEs": "",
@@ -147,7 +178,10 @@
     "answerImageEn": "images/3E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["positive is going up to the right", "going up to the right"],
+      ["negative is going down to the right", "going down to the right"]
+    ],
     "questionReadAloudEn": "1)​How can you tell if a line on a graph\n shows a positive relationship?\n 2)​How can you tell if a line on a graph\n shows a negative relationship?",
     "answerReadAloudEn": "1)​ Positive: going up\n to the right\n 2)​ Negative: going down\n to the right",
     "questionReadAloudEs": "",
@@ -161,7 +195,10 @@
     "answerImageEn": "images/3F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the slope shows how much the plant is growing over time", "rate the plant grows over time"],
+      ["the height of the plant at day zero", "the starting height"]
+    ],
     "questionReadAloudEn": "In the situation graphed below:\n 1) What does the slope represent?\n 2) What does the starting point\n represent?",
     "answerReadAloudEn": "1)​The slope shows how much\n the plant is growing over time:\n ℎ𝑒𝑖𝑔ℎ𝑡 (𝑐𝑚)\n 𝑡𝑖𝑚𝑒(𝑑𝑎𝑦𝑠)\n 2)​The height of the plant at day\n zero",
     "questionReadAloudEs": "",
@@ -175,7 +212,10 @@
     "answerImageEn": "images/3G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["touches the y axis at 2", "y-intercept is 2"],
+      ["has a slope of one third", "slope of 1/3"]
+    ],
     "questionReadAloudEn": "What does the graph of this\nequation look like?\n 1\n 𝑦= 𝑥 + 2 3",
     "answerReadAloudEn": "A straight line that:\n ●​ touches the y-axis at 2\n ●​ has a slope of ⅓\n (every time it goes up by 1, it goes over by 3)",
     "questionReadAloudEs": "",
@@ -189,7 +229,9 @@
     "answerImageEn": "images/4A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["solving an equation means finding the value of the variable that will make the left side equal the right side", "finding the value that makes both sides equal"]
+    ],
     "questionReadAloudEn": "What does it mean to solve an equation?\nExample: 2𝑥+ 3 = 13",
     "answerReadAloudEn": "Solving an equation means finding the\nvalue of the variable that will make\nthe left side equal the right side.\n Example: x = 5",
     "questionReadAloudEs": "",
@@ -203,7 +245,11 @@
     "answerImageEn": "images/4B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["one solution because x equals only one number", "one solution"],
+      ["no solution because it is never true", "no solution"],
+      ["infinite solutions because it is always true", "infinite solutions"]
+    ],
     "questionReadAloudEn": "Most equations have one solution, but some\nequations have no solutions, or more than\none solution.\nMr. Cox solved three different equations\nand each of his last lines of work are below.\nIdentify: 1) the number of solution(s)\n 2) explain why\n Mr. Cox got: # of Explain solutions\n X = 0\n 5 = -5\n 9 = 9",
     "answerReadAloudEn": "Mr. Cox got: # of Explain\n solutions\n X = 0 ONE because x equals\n only one number SOLUTION\n 5 = -5 NO Because it’s never\n true. 5 does not =\n SOLUTION -5.\n 9 = 9 INFINITE because it’s\n always true. 9\n SOLUTIONS always equals 9.",
     "questionReadAloudEs": "",
@@ -217,7 +263,9 @@
     "answerImageEn": "images/4C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["we cant solve this because we have two different variables in only one equation", "two variables in one equation cannot be solved"]
+    ],
     "questionReadAloudEn": "Why can’t we find Mr. Cox and Ms.\nBank’s age with this equation:\n C + B = 55\nC = Cox’s Age B= Banks’ Age",
     "answerReadAloudEn": "We can't solve this because we have\ntwo different variables in only one\nequation.",
     "questionReadAloudEs": "",
@@ -231,7 +279,9 @@
     "answerImageEn": "images/4D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["two related equations that have the same variables and must be solved together", "two equations with the same variables solved together"]
+    ],
     "questionReadAloudEn": "What is a system of equations?",
     "answerReadAloudEn": "Two related equations that have the\nsame variables and must be solved\ntogether\n Ex: C + B = 55\n B = 2C - 41",
     "questionReadAloudEs": "",
@@ -245,7 +295,9 @@
     "answerImageEn": "images/4E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["since the second equation says b equals 2c minus 41 you can replace the b in the first equation with 2c minus 41", "substitute the expression for b into the first equation"]
+    ],
     "questionReadAloudEn": "What is a good first step to ●\n ●solve this system of equations? Explain.\n C + B = 55\n B = 2C - 41",
     "answerReadAloudEn": "●​ Since the 2nd equation says, B equals 2C - 41\n●​ You can replace the “B” in the first\n equation with “2C – 41”\nNow you can solve:\n C + 2C - 41 = 55",
     "questionReadAloudEs": "",
@@ -259,7 +311,10 @@
     "answerImageEn": "images/4F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["(2,1)", "2,1"],
+      ["the two lines would intersect at the point 2 1 on the graph", "the lines intersect at that point"]
+    ],
     "questionReadAloudEn": "For the system below:\n y + 2x = 5\n y = 4x - 7\nThe solution is x = 2 and y = 1\n 1) How would you express this answer as a\ncoordinate pair?\n2) For this system of equations, what would\nbe happening at this coordinate pair?",
     "answerReadAloudEn": "1)​ (2,1)\n 2)​The two lines would intersect\n at the point (2,1) on the graph",
     "questionReadAloudEs": "",
@@ -273,7 +328,11 @@
     "answerImageEn": "images/4G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["one solution"],
+      ["infinite solutions"],
+      ["no solutions"]
+    ],
     "questionReadAloudEn": "These graphs\n 1represent 3\nseparate\nsystems of\nequations.\n 2\nIdentify the\nnumber of\nsolutions each 3\ngraph has.",
     "answerReadAloudEn": "1)​ONE SOLUTION\n 2)​INFINITE SOLUTIONS\n 3)​NO SOLUTIONS",
     "questionReadAloudEs": "",
@@ -287,7 +346,10 @@
     "answerImageEn": "images/5A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a relationship is a function if each x value has only one y value", "each input has exactly one output"],
+      ["the table is not a function because the x value 4 gives you two different y values", "not a function because one x value has two y values"]
+    ],
     "questionReadAloudEn": "1)How do we tell if a\nrelationship is a function?\n2)Explain if this table is\nan example of a\nfunction.",
     "answerReadAloudEn": "1)​A relationship is a function if\n each x value has only one y value\n2) The table is not a function\nbecause the x-value 4 gives you two\ndifferent y-values ( 2 and 3).",
     "questionReadAloudEs": "",
@@ -301,7 +363,10 @@
     "answerImageEn": "images/5B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["yes"],
+      ["it is a function because for any value of x there is only one value of y", "passes the vertical line test"]
+    ],
     "questionReadAloudEn": "1.​Is this graph a\n function?\n2.​Explain why.",
     "answerReadAloudEn": "1. Yes\n2. It is a function because for any\nvalue of x there is only one value\nof y. (It passes the vertical line\ntest.)",
     "questionReadAloudEs": "",
@@ -315,7 +380,10 @@
     "answerImageEn": "images/5C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a linear graph looks like a straight line because it has a constant rate of change", "a straight line with constant rate of change"],
+      ["a linear table has a constant rate of change", "constant rate of change between rows"]
+    ],
     "questionReadAloudEn": "1.​Explain what a linear graph\n looks like\n 2.​Explain what a linear table\n looks like\n Note: you can sketch or draw an example.",
     "answerReadAloudEn": "1.) A linear\ngraph looks like\na straight line\nbecause it has a\nconstant rate of\nchange\n2.)A linear table\nhas a constant\nrate of chance\n(slope).",
     "questionReadAloudEs": "",
@@ -329,7 +397,11 @@
     "answerImageEn": "images/5D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["interval a is the fastest because the slope is steepest there", "the steepest part is the fastest"],
+      ["interval c is the slowest because the slope is less steep there", "the least steep part is slower"],
+      ["interval b is stopped because the slope is flat", "a flat slope means stopped"]
+    ],
     "questionReadAloudEn": "1.​ Where are they moving fastest? Explain?\n 2.​ Where are they moving, but going slow?\n Explain?\n 3.​ Where are\n they stopped?",
     "answerReadAloudEn": "1) Interval A is the fastest\n because the slope is steepest\n there\n 2) Interval C is the slowest\n because the slope is less\n steep there\n 3) Interval B is stopped\n because the slope is flat",
     "questionReadAloudEs": "",
@@ -343,7 +415,10 @@
     "answerImageEn": "images/5E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["volume is the number of cubic units needed to fill a 3d shape", "the number of unit cubes that fill a 3d shape"],
+      ["find the area of the base and multiply it by the height", "area of the base times the height"]
+    ],
     "questionReadAloudEn": "1)​What is volume?\n 2) How can you find the volume\nof ANY cylinder or prism? (like these)",
     "answerReadAloudEn": "1)Volume is the number of cubic\nunits needed to fill a 3D shape\n2) Find the area of the base and\nmultiply it by the height.",
     "questionReadAloudEs": "",
@@ -357,7 +432,9 @@
     "answerImageEn": "images/6A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["think of a number that times itself gives you that area, this is called finding the square root", "finding the square root means finding the number that multiplied by itself gives the area"]
+    ],
     "questionReadAloudEn": "If you know the area of a square, how\ncan you find the length of its sides?\nFor example:\n ?\n ?",
     "answerReadAloudEn": "Think of a number that times itself\ngives you that area.\n(This is also called: “finding the square root”)\nFor example:\n 81 = 9",
     "questionReadAloudEs": "",
@@ -371,7 +448,10 @@
     "answerImageEn": "images/6B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a rational number is any number that can be written as a ratio of two integers", "a number that can be written as a fraction of two integers"],
+      ["4", "-7", "4.6", "2.33", "2/5"]
+    ],
     "questionReadAloudEn": "Most numbers we use are called rational\nnumbers.\n 1.)​ Explain what a rational\n number is.\n 2.)​ Give two examples",
     "answerReadAloudEn": "1.) A rational number is any number\nthat can be written as a ratio of two\nintegers.\n 2\n2.) Examples: 4, , −7, 4. 6 , 2. 33, 25 3",
     "questionReadAloudEs": "",
@@ -385,7 +465,10 @@
     "answerImageEn": "images/6C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an irrational number is a decimal that goes on forever and does not repeat", "a number whose decimal never ends or repeats"],
+      ["square root of 2", "pi", "6.12938"]
+    ],
     "questionReadAloudEn": "1.)​ What is an irrational\n number?\n 2.)​ Give two examples",
     "answerReadAloudEn": "1.)​An irrational number is an unusual\n number that represents a decimal\n that goes on forever and does not\n repeat\n 2.)​Examples: 2 , π, 6. 12938...",
     "questionReadAloudEs": "",
@@ -399,7 +482,9 @@
     "answerImageEn": "images/6D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the hypotenuse is the longest side of the triangle and it is always opposite the right angle", "the longest side, opposite the right angle"]
+    ],
     "questionReadAloudEn": "1. Label the hypotenuse on the right\ntriangle below.\n2. How did you\nknow which side\nto label?",
     "answerReadAloudEn": "2. The hypotenuse\nis the longest side\nof the triangle and\nit is always\nopposite the right\nangle.",
     "questionReadAloudEs": "",
@@ -413,7 +498,9 @@
     "answerImageEn": "images/6E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["if you draw squares on all the sides the areas of the two smaller squares always add up to the area of the biggest square", "the sum of the squares of the two legs equals the square of the hypotenuse"]
+    ],
     "questionReadAloudEn": "What did Pythagoras figure out\nabout every right triangle in the\nworld? (i.e. The Pythagorean Theorem)",
     "answerReadAloudEn": "For every right triangle in the world:\n●​ if you draw squares on all the sides\n●​ the areas of the\n 2 smaller squares\n●​ always add up\n to the area of the\n biggest square.",
     "questionReadAloudEs": "",
@@ -441,7 +528,11 @@
     "answerImageEn": "images/6G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["draw a line between the two points", "connect the two points with a line"],
+      ["use that line to draw a right triangle", "make a right triangle using that line"],
+      ["count the lengths of the legs and use the pythagorean theorem", "use the pythagorean theorem with the leg lengths"]
+    ],
     "questionReadAloudEn": "How do you\nfind the\ndistance\nbetween point\nK and L?",
     "answerReadAloudEn": "1st- Draw a line between point K and L\n2nd- Use that line to draw a right\ntriangle\n3rd - Count the lengths of the legs and\nuse the Pythagorean Theorem",
     "questionReadAloudEs": "",
@@ -455,7 +546,9 @@
     "answerImageEn": "images/7A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["180 degrees", "180"]
+    ],
     "questionReadAloudEn": "What do the interior angles\nof any triangle in the world add up\nto?",
     "answerReadAloudEn": "180°",
     "questionReadAloudEs": "",
@@ -469,7 +562,9 @@
     "answerImageEn": "images/7B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["add the angles you have and subtract them from 180", "subtract the known angles from 180"]
+    ],
     "questionReadAloudEn": "If you know 2 angles of a triangle,\nhow do you find the missing angle\nmeasurement? Example:",
     "answerReadAloudEn": "Add the angles you have,\nand subtract them from 180.\nExample answer:\n X +105 + 45 = 180\n X + 150 = 180",
     "questionReadAloudEs": "",
@@ -483,7 +578,9 @@
     "answerImageEn": "images/7C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["write an equation setting all three angles equal to 180 and solve for x", "add all the angle expressions, set equal to 180, solve", "x = 30", "30"]
+    ],
     "questionReadAloudEn": "How do you find the\nvalue of x in the triangle below?",
     "answerReadAloudEn": "Since all 3 angles add up to 180.\n Write an equation like this:\n 3x + 2x + x = 180\n Solve the equation for x\n 6x=180 so x=30",
     "questionReadAloudEs": "",
@@ -497,7 +594,10 @@
     "answerImageEn": "images/7D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["180 degrees", "180"],
+      ["because these two angles make up a straight line and all straight lines are 180 degrees", "they form a straight line which is always 180"]
+    ],
     "questionReadAloudEn": "1)​What do angles a and b add up to?\n 2)​ Explain why.",
     "answerReadAloudEn": "1)​ 180°\n 2)​ Because these two angles make\n up a straight line and all straight\n lines are 180°.",
     "questionReadAloudEs": "",
@@ -511,7 +611,10 @@
     "answerImageEn": "images/7E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["all big angles are congruent", "the big angles are equal to each other"],
+      ["a small angle plus a big angle equals 180", "small angle plus big angle is 180"]
+    ],
     "questionReadAloudEn": "The picture below shows two parallel\nlines cut by a transversal\n1) What is true about all the BIG\nangles?\n2) What is true about a small angle\nPLUS a big angle?",
     "answerReadAloudEn": "1) All BIG angles are congruent\n<B = <B\n2) Small angle plus big angle\n<B + <s = 180",
     "questionReadAloudEs": "",
@@ -525,7 +628,10 @@
     "answerImageEn": "images/7F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["angles 2 7 and 6 are all 40 degrees because they are all small angles", "the other small angles are also 40 degrees"],
+      ["angle 5 is 140 degrees because small angles plus big angles equal 180", "140 degrees"]
+    ],
     "questionReadAloudEn": "The diagram below shows two\nparallel lines cut by a transversal\nIf angle 3 is 40°:\n 1.​Name 3 other angles that are\n also 40°\n 1.​What is the measure of angle\n 5?",
     "answerReadAloudEn": "1.​Angles 2, 7, and 6 are all 40°\n because they are all small\n angles.\n 2.​Angle 5 is 140° because Small\n angles + Big Angles = 180",
     "questionReadAloudEs": "",
@@ -539,7 +645,9 @@
     "answerImageEn": "images/8A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["5 x 5 x 5 x 5, multiply the base by itself the number of times the exponent tells you", "multiply the base by itself as many times as the exponent says"]
+    ],
     "questionReadAloudEn": "4\nWhat does 5\nmean?",
     "answerReadAloudEn": "5 x 5 x 5 x 5\n Multiply the base (5) by itself the\n number of times the exponent (4)\n tells you",
     "questionReadAloudEs": "",
@@ -553,7 +661,9 @@
     "answerImageEn": "images/8B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["1", "any number to the zero power equals 1", "one"]
+    ],
     "questionReadAloudEn": "Evaluate:\n 1)​50=\n 2)​90=\n 3) 4, 5670=\n4) What does any number to\nthe zero power equal?",
     "answerReadAloudEn": "1)​ 1\n 2)​ 1\n 3)​ 1\n 4)​ 1",
     "questionReadAloudEs": "",
@@ -581,7 +691,9 @@
     "answerImageEn": "images/8D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["negative exponent means one over the positive exponent", "a negative exponent means 1 over that base to the positive exponent", "reciprocal with a positive exponent"]
+    ],
     "questionReadAloudEn": "Fill in the table below with\n equivalent values:\n −3 = ? 4",
     "answerReadAloudEn": "−3 = 1 4\n 3\n 4",
     "questionReadAloudEs": "",
@@ -595,7 +707,9 @@
     "answerImageEn": "images/8E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["when multiplying numbers with the same base you add the exponents", "add the exponents"]
+    ],
     "questionReadAloudEn": "1.​Simplify:\n 2.​Finish this sentence:\n “When multiplying numbers\n with the same base you…”",
     "answerReadAloudEn": "1.​\n 2.​When multiplying numbers\n with the same base you ADD\n the exponents",
     "questionReadAloudEs": "",
@@ -609,7 +723,9 @@
     "answerImageEn": "images/8F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["when dividing numbers with the same base you subtract the exponents", "subtract the exponents"]
+    ],
     "questionReadAloudEn": "1.​Simplify:\n 2.​Finish this sentence:\n “When dividing numbers\n with the same base you…”",
     "answerReadAloudEn": "1.​\n 2.​When dividing numbers with\n the same base you SUBTRACT\n the exponents",
     "questionReadAloudEs": "",
@@ -623,7 +739,9 @@
     "answerImageEn": "images/8G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["when raising an exponent to an exponent you multiply the exponents", "multiply the exponents"]
+    ],
     "questionReadAloudEn": "1.​Simplify:\n 2.​Finish this sentence:\n “When raising an exponent\n to an exponent you…”",
     "answerReadAloudEn": "1.​When raising an exponent to\n an exponent you\n MULTIPLY the exponents",
     "questionReadAloudEs": "",
@@ -637,7 +755,9 @@
     "answerImageEn": "images/8H_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["move the decimal point 6 places to the right and fill empty places with zeros", "9,230,000", "9230000"]
+    ],
     "questionReadAloudEn": "The number below is written\nin scientific notation.\n 6\n 9. 23 𝑥 10\nExplain how you would write\nthis number in standard\nform.",
     "answerReadAloudEn": "●​ Because the exponent of 10 is 6, move\n the decimal 6 places to the right\n ●​ Put a 0 for each empty place value\n ●​ The number would be:\n 9, 230, 000",
     "questionReadAloudEs": "",
@@ -651,7 +771,9 @@
     "answerImageEn": "images/8I_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["7.8 x 10 to the negative 3", "7.8 x 10^-3", "7.8e-3"]
+    ],
     "questionReadAloudEn": "Write the number below in\n Scientific Notation.\n 0. 0078",
     "answerReadAloudEn": "−3\n 7. 8 𝑥 10",
     "questionReadAloudEs": "",
@@ -665,7 +787,9 @@
     "answerImageEn": "images/9A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["positive correlation goes up and to the right", "up and to the right"]
+    ],
     "questionReadAloudEn": "Sketch a scatter\nplot with a positive\nlinear correlation.",
     "answerReadAloudEn": "Positive: up and to the right",
     "questionReadAloudEs": "",
@@ -679,7 +803,9 @@
     "answerImageEn": "images/9B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["negative correlation goes down and to the left", "down and to the left"]
+    ],
     "questionReadAloudEn": "Sketch a scatter\nplot with a negative\nlinear correlation",
     "answerReadAloudEn": "Negative: down and to the left",
     "questionReadAloudEs": "",
@@ -707,7 +833,9 @@
     "answerImageEn": "images/9D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["draw a line that goes through the middle of the data", "a line through the middle of the data points"]
+    ],
     "questionReadAloudEn": "Explain how you would draw a\nline of best fit for this graph.",
     "answerReadAloudEn": "Draw a line that:\n ●​ goes through the middle of the\n data",
     "questionReadAloudEs": "",
@@ -721,7 +849,9 @@
     "answerImageEn": "images/CARD5_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["negative exponent means one over the positive exponent", "a negative exponent means 1 over that base to the positive exponent"]
+    ],
     "questionReadAloudEn": "−5 = ?9\n = 1\n ? 4\n 7\n = 1\n ? 8\n 2",
     "answerReadAloudEn": "−5 = 1 9\n 5\n 9\n −4 = 1\n 47 7\n −8 = 1\n 82 2",
     "questionReadAloudEs": "",
