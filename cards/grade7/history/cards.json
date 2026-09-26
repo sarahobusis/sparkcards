@@ -7,11 +7,26 @@
     "answerImageEn": "images/0A_A_en.png",
     "questionImageEs": "images/0A_Q_es.png",
     "answerImageEs": "images/0A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["geography"],
+      ["religion"],
+      ["achievement", "achievements"],
+      ["politics"],
+      ["economy"],
+      ["social structures", "social structure"]
+    ],
     "questionReadAloudEn": "We use “GRAPES” to help us\n remember the six features of\n civilizations.\n What does each letter stand for?",
     "answerReadAloudEn": "GRAPES stands for:\n Geography\n Religion\n Achievement\n Politics\n Economy\n Social Structures.",
     "questionReadAloudEs": "Usamos “GRAPES” para ayudarnos\n a recordar las seis características\n de las civilizaciones.\n ¿Qué significa cada letra?",
-    "answerReadAloudEs": "GRAPES stands for:\n Geography (geografía)\n Religion (religión)\n Achievements (logros)\n Politics (política)\n Economy(economía)\n Social Structures(estructura\n social)"
+    "answerReadAloudEs": "GRAPES stands for:\n Geography (geografía)\n Religion (religión)\n Achievements (logros)\n Politics (política)\n Economy(economía)\n Social Structures(estructura\n social)",
+    "acceptedAnswersEs": [
+      ["geografia"],
+      ["religion"],
+      ["logros"],
+      ["politica"],
+      ["economia"],
+      ["estructura social"]
+    ]
   },
   {
     "id": "0B",
@@ -21,11 +36,16 @@
     "answerImageEn": "images/0B_A_en.png",
     "questionImageEs": "images/0B_Q_es.png",
     "answerImageEs": "images/0B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["geography is the study of the land water and weather of a place and how they impact people", "the study of land water and weather and how they affect people"]
+    ],
     "questionReadAloudEn": "What is Geography?",
     "answerReadAloudEn": "Geography is the study of the land,\nwater, and weather of a place and\nhow they impact people.",
     "questionReadAloudEs": "What is Geography (geografía)?",
-    "answerReadAloudEs": "La geografía es el estudio de la tierra,\nel agua y el clima de un lugar y cómo\nimpactan a las personas."
+    "answerReadAloudEs": "La geografía es el estudio de la tierra,\nel agua y el clima de un lugar y cómo\nimpactan a las personas.",
+    "acceptedAnswersEs": [
+      ["la geografia es el estudio de la tierra el agua y el clima de un lugar y como impactan a las personas", "el estudio de la tierra el agua y el clima y como afectan a las personas"]
+    ]
   },
   {
     "id": "0C",
@@ -35,11 +55,16 @@
     "answerImageEn": "images/0C_A_en.png",
     "questionImageEs": "images/0C_Q_es.png",
     "answerImageEs": "images/0C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["religion is a set of beliefs and traditions about how to behave often including belief in gods", "a set of beliefs and traditions about how to behave"]
+    ],
     "questionReadAloudEn": "What is Religion?",
     "answerReadAloudEn": "Religion is a set of beliefs and\ntraditions about how to behave.\nOften includes the belief in god(s).",
     "questionReadAloudEs": "What is Religion (religión)?",
-    "answerReadAloudEs": "La religión es un conjunto de creencias y\ntradiciones sobre cómo comportarse. A\nmenudo incluye la creencia en dios(es)."
+    "answerReadAloudEs": "La religión es un conjunto de creencias y\ntradiciones sobre cómo comportarse. A\nmenudo incluye la creencia en dios(es).",
+    "acceptedAnswersEs": [
+      ["la religion es un conjunto de creencias y tradiciones sobre como comportarse", "creencias y tradiciones sobre como comportarse"]
+    ]
   },
   {
     "id": "0D",
@@ -49,11 +74,16 @@
     "answerImageEn": "images/0D_A_en.png",
     "questionImageEs": "images/0D_Q_es.png",
     "answerImageEs": "images/0D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["achievements are the important things a society created or accomplished", "important things a society created or did"]
+    ],
     "questionReadAloudEn": "What are Achievements?",
     "answerReadAloudEn": "Achievements are the important\nthings a society created or\naccomplished (did).",
     "questionReadAloudEs": "What are Achievements (logros)?",
-    "answerReadAloudEs": "Los logros son las cosas importantes\nque una sociedad creó o logró."
+    "answerReadAloudEs": "Los logros son las cosas importantes\nque una sociedad creó o logró.",
+    "acceptedAnswersEs": [
+      ["los logros son las cosas importantes que una sociedad creo o logro", "cosas importantes que una sociedad hizo"]
+    ]
   },
   {
     "id": "0E",
@@ -63,11 +93,16 @@
     "answerImageEn": "images/0E_A_en.png",
     "questionImageEs": "images/0E_Q_es.png",
     "answerImageEs": "images/0E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["politics is the government and how decisions are made", "the government and how decisions are made"]
+    ],
     "questionReadAloudEn": "What is Politics?",
     "answerReadAloudEn": "Politics is the government and how\ndecisions are made.",
     "questionReadAloudEs": "What is Politics (política)?",
-    "answerReadAloudEs": "La política es el gobierno y cómo se\ntoman las decisiones."
+    "answerReadAloudEs": "La política es el gobierno y cómo se\ntoman las decisiones.",
+    "acceptedAnswersEs": [
+      ["la politica es el gobierno y como se toman las decisiones", "el gobierno y como se toman las decisiones"]
+    ]
   },
   {
     "id": "0F",
@@ -77,11 +112,16 @@
     "answerImageEn": "images/0F_A_en.png",
     "questionImageEs": "images/0F_Q_es.png",
     "answerImageEs": "images/0F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["economy is how people make buy and sell resources", "how people make buy and sell resources"]
+    ],
     "questionReadAloudEn": "What is Economy?",
     "answerReadAloudEn": "Economy is how people make, buy,\n and sell resources.",
     "questionReadAloudEs": "What is Economy (economía)?",
-    "answerReadAloudEs": "La economía es cómo las personas\n producen, compran y venden\n recursos."
+    "answerReadAloudEs": "La economía es cómo las personas\n producen, compran y venden\n recursos.",
+    "acceptedAnswersEs": [
+      ["la economia es como las personas producen compran y venden recursos", "como las personas producen compran y venden recursos"]
+    ]
   },
   {
     "id": "0G",
@@ -91,11 +131,16 @@
     "answerImageEn": "images/0G_A_en.png",
     "questionImageEs": "images/0G_Q_es.png",
     "answerImageEs": "images/0G_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["social structure is how people are organized into levels and classes", "how people are organized into levels and classes"]
+    ],
     "questionReadAloudEn": "What is Social Structure?",
     "answerReadAloudEn": "Social Structure is how people are\norganized into levels and classes.",
     "questionReadAloudEs": "What is Social Structure (estructura\n social)?",
-    "answerReadAloudEs": "La estructura social es cómo las\n personas están organizadas en\n niveles y clases."
+    "answerReadAloudEs": "La estructura social es cómo las\n personas están organizadas en\n niveles y clases.",
+    "acceptedAnswersEs": [
+      ["la estructura social es como las personas estan organizadas en niveles y clases", "como las personas estan organizadas en niveles y clases"]
+    ]
   },
   {
     "id": "1A",
@@ -105,11 +150,16 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "images/1A_Q_es.png",
     "answerImageEs": "images/1A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["india is on the continent of asia", "asia"]
+    ],
     "questionReadAloudEn": "Where is India on this map?\nWhat continent is India located on?",
     "answerReadAloudEn": "India is on the continent of Asia.",
     "questionReadAloudEs": "¿Dónde está la India en este mapa?\n¿En qué continente se encuentra la India?",
-    "answerReadAloudEs": "La India está en el continente\n asiático."
+    "answerReadAloudEs": "La India está en el continente\n asiático.",
+    "acceptedAnswersEs": [
+      ["la india esta en el continente asiatico", "asia"]
+    ]
   },
   {
     "id": "1B",
@@ -133,11 +183,22 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "images/1C_Q_es.png",
     "answerImageEs": "images/1C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["fresh water"],
+      ["good soil"],
+      ["natural barriers"],
+      ["good weather"]
+    ],
     "questionReadAloudEn": "What are the four criteria for\nsettlement?",
     "answerReadAloudEn": "1)​Fresh water\n 2)​Good soil\n 3)​Natural barriers\n 4)​Good weather",
     "questionReadAloudEs": "¿Cuáles son los cuatro criterios para\nla liquidación?",
-    "answerReadAloudEs": "1)​Agua dulce\n 2)​Buen suelo\n 3)​Barreras naturales\n 4)​Buen clima"
+    "answerReadAloudEs": "1)​Agua dulce\n 2)​Buen suelo\n 3)​Barreras naturales\n 4)​Buen clima",
+    "acceptedAnswersEs": [
+      ["agua dulce"],
+      ["buen suelo"],
+      ["barreras naturales"],
+      ["buen clima"]
+    ]
   },
   {
     "id": "1D",
@@ -147,11 +208,18 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "images/1D_Q_es.png",
     "answerImageEs": "images/1D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["physical features are natural parts of the earths surface", "natural parts of the earth's surface"],
+      ["mountains", "rivers", "deserts", "oceans"]
+    ],
     "questionReadAloudEn": "1.​What are physical features?\n 2.​Give at least two examples of\n physical features.",
     "answerReadAloudEn": "1.​Physical features are natural\n parts of the Earth’s surface\n 2.​Examples include mountains,\n rivers, deserts, and oceans",
     "questionReadAloudEs": "1.​¿Qué son las características\n físicas?\n 2.​Da al menos dos ejemplos de\n características físicas.",
-    "answerReadAloudEs": "1.​ Las características físicas son\n partes naturales de la superficie\n terrestre.\n 2.​ Por ejemplo, montañas, ríos,\n desiertos y océanos."
+    "answerReadAloudEs": "1.​ Las características físicas son\n partes naturales de la superficie\n terrestre.\n 2.​ Por ejemplo, montañas, ríos,\n desiertos y océanos.",
+    "acceptedAnswersEs": [
+      ["las caracteristicas fisicas son partes naturales de la superficie terrestre", "partes naturales de la superficie de la tierra"],
+      ["montañas", "rios", "desiertos", "oceanos"]
+    ]
   },
   {
     "id": "1E",
@@ -161,11 +229,16 @@
     "answerImageEn": "images/1E_A_en.png",
     "questionImageEs": "images/1E_Q_es.png",
     "answerImageEs": "images/1E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an artifact is an object or tool made by a person in the past", "an object or tool made by people in the past"]
+    ],
     "questionReadAloudEn": "What is an artifact?",
     "answerReadAloudEn": "An artifact is an object or\n tool made by a person in\n the past.",
     "questionReadAloudEs": "¿Qué es un artefacto?",
-    "answerReadAloudEs": "Un artefacto es un objeto o\nherramienta fabricado por\nuna persona en el pasado."
+    "answerReadAloudEs": "Un artefacto es un objeto o\nherramienta fabricado por\nuna persona en el pasado.",
+    "acceptedAnswersEs": [
+      ["un artefacto es un objeto o herramienta fabricado por una persona en el pasado", "un objeto o herramienta hecho por una persona en el pasado"]
+    ]
   },
   {
     "id": "1F",
@@ -175,11 +248,16 @@
     "answerImageEn": "images/1F_A_en.png",
     "questionImageEs": "images/1F_Q_es.png",
     "answerImageEs": "images/1F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["in the caste system you were born into a specific social class that could never change", "you are born into a social class that cannot change"]
+    ],
     "questionReadAloudEn": "Ancient India’s social structure was\ncalled a caste system.\nExplain what a caste system\nmeans.",
     "answerReadAloudEn": "In the caste system you were\n born into a specific social\n class that could never\n change.",
     "questionReadAloudEs": "La estructura social de la antigua India\nse denominaba sistema de castas.\nExplique qué significa un\nsistema de castas.",
-    "answerReadAloudEs": "En el sistema de castas\n nacías en una clase social\n específica que nunca podía\n cambiar."
+    "answerReadAloudEs": "En el sistema de castas\n nacías en una clase social\n específica que nunca podía\n cambiar.",
+    "acceptedAnswersEs": [
+      ["en el sistema de castas nacias en una clase social especifica que nunca podia cambiar", "naces en una clase social que no puede cambiar"]
+    ]
   },
   {
     "id": "1G",
@@ -189,11 +267,18 @@
     "answerImageEn": "images/1G_A_en.png",
     "questionImageEs": "images/1G_Q_es.png",
     "answerImageEs": "images/1G_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["buddhism"],
+      ["hinduism"]
+    ],
     "questionReadAloudEn": "What were the two main\nreligions that developed in\nancient India?",
     "answerReadAloudEn": "1.​Buddhism\n 2.​Hinduism",
     "questionReadAloudEs": "¿Cuáles fueron las dos religiones\nprincipales que se desarrollaron en\nla antigua India?",
-    "answerReadAloudEs": "1.​Budismo\n 2.​Hinduismo"
+    "answerReadAloudEs": "1.​Budismo\n 2.​Hinduismo",
+    "acceptedAnswersEs": [
+      ["budismo"],
+      ["hinduismo"]
+    ]
   },
   {
     "id": "1H",
@@ -203,11 +288,20 @@
     "answerImageEn": "images/1H_A_en.png",
     "questionImageEs": "images/1H_Q_es.png",
     "answerImageEs": "images/1H_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["dharma is a persons duty to follow their role in society", "a person's duty to follow their role in society"],
+      ["samsara is the cycle of life death and rebirth reincarnation", "the cycle of life death and rebirth"],
+      ["karma is the good and bad done in a past life determines how good or bad a persons next life is", "good and bad actions in a past life determine the next life"]
+    ],
     "questionReadAloudEn": "The three central beliefs of\nHinduism are Dharma, Samsara,\nand Karma.\nBriefly describe each one.",
     "answerReadAloudEn": "1.​Dharma: a person’s duty to\n follow their role in society.\n 2.​Samsara: the cycle of life,\n death, and rebirth –\n reincarnation\n 3.​Karma: the good and bad\n done in a past life determines\n how good or bad a person’s\n next life is.",
     "questionReadAloudEs": "Las tres creencias centrales del\nhinduismo son el dharma, el samsara y\nel karma.\nDescribe brevemente cada una.",
-    "answerReadAloudEs": "1.​Dharma: el deber de una persona\n de cumplir con su rol en la\n sociedad.\n 2.​Samsara: el ciclo de vida, muerte\n y renacimiento (reencarnación).\n 3.​Karma: el bien y el mal cometidos\n en una vida pasada determinan la\n bondad o maldad de la siguiente."
+    "answerReadAloudEs": "1.​Dharma: el deber de una persona\n de cumplir con su rol en la\n sociedad.\n 2.​Samsara: el ciclo de vida, muerte\n y renacimiento (reencarnación).\n 3.​Karma: el bien y el mal cometidos\n en una vida pasada determinan la\n bondad o maldad de la siguiente.",
+    "acceptedAnswersEs": [
+      ["dharma el deber de una persona de cumplir con su rol en la sociedad", "el deber de cumplir tu rol en la sociedad"],
+      ["samsara el ciclo de vida muerte y renacimiento reencarnacion", "el ciclo de vida muerte y renacimiento"],
+      ["karma el bien y el mal cometidos en una vida pasada determinan la bondad o maldad de la siguiente", "las acciones buenas y malas de una vida pasada determinan la siguiente"]
+    ]
   },
   {
     "id": "1I",
@@ -217,11 +311,18 @@
     "answerImageEn": "images/1I_A_en.png",
     "questionImageEs": "images/1I_Q_es.png",
     "answerImageEs": "images/1I_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["life involves suffering", "life involves bad things"],
+      ["we can end suffering by following the eightfold path", "the eightfold path ends suffering"]
+    ],
     "questionReadAloudEn": "Buddhism was founded by\nSiddhartha Gautama.\nDescribe the two main teachings of\nBuddhism.",
     "answerReadAloudEn": "Buddhism teaches that:\n 1.​Life involves suffering (bad\n things)\n 2.​We can end suffering by\n following the Eightfold Path,\n which are 8 steps you can follow\n to live a good and moral life",
     "questionReadAloudEs": "El budismo fue fundado por Siddhartha Gautama.\nDescribe las dos enseñanzas\nprincipales del budismo.",
-    "answerReadAloudEs": "1.​El budismo enseña que:\n a.​La vida implica\n sufrimiento (cosas malas).\n b.​Podemos acabar con el\n sufrimiento siguiendo el\n Óctuple Sendero, que\n consiste en ocho pasos\n que puedes seguir para\n vivir una vida buena y\n moral."
+    "answerReadAloudEs": "1.​El budismo enseña que:\n a.​La vida implica\n sufrimiento (cosas malas).\n b.​Podemos acabar con el\n sufrimiento siguiendo el\n Óctuple Sendero, que\n consiste en ocho pasos\n que puedes seguir para\n vivir una vida buena y\n moral.",
+    "acceptedAnswersEs": [
+      ["la vida implica sufrimiento", "la vida implica cosas malas"],
+      ["podemos acabar con el sufrimiento siguiendo el octuple sendero", "el octuple sendero acaba con el sufrimiento"]
+    ]
   },
   {
     "id": "1J",
@@ -231,11 +332,23 @@
     "answerImageEn": "images/1J_A_en.png",
     "questionImageEs": "images/1J_Q_es.png",
     "answerImageEs": "images/1J_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["invented the number zero", "the number zero"],
+      ["cities were built in a grid", "grid pattern cities"],
+      ["had a sewer system an early version of indoor plumbing", "sewer system"],
+      ["had a great bath an early version of a public pool", "great bath"]
+    ],
     "questionReadAloudEn": "Name at least 2\nachievements from ancient\nIndia’s golden age.",
     "answerReadAloudEn": "Some of ancient India’s achievements\nduring their golden age include:\n ●​ Invented the number zero\n ●​ Cities were built in a grid\n ●​ City had a sewer system – an\n early version of indoor plumbing\n ●​ City had a great bath – an early\n version of a public pool",
     "questionReadAloudEs": "Nombra al menos 2 logros de la\népoca dorada de la antigua India.",
-    "answerReadAloudEs": "Algunos de los logros de la antigua India\ndurante su época dorada incluyen:\n ●​ Inventó el número cero\n ●​ Las ciudades se construyeron en\n una cuadrícula\n ●​ La ciudad tenía un sistema de\n alcantarillado- una versión\n temprana de la plomería interior.\n ●​ La ciudad tenía un gran baño- una\n versión temprana de una piscina\n pública"
+    "answerReadAloudEs": "Algunos de los logros de la antigua India\ndurante su época dorada incluyen:\n ●​ Inventó el número cero\n ●​ Las ciudades se construyeron en\n una cuadrícula\n ●​ La ciudad tenía un sistema de\n alcantarillado- una versión\n temprana de la plomería interior.\n ●​ La ciudad tenía un gran baño- una\n versión temprana de una piscina\n pública",
+    "acceptedAnswersEs": [
+      ["invento el numero cero", "el numero cero"],
+      ["las ciudades se construyeron en una cuadricula", "ciudades en cuadricula"],
+      ["tenia un sistema de alcantarillado una version temprana de la plomeria interior", "sistema de alcantarillado"],
+      ["tenia un gran baño una version temprana de una piscina publica", "gran baño"]
+    ],
+    "acceptedAnswersMinMatch": 2
   },
   {
     "id": "1K",
