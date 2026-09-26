@@ -142,6 +142,14 @@ els.showAnswerButton.addEventListener("click", () => {
     return;
   }
 
+  revealAnswer(cardId);
+});
+
+// Shows the answer image and hides the typing box - a student should never
+// see the correct answer and still be able to type/submit at the same time.
+// Used both by the "Show Answer" button and after "Check My Answer", so the
+// two paths land in the same state.
+function revealAnswer(cardId) {
   const answerPath = getCurrentAnswerPath();
 
   incrementPracticeCount(cardId);
@@ -155,10 +163,12 @@ els.showAnswerButton.addEventListener("click", () => {
     els.answerImage.classList.remove("hidden");
   }
 
+  els.answerInputGroup.classList.add("hidden");
+  els.checkAnswerButton.classList.add("hidden");
   els.showAnswerButton.textContent = "Try Again";
   els.nextProblemButton.classList.remove("hidden");
   updatePracticeCountText(cardId);
-});
+}
 
 els.nextProblemButton.addEventListener("click", () => {
   openNextPracticeCard();
@@ -733,6 +743,7 @@ async function checkStudentAnswer() {
 
   renderAnswerFeedback(gradeResult.result, gradeResult.matchedCount, gradeResult.totalCount);
   logAnswerAttempt(cardId, gradeResult.result);
+  revealAnswer(cardId);
 }
 
 // Sends each graded attempt to the sheet backend so badges (practice volume,
