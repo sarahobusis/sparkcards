@@ -7,11 +7,22 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "images/1A_Q_es.png",
     "answerImageEs": "images/1A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["output is what comes out or is produced by a system", "what comes out of a system"],
+      ["feedback is information about how the system is working", "information about how well the system works"],
+      ["input is things that go into a system", "what goes into a system"],
+      ["process is what happens to the things that go into a system", "what happens to the inputs"]
+    ],
     "questionReadAloudEn": "All systems have 4 main components.\nDefine each of the 4 components.\n1. Output\n2. Feedback\n3. Input\n4. Process",
     "answerReadAloudEn": "1.​Output-What comes out or is\n produced by a system.\n 2.​Feedback-Information about how\n the system is working\n 3.​Input-Things that go into a system\n 4.​Process-What happens to the\n things that go into a system",
     "questionReadAloudEs": "Todos los sistemas tienen cuatro\ncomponentes principales.\nDefina cada uno de los cuatro\ncomponentes.\n1. Salida\n2. Retroalimentación\n3. Entrada\n4. Proceso",
-    "answerReadAloudEs": "1.)​Salida: lo que sale o se produce en\n un sistema.\n 2.)​Retroalimentación: información\n sobre cómo funciona el sistema.\n 3.)​Entrada: lo que entra en un sistema.\n 4.)​Proceso: lo que ocurre con lo que\n entra en un sistema."
+    "answerReadAloudEs": "1.)​Salida: lo que sale o se produce en\n un sistema.\n 2.)​Retroalimentación: información\n sobre cómo funciona el sistema.\n 3.)​Entrada: lo que entra en un sistema.\n 4.)​Proceso: lo que ocurre con lo que\n entra en un sistema.",
+    "acceptedAnswersEs": [
+      ["salida es lo que sale o se produce en un sistema", "lo que sale de un sistema"],
+      ["retroalimentacion es informacion sobre como funciona el sistema", "informacion sobre como funciona el sistema"],
+      ["entrada es lo que entra en un sistema", "lo que entra en un sistema"],
+      ["proceso es lo que ocurre con lo que entra en un sistema", "lo que le pasa a las entradas"]
+    ]
   },
   {
     "id": "1B",
@@ -21,11 +32,26 @@
     "answerImageEn": "images/1B_A_en.png",
     "questionImageEs": "images/1B_Q_es.png",
     "answerImageEs": "images/1B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["suspension supports the weight of a vehicle", "supports the weight"],
+      ["guidance helps the vehicle stay on course", "helps stay on course"],
+      ["propulsion moves the vehicle forward", "moves the vehicle forward"],
+      ["structure holds the vehicle up", "holds the vehicle up"],
+      ["control controls speed and direction", "controls speed and direction"],
+      ["support helps the vehicle but is not a part of it", "helps but isn't part of the vehicle"]
+    ],
     "questionReadAloudEn": "Explain what each of the following\nsubsystems does:\n 1.​ Suspension\n 2.​ Guidance\n 3.​ Propulsion\n 4.​ Structure\n 5.​ Control\n 6.​ Support",
     "answerReadAloudEn": "1.​Suspension-supports the weight\n of a vehicle\n 2.​Guidance-helps the vehicle stay\n on course\n 3.​Propulsion-moves the vehicle\n forward\n 4.​Structure-holds the vehicle up\n 5.​Control-controls speed and\n direction\n 6.​Support-helps the vehicle but not\n a part of it",
     "questionReadAloudEs": "Explique qué hace cada uno de los\nsiguientes subsistemas:\n 1.​Suspensión.\n 2.​Guía.\n 3.​Propulsión.\n 4.​Estructura.\n 5.​Control.\n 6.​Soporte.",
-    "answerReadAloudEs": "1.​Suspensión: soporta el peso de un\n vehículo.\n 2.​Guía: ayuda al vehículo a\n mantener el rumbo.\n 3.​Propulsión: impulsa el vehículo\n hacia adelante.\n 4.​Estructura: sostiene el vehículo.\n 5.​Control: controla la velocidad y la\n dirección.\n 6.​Soporte: ayuda al vehículo, pero\n no forma parte de él."
+    "answerReadAloudEs": "1.​Suspensión: soporta el peso de un\n vehículo.\n 2.​Guía: ayuda al vehículo a\n mantener el rumbo.\n 3.​Propulsión: impulsa el vehículo\n hacia adelante.\n 4.​Estructura: sostiene el vehículo.\n 5.​Control: controla la velocidad y la\n dirección.\n 6.​Soporte: ayuda al vehículo, pero\n no forma parte de él.",
+    "acceptedAnswersEs": [
+      ["suspension soporta el peso de un vehiculo", "soporta el peso"],
+      ["guia ayuda al vehiculo a mantener el rumbo", "ayuda a mantener el rumbo"],
+      ["propulsion impulsa el vehiculo hacia adelante", "impulsa el vehiculo"],
+      ["estructura sostiene el vehiculo", "sostiene el vehiculo"],
+      ["control controla la velocidad y la direccion", "controla velocidad y direccion"],
+      ["soporte ayuda al vehiculo pero no forma parte de el", "ayuda pero no es parte del vehiculo"]
+    ]
   },
   {
     "id": "1C",
@@ -35,11 +61,24 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "images/1C_Q_es.png",
     "answerImageEs": "images/1C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["source creates the original message to be communicated", "creates the original message"],
+      ["encoder changes the message into an electrical signal so it can be sent", "changes the message into a signal"],
+      ["transmitter sends the electrical signal", "sends the signal"],
+      ["receiver captures the electrical signal", "captures the signal"],
+      ["decoder changes the electrical signal back to an understandable message", "changes the signal back into a message"]
+    ],
     "questionReadAloudEn": "●​What are the 5 parts in every\n type of communication\n system (ex: text messages)\n ●​What are each of their jobs?",
     "answerReadAloudEn": "1.)​Source - creates the original\n message/information to be\n communicated\n 2.)​Encoder- changes the message into\n an electrical signal so it can be sent\n 3.)​ Transmitter- sends the electrical\n signal\n 4.)​ Receiver- captures the electrical\n signal\n 5.)​Decoder- changes the electrical\n signal back to an understandable\n message",
     "questionReadAloudEs": "●​ ¿Cuáles son las cinco partes que\n componen todo tipo de sistema de\n comunicación (por ejemplo, los\n mensajes de texto)?\n ●​ ¿Cuál es la función de cada una de\n ellas?",
-    "answerReadAloudEs": "1.​ Fuente: crea el mensaje o la\n información original que se va a\n comunicar.\n 2.​ Codificador: convierte el mensaje\n en una señal eléctrica para que\n pueda enviarse.\n 3.​ Transmisor: envía la señal eléctrica.\n 4.​ Receptor: capta la señal eléctrica.\n 5.​ Decodificador: convierte la señal\n eléctrica de nuevo en un mensaje\n comprensible."
+    "answerReadAloudEs": "1.​ Fuente: crea el mensaje o la\n información original que se va a\n comunicar.\n 2.​ Codificador: convierte el mensaje\n en una señal eléctrica para que\n pueda enviarse.\n 3.​ Transmisor: envía la señal eléctrica.\n 4.​ Receptor: capta la señal eléctrica.\n 5.​ Decodificador: convierte la señal\n eléctrica de nuevo en un mensaje\n comprensible.",
+    "acceptedAnswersEs": [
+      ["fuente crea el mensaje original que se va a comunicar", "crea el mensaje original"],
+      ["codificador convierte el mensaje en una señal electrica para que pueda enviarse", "convierte el mensaje en una señal"],
+      ["transmisor envia la señal electrica", "envia la señal"],
+      ["receptor capta la señal electrica", "capta la señal"],
+      ["decodificador convierte la señal electrica de nuevo en un mensaje comprensible", "convierte la señal de vuelta en un mensaje"]
+    ]
   },
   {
     "id": "1D",
@@ -49,11 +88,16 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "images/1D_Q_es.png",
     "answerImageEs": "images/1D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["we need different types of communication systems because there are different audiences with different resources receiving the communication", "different audiences have different resources so we need different types of communication"]
+    ],
     "questionReadAloudEn": "Why do we need different types of\ncommunication systems such as print,\ninternet, radio and TV?",
     "answerReadAloudEn": "We need different types of\ncommunications systems because there\nare different audiences with different\nresources receiving the communication.",
     "questionReadAloudEs": "¿Por qué necesitamos diferentes tipos de\nsistemas de comunicación, como la prensa\nescrita, Internet, la radio y la televisión?",
-    "answerReadAloudEs": "Necesitamos diferentes tipos de sistemas\nde comunicación porque hay diferentes\npúblicos con diferentes recursos que\nreciben la comunicación."
+    "answerReadAloudEs": "Necesitamos diferentes tipos de sistemas\nde comunicación porque hay diferentes\npúblicos con diferentes recursos que\nreciben la comunicación.",
+    "acceptedAnswersEs": [
+      ["necesitamos diferentes tipos de sistemas de comunicacion porque hay diferentes publicos con diferentes recursos", "diferentes publicos tienen diferentes recursos por eso se necesitan diferentes sistemas"]
+    ]
   },
   {
     "id": "1E",
@@ -63,11 +107,18 @@
     "answerImageEn": "images/1E_A_en.png",
     "questionImageEs": "images/1E_Q_es.png",
     "answerImageEs": "images/1E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["tension is acting on the cables because they are stretching", "tension because the cables are stretching"],
+      ["compression is acting on the columns because they are squeezing", "compression because the columns are being squeezed"]
+    ],
     "questionReadAloudEn": "A suspension bridge has a lot of forces acting\non it.\n 1.)​What type of force is acting on the\n cables? Explain your answer.\n 2.)​What type of force is acting on the\n columns? Explain your answer.",
     "answerReadAloudEn": "1.)​Tension is acting on the cables\n because they are stretching\n 2.)​Compression is acting on the\n columns because they are\n squeezing",
     "questionReadAloudEs": "Un puente colgante tiene muchas fuerzas\nque actúan sobre él.\n 1.)​¿Qué tipo de fuerza actúa sobre los\n cables? Explique su respuesta.\n 2.)​¿Qué tipo de fuerza actúa sobre las\n columnas? Explique su respuesta.",
-    "answerReadAloudEs": "1.​ La tensión actúa sobre los cables\n porque se estiran.\n 2.​ La compresión actúa sobre las\n columnas porque se comprimen /\n aprietan."
+    "answerReadAloudEs": "1.​ La tensión actúa sobre los cables\n porque se estiran.\n 2.​ La compresión actúa sobre las\n columnas porque se comprimen /\n aprietan.",
+    "acceptedAnswersEs": [
+      ["la tension actua sobre los cables porque se estiran", "tension porque los cables se estiran"],
+      ["la compresion actua sobre las columnas porque se comprimen", "compresion porque las columnas se aprietan"]
+    ]
   },
   {
     "id": "2A",
@@ -77,11 +128,20 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "images/2A_Q_es.png",
     "answerImageEs": "images/2A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["predation is when one organism kills and eats another organism", "one organism kills and eats another"],
+      ["competition is when two organisms fight over resources", "two organisms fighting over resources"],
+      ["symbiosis is when two organisms have a close relationship that benefits at least one of them", "a close relationship that benefits at least one organism"]
+    ],
     "questionReadAloudEn": "Name and describe the 3 types of\nrelationships among organisms",
     "answerReadAloudEn": "1.)​Predation: one organism kills and\n eats another organism\n 2.)​ Competition: two organisms fight\n over resources\n 3.)​Symbiosis: two organisms have a\n close relationship that benefits\n at least one of them",
     "questionReadAloudEs": "Nombra y describe los tres tipos de\nrelaciones entre los organismos.",
-    "answerReadAloudEs": "1.)​Depredación: un organismo mata y\n se come a otro organismo\n 2.)​Competencia: dos organismos luchan\n por los recursos\n 3.)​Simbiosis: dos organismos tienen una\n relación estrecha que beneficia\n al menos a uno de ellos"
+    "answerReadAloudEs": "1.)​Depredación: un organismo mata y\n se come a otro organismo\n 2.)​Competencia: dos organismos luchan\n por los recursos\n 3.)​Simbiosis: dos organismos tienen una\n relación estrecha que beneficia\n al menos a uno de ellos",
+    "acceptedAnswersEs": [
+      ["depredacion un organismo mata y se come a otro organismo", "un organismo mata y se come a otro"],
+      ["competencia dos organismos luchan por los recursos", "dos organismos luchando por recursos"],
+      ["simbiosis dos organismos tienen una relacion estrecha que beneficia al menos a uno de ellos", "una relacion cercana que beneficia al menos a un organismo"]
+    ]
   },
   {
     "id": "2B",
@@ -91,11 +151,20 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "images/2B_Q_es.png",
     "answerImageEs": "images/2B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["mutualism is when both organisms are helped", "both organisms benefit"],
+      ["commensalism is when one organism is helped and one is not affected", "one organism benefits and the other is unaffected"],
+      ["parasitism is when one organism is helped and one is harmed", "one organism benefits and the other is harmed"]
+    ],
     "questionReadAloudEn": "There are 3 types of symbiotic relationships\namong species of organisms in an ecosystem.\nDescribe each of the forms of symbiotic\nrelationships\n 1.​Mutualism\n 2.​Commensalism\n 3.​Parasitism",
     "answerReadAloudEn": "1.​ Mutualism: Both organisms helped\n 2.​ Commensalism: 1 organism helped,\n 1 not affected\n 3.​ Parasitism: 1 organism helped, 1\n harmed",
     "questionReadAloudEs": "Existen tres tipos de relaciones simbióticas entre\nlas especies de organismos de un ecosistema.\nDescribe cada una de las formas de relaciones\nsimbióticas.\n 1.​Mutualismo.\n 2.​Comensalismo.\n 3.​Parasitismo.",
-    "answerReadAloudEs": "1.​ Mutualismo: ambos organismos se\n ayudaron mutuamente.\n 2.​ Comensalismo: un organismo ayuda al\n otro, el otro no se ve afectado.\n 3.​ Parasitismo: un organismo ayuda al otro,\n el otro resulta perjudicado."
+    "answerReadAloudEs": "1.​ Mutualismo: ambos organismos se\n ayudaron mutuamente.\n 2.​ Comensalismo: un organismo ayuda al\n otro, el otro no se ve afectado.\n 3.​ Parasitismo: un organismo ayuda al otro,\n el otro resulta perjudicado.",
+    "acceptedAnswersEs": [
+      ["mutualismo ambos organismos se ayudaron mutuamente", "ambos organismos se benefician"],
+      ["comensalismo un organismo ayuda al otro el otro no se ve afectado", "un organismo se beneficia y el otro no se ve afectado"],
+      ["parasitismo un organismo ayuda al otro el otro resulta perjudicado", "un organismo se beneficia y el otro es perjudicado"]
+    ]
   },
   {
     "id": "2C",
@@ -105,11 +174,20 @@
     "answerImageEn": "images/2C_A_en.png",
     "questionImageEs": "images/2C_Q_es.png",
     "answerImageEs": "images/2C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["producers make their own energy through photosynthesis", "producers use photosynthesis to get energy"],
+      ["consumers get their energy by eating other organisms", "consumers eat other organisms for energy"],
+      ["decomposers get their energy from breaking down dead plants and animals", "decomposers break down dead organisms for energy"]
+    ],
     "questionReadAloudEn": "Describe how each of the 3 types of\norganisms get their energy\n 1.​Producers\n 2.​Consumers\n 3.​Decomposers",
     "answerReadAloudEn": "1.)​Producers make their own energy\n through photosynthesis (ex. plants)\n 2.)​Consumers get their energy by eating\n other organisms.\n 3.)​Decomposers get their energy from\n breaking down dead plants and\n animals",
     "questionReadAloudEs": "Describe cómo cada uno de los tres\ntipos de organismos obtienen su\nenergía.\n 1.​Productores\n 2.​Consumidores\n 3.​Descomponedores",
-    "answerReadAloudEs": "1.)​ Los productores generan su propia energía\n mediante la fotosíntesis (por ejemplo, las\n plantas).\n 2.)​ Los consumidores obtienen su energía al\n alimentarse de otros organismos.\n 3.)​ Los descomponedores obtienen su energía al\n descomponer plantas y animales muertos."
+    "answerReadAloudEs": "1.)​ Los productores generan su propia energía\n mediante la fotosíntesis (por ejemplo, las\n plantas).\n 2.)​ Los consumidores obtienen su energía al\n alimentarse de otros organismos.\n 3.)​ Los descomponedores obtienen su energía al\n descomponer plantas y animales muertos.",
+    "acceptedAnswersEs": [
+      ["los productores generan su propia energia mediante la fotosintesis", "usan la fotosintesis para obtener energia"],
+      ["los consumidores obtienen su energia al alimentarse de otros organismos", "los consumidores comen otros organismos para obtener energia"],
+      ["los descomponedores obtienen su energia al descomponer plantas y animales muertos", "los descomponedores descomponen organismos muertos para obtener energia"]
+    ]
   },
   {
     "id": "2D",
@@ -119,11 +197,16 @@
     "answerImageEn": "images/2D_A_en.png",
     "questionImageEs": "images/2D_Q_es.png",
     "answerImageEs": "images/2D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["energy begins with the sun because the sun gives energy to producers to make their own food", "energy starts with the sun"]
+    ],
     "questionReadAloudEn": "Where does energy begin in an\necosystem? Explain why.",
     "answerReadAloudEn": "Energy begins with the Sun because\nthe sun gives energy to producers to\nmake their own food - (which starts the cycle of\nenergy through an ecosystem)",
     "questionReadAloudEs": "¿Dónde comienza la energía en un\necosistema? Explique por qué.",
-    "answerReadAloudEs": "La energía comienza con el Sol, ya que este\nproporciona energía a los productores para que\nproduzcan su propio alimento (lo que inicia el\nciclo de la energía a través de un ecosistema)"
+    "answerReadAloudEs": "La energía comienza con el Sol, ya que este\nproporciona energía a los productores para que\nproduzcan su propio alimento (lo que inicia el\nciclo de la energía a través de un ecosistema)",
+    "acceptedAnswersEs": [
+      ["la energia comienza con el sol ya que este proporciona energia a los productores para que produzcan su propio alimento", "la energia empieza con el sol"]
+    ]
   },
   {
     "id": "2E",
@@ -133,11 +216,18 @@
     "answerImageEn": "images/2E_A_en.png",
     "questionImageEs": "images/2E_Q_es.png",
     "answerImageEs": "images/2E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["in photosynthesis plants make their own food and release oxygen using water carbon dioxide and sunlight", "photosynthesis makes food and releases oxygen using water, carbon dioxide and sunlight"],
+      ["in cellular respiration organisms use oxygen to break down sugar into energy releasing carbon dioxide", "cellular respiration uses oxygen to turn sugar into energy and releases carbon dioxide"]
+    ],
     "questionReadAloudEn": "What is the difference between\nphotosynthesis and cellular respiration?",
     "answerReadAloudEn": "gy g y )\n2e)\nIn photosynthesis plants make their own\nfood (sugar) and release oxygen using water,\ncarbon dioxide and sunlight.\nIn cellular respiration, organisms use oxygen\nto break down sugar into energy for their\ncells, releasing carbon dioxide.",
     "questionReadAloudEs": "¿Cuál es la diferencia entre la\nfotosíntesis y la respiración celular?",
-    "answerReadAloudEs": "En la fotosíntesis, las plantas producen su\npropio alimento (azúcar) y liberan oxígeno\nutilizando agua, dióxido de carbono y luz solar.\nEn la respiración celular, los organismos utilizan\noxígeno para descomponer el azúcar en energía\npara sus células, liberando dióxido de carbono."
+    "answerReadAloudEs": "En la fotosíntesis, las plantas producen su\npropio alimento (azúcar) y liberan oxígeno\nutilizando agua, dióxido de carbono y luz solar.\nEn la respiración celular, los organismos utilizan\noxígeno para descomponer el azúcar en energía\npara sus células, liberando dióxido de carbono.",
+    "acceptedAnswersEs": [
+      ["en la fotosintesis las plantas producen su propio alimento y liberan oxigeno utilizando agua dioxido de carbono y luz solar", "la fotosintesis produce alimento y libera oxigeno usando agua dioxido de carbono y luz solar"],
+      ["en la respiracion celular los organismos utilizan oxigeno para descomponer el azucar en energia liberando dioxido de carbono", "la respiracion celular usa oxigeno para convertir azucar en energia y libera dioxido de carbono"]
+    ]
   },
   {
     "id": "2F",
@@ -147,11 +237,18 @@
     "answerImageEn": "images/2F_A_en.png",
     "questionImageEs": "images/2F_Q_es.png",
     "answerImageEs": "images/2F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the grass population would increase because there would be no deer eating the grass", "grass would increase since deer aren't eating it"],
+      ["the wolf population would decrease because the wolves would have no deer to eat", "wolves would decrease with no deer to eat"]
+    ],
     "questionReadAloudEn": "Just one event in an ecosystem can have an impact on the\nwhole ecosystem.\nIf a disease killed all the deer in this\necosystem….\n 1.)​What would happen to the grass\n population and why?\n 2.)​What would happen to the wolf\n population and why?",
     "answerReadAloudEn": "1.)​The grass population would increase\n because there would be no deer\n eating the grass\n 2.)​The wolf population would decrease\n because the wolves would have no\n deer to eat",
     "questionReadAloudEs": "Un solo evento en un ecosistema puede tener un\n impacto en todo el ecosistema.\n Si una enfermedad matara a todos los ciervos de\n este ecosistema...\n 1.)​¿Qué pasaría con la población de pastos y por\n qué?\n 2.)​¿Qué pasaría con la población de lobos y por\n qué?",
-    "answerReadAloudEs": "1.)​La población de pastos aumentaría\n porque no habría ciervos que se los\n comieran.\n 2.)​La población de lobos disminuiría\n porque los lobos no tendrían ciervos\n que comer."
+    "answerReadAloudEs": "1.)​La población de pastos aumentaría\n porque no habría ciervos que se los\n comieran.\n 2.)​La población de lobos disminuiría\n porque los lobos no tendrían ciervos\n que comer.",
+    "acceptedAnswersEs": [
+      ["la poblacion de pastos aumentaria porque no habria ciervos que se los comieran", "el pasto aumentaria sin ciervos comiendolo"],
+      ["la poblacion de lobos disminuiria porque los lobos no tendrian ciervos que comer", "los lobos disminuirian sin ciervos para comer"]
+    ]
   },
   {
     "id": "3A",
@@ -161,11 +258,25 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "images/3A_Q_es.png",
     "answerImageEs": "images/3A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["tectonic plates"],
+      ["earthquakes"],
+      ["mountains"],
+      ["volcanoes"],
+      ["rift valleys"]
+    ],
     "questionReadAloudEn": "1.​ The Earth’s crust is broken down into pieces,\n what are those pieces called?\n 2.​ The places where the pieces of the Earth\n crust meet are called plate boundaries. Give\n at least 2 examples of what occurs at these\n plate boundaries.",
     "answerReadAloudEn": "1.​ Tectonic Plates\n 2.​ -Earthquakes\n -Mountains\n -Volcanoes\n -Rift Valleys",
     "questionReadAloudEs": "1.​ La corteza terrestre está dividida en\n fragmentos, ¿cómo se llaman esos\n fragmentos?\n 2.​ Los lugares donde se unen los fragmentos de\n la corteza terrestre se denominan límites de\n placas. Da al menos dos ejemplos de lo que\n ocurre en estos límites de placas.",
-    "answerReadAloudEs": "1.​ Placas tectónicas\n 2.​\n -Terremotos\n -Montañas\n -Volcanes\n -Valles de rift"
+    "answerReadAloudEs": "1.​ Placas tectónicas\n 2.​\n -Terremotos\n -Montañas\n -Volcanes\n -Valles de rift",
+    "acceptedAnswersEs": [
+      ["placas tectonicas"],
+      ["terremotos"],
+      ["montañas"],
+      ["volcanes"],
+      ["valles de rift"]
+    ],
+    "acceptedAnswersMinMatch": 3
   },
   {
     "id": "3B",
@@ -175,11 +286,16 @@
     "answerImageEn": "images/3B_A_en.png",
     "questionImageEs": "images/3B_Q_es.png",
     "answerImageEs": "images/3B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a divergent plate boundary is where 2 plates spread apart creating rift valleys", "plates spread apart and create rift valleys"]
+    ],
     "questionReadAloudEn": "Describe a divergent plate\nboundary.",
     "answerReadAloudEn": "A divergent plate boundary\nis where 2 plates spread\napart - creating rift valleys",
     "questionReadAloudEs": "Describe un límite de placa\ndivergente.",
-    "answerReadAloudEs": "Un límite de placa\ndivergente es donde dos\nplacas se separan, creando\nvalles de rift."
+    "answerReadAloudEs": "Un límite de placa\ndivergente es donde dos\nplacas se separan, creando\nvalles de rift.",
+    "acceptedAnswersEs": [
+      ["un limite de placa divergente es donde dos placas se separan creando valles de rift", "las placas se separan y crean valles de rift"]
+    ]
   },
   {
     "id": "3C",
@@ -189,11 +305,16 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "images/3C_Q_es.png",
     "answerImageEs": "images/3C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a convergent plate boundary is where 2 plates push together and collide creating mountains", "plates push together and create mountains"]
+    ],
     "questionReadAloudEn": "Describe a convergent plate\nboundary.",
     "answerReadAloudEn": "A convergent plate\nboundary is where\n2 plates push\ntogether (collide) -\ncreating mountains",
     "questionReadAloudEs": "Describe un límite de placa\nconvergente.",
-    "answerReadAloudEs": "Un límite de placa\nconvergente es donde\ndos placas se\nempujan (colisionan),\ncreando montañas."
+    "answerReadAloudEs": "Un límite de placa\nconvergente es donde\ndos placas se\nempujan (colisionan),\ncreando montañas.",
+    "acceptedAnswersEs": [
+      ["un limite de placa convergente es donde dos placas se empujan y colisionan creando montañas", "las placas chocan y crean montañas"]
+    ]
   },
   {
     "id": "3D",
@@ -203,11 +324,16 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "images/3D_Q_es.png",
     "answerImageEs": "images/3D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a transform plate boundary is where 2 plates slide past each other creating earthquakes", "plates slide past each other and create earthquakes"]
+    ],
     "questionReadAloudEn": "Describe a transform plate\nboundary",
     "answerReadAloudEn": "A transform plate\nboundary is where 2\nplates slide past each\nother - creating\nearthquakes",
     "questionReadAloudEs": "Describa un límite de placa\ntransformante.",
-    "answerReadAloudEs": "Un límite de placa\ntransformante es donde\ndos placas se deslizan una\nsobre otra, lo que\nprovoca terremotos."
+    "answerReadAloudEs": "Un límite de placa\ntransformante es donde\ndos placas se deslizan una\nsobre otra, lo que\nprovoca terremotos.",
+    "acceptedAnswersEs": [
+      ["un limite de placa transformante es donde dos placas se deslizan una sobre otra creando terremotos", "las placas se deslizan una sobre otra y crean terremotos"]
+    ]
   },
   {
     "id": "3E",
@@ -217,11 +343,16 @@
     "answerImageEn": "images/3E_A_en.png",
     "questionImageEs": "images/3E_Q_es.png",
     "answerImageEs": "images/3E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a subduction zone is where 1 plate goes under another creating volcanoes", "one plate goes under another and creates volcanoes"]
+    ],
     "questionReadAloudEn": "Describe a subduction zone.",
     "answerReadAloudEn": "A subduction zone is\nwhere 1 plate goes under\nanother - creating\nvolcanoes",
     "questionReadAloudEs": "Describe una zona de subducción.",
-    "answerReadAloudEs": "Una zona de subducción\nes donde una placa se\ndesliza por debajo de\notra, creando volcanes."
+    "answerReadAloudEs": "Una zona de subducción\nes donde una placa se\ndesliza por debajo de\notra, creando volcanes.",
+    "acceptedAnswersEs": [
+      ["una zona de subduccion es donde una placa se desliza por debajo de otra creando volcanes", "una placa se desliza bajo otra y crea volcanes"]
+    ]
   },
   {
     "id": "3F",
@@ -231,11 +362,20 @@
     "answerImageEn": "images/3F_A_en.png",
     "questionImageEs": "images/3F_Q_es.png",
     "answerImageEs": "images/3F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["weathering breaks down rocks", "breaks down rocks"],
+      ["erosion moves the pieces of rock away", "moves rock pieces away"],
+      ["deposition makes pieces of rock pile up", "rock pieces pile up"]
+    ],
     "questionReadAloudEn": "Explain how the following processes\nchange the landscape of the Earth:\n ●​ weathering\n ●​ erosion\n ●​ deposition",
     "answerReadAloudEn": "●​ Weathering breaks down\n rocks.\n ●​Erosion moves the pieces of rock\n away. (See picture below)\n ●​ Deposition makes pieces of rock pile\n up.",
     "questionReadAloudEs": "Explique cómo los siguientes procesos\ncambian el paisaje de la Tierra:\n ●​ desgaste\n ●​ erosión\n ●​ sedimentación",
-    "answerReadAloudEs": "●​ El desgaste descompone\n las rocas.\n ●​ La erosión desplaza los\n fragmentos de roca. (Véase la\n imagen siguiente)\n ●​ La sedimentación hace que los\n fragmentos de roca se acumulen."
+    "answerReadAloudEs": "●​ El desgaste descompone\n las rocas.\n ●​ La erosión desplaza los\n fragmentos de roca. (Véase la\n imagen siguiente)\n ●​ La sedimentación hace que los\n fragmentos de roca se acumulen.",
+    "acceptedAnswersEs": [
+      ["el desgaste descompone las rocas", "descompone las rocas"],
+      ["la erosion desplaza los fragmentos de roca", "mueve los fragmentos de roca"],
+      ["la sedimentacion hace que los fragmentos de roca se acumulen", "los fragmentos de roca se acumulan"]
+    ]
   },
   {
     "id": "3G",
@@ -259,11 +399,18 @@
     "answerImageEn": "images/3H_A_en.png",
     "questionImageEs": "images/3H_Q_es.png",
     "answerImageEs": "images/3H_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the sun provides energy to evaporate the water and start the cycle", "sun energy evaporates water starting the cycle"],
+      ["gravity forces water to move downward causing precipitation and runoff", "gravity pulls water down causing precipitation and runoff"]
+    ],
     "questionReadAloudEn": "1.) What is the Sun's role in the water cycle?\n2.) What is gravity’s role in the water cycle?",
     "answerReadAloudEn": "1.) The sun provides energy to evaporate\nthe water and start the cycle\n2.) Gravity forces water to move downward\ncausing precipitation and runoff",
     "questionReadAloudEs": "1.) ¿Cuál es el papel del Sol en el ciclo del\nagua?\n2.) ¿Cuál es el papel de la gravedad en el\nciclo del agua?",
-    "answerReadAloudEs": "1.) El sol proporciona la energía necesaria\npara evaporar el agua e iniciar el ciclo.\n2.) La gravedad empuja el agua hacia abajo,\nprovocando precipitaciones y escorrentías."
+    "answerReadAloudEs": "1.) El sol proporciona la energía necesaria\npara evaporar el agua e iniciar el ciclo.\n2.) La gravedad empuja el agua hacia abajo,\nprovocando precipitaciones y escorrentías.",
+    "acceptedAnswersEs": [
+      ["el sol proporciona la energia necesaria para evaporar el agua e iniciar el ciclo", "el sol evapora el agua iniciando el ciclo"],
+      ["la gravedad empuja el agua hacia abajo provocando precipitaciones y escorrentias", "la gravedad hace que el agua baje causando precipitacion y escorrentia"]
+    ]
   },
   {
     "id": "4A",
@@ -273,11 +420,18 @@
     "answerImageEn": "images/4A_A_en.png",
     "questionImageEs": "images/4A_Q_es.png",
     "answerImageEs": "images/4A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["deforestation is when people clear large numbers of trees so that the land can be used for other purposes", "clearing large numbers of trees for other land uses"],
+      ["loss of biodiversity", "contributes to climate change", "erosion of soil", "indigenous people forced to move"]
+    ],
     "questionReadAloudEn": "1.​What is deforestation?\n 2.​What is one reason why\n deforestation is considered\n harmful?",
     "answerReadAloudEn": "1.​Deforestation is when people\n clear large numbers of trees so\n that the land can be used for\n other purposes\n 2.​\n -​ Loss of biodiversity\n -​ Contributes to climate change\n -​ Erosion of soil\n -​ Indigenous people forced to\n move",
     "questionReadAloudEs": "1.​¿Qué es la deforestación?\n 2.​¿Cuál es una de las razones por\n las que la deforestación se\n considera perjudicial?",
-    "answerReadAloudEs": "1.​La deforestación se produce\n cuando las personas talan grandes\n cantidades de árboles para que la\n tierra pueda utilizarse para otros\n fines.\n 2.​\n -​ Pérdida de biodiversidad.\n -​ Contribuye al cambio\n climático.\n -​ Erosión del suelo.\n -​ Los pueblos indígenas se ven\n obligados a desplazarse."
+    "answerReadAloudEs": "1.​La deforestación se produce\n cuando las personas talan grandes\n cantidades de árboles para que la\n tierra pueda utilizarse para otros\n fines.\n 2.​\n -​ Pérdida de biodiversidad.\n -​ Contribuye al cambio\n climático.\n -​ Erosión del suelo.\n -​ Los pueblos indígenas se ven\n obligados a desplazarse.",
+    "acceptedAnswersEs": [
+      ["la deforestacion se produce cuando las personas talan grandes cantidades de arboles para que la tierra pueda utilizarse para otros fines", "talar muchos arboles para usar la tierra en otra cosa"],
+      ["perdida de biodiversidad", "contribuye al cambio climatico", "erosion del suelo", "los pueblos indigenas se ven obligados a desplazarse"]
+    ]
   },
   {
     "id": "4B",
@@ -287,11 +441,18 @@
     "answerImageEn": "images/4B_A_en.png",
     "questionImageEs": "images/4B_Q_es.png",
     "answerImageEs": "images/4B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a natural resource is a resource that can be found in nature and used by people", "a resource found in nature that people use"],
+      ["a renewable resource can be replaced naturally and wont run out while a nonrenewable resource cannot be replaced within a persons lifetime and can run out", "renewable resources can be replaced naturally, nonrenewable resources can run out"]
+    ],
     "questionReadAloudEn": "1.​What is a natural resource?\n 2.​What is the difference between a\n renewable and nonrenewable\n resource?",
     "answerReadAloudEn": "1.​A natural resource is a resource\n that can be found in nature and\n used by people.\n 2.​A renewable resource is a\n resource that can be replaced\n naturally and won’t run out and a\n nonrenewable resource is that\n cannot be replaced within a\n person’s lifetime and can run out",
     "questionReadAloudEs": "1.​¿Qué es un recurso natural?\n 2.​¿Cuál es la diferencia entre un\n recurso renovable y uno no\n renovable?",
-    "answerReadAloudEs": "1.​Un recurso natural es un recurso\n que se encuentra en la naturaleza\n y que puede ser utilizado por las\n personas.\n 2.​Un recurso renovable es un\n recurso que puede ser\n reemplazado de forma natural y\n que no se agota, mientras que un\n recurso no renovable es aquel\n que no puede ser reemplazado\n durante la vida de una persona y\n que puede agotarse."
+    "answerReadAloudEs": "1.​Un recurso natural es un recurso\n que se encuentra en la naturaleza\n y que puede ser utilizado por las\n personas.\n 2.​Un recurso renovable es un\n recurso que puede ser\n reemplazado de forma natural y\n que no se agota, mientras que un\n recurso no renovable es aquel\n que no puede ser reemplazado\n durante la vida de una persona y\n que puede agotarse.",
+    "acceptedAnswersEs": [
+      ["un recurso natural es un recurso que se encuentra en la naturaleza y que puede ser utilizado por las personas", "un recurso de la naturaleza que las personas usan"],
+      ["un recurso renovable puede ser reemplazado de forma natural y no se agota mientras que un recurso no renovable no puede ser reemplazado durante la vida de una persona y puede agotarse", "los renovables se reemplazan naturalmente, los no renovables se pueden agotar"]
+    ]
   },
   {
     "id": "4C",
@@ -301,7 +462,9 @@
     "answerImageEn": "images/4C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["renewable energy", "improvements to medicine", "antibiotics", "epipens", "electricity"]
+    ],
     "questionReadAloudEn": "Name two innovations that humans\nhave created that have improved\nquality of life.",
     "answerReadAloudEn": "1.​Renewable energy\n 2.​Improvements to medicine\n (Antibiotics and epipens)\n 3.​Electricity",
     "questionReadAloudEs": "",
@@ -315,11 +478,20 @@
     "answerImageEn": "images/5A_A_en.png",
     "questionImageEs": "images/5A_Q_es.png",
     "answerImageEs": "images/5A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["it can be transformed from one type to another", "transformed from one type to another"],
+      ["it can be transferred from one object to another", "transferred to another object"],
+      ["it can be stored", "stored"]
+    ],
     "questionReadAloudEn": "The law of conservation of energy says that energy cannot\nbe created or destroyed.\nWhat can happen to the energy instead?",
     "answerReadAloudEn": "1.​ It can be transformed from one type\n to another\n2.​ It can be transferred from one object\n to another\n3.​ It can be stored",
     "questionReadAloudEs": "La ley de conservación de la energía dice que\nla energía no se puede crear ni destruir.\n¿Qué puede suceder con la energía en su\nlugar?",
-    "answerReadAloudEs": "1.​ Se puede transformar de un tipo a\n otro.\n 2.​ Se puede transferir de un objeto a\n otro.\n 3.​ Se puede almacenar."
+    "answerReadAloudEs": "1.​ Se puede transformar de un tipo a\n otro.\n 2.​ Se puede transferir de un objeto a\n otro.\n 3.​ Se puede almacenar.",
+    "acceptedAnswersEs": [
+      ["se puede transformar de un tipo a otro", "transformada de un tipo a otro"],
+      ["se puede transferir de un objeto a otro", "transferida a otro objeto"],
+      ["se puede almacenar", "almacenada"]
+    ]
   },
   {
     "id": "5B",
@@ -329,11 +501,18 @@
     "answerImageEn": "images/5B_A_en.png",
     "questionImageEs": "images/5B_Q_es.png",
     "answerImageEs": "images/5B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["opposite charges and poles attract", "attract"],
+      ["like charges and poles repel", "repel"]
+    ],
     "questionReadAloudEn": "Complete the phrases below:\n1.) Opposite charges and poles __________.\n2.) Like charges and poles ___________.",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "Completa las siguientes frases:\n1.) Las cargas y polos opuestos __________.\n2.) Los cargos y polos similares ___________.",
-    "answerReadAloudEs": ""
+    "answerReadAloudEs": "",
+    "acceptedAnswersEs": [
+      ["las cargas y polos opuestos se atraen", "se atraen"],
+      ["los cargos y polos similares se repelen", "se repelen"]
+    ]
   },
   {
     "id": "5C",
@@ -343,11 +522,16 @@
     "answerImageEn": "images/5C_A_en.png",
     "questionImageEs": "images/5C_Q_es.png",
     "answerImageEs": "images/5C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["at the top of the hill the ball has stored potential energy and as it moves down that energy changes into kinetic energy", "potential energy at the top changes into kinetic energy as it rolls down"]
+    ],
     "questionReadAloudEn": "Explain how a ball rolling down a hill shows\npotential energy turning into kinetic energy.",
     "answerReadAloudEn": "At the top of the hill, the ball has stored\npotential energy. As it moves down the hill,\nthat energy changes into kinetic energy.",
     "questionReadAloudEs": "Explica cómo una pelota que rueda cuesta\nabajo muestra cómo la energía potencial se\nconvierte en energía cinética.",
-    "answerReadAloudEs": "En la cima de la colina, la pelota ha\nacumulado energía potencial. A medida que\nbaja por la colina, esa energía se transforma\nen energía cinética."
+    "answerReadAloudEs": "En la cima de la colina, la pelota ha\nacumulado energía potencial. A medida que\nbaja por la colina, esa energía se transforma\nen energía cinética.",
+    "acceptedAnswersEs": [
+      ["en la cima de la colina la pelota ha acumulado energia potencial a medida que baja por la colina esa energia se transforma en energia cinetica", "la energia potencial en la cima se convierte en cinetica al bajar"]
+    ]
   },
   {
     "id": "5D",
@@ -357,11 +541,20 @@
     "answerImageEn": "images/5D_A_en.png",
     "questionImageEs": "images/5D_Q_es.png",
     "answerImageEs": "images/5D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["motion the second object moves", "the object moves"],
+      ["heat there is a temperature change", "temperature changes"],
+      ["sound you hear something", "you hear a sound"]
+    ],
     "questionReadAloudEn": "When an object transfers its kinetic 1\nenergy to another object, what are 3 2\n 3possible signs that show the energy was\ntransferred?",
     "answerReadAloudEn": "1.​ Motion - the second object moves\n2.​ Heat - there is a temperature change\n3.​ Sound - you hear something",
     "questionReadAloudEs": "Cuando un objeto transfiere su\nenergía cinética a otro objeto,\n¿cuáles son los tres posibles\nindicadores que muestran que la\nenergía se ha transferido?",
-    "answerReadAloudEs": "1.​Movimiento: el segundo objeto\n se mueve.\n 2.​Calor: hay un cambio de\n temperatura.\n 3.​Sonido: se oye algo."
+    "answerReadAloudEs": "1.​Movimiento: el segundo objeto\n se mueve.\n 2.​Calor: hay un cambio de\n temperatura.\n 3.​Sonido: se oye algo.",
+    "acceptedAnswersEs": [
+      ["movimiento el segundo objeto se mueve", "el objeto se mueve"],
+      ["calor hay un cambio de temperatura", "cambia la temperatura"],
+      ["sonido se oye algo", "se escucha un sonido"]
+    ]
   },
   {
     "id": "5E",
@@ -371,11 +564,18 @@
     "answerImageEn": "images/5E_A_en.png",
     "questionImageEs": "images/5E_Q_es.png",
     "answerImageEs": "images/5E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the higher something is the more gravitational potential energy it has", "height increases potential energy"],
+      ["the more mass something has the more gravitational potential energy it has", "more mass increases potential energy"]
+    ],
     "questionReadAloudEn": "1.​What are the 2 things that\n impact an object’s gravitational\n potential energy?\n 2.​Explain how each affects the\n object’s potential energy.",
     "answerReadAloudEn": "1.​ Height and Mass\n 2.​\n ●​ The HIGHER something is, the MORE\n gravitational potential energy it has\n ●​ The MORE mass something has, the\n MORE gravitational potential energy it has",
     "questionReadAloudEs": "1.​¿Cuáles son los dos factores que\n influyen en la energía potencial\n gravitatoria de un objeto?\n 2.​Explique cómo afecta cada uno\n de ellos a la energía potencial\n del objeto.",
-    "answerReadAloudEs": "1.​ Altura y masa\n 2.​\n ●​ Cuanto más alto está algo, más energía\n potencial gravitatoria tiene.\n ●​ Cuanta más masa tiene algo, más energía\n potencial gravitatoria tiene."
+    "answerReadAloudEs": "1.​ Altura y masa\n 2.​\n ●​ Cuanto más alto está algo, más energía\n potencial gravitatoria tiene.\n ●​ Cuanta más masa tiene algo, más energía\n potencial gravitatoria tiene.",
+    "acceptedAnswersEs": [
+      ["cuanto mas alto esta algo mas energia potencial gravitatoria tiene", "la altura aumenta la energia potencial"],
+      ["cuanta mas masa tiene algo mas energia potencial gravitatoria tiene", "mas masa aumenta la energia potencial"]
+    ]
   },
   {
     "id": "5F",
@@ -385,11 +585,18 @@
     "answerImageEn": "images/5F_A_en.png",
     "questionImageEs": "images/5F_Q_es.png",
     "answerImageEs": "images/5F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["increase the speed of the object", "increase speed"],
+      ["increase the mass of the object", "increase mass"]
+    ],
     "questionReadAloudEn": "What are two ways to increase the\nkinetic energy of an object?",
     "answerReadAloudEn": "1.)​Increase the speed of the object\n 2.)​Increase the mass of the object",
     "questionReadAloudEs": "¿Cuáles son las dos formas de\naumentar la energía cinética de un\nobjeto?",
-    "answerReadAloudEs": "1.)​Aumentar la velocidad del objeto\n 2.)​Aumentar la masa del objeto"
+    "answerReadAloudEs": "1.)​Aumentar la velocidad del objeto\n 2.)​Aumentar la masa del objeto",
+    "acceptedAnswersEs": [
+      ["aumentar la velocidad del objeto", "aumentar la velocidad"],
+      ["aumentar la masa del objeto", "aumentar la masa"]
+    ]
   },
   {
     "id": "5G",
@@ -413,11 +620,18 @@
     "answerImageEn": "images/6A_A_en.png",
     "questionImageEs": "images/6A_Q_es.png",
     "answerImageEs": "images/6A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the doors atoms would vibrate faster", "atoms vibrate faster when heated"],
+      ["the spoons atoms would vibrate slower", "atoms vibrate slower when cooled"]
+    ],
     "questionReadAloudEn": "Everything in the world is made of atoms\nthat vibrate.\n 1.​ What would happen to the vibration\n of atoms of a door if it was heated up?\n 2.​ What would happen to the vibration\n of the atoms of a spoon if it was\n cooled down?",
     "answerReadAloudEn": "1)​The door’s atoms would\n vibrate faster\n 2)​The spoon’s atoms would\n vibrate slower",
     "questionReadAloudEs": "Todo en el mundo está compuesto por\nátomos que vibran.\n 1.​ ¿Qué pasaría con la vibración de los\n átomos de una puerta si se\n calentara?\n 2.​ ¿Qué pasaría con la vibración de los\n átomos de una cuchara si se\n enfriara?",
-    "answerReadAloudEs": "1)​ Los átomos de la puerta vibraran\n más rápido\n 2)​ Los átomos de la cuchara vibraran\n más despacio"
+    "answerReadAloudEs": "1)​ Los átomos de la puerta vibraran\n más rápido\n 2)​ Los átomos de la cuchara vibraran\n más despacio",
+    "acceptedAnswersEs": [
+      ["los atomos de la puerta vibraran mas rapido", "los atomos vibran mas rapido al calentarse"],
+      ["los atomos de la cuchara vibraran mas despacio", "los atomos vibran mas lento al enfriarse"]
+    ]
   },
   {
     "id": "6B",
@@ -431,7 +645,13 @@
     "questionReadAloudEn": "",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "1.​ Define los siguientes conceptos:\n ●​ Energía cinética\n ●​ Energía térmica\n ●​ Temperatura\n 2.​ Describe cómo se relacionan con la\n energía térmica",
-    "answerReadAloudEs": "1.​\n ●​ La energía cinética es la cantidad de\n movimiento de las partículas de un\n objeto.\n ●​ La energía térmica es la cantidad\n total de energía cinética de un\n objeto.\n ●​ La temperatura es la energía\n cinética media de un objeto.\n 2.​ A medida que el calor fluye a través\n de un objeto, la energía cinética, la\n temperatura y la energía térmica\n aumentan."
+    "answerReadAloudEs": "1.​\n ●​ La energía cinética es la cantidad de\n movimiento de las partículas de un\n objeto.\n ●​ La energía térmica es la cantidad\n total de energía cinética de un\n objeto.\n ●​ La temperatura es la energía\n cinética media de un objeto.\n 2.​ A medida que el calor fluye a través\n de un objeto, la energía cinética, la\n temperatura y la energía térmica\n aumentan.",
+    "acceptedAnswersEs": [
+      ["la energia cinetica es la cantidad de movimiento de las particulas de un objeto", "cantidad de movimiento de las particulas"],
+      ["la energia termica es la cantidad total de energia cinetica de un objeto", "cantidad total de energia cinetica"],
+      ["la temperatura es la energia cinetica media de un objeto", "energia cinetica promedio"],
+      ["a medida que el calor fluye la energia cinetica la temperatura y la energia termica aumentan", "el calor aumenta la energia cinetica la temperatura y la energia termica"]
+    ]
   },
   {
     "id": "6C",
@@ -441,11 +661,20 @@
     "answerImageEn": "images/6C_A_en.png",
     "questionImageEs": "images/6C_Q_es.png",
     "answerImageEs": "images/6C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["kinetic energy is the amount of movement in an objects particles", "amount of movement of particles"],
+      ["thermal energy is the total amount of kinetic energy in an object", "total kinetic energy in an object"],
+      ["temperature is the average kinetic energy in an object", "average kinetic energy"],
+      ["as heat flows through an object the kinetic energy temperature and thermal energy increase", "heat flowing increases kinetic energy, temperature, and thermal energy"]
+    ],
     "questionReadAloudEn": "1.​Define the following\n ●​Kinetic Energy\n ●​Thermal Energy\n ●​Temperature\n 2.​Describe how they are related\n to heat energy",
     "answerReadAloudEn": "1.​\n ●​ Kinetic Energy is the amount of\n movement in an object's particles\n ●​ Thermal Energy is the total\n amount of kinetic energy in an\n object\n ●​ Temperature is the average\n kinetic energy in an object.\n 2.​As heat flows through an object,\n the kinetic energy, temperature\n and thermal energy increase",
     "questionReadAloudEs": "1. Si metes una cuchara fría en una taza de\ncafé caliente, explica qué pasaría con la\ntemperatura tanto del café como de la\ncuchara.\n2. ¿Cómo se llama este proceso en\nciencia?",
-    "answerReadAloudEs": "1.​ El calor seguirá pasando del café\n caliente a la cuchara fría hasta que\n ambos alcancen la misma\n temperatura.\n 2.​ A esto se le llama alcanzar el\n equilibrio térmico."
+    "answerReadAloudEs": "1.​ El calor seguirá pasando del café\n caliente a la cuchara fría hasta que\n ambos alcancen la misma\n temperatura.\n 2.​ A esto se le llama alcanzar el\n equilibrio térmico.",
+    "acceptedAnswersEs": [
+      ["el calor seguira pasando del cafe caliente a la cuchara fria hasta que ambos alcancen la misma temperatura", "el calor pasa del cafe a la cuchara hasta igualar la temperatura"],
+      ["a esto se le llama alcanzar el equilibrio termico", "equilibrio termico"]
+    ]
   },
   {
     "id": "6D",
@@ -455,11 +684,19 @@
     "answerImageEn": "images/6D_A_en.png",
     "questionImageEs": "images/6D_Q_es.png",
     "answerImageEs": "images/6D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the heat would continue to flow from the hot coffee to the cold spoon until they both reach equal temperatures", "heat flows from coffee to spoon until they're equal"],
+      ["this is called reaching thermal equilibrium", "thermal equilibrium"]
+    ],
     "questionReadAloudEn": "1. If you put a cold spoon in a cup of\nhot coffee, explain what\nwould happen to the\ntemperature of both the\ncoffee and the spoon.\n2. What is this process called in\nscience?",
     "answerReadAloudEn": "1.​The heat would continue to\n flow from the hot coffee to\n the cold spoon until they\n both reach equal\n temperatures.\n 2.​This is called reaching thermal\n equilibrium.",
     "questionReadAloudEs": "Define los tres tipos de\ntransferencia de calor:\n ●​Conducción\n ●​Convección\n ●​Radiación",
-    "answerReadAloudEs": "●​ Conducción: el calor se\n transmite por contacto directo\n ●​ Convección: el calor se\n transmite a través del\n movimiento de líquidos o gases\n ●​ Radiación: el calor se transmite\n mediante ondas a través del\n espacio vacío"
+    "answerReadAloudEs": "●​ Conducción: el calor se\n transmite por contacto directo\n ●​ Convección: el calor se\n transmite a través del\n movimiento de líquidos o gases\n ●​ Radiación: el calor se transmite\n mediante ondas a través del\n espacio vacío",
+    "acceptedAnswersEs": [
+      ["conduccion el calor se transmite por contacto directo", "contacto directo"],
+      ["conveccion el calor se transmite a traves del movimiento de liquidos o gases", "movimiento de liquidos o gases"],
+      ["radiacion el calor se transmite mediante ondas a traves del espacio vacio", "ondas a traves del espacio vacio"]
+    ]
   },
   {
     "id": "6E",
@@ -469,11 +706,18 @@
     "answerImageEn": "images/6E_A_en.png",
     "questionImageEs": "images/6E_Q_es.png",
     "answerImageEs": "images/6E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["conduction heat is transferred by direct contact", "direct contact"],
+      ["convection heat is transferred through the movement of liquids or gasses", "movement of liquids or gases"],
+      ["radiation heat is transferred by waves through empty space", "waves through empty space"]
+    ],
     "questionReadAloudEn": "Define the 3 types of heat\ntransfer:\n ●​Conduction\n ●​Convection\n ●​Radiation",
     "answerReadAloudEn": "●​ Conduction: Heat is transferred\n by direct contact\n ●​ Convection: Heat is transferred\n through the movement of\n liquids or gasses\n ●​ Radiation: Heat is transferred by\n waves through empty space",
     "questionReadAloudEs": "¿Qué es la conductividad térmica?",
-    "answerReadAloudEs": "La conductividad térmica es la\ncapacidad de un objeto para\ntransferir calor\n(Por ejemplo, una cuchara de metal tiene una\nalta conductividad térmica, mientras que una\ncuchara de madera tiene una baja\nconductividad térmica)."
+    "answerReadAloudEs": "La conductividad térmica es la\ncapacidad de un objeto para\ntransferir calor\n(Por ejemplo, una cuchara de metal tiene una\nalta conductividad térmica, mientras que una\ncuchara de madera tiene una baja\nconductividad térmica).",
+    "acceptedAnswersEs": [
+      ["la conductividad termica es la capacidad de un objeto para transferir calor", "capacidad de transferir calor"]
+    ]
   },
   {
     "id": "6F",
@@ -483,7 +727,9 @@
     "answerImageEn": "images/6F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["thermal conductivity is an objects ability to transfer heat", "ability to transfer heat"]
+    ],
     "questionReadAloudEn": "What is thermal conductivity?",
     "answerReadAloudEn": "Thermal Conductivity is an object’s\nability to transfer heat\n(For example, a metal spoon has high thermal\nconductivity, but a wooden spoon has low\nthermal conductivity.)",
     "questionReadAloudEs": "",
@@ -497,11 +743,18 @@
     "answerImageEn": "images/7A_A_en.png",
     "questionImageEs": "images/7A_Q_es.png",
     "answerImageEs": "images/7A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["criteria are the requirements of the design", "requirements of the design"],
+      ["constraints are the limitations of the design", "limitations of the design"]
+    ],
     "questionReadAloudEn": "When thinking of their design solution,\nengineers need to think about the criteria and\nconstraints of their design.\nWhat are criteria and constraints?",
     "answerReadAloudEn": "●​ Criteria = requirements of the\n design\n ●​ Constraints = limitations of the\n design",
     "questionReadAloudEs": "Al idear una solución de diseño, los ingenieros\ndeben tener en cuenta los criterios y las\nlimitaciones de su proyecto.\n¿Qué son los criterios y las\nrestricciones?",
-    "answerReadAloudEs": "●​ Criterios = requisitos del diseño\n ●​ Restricciones = limitaciones del diseño"
+    "answerReadAloudEs": "●​ Criterios = requisitos del diseño\n ●​ Restricciones = limitaciones del diseño",
+    "acceptedAnswersEs": [
+      ["criterios son los requisitos del diseño", "requisitos del diseño"],
+      ["restricciones son las limitaciones del diseño", "limitaciones del diseño"]
+    ]
   },
   {
     "id": "7B",
@@ -511,11 +764,16 @@
     "answerImageEn": "images/7B_A_en.png",
     "questionImageEs": "images/7B_Q_es.png",
     "answerImageEs": "images/7B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["engineers test and evaluate prototypes to make the design solution better", "to improve the design"]
+    ],
     "questionReadAloudEn": "Why do engineers test and evaluate\nprototypes?",
     "answerReadAloudEn": "Engineers test and evaluate prototypes\nto make the design solution better.",
     "questionReadAloudEs": "¿Por qué los ingenieros realizan\npruebas y evalúan los prototipos?",
-    "answerReadAloudEs": "Los ingenieros prueban y evalúan los\nprototipos para mejorar la solución de\ndiseño."
+    "answerReadAloudEs": "Los ingenieros prueban y evalúan los\nprototipos para mejorar la solución de\ndiseño.",
+    "acceptedAnswersEs": [
+      ["los ingenieros prueban y evaluan los prototipos para mejorar la solucion de diseño", "para mejorar el diseño"]
+    ]
   },
   {
     "id": "7C",
@@ -525,10 +783,15 @@
     "answerImageEn": "images/7C_A_en.png",
     "questionImageEs": "images/7C_Q_es.png",
     "answerImageEs": "images/7C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a decision matrix helps engineers to evaluate and select the best design based on given criteria", "helps choose the best design based on criteria"]
+    ],
     "questionReadAloudEn": "What is the purpose of using a decision\nmatrix like the one below?",
     "answerReadAloudEn": "A decision matrix helps\nengineers to evaluate\nand select the best\ndesign based on given\ncriteria",
     "questionReadAloudEs": "¿Cuál es el objetivo de utilizar una matriz de\ndecisión como la que se muestra a\ncontinuación?",
-    "answerReadAloudEs": "Una matriz de decisión ayuda a\nlos ingenieros a evaluar y\nseleccionar el mejor diseño en\nfunción de unos criterios\ndeterminados"
+    "answerReadAloudEs": "Una matriz de decisión ayuda a\nlos ingenieros a evaluar y\nseleccionar el mejor diseño en\nfunción de unos criterios\ndeterminados",
+    "acceptedAnswersEs": [
+      ["una matriz de decision ayuda a los ingenieros a evaluar y seleccionar el mejor diseño en funcion de unos criterios determinados", "ayuda a elegir el mejor diseño segun criterios"]
+    ]
   }
 ]
