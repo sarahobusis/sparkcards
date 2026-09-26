@@ -7,11 +7,16 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "images/1A_Q_es.png",
     "answerImageEs": "images/1A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["ancient greece had a direct democracy in which people voted on each law and decision the society made", "a direct democracy where people voted on every law and decision"]
+    ],
     "questionReadAloudEn": "Name and describe the type of\ngovernment in Ancient Greece.",
     "answerReadAloudEn": "Ancient Greece had a direct\ndemocracy in which people voted\non each law and decision the\nsociety made.",
     "questionReadAloudEs": "Nombra y describe el tipo de\ngobierno que existía en la Antigua\nGrecia.",
-    "answerReadAloudEs": "Antiguamente Grecia tenía una\ndemocracia directa en la que la\ngente votó sobre cada ley decisión\ntomada por la sociedad."
+    "answerReadAloudEs": "Antiguamente Grecia tenía una\ndemocracia directa en la que la\ngente votó sobre cada ley decisión\ntomada por la sociedad.",
+    "acceptedAnswersEs": [
+      ["antiguamente grecia tenia una democracia directa en la que la gente voto sobre cada ley decision tomada por la sociedad", "una democracia directa donde la gente votaba cada ley y decision"]
+    ]
   },
   {
     "id": "1B",
@@ -21,11 +26,16 @@
     "answerImageEn": "images/1B_A_en.png",
     "questionImageEs": "images/1B_Q_es.png",
     "answerImageEs": "images/1B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["ancient rome had a republic representative democracy in which people voted for leaders who made the laws and decisions for a society", "a republic where people voted for leaders who made the laws"]
+    ],
     "questionReadAloudEn": "Name and describe the type of\ngovernment in Ancient Rome.",
     "answerReadAloudEn": "Ancient Rome had a republic\n(representative democracy) in\nwhich people voted for leaders\nwho made the laws and decisions\nfor a society.",
     "questionReadAloudEs": "Nombra y describe el tipo de\ngobierno que existía en la Antigua\nRoma.",
-    "answerReadAloudEs": "La antigua Roma tenía una\nrepública (democracia\nrepresentativa) en la que el\npueblo votaba por sus líderes\nquién hizo las leyes y decisiones\npara una sociedad."
+    "answerReadAloudEs": "La antigua Roma tenía una\nrepública (democracia\nrepresentativa) en la que el\npueblo votaba por sus líderes\nquién hizo las leyes y decisiones\npara una sociedad.",
+    "acceptedAnswersEs": [
+      ["la antigua roma tenia una republica democracia representativa en la que el pueblo votaba por sus lideres quien hizo las leyes y decisiones para una sociedad", "una republica donde la gente votaba por lideres que hacian las leyes"]
+    ]
   },
   {
     "id": "1C",
@@ -35,11 +45,16 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "images/1C_Q_es.png",
     "answerImageEs": "images/1C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["it means the government is split into three branches each with its own responsibilities", "the government is divided into three branches with separate responsibilities"]
+    ],
     "questionReadAloudEn": "Ancient Romans created the concept of\nseparation of powers.\nWhat does separation of powers\nmean?",
     "answerReadAloudEn": "It means the government is\nsplit into three branches\neach with its own\nresponsibilities.",
     "questionReadAloudEs": "Los antiguos romanos crearon el concepto de\nseparación de poderes.\n¿Qué significa la separación de\npoderes?",
-    "answerReadAloudEs": "Significa El gobierno está\ndividido en tres ramas, cada\nuna con sus propias\nresponsabilidades."
+    "answerReadAloudEs": "Significa El gobierno está\ndividido en tres ramas, cada\nuna con sus propias\nresponsabilidades.",
+    "acceptedAnswersEs": [
+      ["significa que el gobierno esta dividido en tres ramas cada una con sus propias responsabilidades", "el gobierno se divide en tres ramas con responsabilidades separadas"]
+    ]
   },
   {
     "id": "2A",
@@ -49,11 +64,18 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "images/2A_Q_es.png",
     "answerImageEs": "images/2A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the british monarchy", "britain"],
+      ["colonists had no power to make laws or control taxes", "colonists couldn't make laws or control taxes"]
+    ],
     "questionReadAloudEn": "1.​Who controlled the American\n colonies?\n 2.​Why were the colonists angry?",
     "answerReadAloudEn": "1.​The British monarchy\n 2.​Colonists had no power to make\n laws or control taxes",
     "questionReadAloudEs": "1.​¿Quién controlaba las colonias\n americanas?\n 2.​¿Por qué estaban enojados los\n colonos?",
-    "answerReadAloudEs": "1.​La monarquía británica\n 2.​Los colonos no tenían poder para\n crear leyes ni controlar los\n impuestos."
+    "answerReadAloudEs": "1.​La monarquía británica\n 2.​Los colonos no tenían poder para\n crear leyes ni controlar los\n impuestos.",
+    "acceptedAnswersEs": [
+      ["la monarquia britanica", "gran bretaña"],
+      ["los colonos no tenian poder para crear leyes ni controlar los impuestos", "los colonos no podian hacer leyes ni controlar impuestos"]
+    ]
   },
   {
     "id": "2B",
@@ -63,11 +85,16 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "images/2B_Q_es.png",
     "answerImageEs": "images/2B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["tells the british monarchy that the colonists want their own government", "the colonists wanted independence from britain and their own government"]
+    ],
     "questionReadAloudEn": "What is the main purpose in the\nDeclaration of Independence?",
     "answerReadAloudEn": "Tells the British Monarchy that the\nColonists want their own government",
     "questionReadAloudEs": "¿Qué es el? ¿Cuál es el propósito\nprincipal de la Declaración de\nIndependencia?",
-    "answerReadAloudEs": "Le comunica a la monarquía británica\nque los colonos desean tener su propio\ngobierno."
+    "answerReadAloudEs": "Le comunica a la monarquía británica\nque los colonos desean tener su propio\ngobierno.",
+    "acceptedAnswersEs": [
+      ["le comunica a la monarquia britanica que los colonos desean tener su propio gobierno", "los colonos querian independencia y su propio gobierno"]
+    ]
   },
   {
     "id": "2C",
@@ -77,11 +104,18 @@
     "answerImageEn": "images/2C_A_en.png",
     "questionImageEs": "images/2C_Q_es.png",
     "answerImageEs": "images/2C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["britain and the colonists", "britain versus the colonists"],
+      ["the united states became its own nation with a representative democracy", "the us became an independent nation with a representative democracy"]
+    ],
     "questionReadAloudEn": "1.​Who fought the\n Revolutionary War?\n 2.​What happened after the war?",
     "answerReadAloudEn": "1.​Britain and the colonists\n 2.​The United States became its own\n nation with a Representative\n Democracy",
     "questionReadAloudEs": "1.​¿Quiénes lucharon en la\n Revolución?¿Y la guerra?\n 2.​Qué ¿Sucedió después de la guerra?",
-    "answerReadAloudEs": "1.​Gran Bretaña y los colonos\n 2.​Estados Unidos se convirtió en una\n nación independiente con una\n democracia representativa."
+    "answerReadAloudEs": "1.​Gran Bretaña y los colonos\n 2.​Estados Unidos se convirtió en una\n nación independiente con una\n democracia representativa.",
+    "acceptedAnswersEs": [
+      ["gran bretaña y los colonos"],
+      ["estados unidos se convirtio en una nacion independiente con una democracia representativa", "se convirtio en una nacion independiente"]
+    ]
   },
   {
     "id": "2D",
@@ -91,11 +125,20 @@
     "answerImageEn": "images/2D_A_en.png",
     "questionImageEs": "images/2D_Q_es.png",
     "answerImageEs": "images/2D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["george washington", "washington"],
+      ["thomas jefferson", "jefferson"],
+      ["james madison", "madison"]
+    ],
     "questionReadAloudEn": "Name that Founding Father!\n 1)​Who was the first president of the\n United States?\n 2)​Who wrote the Declaration of\n Independence?\n 3)​Who wrote the Constitution?",
     "answerReadAloudEn": "1)​George Washington\n 2)​Thomas Jefferson\n 3)​James Madison",
     "questionReadAloudEs": "norte¡Nombra a ese Padre\nFundador!\n 1)​¿Quién fue el primer presidente\n de los Estados Unidos?\n 2)​¿Quién escribió la Declaración de\n Independencia?\n 3)​¿Quién redactó la Constitución?",
-    "answerReadAloudEs": "1)​George Washington\n 2)​Thomas Jefferson\n 3)​James Madison"
+    "answerReadAloudEs": "1)​George Washington\n 2)​Thomas Jefferson\n 3)​James Madison",
+    "acceptedAnswersEs": [
+      ["george washington", "washington"],
+      ["thomas jefferson", "jefferson"],
+      ["james madison", "madison"]
+    ]
   },
   {
     "id": "2E",
@@ -105,11 +148,18 @@
     "answerImageEn": "images/2E_A_en.png",
     "questionImageEs": "images/2E_Q_es.png",
     "answerImageEs": "images/2E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the first rulebook for the us government", "the first set of rules for the us government"],
+      ["they gave too much freedom to state government and not enough power to the federal government", "too much power to the states and not enough to the federal government"]
+    ],
     "questionReadAloudEn": "1.​What were the Articles of\n Confederation?\n 2.​Why did they fail?",
     "answerReadAloudEn": "1.​The first rulebook for the U.S.\n Government\n 2.​They gave too much freedom to\n state government and not enough\n power to the federal government",
     "questionReadAloudEs": "1.​¿Qué eran los Artículos de la\n Confederación?\n 2.​¿Por qué fracasaron?",
-    "answerReadAloudEs": "1.​El primer reglamento del\n Gobierno de los Estados Unidos\n 2.​Le dieron demasiada libertad al\n gobierno estatal y no suficiente\n poder al gobierno federal."
+    "answerReadAloudEs": "1.​El primer reglamento del\n Gobierno de los Estados Unidos\n 2.​Le dieron demasiada libertad al\n gobierno estatal y no suficiente\n poder al gobierno federal.",
+    "acceptedAnswersEs": [
+      ["el primer reglamento del gobierno de los estados unidos", "el primer conjunto de reglas del gobierno de eeuu"],
+      ["le dieron demasiada libertad al gobierno estatal y no suficiente poder al gobierno federal", "demasiado poder a los estados y poco al gobierno federal"]
+    ]
   },
   {
     "id": "2F",
@@ -119,11 +169,18 @@
     "answerImageEn": "images/2F_A_en.png",
     "questionImageEs": "images/2F_Q_es.png",
     "answerImageEs": "images/2F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["federalists supported a strong federal government and the constitution", "federalists wanted a strong federal government"],
+      ["anti federalists supported more power for the states and pushed for a bill of rights", "anti-federalists wanted more state power and a bill of rights"]
+    ],
     "questionReadAloudEn": "America’s first two political parties\nwere the Federalists and Anti-Federalists.\nBriefly describe each of their beliefs\nabout government.",
     "answerReadAloudEn": "●​ Federalists: supported a strong\n federal government and the\n Constitution\n ●​ Anti-Federalists: supported more\n power for the states and pushed\n to have a Bills of Rights to protect\n individual freedoms",
     "questionReadAloudEs": "Los dos primeros partidos políticos\nde Estados Unidos fueron losfederalistasy\nAntifederalistas.\nDescriba brevemente las creencias de\ncada uno de ellos sobre el gobierno.",
-    "answerReadAloudEs": "●​ Federalistas:apoyó unfuerte\n federalgobierno y la Constitución\n ●​ Antifederalistas:apoyadomás\n potencia para el sestados y\n presionaron para tener una\n Declaración de Derechospara\n proteger a las personaslibertades"
+    "answerReadAloudEs": "●​ Federalistas:apoyó unfuerte\n federalgobierno y la Constitución\n ●​ Antifederalistas:apoyadomás\n potencia para el sestados y\n presionaron para tener una\n Declaración de Derechospara\n proteger a las personaslibertades",
+    "acceptedAnswersEs": [
+      ["federalistas apoyo un fuerte gobierno federal y la constitucion", "los federalistas querian un gobierno federal fuerte"],
+      ["antifederalistas apoyaron mas poder para los estados y presionaron para tener una declaracion de derechos", "los antifederalistas querian mas poder estatal y una declaracion de derechos"]
+    ]
   },
   {
     "id": "2G",
@@ -133,7 +190,9 @@
     "answerImageEn": "images/2G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the rulebook for the united states that says how the government works and what power it has", "the set of rules for how the government works and its powers"]
+    ],
     "questionReadAloudEn": "The Constitution is the supreme law of the land.\nWhat does that mean?",
     "answerReadAloudEn": "The rulebook for the United\nStates that says how the\ngovernment works and what\npower it has",
     "questionReadAloudEs": "",
@@ -147,7 +206,9 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a set of written rules that states how the government works and what power it has", "the rules for how the government works and its powers"]
+    ],
     "questionReadAloudEn": "The Constitution is the supreme law of the land.\nWhat does that mean?",
     "answerReadAloudEn": "A set of written rules that states\nhow the government works and\nwhat power it has",
     "questionReadAloudEs": "",
@@ -161,7 +222,9 @@
     "answerImageEn": "images/3B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the three branches of government", "three branches of government"]
+    ],
     "questionReadAloudEn": "What do articles 1-3 of the Constitution\ncreate?",
     "answerReadAloudEn": "The three branches of government.",
     "questionReadAloudEs": "",
@@ -175,7 +238,10 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an amendment is a change to the constitution", "a change to the constitution"],
+      ["27 amendments", "27"]
+    ],
     "questionReadAloudEn": "1.​What is an Amendment?\n 2.​How many Amendments are\n there?",
     "answerReadAloudEn": "1.​An Amendment is a change to the\n Constitution\n 2.​27 Amendments",
     "questionReadAloudEs": "",
@@ -189,7 +255,10 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the first 10 amendments to the constitution", "the first ten amendments"],
+      ["the bill of rights protects rights and freedoms for people in the us", "protects rights and freedoms of people in the us"]
+    ],
     "questionReadAloudEn": "1.​What is the Bill of Rights?\n 2.​What does the Bill of Rights\n protect?",
     "answerReadAloudEn": "1.​The first 10 Amendments to the\n Constitution\n 2.​The Bill of Rights protects rights\n and freedoms for people in the US",
     "questionReadAloudEs": "",
@@ -203,7 +272,13 @@
     "answerImageEn": "images/3E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["religion"],
+      ["assembly"],
+      ["press"],
+      ["petition"],
+      ["speech"]
+    ],
     "questionReadAloudEn": "What are the five freedoms guaranteed\nin the First Amendment?",
     "answerReadAloudEn": "1.​Religion\n 2.​Assembly\n 3.​Press\n 4.​Petition\n 5.​Speech",
     "questionReadAloudEs": "",
@@ -217,7 +292,9 @@
     "answerImageEn": "images/3F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the right to bear arms", "the right to own a gun"]
+    ],
     "questionReadAloudEn": "What right is guaranteed in the\n Second Amendment?",
     "answerReadAloudEn": "The right to bear arms (own a gun)",
     "questionReadAloudEs": "",
@@ -231,7 +308,9 @@
     "answerImageEn": "images/3G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the police cannot search or take your property without a reason supported by evidence or legal permission from a judge", "protection from unreasonable searches without probable cause or a warrant"]
+    ],
     "questionReadAloudEn": "The Fourth Amendment protects\nagainst unreasonable search and\nseizure.\n Explain this right.",
     "answerReadAloudEn": "Except in some emergencies, the police\ncannot search or take your property\nwithout:\n1. a reason supported by evidence\n(probable cause)\n2. legal permission from a judge (a\nwarrant)",
     "questionReadAloudEs": "",
@@ -245,7 +324,10 @@
     "answerImageEn": "images/3H_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["due process means the government must follow fair rules before it can punish you", "the government must follow fair procedures before punishing you"],
+      ["protection against self incrimination means you dont have to say anything or provide evidence that would make you look guilty", "you don't have to testify against yourself"]
+    ],
     "questionReadAloudEn": "1The Fifth Amendment guarantees rights\nin a criminal trial, including due process\nand protection against self\nincrimination.\n 2\n Explain these two rights.",
     "answerReadAloudEn": "1.​Due process:\n The government must follow fair\n rules before it can punish you\n2.​Protection against self incrimination: You\n don’t have to say anything or provide\n evidence that would make you look\n guilty.",
     "questionReadAloudEs": "",
@@ -259,7 +341,11 @@
     "answerImageEn": "images/4A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["legislative writes laws", "legislative branch writes laws"],
+      ["executive carries out laws", "executive branch carries out laws"],
+      ["judicial interprets laws", "judicial branch interprets laws"]
+    ],
     "questionReadAloudEn": "What are the three branches\nof government and what are their\njobs?",
     "answerReadAloudEn": "1.​Legislative: writes laws\n 2.​Executive: carries out laws\n 3.​Judicial: interprets laws",
     "questionReadAloudEs": "",
@@ -273,7 +359,9 @@
     "answerImageEn": "images/4B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["checks and balances makes sure that one branch of government doesnt have all the power", "prevents any one branch from having too much power"]
+    ],
     "questionReadAloudEn": "What is the purpose of checks and\nbalances?",
     "answerReadAloudEn": "Checks and balances makes sure that\none branch of government doesn’t have\nall the power.\nExample: The president can veto laws passed by Congress.",
     "questionReadAloudEs": "",
@@ -287,7 +375,10 @@
     "answerImageEn": "images/4C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["congress"],
+      ["the senate and the house of representatives", "senate and house"]
+    ],
     "questionReadAloudEn": "1.​What do we call the\n legislative branch of the Federal\n Government?\n 2.​What are the two parts?",
     "answerReadAloudEn": "p p p y g\n4c)\n 1.​Congress\n 2.​The Senate and the House of\n Representatives",
     "questionReadAloudEs": "",
@@ -301,7 +392,10 @@
     "answerImageEn": "images/4D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the president"],
+      ["the cabinet of advisors who are called secretaries", "the cabinet"]
+    ],
     "questionReadAloudEn": "1.​Who is the leader of the\n executive branch of the Federal\n Government?\n 2.​Who advises this leader?",
     "answerReadAloudEn": "1.​The President\n 2.​The “Cabinet” of advisors who are\n called Secretaries\nExamples: Secretary of Education, Secretary of Defense",
     "questionReadAloudEs": "",
@@ -315,7 +409,9 @@
     "answerImageEn": "images/4E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the supreme court"]
+    ],
     "questionReadAloudEn": "The judicial branch is made up\nof many different courts.\nWhat is the highest court in the\njudicial branch?",
     "answerReadAloudEn": "The Supreme Court",
     "questionReadAloudEs": "",
@@ -329,7 +425,10 @@
     "answerImageEn": "images/4F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["democrats believe the government should do more to help people through laws and programs", "democrats want more government help through laws and programs"],
+      ["republicans believe the government should have less control and people should rely more on themselves", "republicans want less government control and more self reliance"]
+    ],
     "questionReadAloudEn": "What are the two key differences\nbetween Democrats and Republicans?",
     "answerReadAloudEn": "Democrats believe the government\nshould do more to help people through\nlaws and programs.\nRepublicans believe the government\nshould have less control and people\nshould rely more on themselves.",
     "questionReadAloudEs": "",
@@ -357,7 +456,9 @@
     "answerImageEn": "images/5A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["representative democracy citizens vote for representatives who then make the laws", "a representative democracy where people elect representatives to make laws"]
+    ],
     "questionReadAloudEn": "What kind of government does the\nUnited States have? Explain it.",
     "answerReadAloudEn": "Representative Democracy:\nCitizens vote for representatives\nwho then make the laws. Citizens\ndon’t vote directly on federal laws.",
     "questionReadAloudEs": "",
@@ -371,7 +472,10 @@
     "answerImageEn": "images/5B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["natural born means being born in the usa or having parents who are citizens at birth", "born in the usa or born to citizen parents"],
+      ["naturalized means moving to the usa applying and passing a test", "move to the us, apply, and pass a test"]
+    ],
     "questionReadAloudEn": "What are the two ways to become\na US citizen?",
     "answerReadAloudEn": "1.​Natural Born:\n Be born in the USA, or have\n parents who are citizens at\n the time of their birth\n 2.​Naturalized:\n Move to the USA, apply, and\n pass a test",
     "questionReadAloudEs": "",
@@ -385,7 +489,9 @@
     "answerImageEn": "images/5C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["freedoms and powers people can choose to use", "freedoms and powers a person can use"]
+    ],
     "questionReadAloudEn": "What are rights?",
     "answerReadAloudEn": "Freedoms and powers people can\nchoose to use.",
     "questionReadAloudEs": "",
@@ -399,7 +505,10 @@
     "answerImageEn": "images/5E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["duties people are required to do for their city state or country", "things you are required to do for your community"],
+      ["following laws", "obeying the law"]
+    ],
     "questionReadAloudEn": "1.​What are civic\n responsibilities?\n 2.​What is one major example of\n a civic responsibility?",
     "answerReadAloudEn": "1.​Duties people are required to\n do for their city, state, or\n country.\n 2.​ Following laws",
     "questionReadAloudEs": "",
@@ -413,7 +522,10 @@
     "answerImageEn": "images/5F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["jury duty"],
+      ["voting"]
+    ],
     "questionReadAloudEn": "What are the two major rights and\nresponsibilities of citizens that\nresidents don’t have?",
     "answerReadAloudEn": "1.​jury duty\n 2.​voting",
     "questionReadAloudEs": "",
@@ -427,7 +539,10 @@
     "answerImageEn": "images/5G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["taxes are money people pay to the government", "money paid to the government"],
+      ["taxes are used to pay for public goods and services", "used for public schools roads and parks"]
+    ],
     "questionReadAloudEn": "One civic responsibility everyone (citizens and\nresidents) has in the United States is to pay taxes.\n 1.​What are taxes?\n 2.​What are taxes used for?",
     "answerReadAloudEn": "1.​Taxes are money people pay\n to the government\n 2.​Taxes are used to pay for\n public goods and services\nExamples: public schools, roads, parks, etc.",
     "questionReadAloudEs": "",
@@ -441,7 +556,9 @@
     "answerImageEn": "images/6A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["powers not given to the federal government go to the states and the people", "any power not given to the federal government belongs to the states and people"]
+    ],
     "questionReadAloudEn": "What does the 10th Amendment say?",
     "answerReadAloudEn": "Powers not given to the federal\ngovernment go to the states and\nthe people",
     "questionReadAloudEs": "",
@@ -455,7 +572,9 @@
     "answerImageEn": "images/6B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the idea that the federal government and state governments share and divide power in a nation", "power is shared and divided between federal and state governments"]
+    ],
     "questionReadAloudEn": "What is federalism?\nThe idea that the federal government and state\ngovernments share and divide power in a nation.",
     "answerReadAloudEn": "The idea that the federal\ngovernment and state governments\nshare and divide power in a nation.",
     "questionReadAloudEs": "",
@@ -483,7 +602,16 @@
     "answerImageEn": "images/6D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["president"],
+      ["us representatives", "representatives"],
+      ["us senators", "senators"],
+      ["governor"],
+      ["state representatives"],
+      ["state senators"],
+      ["mayor"],
+      ["city council members", "city council"]
+    ],
     "questionReadAloudEn": "The federal, state and local governments all have\nthe same three branches of government.\nHowever, what we call the elected officials is\ndifferent at each level.\nWhat are elected officials called in\nthe executive and legislative\nbranches at each level?\nComplete the table below.\n Executive Legislative\n Federal (1)\n (2)\n State (1)\n (2)\n Local",
     "answerReadAloudEn": "Executive Legislative\n Federal President (1) U.S. Representatives\n (2) U.S. Senators\n State Governor (1) State Representatives\n (2) State Senators\n Local* Mayor City Council Members\n*These are the titles of local representatives in\nLawrence. Every city or town throughout the U.S.\ndecides what to call their elected officials.",
     "questionReadAloudEs": "",
@@ -497,7 +625,9 @@
     "answerImageEn": "images/6E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the right to a free public education", "free public education"]
+    ],
     "questionReadAloudEn": "The Massachusetts Constitution protects all civil\nrights in the United States Constitution, and adds\nmore. For example, freedom of speech is\nprotected in the US Constitution and the MA\nConstitution. However, the MA Constitution\nincludes additional rights that are not found in\nthe US Constitution.\nWhat major right is protected in\nthe MA Constitution but not in the\nUS Constitution?",
     "answerReadAloudEn": "The right to a free, public\n education",
     "questionReadAloudEs": "",
@@ -511,7 +641,9 @@
     "answerImageEn": "images/7A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the elastic clause allows congress to stretch its powers to do things beyond whats written in the constitution", "allows congress to do things not explicitly listed in the constitution"]
+    ],
     "questionReadAloudEn": "The Necessary and Proper\nClause in the Constitution is also called\nthe Elastic Clause. What does the\nElastic Clause do?",
     "answerReadAloudEn": "The Elastic Clause allows Congress to stretch\nits powers - do things beyond what’s written\nin the Constitution.",
     "questionReadAloudEs": "",
@@ -525,7 +657,9 @@
     "answerImageEn": "images/7B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["judicial review is when the supreme court decides whether laws or government actions follow the constitution", "the supreme court determines if laws are constitutional"]
+    ],
     "questionReadAloudEn": "What is judicial review?",
     "answerReadAloudEn": "Judicial review is when the Supreme Court\ndecides whether laws or government actions\nfollow the Constitution.",
     "questionReadAloudEs": "",
@@ -553,7 +687,9 @@
     "answerImageEn": "images/7E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the north and the south disagreed about slavery, the south wanted to keep it and the north wanted to limit or end it", "disagreement over slavery between north and south"]
+    ],
     "questionReadAloudEn": "The time before the Civil War there was\ngrowing tension between the North and the\nSouth in the USA. What was the main cause\nof this tension?",
     "answerReadAloudEn": "The North and the South disagreed about\nslavery. The South wanted to keep slavery, but\nthe North wanted to limit or end it.",
     "questionReadAloudEs": "",
@@ -567,7 +703,10 @@
     "answerImageEn": "images/7F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["reconstruction"],
+      ["helped rebuild the south and decided rights for people who were enslaved before", "rebuilding the south and determining rights for formerly enslaved people"]
+    ],
     "questionReadAloudEn": "1.​ What was the period\n after the Civil War Called?\n 2.​ What happened during this time?",
     "answerReadAloudEn": "1.​Reconstruction\n 2.​ During Reconstruction the United States:\n a.​ helps rebuilds the South\n b.​ decides rights for people who\n were enslaved before. ​ ​\n ​ ​",
     "questionReadAloudEs": "",
@@ -581,7 +720,9 @@
     "answerImageEn": "images/7G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["abolished slavery", "ended slavery"]
+    ],
     "questionReadAloudEn": "What did the 13th amendment\ndo?",
     "answerReadAloudEn": "Abolished slavery",
     "questionReadAloudEs": "",
@@ -595,7 +736,10 @@
     "answerImageEn": "images/7H_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["gave anyone born in the us citizenship", "citizenship to anyone born in the us"],
+      ["gave equal rights to all citizens including due process", "equal rights and due process for all citizens"]
+    ],
     "questionReadAloudEn": "What did the 14th amendment\ndo?",
     "answerReadAloudEn": "1.​Gave anyone born in the US\n citizenship\n2.​Gave equal rights to all\n citizens including due process",
     "questionReadAloudEs": "",
@@ -609,7 +753,9 @@
     "answerImageEn": "images/7I_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["gave men of color the right to vote", "the right to vote regardless of race"]
+    ],
     "questionReadAloudEn": "What did the 15th amendment\ndo?",
     "answerReadAloudEn": "Gave men of color the\nright to vote",
     "questionReadAloudEs": "",
@@ -623,7 +769,9 @@
     "answerImageEn": "images/8A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["journalists have the right to report news without the government stopping or controlling them", "the right to report news without government interference"]
+    ],
     "questionReadAloudEn": "What is freedom of the\npress?",
     "answerReadAloudEn": "AAA\nJournalists have the right to report\nnews without the government\nstopping or controlling them.",
     "questionReadAloudEs": "",
@@ -637,7 +785,10 @@
     "answerImageEn": "images/8B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["to help inform citizens of the truth", "informs citizens of the truth"],
+      ["to make sure that the government is not doing something unfair", "checks that the government isn't acting unfairly"]
+    ],
     "questionReadAloudEn": "Why was free press included in the\nFirst Amendment?",
     "answerReadAloudEn": "●​ To help inform citizens of the truth\n●​ To make sure that the government\n is not doing something unfair.",
     "questionReadAloudEs": "",
@@ -651,7 +802,9 @@
     "answerImageEn": "images/8C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["political cartoons use pictures and humor to show ideas and criticize the government in an interesting way", "use images and humor to criticize the government or show ideas"]
+    ],
     "questionReadAloudEn": "Political cartoons are part of the press.\nWhat is the purpose of a political\ncartoon? Below is an example.",
     "answerReadAloudEn": "Political cartoons use pictures and\nhumor to show ideas and criticize\nthe government in an interesting\nway.",
     "questionReadAloudEs": "",

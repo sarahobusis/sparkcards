@@ -7,11 +7,18 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "images/1A_Q_es.png",
     "answerImageEs": "images/1A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the boat would be pushed backwards in the opposite direction of the man", "the boat moves backward"],
+      ["for every action there is an equal and opposite reaction", "equal and opposite reaction"]
+    ],
     "questionReadAloudEn": "1) If a man pushes off a boat as he jumps to\nthe land, what would happen to the boat?\n2)This is an example of Newton’s 3rd Law of\nMotion. Describe Newton’s 3rd Law.",
     "answerReadAloudEn": "1.​ The boat would be pushed backwards.\n (*The opposite direction of the man)\n 2.​ For every action, there is an equal and\n opposite reaction",
     "questionReadAloudEs": "1) Si un hombre empuja un barco al saltar a\ntierra, ¿qué le ocurriría al barco?\n2)Este es un ejemplo de la 3ª Ley del\nMovimiento de Newton. Describa la 3ª Ley\nde Newton.",
-    "answerReadAloudEs": "1.​ El barco sería empujado hacia atrás.\n (*La dirección opuesta a la del\n hombre)\n 2.​ Para cada acción hay una reacción\n igual y opuesta"
+    "answerReadAloudEs": "1.​ El barco sería empujado hacia atrás.\n (*La dirección opuesta a la del\n hombre)\n 2.​ Para cada acción hay una reacción\n igual y opuesta",
+    "acceptedAnswersEs": [
+      ["el barco seria empujado hacia atras en la direccion opuesta al hombre", "el barco se mueve hacia atras"],
+      ["para cada accion hay una reaccion igual y opuesta", "reaccion igual y opuesta"]
+    ]
   },
   {
     "id": "1B",
@@ -25,7 +32,10 @@
     "questionReadAloudEn": "",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "Basándote en la 3ª Ley de Newton, si el\ncoche y el camión de abajo colisionan, ¿qué\nvehículo ejercerá más fuerza?",
-    "answerReadAloudEs": "¡¡Ambos vehículos ejercerán la misma\nfuerza!!\n(La 3ª Ley de Newton dice que para cada\nacción hay una reacción igual y opuesta. -\nesto significa que cuando dos cosas chocan,\nejercen fuerzas iguales y opuestas entre sí)."
+    "answerReadAloudEs": "¡¡Ambos vehículos ejercerán la misma\nfuerza!!\n(La 3ª Ley de Newton dice que para cada\nacción hay una reacción igual y opuesta. -\nesto significa que cuando dos cosas chocan,\nejercen fuerzas iguales y opuestas entre sí).",
+    "acceptedAnswersEs": [
+      ["ambos vehiculos ejerceran la misma fuerza", "la misma fuerza en ambos vehiculos"]
+    ]
   },
   {
     "id": "1C",
@@ -35,11 +45,18 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "images/1C_Q_es.png",
     "answerImageEs": "images/1C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the car"],
+      ["newtons second law states that the more mass an object has the more force is needed to move it", "more mass needs more force to accelerate"]
+    ],
     "questionReadAloudEn": "1) Which requires more force to move - a\nbaby stroller or a car?\n2) Newton’s 2nd Law explains why this is\ntrue. Explain Newton’s 2nd Law.",
     "answerReadAloudEn": "1) The Car\n2) Newton’s 2nd law states that the more\nmass an object has the more force is needed\nto move it (accelerate it).",
     "questionReadAloudEs": "1) ¿Qué requiere más fuerza para moverse:\nun cochecito de bebé o un coche?\n2) La 2ª Ley de Newton explica por qué esto\nes cierto. Explica la 2ª Ley de Newton.",
-    "answerReadAloudEs": "1) El coche\n2) La 2ª ley de Newton establece que cuanta\nmás masa tiene un objeto, más fuerza se\nnecesita para moverlo (acelerarlo)."
+    "answerReadAloudEs": "1) El coche\n2) La 2ª ley de Newton establece que cuanta\nmás masa tiene un objeto, más fuerza se\nnecesita para moverlo (acelerarlo).",
+    "acceptedAnswersEs": [
+      ["el coche"],
+      ["la segunda ley de newton establece que cuanta mas masa tiene un objeto mas fuerza se necesita para moverlo", "mas masa necesita mas fuerza para acelerar"]
+    ]
   },
   {
     "id": "1D",
@@ -49,11 +66,16 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "images/1D_Q_es.png",
     "answerImageEs": "images/1D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["force equals mass times acceleration", "mass times acceleration"]
+    ],
     "questionReadAloudEn": "What is the formula that calculates the\n“Force” in Newton’s 2nd Law?",
     "answerReadAloudEn": "Force = Mass x Acceleration",
     "questionReadAloudEs": "¿Cuál es la fórmula que calcula la \"Fuerza\" en\nla 2ª Ley de Newton?",
-    "answerReadAloudEs": "Fuerza = Masa x Aceleración"
+    "answerReadAloudEs": "Fuerza = Masa x Aceleración",
+    "acceptedAnswersEs": [
+      ["fuerza es igual a masa por aceleracion", "masa por aceleracion"]
+    ]
   },
   {
     "id": "1E",
@@ -63,11 +85,18 @@
     "answerImageEn": "images/1E_A_en.png",
     "questionImageEs": "images/1E_Q_es.png",
     "answerImageEs": "images/1E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the rider would continue to move forward", "the rider keeps moving forward"],
+      ["an object will continue to move in the same direction and the same speed unless an unbalanced force acts on it", "objects keep moving unless a force acts on them"]
+    ],
     "questionReadAloudEn": "1)What happens to a bike rider who hits a big\nrock (or other obstacle) ?\n2) This is an example of Newton’s 1st Law of\nMotion. Explain Newton’s 1st Law of Motion.",
     "answerReadAloudEn": "1) The rider would continue to move forward.\n2) An object will continue to move in the\nsame direction and the same speed - unless\nan unbalanced force acts on it.",
     "questionReadAloudEs": "1)¿Qué le ocurre a un ciclista que choca\ncontra una gran roca (u otro obstáculo)?\n2) Este es un ejemplo de la 1ª Ley del\nMovimiento de Newton. Explique la 1ª Ley\ndel Movimiento de Newton.",
-    "answerReadAloudEs": "1) El piloto seguiría avanzando.\n2) Un objeto seguirá moviéndose en la misma\ndirección y a la misma velocidad, a menos\nque actúe sobre él una fuerza."
+    "answerReadAloudEs": "1) El piloto seguiría avanzando.\n2) Un objeto seguirá moviéndose en la misma\ndirección y a la misma velocidad, a menos\nque actúe sobre él una fuerza.",
+    "acceptedAnswersEs": [
+      ["el piloto seguiria avanzando", "sigue moviendose hacia adelante"],
+      ["un objeto seguira moviendose en la misma direccion y a la misma velocidad a menos que actue sobre el una fuerza", "los objetos siguen moviendose a menos que una fuerza actue sobre ellos"]
+    ]
   },
   {
     "id": "1F",
@@ -77,11 +106,18 @@
     "answerImageEn": "images/1F_A_en.png",
     "questionImageEs": "images/1F_Q_es.png",
     "answerImageEs": "images/1F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the green team will win because it is applying greater force", "green wins because it applies more force"],
+      ["the net force will be 300 newtons because when forces are going in opposite directions you subtract them", "300 newtons, subtract opposing forces"]
+    ],
     "questionReadAloudEn": "p\n1f)\n1)Explain which team will win this tug-of-war\n2) What is the net force of this action? Why?",
     "answerReadAloudEn": "1)The Green team will win because it is\napplying greater force.\n2) The net force will be 300 Newtons,\nbecause when forces are going in opposite\ndirections, you subtract them.\n(2500 -2200 = 300.)",
     "questionReadAloudEs": "1)Explica qué equipo ganará este tira y afloja\n2) ¿Cuál es la fuerza neta de esta acción?\n¿Por qué?",
-    "answerReadAloudEs": "1)El equipo Verde ganará porque aplica\nmayor fuerza.\n2) La fuerza neta será de 300 Newtons,\nporque cuando las fuerzas van en direcciones\nopuestas hay que restarlas. (2500 -2200 =\n300.)"
+    "answerReadAloudEs": "1)El equipo Verde ganará porque aplica\nmayor fuerza.\n2) La fuerza neta será de 300 Newtons,\nporque cuando las fuerzas van en direcciones\nopuestas hay que restarlas. (2500 -2200 =\n300.)",
+    "acceptedAnswersEs": [
+      ["el equipo verde ganara porque aplica mayor fuerza", "verde gana porque aplica mas fuerza"],
+      ["la fuerza neta sera de 300 newtons porque cuando las fuerzas van en direcciones opuestas hay que restarlas", "300 newtons, se restan las fuerzas opuestas"]
+    ]
   },
   {
     "id": "1G",
@@ -91,11 +127,18 @@
     "answerImageEn": "images/1G_A_en.png",
     "questionImageEs": "images/1G_Q_es.png",
     "answerImageEs": "images/1G_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the wagon will move to the right", "moves to the right"],
+      ["the net force will be 18 newtons because when forces are going in the same direction you add them", "18 newtons, add forces going the same direction"]
+    ],
     "questionReadAloudEn": "1.​ In which direction will the wagon\n move?\n 2.​ What will the net force be and why?",
     "answerReadAloudEn": "1.​ The wagon will move to the right\n 2.​ The net force will be 18 Newtons\n because when forces are going in the\n same direction, you add them\n (10+8=18)",
     "questionReadAloudEs": "1.​ ¿En qué dirección se moverá el vagón?\n 2.​ ¿Cuál será la fuerza neta y por qué?",
-    "answerReadAloudEs": "1.​ El vagón se moverá a la derecha\n 2.​ La fuerza neta será de 18 Newtons\n porque cuando las fuerzas van en la\n misma dirección se suman (10+8=18)"
+    "answerReadAloudEs": "1.​ El vagón se moverá a la derecha\n 2.​ La fuerza neta será de 18 Newtons\n porque cuando las fuerzas van en la\n misma dirección se suman (10+8=18)",
+    "acceptedAnswersEs": [
+      ["el vagon se movera a la derecha", "se mueve a la derecha"],
+      ["la fuerza neta sera de 18 newtons porque cuando las fuerzas van en la misma direccion se suman", "18 newtons, se suman las fuerzas en la misma direccion"]
+    ]
   },
   {
     "id": "2A",
@@ -105,11 +148,16 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "images/2A_Q_es.png",
     "answerImageEs": "images/2A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["summer is when our hemisphere is tilted toward the sun so there is more direct sunlight which makes it hotter", "our hemisphere tilts toward the sun giving more direct sunlight and heat"]
+    ],
     "questionReadAloudEn": "●\nWhy is it warmer in the summer than in\nthe winter in Massachusetts? ●",
     "answerReadAloudEn": "●​ Summer is when our hemisphere is\n tilted toward the sun …\n●​ …so there is more direct sunlight on our\n part of the Earth - which makes it hotter.",
     "questionReadAloudEs": "●\n¿Por qué hace más calor en verano que en\ninvierno en Massachusetts? ●",
-    "answerReadAloudEs": "●​ El verano es cuando nuestro hemisferio\n está inclinado hacia el sol ...\n●​ ...por lo que hay más luz solar directa en\n nuestra parte de la Tierra, lo que hace que\n haga más calor."
+    "answerReadAloudEs": "●​ El verano es cuando nuestro hemisferio\n está inclinado hacia el sol ...\n●​ ...por lo que hay más luz solar directa en\n nuestra parte de la Tierra, lo que hace que\n haga más calor.",
+    "acceptedAnswersEs": [
+      ["el verano es cuando nuestro hemisferio esta inclinado hacia el sol por lo que hay mas luz solar directa lo que hace que haga mas calor", "nuestro hemisferio se inclina hacia el sol dando mas luz solar directa y calor"]
+    ]
   },
   {
     "id": "2B",
@@ -119,11 +167,18 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "images/2B_Q_es.png",
     "answerImageEs": "images/2B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["weather is the temperature and precipitation on any given day", "the temperature and precipitation on a specific day"],
+      ["climate is the average weather over a long period of time", "average weather over a long time"]
+    ],
     "questionReadAloudEn": "What is the difference between weather and\nclimate?",
     "answerReadAloudEn": "Weather is the temperature and\nprecipitation on any given day.\nClimate is the average weather over a long\nperiod of time.",
     "questionReadAloudEs": "¿Cuál es la diferencia entre el tiempo y el\nclima?",
-    "answerReadAloudEs": "El tiempo es la temperatura y las\nprecipitaciones de un día cualquiera.\nEl clima es el tiempo medio durante un largo\nperiodo de tiempo."
+    "answerReadAloudEs": "El tiempo es la temperatura y las\nprecipitaciones de un día cualquiera.\nEl clima es el tiempo medio durante un largo\nperiodo de tiempo.",
+    "acceptedAnswersEs": [
+      ["el tiempo es la temperatura y las precipitaciones de un dia cualquiera", "la temperatura y precipitacion de un dia especifico"],
+      ["el clima es el tiempo medio durante un largo periodo de tiempo", "el clima promedio durante mucho tiempo"]
+    ]
   },
   {
     "id": "2C",
@@ -133,11 +188,18 @@
     "answerImageEn": "images/2C_A_en.png",
     "questionImageEs": "images/2C_Q_es.png",
     "answerImageEs": "images/2C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["places near the ocean have warmer winters and cooler summers", "coastal places have milder winters and summers"],
+      ["ocean currents bring warmer temperatures to places near the poles and cooler temperatures to places near the equator", "currents move warm and cool water around the globe"]
+    ],
     "questionReadAloudEn": "Explain the 2 ways that the ocean’s water\ninfluences the climate of places near the\nocean.",
     "answerReadAloudEn": "1.​ Places near the ocean have warmer\n winters and cooler summers\n 2.​ Ocean currents bring warmer\n temperatures to places near the poles\n and cooler temperatures to places\n near the equator.",
     "questionReadAloudEs": "Explica las 2 formas en que el agua del\nocéano influye en el clima de los lugares\ncercanos al océano.",
-    "answerReadAloudEs": "1.​ Los lugares cercanos al océano tienen\n inviernos más cálidos y veranos más\n frescos\n 2.​ Las corrientes oceánicas llevan\n temperaturas más cálidas a los lugares\n cercanos a los polos y temperaturas\n más frías a los lugares cercanos al\n ecuador."
+    "answerReadAloudEs": "1.​ Los lugares cercanos al océano tienen\n inviernos más cálidos y veranos más\n frescos\n 2.​ Las corrientes oceánicas llevan\n temperaturas más cálidas a los lugares\n cercanos a los polos y temperaturas\n más frías a los lugares cercanos al\n ecuador.",
+    "acceptedAnswersEs": [
+      ["los lugares cercanos al oceano tienen inviernos mas calidos y veranos mas frescos", "lugares costeros tienen inviernos y veranos mas templados"],
+      ["las corrientes oceanicas llevan temperaturas mas calidas a los lugares cercanos a los polos y temperaturas mas frias a los lugares cercanos al ecuador", "las corrientes mueven agua calida y fria alrededor del globo"]
+    ]
   },
   {
     "id": "2D",
@@ -147,11 +209,18 @@
     "answerImageEn": "images/2D_A_en.png",
     "questionImageEs": "images/2D_Q_es.png",
     "answerImageEs": "images/2D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["when two air masses meet its called a front", "a front"],
+      ["warm air rises above cool air which often creates stormy weather", "warm air rising over cool air creates storms"]
+    ],
     "questionReadAloudEn": "●​ What is it called when two air masses\n meet?\n ●​ What happens when two air masses\n meet?",
     "answerReadAloudEn": "●​ When two air masses meet, it’s called\n a front\n ●​ Warm air rises above cool air. This\n often creates stormy weather.",
     "questionReadAloudEs": "●​ ¿Cómo se denomina el encuentro de\n dos masas de aire?\n ●​ ¿Qué ocurre cuando dos masas de aire\n se encuentran?",
-    "answerReadAloudEs": "●​ Cuando dos masas de aire se\n encuentran, se llama frente\n ●​ El aire caliente se eleva por encima del\n aire frío. Esto suele provocar\n tormentas."
+    "answerReadAloudEs": "●​ Cuando dos masas de aire se\n encuentran, se llama frente\n ●​ El aire caliente se eleva por encima del\n aire frío. Esto suele provocar\n tormentas.",
+    "acceptedAnswersEs": [
+      ["cuando dos masas de aire se encuentran se llama frente", "un frente"],
+      ["el aire caliente se eleva por encima del aire frio esto suele provocar tormentas", "el aire caliente sube sobre el aire frio y provoca tormentas"]
+    ]
   },
   {
     "id": "2E",
@@ -161,11 +230,16 @@
     "answerImageEn": "images/2E_A_en.png",
     "questionImageEs": "images/2E_Q_es.png",
     "answerImageEs": "images/2E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["high pressure areas have clear skies and sunshine and low pressure areas have rain and storms", "high pressure is clear, low pressure brings rain and storms"]
+    ],
     "questionReadAloudEn": "How is the weather in a high pressure area\ndifferent from the weather in a low pressure\narea?",
     "answerReadAloudEn": "High-pressure areas = clear skies and\nsunshine.\nLow pressure areas= rain and storms.",
     "questionReadAloudEs": "¿En qué se diferencia el tiempo en una zona\nde altas presiones del tiempo en una zona de\nbajas presiones?",
-    "answerReadAloudEs": "Zonas de altas presiones = cielos despejados\ny sol.\nZonas de bajas presiones = lluvias y\ntormentas."
+    "answerReadAloudEs": "Zonas de altas presiones = cielos despejados\ny sol.\nZonas de bajas presiones = lluvias y\ntormentas.",
+    "acceptedAnswersEs": [
+      ["zonas de altas presiones tienen cielos despejados y sol y zonas de bajas presiones tienen lluvias y tormentas", "alta presion es despejado, baja presion trae lluvia y tormentas"]
+    ]
   },
   {
     "id": "2F",
@@ -175,11 +249,16 @@
     "answerImageEn": "images/2F_A_en.png",
     "questionImageEs": "images/2F_Q_es.png",
     "answerImageEs": "images/2F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["burning fossil fuels releases carbon dioxide which forms a blanket in the atmosphere that traps heat from the sun", "carbon dioxide traps heat in the atmosphere"]
+    ],
     "questionReadAloudEn": "Most scientists think that climate change is\nthe biggest threat to our environment. ​\nHow does burning fossil fuels cause global\nwarming and climate change?",
     "answerReadAloudEn": "Burning fossil fuels releases carbon dioxide.\nThis carbon dioxide forms a “blanket” in the\natmosphere that traps heat from the sun.\n(preventing the heat from escaping back into space)",
     "questionReadAloudEs": "La mayoría de los científicos creen que el\ncambio climático es la mayor amenaza para\nnuestro medio ambiente. ​\n¿Cómo provoca la quema de combustibles\nfósiles el calentamiento global y el cambio\nclimático?",
-    "answerReadAloudEs": "La quema de combustibles fósiles libera\ndióxido de carbono\nEste dióxido de carbono forma una \"manta\"\nen la atmósfera que atrapa el calor del sol.\n(impidiendo que el calor vuelva a escapar al espacio)"
+    "answerReadAloudEs": "La quema de combustibles fósiles libera\ndióxido de carbono\nEste dióxido de carbono forma una \"manta\"\nen la atmósfera que atrapa el calor del sol.\n(impidiendo que el calor vuelva a escapar al espacio)",
+    "acceptedAnswersEs": [
+      ["la quema de combustibles fosiles libera dioxido de carbono que forma una manta en la atmosfera que atrapa el calor del sol", "el dioxido de carbono atrapa el calor en la atmosfera"]
+    ]
   },
   {
     "id": "2G",
@@ -189,7 +268,9 @@
     "answerImageEn": "images/2G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["sea level rise", "extreme weather", "droughts", "stronger storms", "wildfires", "mass extinctions"]
+    ],
     "questionReadAloudEn": "Name at least 2 effects of global warming\nand climate change.",
     "answerReadAloudEn": "●​ Sea level rise\n●​ Extreme weather\n (ex. droughts, stronger storms,\n wildfires)\n●​ Mass extinctions ​",
     "questionReadAloudEs": "",
@@ -203,11 +284,18 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "images/3A_Q_es.png",
     "answerImageEs": "images/3A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["convection currents are big circles of moving gasses or liquids", "circular movement of gases or liquids"],
+      ["convection currents happen when hot gasses or liquids rise and cool gasses or liquids sink", "hot fluid rises and cool fluid sinks"]
+    ],
     "questionReadAloudEn": "1.​What are convection currents?\n2.​What causes convection\n currents?",
     "answerReadAloudEn": "1.​Convection currents are big\n circles of moving gasses or\n liquids\n 2.​Convection currents happen\n when hot gasses or liquids rise\n and cool gasses or liquids sink",
     "questionReadAloudEs": "1.​¿Qué son las corrientes de\n convección?\n2.​¿Cuáles son las causas de las\n corrientes de convección?",
-    "answerReadAloudEs": "1.​Las corrientes de convección\n son grandes círculos de gases\n o líquidos en movimiento.\n 2.​Las corrientes de convección\n se producen cuando los gases\n o líquidos calientes ascienden\n y los gases o líquidos fríos\n descienden."
+    "answerReadAloudEs": "1.​Las corrientes de convección\n son grandes círculos de gases\n o líquidos en movimiento.\n 2.​Las corrientes de convección\n se producen cuando los gases\n o líquidos calientes ascienden\n y los gases o líquidos fríos\n descienden.",
+    "acceptedAnswersEs": [
+      ["las corrientes de conveccion son grandes circulos de gases o liquidos en movimiento", "movimiento circular de gases o liquidos"],
+      ["las corrientes de conveccion se producen cuando los gases o liquidos calientes ascienden y los gases o liquidos frios descienden", "el fluido caliente sube y el frio baja"]
+    ]
   },
   {
     "id": "3B",
@@ -217,11 +305,16 @@
     "answerImageEn": "images/3B_A_en.png",
     "questionImageEs": "images/3B_Q_es.png",
     "answerImageEs": "images/3B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["convection currents cause hot magma to rise then cool and sink which makes earths tectonic plates move and creates mountains and earthquakes", "convection currents move magma and drive tectonic plate movement"]
+    ],
     "questionReadAloudEn": "What is the role of convection\ncurrents in the Earth’s mantle?",
     "answerReadAloudEn": "Convection currents cause:\n ●​ hot magma to rise\n ●​ Then, it cools and sinks\n ●​ This makes Earth’s tectonic\n plates move and creates\n mountains, earthquakes,etc.",
     "questionReadAloudEs": "¿Qué papel desempeñan las\ncorrientes de convección en el\nmanto terrestre?",
-    "answerReadAloudEs": "Las corrientes de convección\ncausan:\n ●​ magma caliente para subir\n ●​ luego enfriar y hundir\n ●​ haciendo que las placas\n tectónicas de la Tierra se\n muevan y creen montañas,\n terremotos, etc."
+    "answerReadAloudEs": "Las corrientes de convección\ncausan:\n ●​ magma caliente para subir\n ●​ luego enfriar y hundir\n ●​ haciendo que las placas\n tectónicas de la Tierra se\n muevan y creen montañas,\n terremotos, etc.",
+    "acceptedAnswersEs": [
+      ["las corrientes de conveccion causan que el magma caliente suba luego se enfrie y se hunda haciendo que las placas tectonicas se muevan", "las corrientes de conveccion mueven el magma y las placas tectonicas"]
+    ]
   },
   {
     "id": "3C",
@@ -231,11 +324,20 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "images/3C_Q_es.png",
     "answerImageEs": "images/3C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["weathering breaks down rocks", "breaks down rocks"],
+      ["erosion moves pieces of rock away", "moves rock away"],
+      ["deposition is when rocks pile up", "rocks pile up"]
+    ],
     "questionReadAloudEn": "Explain how the following\nprocesses change the\nlandscape of the Earth:\n ●​weathering\n ●​erosion\n ●​deposition",
     "answerReadAloudEn": "●​ Weathering breaks\n down rocks.\n ●​ Erosion moves pieces of rock away.\n (see picture below)\n ●​ Deposition is when rocks pile up.",
     "questionReadAloudEs": "Explica cómo los siguientes\nprocesos modifican el paisaje\nde la Tierra:\n ●​Desgaste\n ●​erosión\n ●​Deposición",
-    "answerReadAloudEs": "●​ El desgaste, descompone las rocas.\n ●​ La erosión desplaza trozos de roca.\n (véase la imagen siguiente)\n ●​ La deposición se produce cuando las\n rocas se amontonan."
+    "answerReadAloudEs": "●​ El desgaste, descompone las rocas.\n ●​ La erosión desplaza trozos de roca.\n (véase la imagen siguiente)\n ●​ La deposición se produce cuando las\n rocas se amontonan.",
+    "acceptedAnswersEs": [
+      ["el desgaste descompone las rocas", "descompone las rocas"],
+      ["la erosion desplaza trozos de roca", "mueve la roca"],
+      ["la deposicion se produce cuando las rocas se amontonan", "las rocas se amontonan"]
+    ]
   },
   {
     "id": "3D",
@@ -245,11 +347,16 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "images/3D_Q_es.png",
     "answerImageEs": "images/3D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["non renewable means it takes millions of years to form and it can run out when people use it", "takes millions of years to form and can be used up"]
+    ],
     "questionReadAloudEn": "Fossil fuels and mineral ores are\nconsidered non-renewable resources.\nWhat does non-renewable mean?",
     "answerReadAloudEn": "Non-renewable means it takes\nmillions of years to form and it can\nrun out when people use it.",
     "questionReadAloudEs": "Los combustibles fósiles y los\nminerales se consideran recursos no\nrenovables.\n¿Qué significa no renovable?",
-    "answerReadAloudEs": "No renovable significa que tarda\nmillones de años en formarse y\npuede agotarse cuando la gente lo\nutiliza."
+    "answerReadAloudEs": "No renovable significa que tarda\nmillones de años en formarse y\npuede agotarse cuando la gente lo\nutiliza.",
+    "acceptedAnswersEs": [
+      ["no renovable significa que tarda millones de años en formarse y puede agotarse cuando la gente lo utiliza", "tarda millones de años en formarse y se puede agotar"]
+    ]
   },
   {
     "id": "3E",
@@ -259,11 +366,16 @@
     "answerImageEn": "images/3E_A_en.png",
     "questionImageEs": "images/3E_Q_es.png",
     "answerImageEs": "images/3E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["fossil fuels are formed when dead plants and animals are broken down buried and squeezed by heat and pressure over millions of years", "dead organisms are buried and compressed by heat and pressure over millions of years"]
+    ],
     "questionReadAloudEn": "Oil, coal and natural gas are fossil fuels.\nHow do fossil fuels form on Earth?",
     "answerReadAloudEn": "Fossil fuels are formed when dead\nplants and animals are broken\ndown, buried and squeezed by\nheat and pressure over millions of\nyears.",
     "questionReadAloudEs": "El petróleo, el carbón y el gas natural\nson combustibles fósiles.\n¿Cómo se forman los combustibles\nfósiles en la Tierra?",
-    "answerReadAloudEs": "Los combustibles fósiles se forman\ncuando plantas y animales\nmuertos se descomponen, se\nentierran y se estrujan por el calor\ny la presión durante millones de\naños."
+    "answerReadAloudEs": "Los combustibles fósiles se forman\ncuando plantas y animales\nmuertos se descomponen, se\nentierran y se estrujan por el calor\ny la presión durante millones de\naños.",
+    "acceptedAnswersEs": [
+      ["los combustibles fosiles se forman cuando plantas y animales muertos se descomponen se entierran y se estrujan por el calor y la presion durante millones de años", "organismos muertos enterrados y comprimidos por calor y presion durante millones de años"]
+    ]
   },
   {
     "id": "4A",
@@ -273,11 +385,18 @@
     "answerImageEn": "images/4A_A_en.png",
     "questionImageEs": "images/4A_Q_es.png",
     "answerImageEs": "images/4A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a physical change changes the look of a substance but does not create a new substance", "changes appearance but not the substance itself"],
+      ["broken glass", "boiling water", "chopping wood"]
+    ],
     "questionReadAloudEn": "1.​ What is a physical change?\n 2.​ Name 2 examples.",
     "answerReadAloudEn": "1. A physical change changes the look of a\nsubstance; but does NOT create a new\nsubstance\n2. Examples\n ●​ Broken glass\n ●​ Boiling water\n ●​ Chopping wood",
     "questionReadAloudEs": "1.​ ¿Qué es un cambio físico?\n 2.​ Nombra 2 ejemplos.",
-    "answerReadAloudEs": "1. Un cambio físico modifica el aspecto de una\nsustancia, pero NO crea una sustancia nueva.\n2. Ejemplos\n ●​ Cristales rotos\n ●​ Agua hirviendo\n ●​ Cortar leña"
+    "answerReadAloudEs": "1. Un cambio físico modifica el aspecto de una\nsustancia, pero NO crea una sustancia nueva.\n2. Ejemplos\n ●​ Cristales rotos\n ●​ Agua hirviendo\n ●​ Cortar leña",
+    "acceptedAnswersEs": [
+      ["un cambio fisico modifica el aspecto de una sustancia pero no crea una sustancia nueva", "cambia la apariencia pero no crea una sustancia nueva"],
+      ["cristales rotos", "agua hirviendo", "cortar leña"]
+    ]
   },
   {
     "id": "4B",
@@ -287,11 +406,18 @@
     "answerImageEn": "images/4B_A_en.png",
     "questionImageEs": "images/4B_Q_es.png",
     "answerImageEs": "images/4B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a chemical change creates a new substance through a chemical reaction", "creates a new substance"],
+      ["iron turning to rust", "burning wood into ashes", "mixing baking soda and vinegar"]
+    ],
     "questionReadAloudEn": "1.​ What is a chemical change?\n 2.​ Name 1 example",
     "answerReadAloudEn": "1. A chemical change creates a new substance\nthrough a chemical reaction\n2. Examples\n ●​ Iron turning to rust\n ●​ Burning wood into ashes\n ●​ Mixing baking soda and vinegar",
     "questionReadAloudEs": "1.​ ¿Qué es un cambio químico?\n 2.​ Nombre 1 ejemplo",
-    "answerReadAloudEs": "1. Un cambio químico crea una nueva sustancia\na través de una reacción química\n2. Ejemplos\n ●​ El hierro se oxida\n ●​ Convertir la madera en cenizas\n ●​ Mezclar bicarbonato y vinagre"
+    "answerReadAloudEs": "1. Un cambio químico crea una nueva sustancia\na través de una reacción química\n2. Ejemplos\n ●​ El hierro se oxida\n ●​ Convertir la madera en cenizas\n ●​ Mezclar bicarbonato y vinagre",
+    "acceptedAnswersEs": [
+      ["un cambio quimico crea una nueva sustancia a traves de una reaccion quimica", "crea una nueva sustancia"],
+      ["el hierro se oxida", "convertir la madera en cenizas", "mezclar bicarbonato y vinagre"]
+    ]
   },
   {
     "id": "4C",
@@ -301,11 +427,18 @@
     "answerImageEn": "images/4C_A_en.png",
     "questionImageEs": "images/4C_Q_es.png",
     "answerImageEs": "images/4C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an atom is the smallest building block of matter and the smallest part of an element that is still that element", "the smallest part of an element"],
+      ["a molecule is a bunch of atoms bonded together", "atoms bonded together"]
+    ],
     "questionReadAloudEn": "1.​ What is an atom?\n 2.​ What is a molecule?",
     "answerReadAloudEn": "1.​ An atom is the smallest building block of\n matter. It is the smallest part of an\n element that is still that element.\n 2.​ A molecule is a bunch of atoms bonded\n together",
     "questionReadAloudEs": "El agua es un compuesto y tiene el símbolo\nquímico (H2 O)\nEn los símbolos químicos de compuestos\ncomo el agua (H2 O)...\n ●​ ¿Qué te dicen las letras?\n ●​ ¿Qué le dicen las cifras?",
-    "answerReadAloudEs": "●​ Las letras indican los elementos que\n componen el compuesto.\n ( H=Hidrógeno, O=Oxígeno)\n ●​ Los números indican cuántos átomos\n hay de cada elemento.\n (ej. H2 tiene 2 átomos de hidrógeno)"
+    "answerReadAloudEs": "●​ Las letras indican los elementos que\n componen el compuesto.\n ( H=Hidrógeno, O=Oxígeno)\n ●​ Los números indican cuántos átomos\n hay de cada elemento.\n (ej. H2 tiene 2 átomos de hidrógeno)",
+    "acceptedAnswersEs": [
+      ["las letras indican los elementos que componen el compuesto", "los elementos que forman el compuesto"],
+      ["los numeros indican cuantos atomos hay de cada elemento", "cuantos atomos de cada elemento hay"]
+    ]
   },
   {
     "id": "4D",
@@ -315,11 +448,19 @@
     "answerImageEn": "images/4D_A_en.png",
     "questionImageEs": "images/4D_Q_es.png",
     "answerImageEs": "images/4D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the letters tell you the elements the compound is made of", "the elements that make up the compound"],
+      ["the numbers tell you how many atoms of each element there are", "how many atoms of each element"]
+    ],
     "questionReadAloudEn": "Water is a compound and has the chemical\nsymbol: (H2O)\nIn chemical symbols of compounds like\nwater (H2O)…\n ●​ What do the letters tell you?\n ●​ What do the numbers tell you?",
     "answerReadAloudEn": "●​ The letters tell you the elements the\n compound is made of.\n ( H=Hydrogen, O=Oxygen)\n ●​ The numbers tell you how many atoms\n of each element there are.\n (ex. H2 has 2 atoms of Hydrogen)",
     "questionReadAloudEs": "Cómo saber si algo es un:\n¿elemento, compuesto o mezcla?",
-    "answerReadAloudEs": "●​ Un elemento tiene un tipo de átomo.\n (1 mayúscula en la fórmula)\n ●​ Un compuesto tiene más de\n un tipo de átomo.\n (más de una letra mayúscula en\n la fórmula)\n ●​ Una mezcla puede\n separarse.\n (Signo más (+) en la fórmula)"
+    "answerReadAloudEs": "●​ Un elemento tiene un tipo de átomo.\n (1 mayúscula en la fórmula)\n ●​ Un compuesto tiene más de\n un tipo de átomo.\n (más de una letra mayúscula en\n la fórmula)\n ●​ Una mezcla puede\n separarse.\n (Signo más (+) en la fórmula)",
+    "acceptedAnswersEs": [
+      ["un elemento tiene un tipo de atomo", "un tipo de atomo"],
+      ["un compuesto tiene mas de un tipo de atomo", "mas de un tipo de atomo"],
+      ["una mezcla puede separarse", "se puede separar"]
+    ]
   },
   {
     "id": "4E",
@@ -329,11 +470,19 @@
     "answerImageEn": "images/4E_A_en.png",
     "questionImageEs": "images/4E_Q_es.png",
     "answerImageEs": "images/4E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an element has one type of atom", "one type of atom"],
+      ["a compound has more than one type of atom", "more than one type of atom"],
+      ["a mixture can be separated", "can be separated"]
+    ],
     "questionReadAloudEn": "y\n 4e)\nHow can you tell if something is an:\nelement, compound or mixture?",
     "answerReadAloudEn": "●​ An element has one type of atom.\n (1 capital letter in the formula)\n ●​ A compound has more than\n one type of atom.\n (more than one capital letter in\n the formula)\n ●​ A mixture can be\n separated.\n (Plus sign (+) in the formula)",
     "questionReadAloudEs": "1) ¿Qué les ocurre a las partículas cuando se\ncalientan?\n2) ¿Qué les ocurre a las partículas cuando se\nenfrían?",
-    "answerReadAloudEs": "1) Las partículas se aceleran y se dispersan\ncuando se calientan.\n2) Las partículas se ralentizan y se acercan\ncuando se enfrían."
+    "answerReadAloudEs": "1) Las partículas se aceleran y se dispersan\ncuando se calientan.\n2) Las partículas se ralentizan y se acercan\ncuando se enfrían.",
+    "acceptedAnswersEs": [
+      ["las particulas se aceleran y se dispersan cuando se calientan", "se mueven mas rapido y se separan al calentarse"],
+      ["las particulas se ralentizan y se acercan cuando se enfrian", "se mueven mas lento y se acercan al enfriarse"]
+    ]
   },
   {
     "id": "4F",
@@ -343,11 +492,18 @@
     "answerImageEn": "images/4F_A_en.png",
     "questionImageEs": "images/4F_Q_es.png",
     "answerImageEs": "images/4F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["particles speed up and spread out when they are heated", "move faster and spread apart when heated"],
+      ["particles slow down and come closer together when they are cooled", "move slower and get closer when cooled"]
+    ],
     "questionReadAloudEn": "1) What happens to particles when they are\nheated?\n2) What happens to particles when they are\ncooled?",
     "answerReadAloudEn": "1) Particles speed up and spread out when\nthey are heated.\n2) Particles slow down and come closer\ntogether when they are cooled.",
     "questionReadAloudEs": "1) ¿Cuáles son los reactivos en\nuna reacción química?\n2) ¿Qué son los productos en una reacción\nquímica?",
-    "answerReadAloudEs": "1) Los reactivos son los ingredientes o lo que\ninterviene en una reacción química.\n2) Los productos son lo que sale (lo que se\nfabrica) de una reacción química.\n Reactivos Productos"
+    "answerReadAloudEs": "1) Los reactivos son los ingredientes o lo que\ninterviene en una reacción química.\n2) Los productos son lo que sale (lo que se\nfabrica) de una reacción química.\n Reactivos Productos",
+    "acceptedAnswersEs": [
+      ["los reactivos son los ingredientes o lo que interviene en una reaccion quimica", "los ingredientes de una reaccion quimica"],
+      ["los productos son lo que sale de una reaccion quimica", "lo que resulta de una reaccion quimica"]
+    ]
   },
   {
     "id": "4F_2",
@@ -361,7 +517,11 @@
     "questionReadAloudEn": "",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "1 ) ¿Qué dice la Ley de Conservación de la\nMasa?\n2) ¿Qué significa esto cuando se piensa en\nreacciones químicas?",
-    "answerReadAloudEs": "1)La Ley de Conservación de la Masa dice que\nla materia no puede crearse ni destruirse,\n(sólo puede cambiar de forma).\n2)Los productos tendrán la misma masa y el\nmismo número y tipo de átomos que los\nreactantes.\n Reactivos Productos"
+    "answerReadAloudEs": "1)La Ley de Conservación de la Masa dice que\nla materia no puede crearse ni destruirse,\n(sólo puede cambiar de forma).\n2)Los productos tendrán la misma masa y el\nmismo número y tipo de átomos que los\nreactantes.\n Reactivos Productos",
+    "acceptedAnswersEs": [
+      ["la ley de conservacion de la masa dice que la materia no puede crearse ni destruirse solo puede cambiar de forma", "la materia no se crea ni se destruye solo cambia de forma"],
+      ["los productos tendran la misma masa y el mismo numero y tipo de atomos que los reactantes", "los productos tienen la misma masa y atomos que los reactivos"]
+    ]
   },
   {
     "id": "4G",
@@ -371,7 +531,10 @@
     "answerImageEn": "images/4G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the reactants are the ingredients or what goes into a chemical reaction", "the ingredients of a chemical reaction"],
+      ["the products are what comes out or what is made from a chemical reaction", "what results from a chemical reaction"]
+    ],
     "questionReadAloudEn": "1) What are the reactants in a\nchemical reaction?\n2) What are products in a chemical reaction?",
     "answerReadAloudEn": "1) The reactants are the ingredients or what\ngoes into a chemical reaction.\n2) The products are what comes out (what is\nmade) from a chemical reaction.\n Reactants Products",
     "questionReadAloudEs": "",
@@ -385,7 +548,10 @@
     "answerImageEn": "images/4H_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the law of conservation of mass says that matter cannot be created or destroyed it can only change form", "matter cannot be created or destroyed, only changed in form"],
+      ["the products will have the same mass and number and type of atoms as the reactants", "products have the same mass and atoms as the reactants"]
+    ],
     "questionReadAloudEn": "1 )What does the Law of Conservation of\nMass say?\n2) What does this mean when thinking about\nchemical reactions?",
     "answerReadAloudEn": "1)The Law of Conservation of Mass says that\nmatter cannot be created or destroyed, (it\ncan only change form).\n2)The products will have the same mass and\nnumber and type of atoms as the reactants.\n Reactants Products",
     "questionReadAloudEs": "",
@@ -399,11 +565,18 @@
     "answerImageEn": "images/5A_A_en.png",
     "questionImageEs": "images/5A_Q_es.png",
     "answerImageEs": "images/5A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the main advantage of asexual reproduction is that it creates more offspring quickly", "creates offspring quickly"],
+      ["the main disadvantage of asexual reproduction is that there is no genetic variation", "no genetic variation"]
+    ],
     "questionReadAloudEn": "Asexual reproduction is reproduction without\na mate.\n1) What is the main advantage of asexual\nreproduction?\n2) What is the main disadvantage of asexual\nreproduction?",
     "answerReadAloudEn": "1) The main advantage of asexual\nreproduction is that it creates more\noffspring quickly.\n2) The main disadvantage of asexual\nreproduction is that there is no genetic\nvariation.",
     "questionReadAloudEs": "La reproducción asexual es la reproducción\nsin pareja.\n1) ¿Cuál es la principal ventaja de la reproducción\nasexual?\n2) ¿Cuál es la principal desventaja de la reproducción\nasexual?",
-    "answerReadAloudEs": "1) La principal ventaja de la reproducción\nasexual es que crea más descendencia\nrápidamente.\n2) La principal desventaja de la\nreproducción asexual es que no hay\nvariación genética."
+    "answerReadAloudEs": "1) La principal ventaja de la reproducción\nasexual es que crea más descendencia\nrápidamente.\n2) La principal desventaja de la\nreproducción asexual es que no hay\nvariación genética.",
+    "acceptedAnswersEs": [
+      ["la principal ventaja de la reproduccion asexual es que crea mas descendencia rapidamente", "crea descendencia rapido"],
+      ["la principal desventaja de la reproduccion asexual es que no hay variacion genetica", "no hay variacion genetica"]
+    ]
   },
   {
     "id": "5B",
@@ -413,11 +586,18 @@
     "answerImageEn": "images/5B_A_en.png",
     "questionImageEs": "images/5B_Q_es.png",
     "answerImageEs": "images/5B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the main advantage of sexual reproduction is that it creates genetic variation", "creates genetic variation"],
+      ["the main disadvantage of sexual reproduction is it takes more time and energy", "takes more time and energy"]
+    ],
     "questionReadAloudEn": "Sexual reproduction is reproduction with a\nmate.\n1) What is the main advantage of sexual\nreproduction?\n2) What is the main disadvantage of sexual\nreproduction?",
     "answerReadAloudEn": "1) The main advantage of sexual\nreproduction is that it creates genetic\nvariation.\n2) The main disadvantage of sexual\nreproduction is it takes more time and\nenergy.",
     "questionReadAloudEs": "La reproducción sexual es la reproducción\ncon una pareja.\n1) ¿Cuál es la principal ventaja de la\nreproducción sexual?\n2) ¿Cuál es el principal inconveniente de la\nreproducción sexual?",
-    "answerReadAloudEs": "1) La principal ventaja de la reproducción\nsexual es que crea variación genética.\n2) La principal desventaja de la\nreproducción sexual es que requiere más\ntiempo y energía."
+    "answerReadAloudEs": "1) La principal ventaja de la reproducción\nsexual es que crea variación genética.\n2) La principal desventaja de la\nreproducción sexual es que requiere más\ntiempo y energía.",
+    "acceptedAnswersEs": [
+      ["la principal ventaja de la reproduccion sexual es que crea variacion genetica", "crea variacion genetica"],
+      ["la principal desventaja de la reproduccion sexual es que requiere mas tiempo y energia", "requiere mas tiempo y energia"]
+    ]
   },
   {
     "id": "5C",
@@ -427,11 +607,18 @@
     "answerImageEn": "images/5C_A_en.png",
     "questionImageEs": "images/5C_Q_es.png",
     "answerImageEs": "images/5C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an inherited trait is a characteristic that is passed on from parents to children through dna", "a trait passed from parents to children through dna"],
+      ["eye color", "hair color", "flower color", "leaf shape", "height", "freckles", "dimples"]
+    ],
     "questionReadAloudEn": "1.​What is an inherited trait?\n 2.​Name an example of an\n inherited trait",
     "answerReadAloudEn": "1.​ An inherited trait is a characteristic\n that is passed on from parents to\n children through DNA\n 2.​ Examples\n ●​ Eye color, hair color, flower color\n ●​ Leaf Shape\n ●​ Height\n ●​ Freckles, dimples",
     "questionReadAloudEs": "1.​ ¿Qué es un rasgo hereditario?\n 2.​ Nombra un ejemplo de rasgo\n hereditario",
-    "answerReadAloudEs": "1.​ Un rasgo hereditario es una\n característica que se transmite de\n padres a hijos a través del ADN\n 2.​ Ejemplos\n ●​ Colores (color de ojos, color de pelo, color\n de flores, etc.)\n ●​ Formas (rectangular, cuadrada, etc.)\n ●​ Tamaño (altura)\n ●​ Rasgos faciales (pecas y hoyuelos)"
+    "answerReadAloudEs": "1.​ Un rasgo hereditario es una\n característica que se transmite de\n padres a hijos a través del ADN\n 2.​ Ejemplos\n ●​ Colores (color de ojos, color de pelo, color\n de flores, etc.)\n ●​ Formas (rectangular, cuadrada, etc.)\n ●​ Tamaño (altura)\n ●​ Rasgos faciales (pecas y hoyuelos)",
+    "acceptedAnswersEs": [
+      ["un rasgo hereditario es una caracteristica que se transmite de padres a hijos a traves del adn", "un rasgo que se transmite de padres a hijos por el adn"],
+      ["color de ojos", "color de pelo", "color de flores", "forma de las hojas", "altura", "pecas", "hoyuelos"]
+    ]
   },
   {
     "id": "5D",
@@ -441,11 +628,18 @@
     "answerImageEn": "images/5D_A_en.png",
     "questionImageEs": "images/5D_Q_es.png",
     "answerImageEs": "images/5D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a dominant trait only requires 1 copy of the gene to be expressed", "needs only one copy of the gene to show"],
+      ["a recessive trait requires 2 copies of the gene to be expressed", "needs two copies of the gene to show"]
+    ],
     "questionReadAloudEn": "1.​What is a dominant trait?\n 2.​What is a recessive trait?",
     "answerReadAloudEn": "1.​ A dominant trait only requires 1\n copy of the gene to be expressed\n (shown)\n 2.​ A recessive trait requires 2 copies of\n the gene to be expressed (shown)",
     "questionReadAloudEs": "1.​¿Qué es un rasgo\n dominante?\n 2.​¿Qué es un rasgo recesivo?",
-    "answerReadAloudEs": "1.​ Un rasgo dominante sólo requiere 1\n copia del gen para expresarse (se\n muestra)\n 2.​ Un rasgo recesivo requiere 2 copias\n del gen para expresarse (se\n muestra)"
+    "answerReadAloudEs": "1.​ Un rasgo dominante sólo requiere 1\n copia del gen para expresarse (se\n muestra)\n 2.​ Un rasgo recesivo requiere 2 copias\n del gen para expresarse (se\n muestra)",
+    "acceptedAnswersEs": [
+      ["un rasgo dominante solo requiere 1 copia del gen para expresarse", "necesita solo una copia del gen para expresarse"],
+      ["un rasgo recesivo requiere 2 copias del gen para expresarse", "necesita dos copias del gen para expresarse"]
+    ]
   },
   {
     "id": "5E",
@@ -455,11 +649,16 @@
     "answerImageEn": "images/5E_A_en.png",
     "questionImageEs": "images/5E_Q_es.png",
     "answerImageEs": "images/5E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["there is a one fourth or 25 percent chance the offspring will have blue eyes if both parents have brown eyes", "25 percent", "1/4"]
+    ],
     "questionReadAloudEn": "In humans, brown eyes are dominant and\nblue eyes are recessive.\n1) Draw a Punnett Square that shows that\ntwo brown-eyed parents can have a\nblue-eyed baby\n2) Determine the probability that the\noffspring in your Punnett Square will have\nblue eyes.",
     "answerReadAloudEn": "1)\n2) There is a ¼ or 25% chance the\noffspring will have blue eyes if both of\ntheir parents have brown eyes (Bb).",
     "questionReadAloudEs": "En los humanos, los ojos marrones son\ndominantes y los azules, recesivos.\n1) Dibuja un cuadrado de Punnett que\nmuestre que dos padres de ojos marrones\npueden tener un bebé de ojos azules\n2) Determina la probabilidad de que la\ndescendencia de tu cuadrado de Punnett\ntenga los ojos azules.",
-    "answerReadAloudEs": "1)\n2) Existe un ¼ o 25% de probabilidades de\nque la descendencia tenga ojos azules si\nambos progenitores tienen ojos marrones\n(Bb)."
+    "answerReadAloudEs": "1)\n2) Existe un ¼ o 25% de probabilidades de\nque la descendencia tenga ojos azules si\nambos progenitores tienen ojos marrones\n(Bb).",
+    "acceptedAnswersEs": [
+      ["existe un un cuarto o 25 por ciento de probabilidades de que la descendencia tenga ojos azules si ambos progenitores tienen ojos marrones", "25 por ciento", "1/4"]
+    ]
   },
   {
     "id": "5F",
@@ -469,11 +668,18 @@
     "answerImageEn": "images/5F_A_en.png",
     "questionImageEs": "images/5F_Q_es.png",
     "answerImageEs": "images/5F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["genetic factors are passed through dna and environmental factors are from outside the organisms body", "genetic factors come from dna, environmental factors come from outside the organism"],
+      ["sunlight", "water", "nutrients", "air quality"]
+    ],
     "questionReadAloudEn": "1)What is the difference between a\ngenetic factor and an environmental\nfactor?\n2)List at least 3 examples of\nenvironmental factors that can affect an\norganism’s characteristics.",
     "answerReadAloudEn": "1) Genetic factors are passed through DNA.\nEnvironmental factors are from outside the\norganism’s body.\n2) Examples of environmental factors include:\n ○​ Sunlight\n ○​ Water\n ○​ Nutrients\n ○​ Air Quality",
     "questionReadAloudEs": "1)¿Cuál es la diferencia entre un factor\ngenético y un factor ambiental?\n2)Enumera al menos 3 ejemplos de\nfactores ambientales que pueden\nafectar a las características de un\norganismo.",
-    "answerReadAloudEs": "1) Los factores genéticos se transmiten a\ntravés del ADN.\nLos factores ambientales proceden del\nexterior del organismo.\n2) Ejemplos de factores medioambientales\n ○​ Luz solar\n ○​ Agua\n ○​ Nutrientes\n ○​ Calidad del aire"
+    "answerReadAloudEs": "1) Los factores genéticos se transmiten a\ntravés del ADN.\nLos factores ambientales proceden del\nexterior del organismo.\n2) Ejemplos de factores medioambientales\n ○​ Luz solar\n ○​ Agua\n ○​ Nutrientes\n ○​ Calidad del aire",
+    "acceptedAnswersEs": [
+      ["los factores geneticos se transmiten a traves del adn y los factores ambientales proceden del exterior del organismo", "los factores geneticos vienen del adn y los ambientales de fuera del organismo"],
+      ["luz solar", "agua", "nutrientes", "calidad del aire"]
+    ]
   },
   {
     "id": "6A",
@@ -483,11 +689,18 @@
     "answerImageEn": "images/6A_A_en.png",
     "questionImageEs": "images/6A_Q_es.png",
     "answerImageEs": "images/6A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a mutation is a mistake in copying an organisms dna and it changes an organisms trait", "an error in copying dna that changes a trait"],
+      ["mutations are either harmful neutral or will lead to an adaptation", "harmful, neutral, or beneficial"]
+    ],
     "questionReadAloudEn": "1) What is a mutation?\n2)How do mutations affect organisms?",
     "answerReadAloudEn": "1) A mutation is a mistake in copying\nan organism’s DNA. Mutations change\nan organism’s trait.\n2) Mutations are either: harmful,\nneutral, or will lead to an adaptation.",
     "questionReadAloudEs": "1) ¿Qué es una mutación?\n2)¿Cómo afectan las mutaciones a los\norganismos?",
-    "answerReadAloudEs": "1) Una mutación es un error en la copia\ndel ADN de un organismo. Las\nmutaciones cambian los rasgos de un\norganismo.\n2) Las mutaciones son: perjudiciales,\nneutras o conducen a una adaptación."
+    "answerReadAloudEs": "1) Una mutación es un error en la copia\ndel ADN de un organismo. Las\nmutaciones cambian los rasgos de un\norganismo.\n2) Las mutaciones son: perjudiciales,\nneutras o conducen a una adaptación.",
+    "acceptedAnswersEs": [
+      ["una mutacion es un error en la copia del adn de un organismo y las mutaciones cambian los rasgos de un organismo", "un error al copiar el adn que cambia un rasgo"],
+      ["las mutaciones son perjudiciales neutras o conducen a una adaptacion", "perjudiciales, neutras o beneficiosas"]
+    ]
   },
   {
     "id": "6B",
@@ -497,11 +710,18 @@
     "answerImageEn": "images/6B_A_en.png",
     "questionImageEs": "images/6B_Q_es.png",
     "answerImageEs": "images/6B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a variation is a different version of an inherited trait", "a different version of a trait"],
+      ["variations are caused by sexual reproduction or mutations", "caused by sexual reproduction or mutations"]
+    ],
     "questionReadAloudEn": "1) What is a variation?\n2) What causes variation?",
     "answerReadAloudEn": "1) A variation is a different version of\nan inherited trait. (Ex. blue eyes vs\nbrown eyes. )\n2) Variations are caused by sexual\nreproduction or mutations",
     "questionReadAloudEs": "1) ¿Qué es una variación?\n2) ¿Qué causa la variación?",
-    "answerReadAloudEs": "1) Una variación es una versión\ndiferente de un rasgo hereditario.\n(Por ejemplo, ojos azules frente a ojos\nmarrones).\n2) Las variaciones se producen por\nreproducción sexual o mutaciones"
+    "answerReadAloudEs": "1) Una variación es una versión\ndiferente de un rasgo hereditario.\n(Por ejemplo, ojos azules frente a ojos\nmarrones).\n2) Las variaciones se producen por\nreproducción sexual o mutaciones",
+    "acceptedAnswersEs": [
+      ["una variacion es una version diferente de un rasgo hereditario", "una version diferente de un rasgo"],
+      ["las variaciones se producen por reproduccion sexual o mutaciones", "causadas por reproduccion sexual o mutaciones"]
+    ]
   },
   {
     "id": "6C",
@@ -511,11 +731,18 @@
     "answerImageEn": "images/6C_A_en.png",
     "questionImageEs": "images/6C_Q_es.png",
     "answerImageEs": "images/6C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an adaptation is a change in an organisms traits that helps it survive and reproduce in its environment", "a trait change that helps an organism survive and reproduce"],
+      ["bright colored flowers attract pollinators like bees allowing flowers to reproduce", "bright colors attract pollinators to help reproduction"]
+    ],
     "questionReadAloudEn": "1.​What is an adaptation?\n 2.​Why are flowers being\n brightly colored an example\n of an adaptation?",
     "answerReadAloudEn": "1.​An adaptation is a change in an\n organism's traits that helps it\n survive and reproduce in its\n environment\n 2.​Bright colored flowers attract\n pollinators like bees, allowing\n flowers to reproduce.",
     "questionReadAloudEs": "1.​¿Qué es una adaptación?\n 2.​¿Por qué las flores de\n colores vivos son un ejemplo\n de adaptación?",
-    "answerReadAloudEs": "1.​Una adaptación es un cambio en\n los rasgos de un organismo que le\n ayuda a sobrevivir y reproducirse\n en su entorno.\n 2.​Las flores de colores brillantes\n atraen a polinizadores como las\n abejas, lo que permite que las\n flores se reproduzcan."
+    "answerReadAloudEs": "1.​Una adaptación es un cambio en\n los rasgos de un organismo que le\n ayuda a sobrevivir y reproducirse\n en su entorno.\n 2.​Las flores de colores brillantes\n atraen a polinizadores como las\n abejas, lo que permite que las\n flores se reproduzcan.",
+    "acceptedAnswersEs": [
+      ["una adaptacion es un cambio en los rasgos de un organismo que le ayuda a sobrevivir y reproducirse en su entorno", "un cambio de rasgo que ayuda a sobrevivir y reproducirse"],
+      ["las flores de colores brillantes atraen a polinizadores como las abejas lo que permite que las flores se reproduzcan", "los colores brillantes atraen polinizadores para ayudar a la reproduccion"]
+    ]
   },
   {
     "id": "6D",
@@ -525,11 +752,16 @@
     "answerImageEn": "images/6D_A_en.png",
     "questionImageEs": "images/6D_Q_es.png",
     "answerImageEs": "images/6D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["natural selection is the idea that organisms that are better adapted to their environment are more likely to survive and reproduce", "better adapted organisms are more likely to survive and reproduce"]
+    ],
     "questionReadAloudEn": "What is natural selection?",
     "answerReadAloudEn": "Natural selection is the idea that organisms\nthat are better adapted to their\nenvironment are more\nlikely to survive and\nreproduce. (This causes\nspecies to evolve over\ntime)",
     "questionReadAloudEs": "¿Qué es la selección natural?",
-    "answerReadAloudEs": "La selección natural es la idea de que los\norganismos mejor adaptados a su entorno\ntienen más\nprobabilidades de\nsobrevivir y\nreproducirse. (Esto hace\nque las especies\nevolucionen con el\ntiempo)"
+    "answerReadAloudEs": "La selección natural es la idea de que los\norganismos mejor adaptados a su entorno\ntienen más\nprobabilidades de\nsobrevivir y\nreproducirse. (Esto hace\nque las especies\nevolucionen con el\ntiempo)",
+    "acceptedAnswersEs": [
+      ["la seleccion natural es la idea de que los organismos mejor adaptados a su entorno tienen mas probabilidades de sobrevivir y reproducirse", "los organismos mejor adaptados sobreviven y se reproducen mas"]
+    ]
   },
   {
     "id": "6E",
@@ -539,11 +771,18 @@
     "answerImageEn": "images/6E_A_en.png",
     "questionImageEs": "images/6E_Q_es.png",
     "answerImageEs": "images/6E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["artificial selection is when humans breed organisms with specific mates to create offspring with specific traits", "humans breed organisms to get specific traits"],
+      ["artificial selection is beneficial to humans because the offspring created have a trait humans want or need", "creates offspring with traits humans want"]
+    ],
     "questionReadAloudEn": "1) What is artificial selection?\n2) How is artificial selection\nbeneficial?",
     "answerReadAloudEn": "1) Artificial selection is when humans\nbreed organisms with specific mates to\ncreate offspring with specific traits.\n2) Artificial selection is beneficial to\nhumans because the offspring created\nhave a trait humans want or need.\n(Ex. seedless bananas, muscular cows for\nmeat) ​ ​",
     "questionReadAloudEs": "1) ¿Qué es la selección artificial?\n2) ¿En qué beneficia la selección\nartificial?",
-    "answerReadAloudEs": "1) La selección artificial se produce\ncuando los seres humanos cruzan\norganismos con parejas específicas para\ncrear una descendencia con rasgos\nespecíficos.\n2) La selección artificial es beneficiosa\npara los humanos porque la descendencia\ncreada tiene un rasgo que los humanos\nquieren o necesitan. (Ej. plátanos sin\nsemillas, vacas musculosas para carne) ​\n​"
+    "answerReadAloudEs": "1) La selección artificial se produce\ncuando los seres humanos cruzan\norganismos con parejas específicas para\ncrear una descendencia con rasgos\nespecíficos.\n2) La selección artificial es beneficiosa\npara los humanos porque la descendencia\ncreada tiene un rasgo que los humanos\nquieren o necesitan. (Ej. plátanos sin\nsemillas, vacas musculosas para carne) ​\n​",
+    "acceptedAnswersEs": [
+      ["la seleccion artificial se produce cuando los seres humanos cruzan organismos con parejas especificas para crear una descendencia con rasgos especificos", "los humanos cruzan organismos para obtener rasgos especificos"],
+      ["la seleccion artificial es beneficiosa para los humanos porque la descendencia creada tiene un rasgo que los humanos quieren o necesitan", "crea descendencia con rasgos que los humanos quieren"]
+    ]
   },
   {
     "id": "6F",
@@ -553,10 +792,15 @@
     "answerImageEn": "images/6F_A_en.png",
     "questionImageEs": "images/6F_Q_es.png",
     "answerImageEs": "images/6F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["organisms have different adaptations that allow them to survive in the different environments they live in which makes them look different", "different adaptations for different environments make species look different"]
+    ],
     "questionReadAloudEn": "Why do all species on Earth look\ndifferent?",
     "answerReadAloudEn": "Organisms have different adaptations\nthat allow them to survive in the\ndifferent environments they live in. This\nmakes them look different.",
     "questionReadAloudEs": "¿Por qué todas las especies de la\nTierra tienen un aspecto diferente?",
-    "answerReadAloudEs": "Los organismos tienen diferentes\nadaptaciones que les permiten sobrevivir\nen los distintos entornos en los que viven.\nEsto hace que tengan un aspecto\ndiferente."
+    "answerReadAloudEs": "Los organismos tienen diferentes\nadaptaciones que les permiten sobrevivir\nen los distintos entornos en los que viven.\nEsto hace que tengan un aspecto\ndiferente.",
+    "acceptedAnswersEs": [
+      ["los organismos tienen diferentes adaptaciones que les permiten sobrevivir en los distintos entornos en los que viven esto hace que tengan un aspecto diferente", "diferentes adaptaciones para diferentes ambientes hacen que las especies se vean diferentes"]
+    ]
   }
 ]
