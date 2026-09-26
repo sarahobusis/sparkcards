@@ -31,6 +31,9 @@ const els = {
   totalMastered: document.getElementById("totalMastered"),
   badgesSection: document.getElementById("badgesSection"),
   badgeShelf: document.getElementById("badgeShelf"),
+  badgeCelebration: document.getElementById("badgeCelebration"),
+  badgeCelebrationIcon: document.getElementById("badgeCelebrationIcon"),
+  badgeCelebrationName: document.getElementById("badgeCelebrationName"),
   chipGrid: document.getElementById("chipGrid"),
   backButton: document.getElementById("backButton"),
   studyAllButton: document.getElementById("studyAllButton"),
@@ -749,7 +752,71 @@ function logAnswerAttempt(cardId, result) {
       cardId: cardId,
       result: result
     })
-  }).catch(() => {});
+  })
+    .then(() => refreshBadgesAndCelebrateNewOnes())
+    .catch(() => {}); // best-effort; a failed log should never block practice
+}
+
+// Re-fetches the student's badge totals after an attempt is logged and pops
+// a celebration for any badge that crossed its threshold just now (compared
+// against the totals already shown on the dashboard, not just "is earned").
+async function refreshBadgesAndCelebrateNewOnes() {
+  const previousBadges = state.badges;
+  const freshBadges = await fetchBadgeData();
+  if (!freshBadges || !freshBadges.found) return;
+
+  const newlyEarned = BADGE_DEFINITIONS.filter(badge => {
+    const wasEarned = previousBadges && Number(previousBadges[badge.metric]) >= badge.threshold;
+    const isEarnedNow = Number(freshBadges[badge.metric]) >= badge.threshold;
+    return isEarnedNow && !wasEarned;
+  });
+
+  state.badges = freshBadges;
+  renderBadgeShelf();
+
+  if (newlyEarned.length) queueBadgeCelebrations(newlyEarned);
+}
+
+/***** BADGE CELEBRATION *****/
+//
+// A small toast that pops up from the bottom of the screen when a badge is
+// newly earned. Queued rather than shown all at once, since a single check
+// can cross more than one threshold at a time (e.g. hitting both a
+// mastery badge and a practice-volume badge on the same answer).
+
+const badgeCelebrationQueue = [];
+let badgeCelebrationShowing = false;
+
+function queueBadgeCelebrations(badges) {
+  badgeCelebrationQueue.push(...badges);
+  if (!badgeCelebrationShowing) showNextBadgeCelebration();
+}
+
+function showNextBadgeCelebration() {
+  const badge = badgeCelebrationQueue.shift();
+
+  if (!badge || !els.badgeCelebration) {
+    badgeCelebrationShowing = false;
+    return;
+  }
+
+  badgeCelebrationShowing = true;
+  els.badgeCelebrationIcon.textContent = badge.icon;
+  els.badgeCelebrationName.textContent = badge.name;
+  els.badgeCelebration.classList.remove("hidden");
+
+  // Force a reflow so the "showing" transition actually animates in from
+  // the hidden state, instead of the browser coalescing both class changes.
+  void els.badgeCelebration.offsetWidth;
+  els.badgeCelebration.classList.add("showing");
+
+  setTimeout(() => {
+    els.badgeCelebration.classList.remove("showing");
+    setTimeout(() => {
+      els.badgeCelebration.classList.add("hidden");
+      showNextBadgeCelebration();
+    }, 300); // matches the CSS transition duration
+  }, 3000);
 }
 
 function renderAnswerFeedback(result, matchedCount, totalCount) {
