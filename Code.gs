@@ -26,6 +26,19 @@ const SETTINGS_SHEET_NAME = "Settings";
 // isn't scoped to any one grade's spreadsheet.
 const LEADERBOARD_ENABLED_PROPERTY = "leaderboardEnabled";
 
+// Practice tracking (badges)
+const PRACTICE_LOG_SHEET_NAME = "PracticeLog";
+const PRACTICE_LOG_HEADERS = [
+  "StudentId", "Subject", "CardId", "Attempts", "CorrectCount",
+  "CurrentStreak", "BestStreak", "Mastered", "LastResult", "LastPracticedAt"
+];
+const PRACTICE_STREAK_SHEET_NAME = "PracticeStreak";
+const PRACTICE_STREAK_HEADERS = ["StudentId", "LastPracticeDate", "CurrentDayStreak", "BestDayStreak"];
+// A card counts as "mastered" for badge purposes once it's been answered
+// correctly this many times in a row (separate from the teacher's own
+// mastery score on the Math/Science/History tabs).
+const MASTERY_STREAK_THRESHOLD = 3;
+
 function doGet(e) {
   try {
     const params = e.parameter || {};
@@ -63,6 +76,17 @@ function doGet(e) {
       });
     }
 
+    if (params.action === "badges") {
+      const starCardId = cleanStudentId(params.starCardId || params.lasid);
+      const grade = cleanGrade(params.grade);
+
+      if (!starCardId || !grade) {
+        return jsonResponse({ found: false, error: "Missing STAR Card ID or grade." });
+      }
+
+      return jsonResponse(getBadgeData(starCardId, grade));
+    }
+
     // New name is starCardId. Keeping lasid as a backup makes old links/tests not totally break.
     const starCardId = cleanStudentId(params.starCardId || params.lasid);
     const grade = cleanGrade(params.grade);
@@ -95,6 +119,34 @@ function doPost(e) {
         return jsonResponse({ found: false, error: "Incorrect password." });
       }
       return jsonResponse({ found: true });
+    }
+
+    if (params.action === "logPracticeAttempt") {
+      const starCardId = cleanStudentId(params.starCardId);
+      const grade = cleanGrade(params.grade);
+      const subject = cleanSubject(params.subject);
+      const cardId = normalizeCardId(params.cardId);
+      const result = cleanResult(params.result);
+
+      if (!starCardId || !grade || !subject || !cardId || !result) {
+        return jsonResponse({ found: false, error: "Missing starCardId, grade, subject, cardId, or result." });
+      }
+
+      if (!SPREADSHEETS_BY_GRADE[grade]) {
+        return jsonResponse({ found: false, error: "No spreadsheet is connected for grade " + grade + " yet." });
+      }
+
+      const stats = logPracticeAttempt(starCardId, grade, subject, cardId, result);
+      return jsonResponse({
+        found: true,
+        attempts: stats.attempts,
+        correctCount: stats.correctCount,
+        currentStreak: stats.currentStreak,
+        bestStreak: stats.bestStreak,
+        mastered: stats.mastered,
+        dayStreak: stats.dayStreak,
+        bestDayStreak: stats.bestDayStreak
+      });
     }
 
     if (params.action === "setCardVisibility") {
@@ -719,6 +771,273 @@ function jsonResponse(data) {
     .setMimeType(ContentService.MimeType.JSON);
 }
 
+/***** PRACTICE TRACKING (badges) *****/
+//
+// Every typed-answer check a student submits is logged here so a badge
+// system can reward practice volume and repeated correct answers on the
+// same card — not just the one-time mastery score the teacher's own sheet
+// tracks. Two tabs per grade spreadsheet:
+//   - PracticeLog: one row per (StudentId, Subject, CardId) with running
+//     attempt/correct counts and a same-card correct streak.
+//   - PracticeStreak: one row per StudentId tracking a daily practice streak
+//     (any subject/card counts once per calendar day).
+// This endpoint only returns raw counters; which named badges those earn
+// (thresholds, art, copy) is presentation logic and lives client-side so it
+// can change without redeploying the script.
+
+function getOrCreatePracticeLogSheet(ss) {
+  let sheet = ss.getSheetByName(PRACTICE_LOG_SHEET_NAME);
+
+  if (!sheet) {
+    sheet = ss.insertSheet(PRACTICE_LOG_SHEET_NAME);
+    sheet.getRange(1, 1, 1, PRACTICE_LOG_HEADERS.length).setValues([PRACTICE_LOG_HEADERS]);
+  }
+
+  return sheet;
+}
+
+function getOrCreatePracticeStreakSheet(ss) {
+  let sheet = ss.getSheetByName(PRACTICE_STREAK_SHEET_NAME);
+
+  if (!sheet) {
+    sheet = ss.insertSheet(PRACTICE_STREAK_SHEET_NAME);
+    sheet.getRange(1, 1, 1, PRACTICE_STREAK_HEADERS.length).setValues([PRACTICE_STREAK_HEADERS]);
+  }
+
+  return sheet;
+}
+
+function logPracticeAttempt(starCardId, grade, subject, cardId, result) {
+  const spreadsheetId = SPREADSHEETS_BY_GRADE[grade];
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+
+  try {
+    const ss = SpreadsheetApp.openById(spreadsheetId);
+    const sheet = getOrCreatePracticeLogSheet(ss);
+    const lastRow = sheet.getLastRow();
+    const now = new Date();
+
+    let rowIndex = -1; // 1-based sheet row; -1 means "not found yet"
+    let attempts = 0;
+    let correctCount = 0;
+    let currentStreak = 0;
+    let bestStreak = 0;
+    let mastered = false;
+
+    if (lastRow >= 2) {
+      const values = sheet.getRange(2, 1, lastRow - 1, PRACTICE_LOG_HEADERS.length).getValues();
+
+      for (let i = 0; i < values.length; i++) {
+        if (
+          cleanStudentId(values[i][0]) === starCardId &&
+          cleanSubject(values[i][1]) === subject &&
+          normalizeCardId(values[i][2]) === cardId
+        ) {
+          rowIndex = i + 2;
+          attempts = Number(values[i][3]) || 0;
+          correctCount = Number(values[i][4]) || 0;
+          currentStreak = Number(values[i][5]) || 0;
+          bestStreak = Number(values[i][6]) || 0;
+          mastered = values[i][7] === true || String(values[i][7]).trim().toLowerCase() === "true";
+          break;
+        }
+      }
+    }
+
+    attempts += 1;
+
+    if (result === "correct") {
+      correctCount += 1;
+      currentStreak += 1;
+      if (currentStreak > bestStreak) bestStreak = currentStreak;
+      // Sticky once earned — a later miss shouldn't take a mastery badge away.
+      if (currentStreak >= MASTERY_STREAK_THRESHOLD) mastered = true;
+    } else {
+      currentStreak = 0;
+    }
+
+    const rowValues = [
+      starCardId, subject, cardId, attempts, correctCount,
+      currentStreak, bestStreak, mastered, result, now
+    ];
+
+    if (rowIndex === -1) {
+      sheet.appendRow(rowValues);
+    } else {
+      sheet.getRange(rowIndex, 1, 1, rowValues.length).setValues([rowValues]);
+    }
+
+    const dayStreakInfo = recordDailyPractice(ss, starCardId, now);
+
+    return {
+      attempts: attempts,
+      correctCount: correctCount,
+      currentStreak: currentStreak,
+      bestStreak: bestStreak,
+      mastered: mastered,
+      dayStreak: dayStreakInfo.currentDayStreak,
+      bestDayStreak: dayStreakInfo.bestDayStreak
+    };
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function recordDailyPractice(ss, starCardId, now) {
+  const sheet = getOrCreatePracticeStreakSheet(ss);
+  const lastRow = sheet.getLastRow();
+  const today = formatDateKey(ss, now);
+  const yesterday = formatDateKey(ss, addDays(now, -1));
+
+  let rowIndex = -1;
+  let lastDate = "";
+  let currentDayStreak = 0;
+  let bestDayStreak = 0;
+
+  if (lastRow >= 2) {
+    const values = sheet.getRange(2, 1, lastRow - 1, PRACTICE_STREAK_HEADERS.length).getValues();
+
+    for (let i = 0; i < values.length; i++) {
+      if (cleanStudentId(values[i][0]) === starCardId) {
+        rowIndex = i + 2;
+        lastDate = formatDateKey(ss, values[i][1]);
+        currentDayStreak = Number(values[i][2]) || 0;
+        bestDayStreak = Number(values[i][3]) || 0;
+        break;
+      }
+    }
+  }
+
+  if (lastDate === today) {
+    // Already logged practice today; the streak doesn't change again.
+  } else if (lastDate === yesterday) {
+    currentDayStreak += 1;
+  } else {
+    currentDayStreak = 1;
+  }
+
+  if (currentDayStreak > bestDayStreak) bestDayStreak = currentDayStreak;
+
+  const rowValues = [starCardId, today, currentDayStreak, bestDayStreak];
+
+  if (rowIndex === -1) {
+    sheet.appendRow(rowValues);
+  } else {
+    sheet.getRange(rowIndex, 1, 1, rowValues.length).setValues([rowValues]);
+  }
+
+  return { currentDayStreak: currentDayStreak, bestDayStreak: bestDayStreak };
+}
+
+function getBadgeData(starCardId, grade) {
+  const spreadsheetId = SPREADSHEETS_BY_GRADE[grade];
+
+  if (!spreadsheetId) {
+    return { found: false, error: "No spreadsheet is connected for grade " + grade + " yet." };
+  }
+
+  const ss = SpreadsheetApp.openById(spreadsheetId);
+  const sheet = ss.getSheetByName(PRACTICE_LOG_SHEET_NAME);
+
+  const bySubject = {};
+  ALLOWED_SUBJECTS.forEach(subj => {
+    bySubject[subj] = { attempts: 0, correctCount: 0, masteredCount: 0 };
+  });
+
+  let totalAttempts = 0;
+  let totalCorrect = 0;
+  const masteredCardIds = [];
+
+  if (sheet) {
+    const lastRow = sheet.getLastRow();
+
+    if (lastRow >= 2) {
+      const values = sheet.getRange(2, 1, lastRow - 1, PRACTICE_LOG_HEADERS.length).getValues();
+
+      values.forEach(row => {
+        if (cleanStudentId(row[0]) !== starCardId) return;
+
+        const subject = cleanSubject(row[1]);
+        if (!bySubject[subject]) return;
+
+        const cardId = normalizeCardId(row[2]);
+        const attempts = Number(row[3]) || 0;
+        const correctCount = Number(row[4]) || 0;
+        const mastered = row[7] === true || String(row[7]).trim().toLowerCase() === "true";
+
+        bySubject[subject].attempts += attempts;
+        bySubject[subject].correctCount += correctCount;
+        totalAttempts += attempts;
+        totalCorrect += correctCount;
+
+        if (mastered) {
+          bySubject[subject].masteredCount += 1;
+          masteredCardIds.push(subject + ":" + cardId);
+        }
+      });
+    }
+  }
+
+  let dayStreak = 0;
+  let bestDayStreak = 0;
+  const streakSheet = ss.getSheetByName(PRACTICE_STREAK_SHEET_NAME);
+
+  if (streakSheet) {
+    const lastRow = streakSheet.getLastRow();
+
+    if (lastRow >= 2) {
+      const values = streakSheet.getRange(2, 1, lastRow - 1, PRACTICE_STREAK_HEADERS.length).getValues();
+      const now = new Date();
+      const today = formatDateKey(ss, now);
+      const yesterday = formatDateKey(ss, addDays(now, -1));
+
+      for (let i = 0; i < values.length; i++) {
+        if (cleanStudentId(values[i][0]) === starCardId) {
+          const lastDate = formatDateKey(ss, values[i][1]);
+          // A streak still "counts" if they practiced today or yesterday
+          // (they may just not have gotten to it yet today); older than
+          // that, it's lapsed even though we keep the historical best.
+          dayStreak = (lastDate === today || lastDate === yesterday) ? (Number(values[i][2]) || 0) : 0;
+          bestDayStreak = Number(values[i][3]) || 0;
+          break;
+        }
+      }
+    }
+  }
+
+  return {
+    found: true,
+    grade: grade,
+    totalAttempts: totalAttempts,
+    totalCorrect: totalCorrect,
+    masteredCount: masteredCardIds.length,
+    masteredCardIds: masteredCardIds,
+    dayStreak: dayStreak,
+    bestDayStreak: bestDayStreak,
+    bySubject: bySubject
+  };
+}
+
+function formatDateKey(ss, dateValue) {
+  if (!dateValue) return "";
+  const date = dateValue instanceof Date ? dateValue : new Date(dateValue);
+  if (isNaN(date.getTime())) return "";
+  return Utilities.formatDate(date, ss.getSpreadsheetTimeZone(), "yyyy-MM-dd");
+}
+
+function addDays(date, days) {
+  const result = new Date(date.getTime());
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
+function cleanResult(value) {
+  const text = String(value || "").trim().toLowerCase();
+  return (text === "correct" || text === "partial" || text === "incorrect") ? text : "";
+}
+
 /***** QUICK TEST *****/
 
 function testLookup() {
@@ -729,6 +1048,17 @@ function testLookup() {
 
 function testLeaderboard() {
   const result = getLeaderboardData("", ""); // all grades, all subjects
+  Logger.log(JSON.stringify(result, null, 2));
+}
+
+function testPracticeLog() {
+  // Replace TEST123 with a STAR Card ID from column B.
+  const result = logPracticeAttempt("TEST123", "5", "Math", "1A", "correct");
+  Logger.log(JSON.stringify(result, null, 2));
+}
+
+function testBadges() {
+  const result = getBadgeData("TEST123", "5");
   Logger.log(JSON.stringify(result, null, 2));
 }
 
