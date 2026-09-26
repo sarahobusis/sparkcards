@@ -145,8 +145,9 @@ els.showAnswerButton.addEventListener("click", () => {
   revealAnswer(cardId);
 });
 
-// Shows the answer image and hides the typing box - a student should never
-// see the correct answer and still be able to type/submit at the same time.
+// Shows the answer image and locks the typing box (read-only, not hidden) -
+// a student should never be able to edit their answer while the correct
+// answer is visible, but they can still see what they wrote to compare it.
 // Used both by the "Show Answer" button and after "Check My Answer", so the
 // two paths land in the same state.
 function revealAnswer(cardId) {
@@ -163,7 +164,8 @@ function revealAnswer(cardId) {
     els.answerImage.classList.remove("hidden");
   }
 
-  els.answerInputGroup.classList.add("hidden");
+  els.studentAnswer.readOnly = true;
+  els.answerInputGroup.classList.add("locked");
   els.checkAnswerButton.classList.add("hidden");
   els.showAnswerButton.textContent = "Try Again";
   els.nextProblemButton.classList.remove("hidden");
@@ -588,6 +590,11 @@ function renderPracticeCard() {
   // when off, hide the input and Check button but leave Show Answer alone.
   els.answerInputGroup.classList.toggle("hidden", !state.checkingEnabled);
   els.checkAnswerButton.classList.toggle("hidden", !state.checkingEnabled);
+
+  // Unlock the typing box every time a card is (re)rendered - it only locks
+  // once the answer is actually revealed, in revealAnswer() below.
+  els.studentAnswer.readOnly = false;
+  els.answerInputGroup.classList.remove("locked");
 
   // Important: clear old images every time a new card opens.
   // This prevents a missing card from accidentally showing the previous card's answer.
