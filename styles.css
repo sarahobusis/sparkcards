@@ -256,6 +256,55 @@ button {
   color: var(--blue-dark);
 }
 
+.badge-celebration {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  transform: translate(-50%, 20px) scale(0.9);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 22px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  max-width: min(90vw, 360px);
+}
+
+.badge-celebration.showing {
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
+}
+
+.badge-celebration-icon {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.badge-celebration-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.badge-celebration-title {
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--yellow);
+}
+
+.badge-celebration-name {
+  font-size: 18px;
+  font-weight: 800;
+}
+
 .unit-select-label {
   display: flex;
   align-items: center;
