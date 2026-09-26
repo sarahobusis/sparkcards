@@ -7,11 +7,18 @@
     "answerImageEn": "images/0A_A_en.png",
     "questionImageEs": "images/0A_Q_es.png",
     "answerImageEs": "images/0A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["addition means combining two amounts to find the total", "addition combines two amounts to find the total", "putting together", "combining two amounts", "joining two amounts together"],
+      ["subtraction means taking away or finding the difference", "taking away", "finding the difference"]
+    ],
     "questionReadAloudEn": "What is addition? What is subtraction?",
     "answerReadAloudEn": "Addition means combining two amounts to find the total. Subtraction means taking away or finding the difference.",
     "questionReadAloudEs": "¿Qué es la suma? ¿Qué es la resta?",
-    "answerReadAloudEs": "La suma consiste en combinar dos cantidades para obtener el total. La resta consiste en quitar o hallar la diferencia."
+    "answerReadAloudEs": "La suma consiste en combinar dos cantidades para obtener el total. La resta consiste en quitar o hallar la diferencia.",
+    "acceptedAnswersEs": [
+      ["la suma consiste en combinar dos cantidades para obtener el total", "combinar dos cantidades", "juntar cantidades"],
+      ["la resta consiste en quitar o hallar la diferencia", "quitar", "hallar la diferencia"]
+    ]
   },
   {
     "id": "0B",
@@ -21,11 +28,18 @@
     "answerImageEn": "images/0B_A_en.png",
     "questionImageEs": "images/0B_Q_es.png",
     "answerImageEs": "images/0B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["repeated addition of the same number", "adding the same number over and over", "repeated addition"],
+      ["3 x 5", "3x5", "3*5", "3 times 5", "5 x 3", "5x3", "5*3", "5 times 3"]
+    ],
     "questionReadAloudEn": "1)​What is multiplication?\n 2)​What is the multiplication\n version of 5+5+5?",
     "answerReadAloudEn": "1)​Repeated addition of the\n same number\n 2)​",
     "questionReadAloudEs": "¿Qué es la multiplicación? ¿Cuál es la versión multiplicativa de 5 más 5 más 5?",
-    "answerReadAloudEs": "Suma repetida del mismo número. 3 por 5."
+    "answerReadAloudEs": "Suma repetida del mismo número. 3 por 5.",
+    "acceptedAnswersEs": [
+      ["suma repetida del mismo numero", "sumar el mismo numero varias veces"],
+      ["3 x 5", "3x5", "3*5", "3 veces 5", "5 x 3", "5x3", "5*3"]
+    ]
   },
   {
     "id": "0C",
@@ -35,11 +49,22 @@
     "answerImageEn": "images/0C_A_en.png",
     "questionImageEs": "images/0C_Q_es.png",
     "answerImageEs": "images/0C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["breaking a total into equal groups", "dividing a total into equal groups", "splitting into equal groups"],
+      ["division symbol", "the division sign", "÷"],
+      ["a slash", "forward slash", "/"],
+      ["a fraction bar", "fraction bar"]
+    ],
     "questionReadAloudEn": "1)​What is division?\n 2)​What are the 3 ways to\n show division?",
     "answerReadAloudEn": "1)​Breaking a total into\n equal groups\n 2)​",
     "questionReadAloudEs": "¿Qué es la división? ¿Cuáles son las tres formas de representar la división?",
-    "answerReadAloudEs": "Dividir un total en grupos iguales. Las tres formas de representar la división son el símbolo de división, una barra inclinada y una barra de fracción."
+    "answerReadAloudEs": "Dividir un total en grupos iguales. Las tres formas de representar la división son el símbolo de división, una barra inclinada y una barra de fracción.",
+    "acceptedAnswersEs": [
+      ["dividir un total en grupos iguales", "repartir un total en grupos iguales"],
+      ["simbolo de division", "el simbolo de dividir"],
+      ["una barra inclinada", "barra inclinada"],
+      ["una barra de fraccion", "barra de fraccion"]
+    ]
   },
   {
     "id": "0D",
@@ -49,11 +74,22 @@
     "answerImageEn": "images/0D_A_en.png",
     "questionImageEs": "images/0D_Q_es.png",
     "answerImageEs": "images/0D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["sum", "answer to addition", "addition answer"],
+      ["difference", "answer to subtraction", "subtraction answer"],
+      ["product", "answer to multiplication", "multiplication answer"],
+      ["quotient", "answer to division", "division answer"]
+    ],
     "questionReadAloudEn": "What are the names of the answers to each of these types of problems?",
     "answerReadAloudEn": "For addition, the answer is called the sum. For subtraction, the answer is called the difference. For multiplication, the answer is called the product. For division, the answer is called the quotient.",
     "questionReadAloudEs": "¿Cómo se llaman las respuestas a cada uno de estos tipos de problemas?",
-    "answerReadAloudEs": "En suma, la respuesta se llama suma. En resta, la respuesta se llama diferencia. En multiplicación, la respuesta se llama producto. En división, la respuesta se llama cociente."
+    "answerReadAloudEs": "En suma, la respuesta se llama suma. En resta, la respuesta se llama diferencia. En multiplicación, la respuesta se llama producto. En división, la respuesta se llama cociente.",
+    "acceptedAnswersEs": [
+      ["suma"],
+      ["diferencia"],
+      ["producto"],
+      ["cociente"]
+    ]
   },
   {
     "id": "0E",
@@ -63,11 +99,22 @@
     "answerImageEn": "images/0E_A_en.png",
     "questionImageEs": "images/0E_Q_es.png",
     "answerImageEs": "images/0E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["start at 0 0", "start at the origin", "start at (0,0)"],
+      ["move to the right 3 spaces", "move right 3", "move right"],
+      ["move up 5 spaces", "move up 5", "move up"],
+      ["draw a dot there", "plot the point", "put a point there"]
+    ],
     "questionReadAloudEn": "Explain how you can graph coordinates, like 3, 5.",
     "answerReadAloudEn": "Start at 0, 0. Move to the right 3 spaces. Then move up 5 spaces. Draw a dot there.",
     "questionReadAloudEs": "Explique cómo se pueden representar gráficamente las coordenadas. Por ejemplo: 3, 5.",
-    "answerReadAloudEs": "Comienza en 0, 0. Muévete hacia la derecha 3 espacios. Luego muévete hacia arriba 5 espacios. Dibuja un punto."
+    "answerReadAloudEs": "Comienza en 0, 0. Muévete hacia la derecha 3 espacios. Luego muévete hacia arriba 5 espacios. Dibuja un punto.",
+    "acceptedAnswersEs": [
+      ["comienza en 0 0", "empieza en el origen", "comienza en (0,0)"],
+      ["muevete hacia la derecha 3 espacios", "muevete a la derecha 3", "muevete a la derecha"],
+      ["muevete hacia arriba 5 espacios", "sube 5", "muevete hacia arriba"],
+      ["dibuja un punto", "traza un punto", "marca un punto"]
+    ]
   },
   {
     "id": "1A",
@@ -77,11 +124,18 @@
     "answerImageEs": "images/1A_A_es.png",
     "questionImageEn": "images/1A_Q_en.png",
     "answerImageEn": "images/1A_A_en.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["line up the decimal points so you add or subtract the same place values together", "line up the decimal points", "lining up decimal points", "align the decimal points"],
+      ["this answer is wrong because they added the tenths to the hundredths instead of matching place values", "wrong, the correct answer is 4.35", "incorrect, it should be 4.35"]
+    ],
     "questionReadAloudEn": "1)​What is the first step to adding or\n subtracting decimals and why do you\n need to do it?\n 2)​Is this answer right or wrong? Explain\n why.\n 4.25 + .1 = 4.26",
     "answerReadAloudEn": "1)​ The first step to add or subtract decimals is to line\n up the decimal points so you add or subtract the\n same place values together.\n 2)​ This answer is wrong because they added the 1\n tenths to the 5 hundredths. The 1 tenths needs to\n be added to the 2 tenths.\n 4.25\n +​ .1\n 4.35",
     "questionReadAloudEs": "1)​¿Cuál es el primer paso para\n sumar o restar decimales y por\n qué es necesario hacerlo?\n 2)​¿Esta respuesta es correcta o\n incorrecta? Explica por qué.\n 4.25 + .1 = 4.26",
-    "answerReadAloudEs": "1)​ El primer paso para sumar o restar decimales\n es alinear los puntos decimales para sumar\n o restar los mismos valores decimales juntos.\n 2)​ Esta respuesta es incorrecta porque han\n sumado las 1 décimas a las 5 centésimas. Las\n 1 décimas deben sumarse a las 2 décimas."
+    "answerReadAloudEs": "1)​ El primer paso para sumar o restar decimales\n es alinear los puntos decimales para sumar\n o restar los mismos valores decimales juntos.\n 2)​ Esta respuesta es incorrecta porque han\n sumado las 1 décimas a las 5 centésimas. Las\n 1 décimas deben sumarse a las 2 décimas.",
+    "acceptedAnswersEs": [
+      ["alinear los puntos decimales para sumar o restar los mismos valores decimales juntos", "alinear los puntos decimales", "alinear los decimales"],
+      ["esta respuesta es incorrecta porque sumaron las decimas a las centesimas", "es incorrecta, la respuesta correcta es 4.35", "incorrecta"]
+    ]
   },
   {
     "id": "1B",
@@ -91,11 +145,18 @@
     "answerImageEs": "images/1B_A_es.png",
     "questionImageEn": "images/1B_Q_en.png",
     "answerImageEn": "images/1B_A_en.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["1.376"],
+      ["count the number of decimal places in your factors and use that number of decimal places in your answer", "count the decimal places in the factors and use that many in the answer", "count the total decimal places in both numbers being multiplied"]
+    ],
     "questionReadAloudEn": "​\n. 32 × 4. 3 = 1376\n 1)​Place the missing decimal point in\n the answer above.\n 2)​When you are multiplying decimals\n how do you know where to place the\n decimal point?",
     "answerReadAloudEn": "1)​1.376\n 2)​When multiplying decimals:\n ●​ count the number of decimal places in\n your factors\n ●​ use that number of decimal places in\n your answer.",
     "questionReadAloudEs": ". 32 × 4. 3 = 1376\n 1)​Pon el punto decimal que\n falta en la respuesta\n anterior.\n 2)​Para multiplicar decimales,\n ¿cómo sabes dónde colocar\n el punto decimal?",
-    "answerReadAloudEs": "1)​1.376\n 2)​Para multiplicar decimales:\n ●​ cuenta el número de lugares\n decimales de tus factores\n ●​ utiliza ese número de\n lugares decimales en tu\n respuesta."
+    "answerReadAloudEs": "1)​1.376\n 2)​Para multiplicar decimales:\n ●​ cuenta el número de lugares\n decimales de tus factores\n ●​ utiliza ese número de\n lugares decimales en tu\n respuesta.",
+    "acceptedAnswersEs": [
+      ["1.376"],
+      ["cuenta el numero de lugares decimales de tus factores y utiliza ese numero de lugares decimales en tu respuesta", "cuenta los lugares decimales de los factores y usa esa cantidad en la respuesta"]
+    ]
   },
   {
     "id": "1C",
@@ -105,11 +166,20 @@
     "answerImageEs": "images/1C_A_es.png",
     "questionImageEn": "images/1C_Q_en.png",
     "answerImageEn": "images/1C_A_en.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["make the divisor a whole number by moving the decimal one place to the right", "move the decimal point in the divisor to make it a whole number", "make the divisor a whole number"],
+      ["move the decimal point in the dividend the same number of places", "move the decimal the same number of places in the dividend"],
+      ["divide", "bring the decimal point up and divide", "pop the decimal up and divide"]
+    ],
     "questionReadAloudEn": "​\nWhat needs to be done before dividing\nthese numbers?",
     "answerReadAloudEn": "Step 1) Make the divisor a whole number by\nmoving the decimal one\nplace to the right\nStep 2) In the dividend, move the decimal point\nthe same number of places.\nStep 3) Now pop the\ndecimal up and divide",
     "questionReadAloudEs": "​\n¿Qué hay que hacer antes de dividir estos\nnúmeros?",
-    "answerReadAloudEs": "Paso 1) Convierta el divisor en un\nnúmero entero moviendo el decimal\nun lugar a la derecha.\nPaso 2) En el dividendo, desplaza el punto decimal el mismo\nnúmero de lugares.\nPaso 3) Ahora saca el decimal y divide."
+    "answerReadAloudEs": "Paso 1) Convierta el divisor en un\nnúmero entero moviendo el decimal\nun lugar a la derecha.\nPaso 2) En el dividendo, desplaza el punto decimal el mismo\nnúmero de lugares.\nPaso 3) Ahora saca el decimal y divide.",
+    "acceptedAnswersEs": [
+      ["convierta el divisor en un numero entero moviendo el decimal un lugar a la derecha", "mueve el punto decimal del divisor para hacerlo un numero entero"],
+      ["en el dividendo desplaza el punto decimal el mismo numero de lugares", "mueve el decimal del dividendo la misma cantidad de lugares"],
+      ["divide", "sube el decimal y divide"]
+    ]
   },
   {
     "id": "1D",
@@ -119,11 +189,16 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "images/1D_Q_es.png",
     "answerImageEs": "images/1D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["skip count with both numbers until they meet for the first time", "skip count both numbers until you find a common multiple", "list multiples of both numbers until one matches", "20"]
+    ],
     "questionReadAloudEn": "​\nHow do you find the Least Common\nMultiple (LCM) of two numbers?\nExample:\nFind the LCM of 4 and 5",
     "answerReadAloudEn": "​\nTo find the LCM, skip count with both\nnumbers until they meet for the first time.\n LCM = 20",
     "questionReadAloudEs": "​\n¿Cómo se calcula el\nmínimo común múltiplo\n(LCM) de dos números?\nEjemplo:\nCalcula el MCM de 4 y 5.",
-    "answerReadAloudEs": "Para encontrar el LCM, cuenta\nsaltando con ambos números hasta que\nencuentres el número más pequeño que\nambos tienen en comun.\n LCM = 20"
+    "answerReadAloudEs": "Para encontrar el LCM, cuenta\nsaltando con ambos números hasta que\nencuentres el número más pequeño que\nambos tienen en comun.\n LCM = 20",
+    "acceptedAnswersEs": [
+      ["cuenta saltando con ambos numeros hasta que encuentres el numero mas pequeño que ambos tienen en comun", "cuenta salteado con ambos numeros hasta encontrar un multiplo comun", "20"]
+    ]
   },
   {
     "id": "1E",
@@ -133,11 +208,18 @@
     "answerImageEn": "images/1E_A_en.png",
     "questionImageEs": "images/1E_Q_es.png",
     "answerImageEs": "images/1E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["find all the pairs of factors for each number", "list the factor pairs of each number", "find the factors of both numbers"],
+      ["find the biggest number that is on both lists", "find the largest number in both lists", "the greatest common factor is the biggest shared factor"]
+    ],
     "questionReadAloudEn": "​\n​\nHow do you find the Greatest Common\nFactor (GCF) of two numbers?\nExample: Find the GCF of 8 and 12",
     "answerReadAloudEn": "Step 1) Find all the pairs of factors for each\nnumber.\nStep 2) Find the biggest number that is on\nboth lists.\n Step 1 Step 2\n 8: 12:\n 1 × 8 1 × 12\n 2 × 4 2 × 6\n 3 × 4",
     "questionReadAloudEs": "​\n​\n¿Cómo puedes encontrar el máximo\ncomún divisor (GCF) de dos números?\nEjemplo: Encuentra el GCF de 8 y 12",
-    "answerReadAloudEs": "Paso 1: Encuentra todos los pares de factores de\ncada número.\nPaso 2: Encuentra el número más grande que\nestá en ambas listas.\n Paso 1 Paso 2\n 8: 12:\n 1 × 8 1 × 12\n 2 × 4 2 × 6\n 3 × 4"
+    "answerReadAloudEs": "Paso 1: Encuentra todos los pares de factores de\ncada número.\nPaso 2: Encuentra el número más grande que\nestá en ambas listas.\n Paso 1 Paso 2\n 8: 12:\n 1 × 8 1 × 12\n 2 × 4 2 × 6\n 3 × 4",
+    "acceptedAnswersEs": [
+      ["encuentra todos los pares de factores de cada numero", "lista los pares de factores de cada numero"],
+      ["encuentra el numero mas grande que esta en ambas listas", "encuentra el factor mas grande compartido"]
+    ]
   },
   {
     "id": "2A",
@@ -147,11 +229,18 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "images/2A_Q_es.png",
     "answerImageEs": "images/2A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["area is the number of square units that cover a shape", "the number of square units covering a shape", "square units that cover a shape"],
+      ["13 square units", "13"]
+    ],
     "questionReadAloudEn": "1.​ What is area?\n 2.​What is the area\n of this shape?",
     "answerReadAloudEn": "1.​ Area is the number of square\n units that cover a shape.\n 2.​ The area of\n this shape is\n 13 square\n units.",
     "questionReadAloudEs": "A) ¿Qué es área?\nB) ¿Cuál es el área\nde esta figura?",
-    "answerReadAloudEs": "A) Área es el\nnúmero de\nunidades cuadradas\nque cubren\nuna figura.\nB) El área de esta figura es de 13\nunidades cuadradas."
+    "answerReadAloudEs": "A) Área es el\nnúmero de\nunidades cuadradas\nque cubren\nuna figura.\nB) El área de esta figura es de 13\nunidades cuadradas.",
+    "acceptedAnswersEs": [
+      ["area es el numero de unidades cuadradas que cubren una figura", "el numero de unidades cuadradas que cubren una figura"],
+      ["13 unidades cuadradas", "13"]
+    ]
   },
   {
     "id": "2B",
@@ -161,11 +250,16 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "images/2B_Q_es.png",
     "answerImageEs": "images/2B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["base x height", "length x width", "base times height", "length times width"]
+    ],
     "questionReadAloudEn": "​\n How do you find the area of a\n rectangle?",
     "answerReadAloudEn": "Base x Height\n or\n Length x Width",
     "questionReadAloudEs": "​\n ¿Cómo se calcula el área de un\n rectángulo?",
-    "answerReadAloudEs": "Base x Altura\n o\n Longitud x ancho"
+    "answerReadAloudEs": "Base x Altura\n o\n Longitud x ancho",
+    "acceptedAnswersEs": [
+      ["base x altura", "longitud x ancho", "base por altura", "longitud por ancho"]
+    ]
   },
   {
     "id": "2C",
@@ -175,11 +269,16 @@
     "answerImageEn": "images/2C_A_en.png",
     "questionImageEs": "images/2C_Q_es.png",
     "answerImageEs": "images/2C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["multiply the base x height", "base times height", "base x height"]
+    ],
     "questionReadAloudEn": "How do you find the area of a\nparallelogram?\nex.",
     "answerReadAloudEn": "Multiply the base x height.\n 2\nex. 15 𝑐𝑚 × 5 𝑐𝑚 = 75 𝑐𝑚",
     "questionReadAloudEs": "¿Cómo se encuentra el área de un\nparalelograma?\nej:",
-    "answerReadAloudEs": "Multiplica la base x la altura.\nej:\n 15 x 5=\n 75"
+    "answerReadAloudEs": "Multiplica la base x la altura.\nej:\n 15 x 5=\n 75",
+    "acceptedAnswersEs": [
+      ["multiplica la base x la altura", "base por altura", "base x altura"]
+    ]
   },
   {
     "id": "2D",
@@ -189,11 +288,18 @@
     "answerImageEn": "images/2D_A_en.png",
     "questionImageEs": "images/2D_Q_es.png",
     "answerImageEs": "images/2D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["4 cm is the height", "4 cm", "the height is 4 cm"],
+      ["the height always makes a 90 degree angle with the base", "height forms a right angle with the base", "the height is perpendicular to the base"]
+    ],
     "questionReadAloudEn": "1.​Which is the height of this\n triangle?\n 2.​How do you\n know?",
     "answerReadAloudEn": "1.​4 cm is the height.\n 2.​The height always makes a 90\n degree angle with the base (even if\n the height does not hit the base).",
     "questionReadAloudEs": "¿Cuál es la altura de este\ntriángulo? ¿Cómo sabes?",
-    "answerReadAloudEs": "4 cm es la altura.\nLa altura siempre forma un ángulo de\n90 grados con la base (aunque la altura\nno toque la base)."
+    "answerReadAloudEs": "4 cm es la altura.\nLa altura siempre forma un ángulo de\n90 grados con la base (aunque la altura\nno toque la base).",
+    "acceptedAnswersEs": [
+      ["4 cm es la altura", "4 cm"],
+      ["la altura siempre forma un angulo de 90 grados con la base", "la altura es perpendicular a la base"]
+    ]
   },
   {
     "id": "2E",
@@ -203,11 +309,18 @@
     "answerImageEn": "images/2E_A_en.png",
     "questionImageEs": "images/2E_Q_es.png",
     "answerImageEs": "images/2E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["multiply the base x height", "base times height"],
+      ["divide by 2", "then divide by 2"]
+    ],
     "questionReadAloudEn": "​\nHow do you find the area of a\ntriangle?",
     "answerReadAloudEn": "1st) Multiply the Base x Height.\n2nd) Divide by 2",
     "questionReadAloudEs": "​\n¿Cómo se calcula el área de un\n triángulo?",
-    "answerReadAloudEs": "1º: Multiplicar la Base x la Altura.\n2º: Dividir por 2."
+    "answerReadAloudEs": "1º: Multiplicar la Base x la Altura.\n2º: Dividir por 2.",
+    "acceptedAnswersEs": [
+      ["multiplicar la base x la altura", "base por altura"],
+      ["dividir por 2", "divide entre 2"]
+    ]
   },
   {
     "id": "2F",
@@ -217,11 +330,22 @@
     "answerImageEn": "images/2F_A_en.png",
     "questionImageEs": "images/2F_Q_es.png",
     "answerImageEs": "images/2F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["break it up into shapes you know", "break the shape into familiar shapes", "divide it into shapes you recognize"],
+      ["fill in the missing side lengths", "find the missing side lengths"],
+      ["find the area of each shape", "calculate the area of each shape"],
+      ["add them all together", "add the areas together", "sum the areas"]
+    ],
     "questionReadAloudEn": "How would you find the area of an\nunusual shape like this:",
     "answerReadAloudEn": "1)​Break it up into shapes you know.\n 2)​Fill in the missing side lengths.\n 3)​Find the area of each shape.\n 4)​Add them all together.",
     "questionReadAloudEs": "¿Cómo encontrarías el área de\nuna figura inusual como ésta?",
-    "answerReadAloudEs": "1)​Divídelo en figuras que conozcas.\n 2)​Completa las longitudes de los lados\n que faltan.\n 3)​Calcula el área de cada figura.\n 4)​Súmalas todas."
+    "answerReadAloudEs": "1)​Divídelo en figuras que conozcas.\n 2)​Completa las longitudes de los lados\n que faltan.\n 3)​Calcula el área de cada figura.\n 4)​Súmalas todas.",
+    "acceptedAnswersEs": [
+      ["dividelo en figuras que conozcas", "divide la figura en formas conocidas"],
+      ["completa las longitudes de los lados que faltan", "encuentra las longitudes que faltan"],
+      ["calcula el area de cada figura", "encuentra el area de cada figura"],
+      ["sumalas todas", "suma las areas"]
+    ]
   },
   {
     "id": "2G",
@@ -235,7 +359,12 @@
     "questionReadAloudEn": "",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "​\n¿Cómo se calcula el área de\nsuperficie de esta red?",
-    "answerReadAloudEs": "1)​ Completa las longitudes de los lados que\n faltan.\n 2)​ Calcula el área de cada figura.\n 3)​ Súmalas todas."
+    "answerReadAloudEs": "1)​ Completa las longitudes de los lados que\n faltan.\n 2)​ Calcula el área de cada figura.\n 3)​ Súmalas todas.",
+    "acceptedAnswersEs": [
+      ["completa las longitudes de los lados que faltan", "encuentra las longitudes que faltan"],
+      ["calcula el area de cada figura", "encuentra el area de cada figura"],
+      ["sumalas todas", "suma las areas"]
+    ]
   },
   {
     "id": "3A",
@@ -245,11 +374,16 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "images/3A_Q_es.png",
     "answerImageEs": "images/3A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a ratio is a comparison between 2 quantities", "a comparison between two quantities", "a comparison between two amounts"]
+    ],
     "questionReadAloudEn": "What is a ratio?",
     "answerReadAloudEn": "A ratio is a comparison\n between 2 quantities.",
     "questionReadAloudEs": "¿Qué es una relación\nproporcional?",
-    "answerReadAloudEs": "Una relación\n proporcional es una\n comparación entre 2\n cantidades."
+    "answerReadAloudEs": "Una relación\n proporcional es una\n comparación entre 2\n cantidades.",
+    "acceptedAnswersEs": [
+      ["una relacion proporcional es una comparacion entre 2 cantidades", "una comparacion entre dos cantidades"]
+    ]
   },
   {
     "id": "3B",
@@ -259,11 +393,22 @@
     "answerImageEn": "images/3B_A_en.png",
     "questionImageEs": "images/3B_Q_es.png",
     "answerImageEs": "images/3B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["for every 5 raspberries there are 3 mangoes", "for every 5 raspberries, 3 mangoes"],
+      ["5:3", "5 : 3"],
+      ["5 to 3"],
+      ["5/3", "5 over 3"]
+    ],
     "questionReadAloudEn": "​\nDescribe the ratio between\nraspberries and mangoes in 4\ndifferent ways.",
     "answerReadAloudEn": "1.​ For every 5 raspberries,\n there are 3 mangoes.\n 2.​ 5 : 3\n 3.​ 5 to 3\n 5 4.​ 3",
     "questionReadAloudEs": "Describe la proporción entre\nframbuesas y mangos en 4\nformas diferentes.",
-    "answerReadAloudEs": "●​Para cada 5 frambuesas,\n hay 3 mangos.\n ●​5 : 3\n ●​5 a 3\n 5\n ●​ 3"
+    "answerReadAloudEs": "●​Para cada 5 frambuesas,\n hay 3 mangos.\n ●​5 : 3\n ●​5 a 3\n 5\n ●​ 3",
+    "acceptedAnswersEs": [
+      ["para cada 5 frambuesas hay 3 mangos", "por cada 5 frambuesas 3 mangos"],
+      ["5:3", "5 : 3"],
+      ["5 a 3"],
+      ["5/3"]
+    ]
   },
   {
     "id": "3C",
@@ -273,11 +418,18 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "images/3C_Q_es.png",
     "answerImageEs": "images/3C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["uni means 1 so a unit rate is always a rate out of 1", "a unit rate is a rate for 1", "unit rate means a rate out of 1"],
+      ["per means for every 1 lamp", "per means for every one", "per means for each one"]
+    ],
     "questionReadAloudEn": "1.​What is a unit rate?\n 2.​What does the word per mean in\n the situation below:\n “8 lamps cost $40. What is the cost\n per lamp?”",
     "answerReadAloudEn": "1.​ “Uni” means 1, so a unit rate\n is always a rate out of 1.​\n 2.​PER means “for every 1” lamp.",
     "questionReadAloudEs": "1)​¿Qué es una tasa\n unitaria?\n 2)​¿Qué significa la\n palabra por en esta\n situación:",
-    "answerReadAloudEs": "1)​ \"Uni\" significa 1, por lo\n que una tasa unitaria es\n siempre una tasa sobre\n 1.\n 2)​ POR significa \"por cada\n 1\"."
+    "answerReadAloudEs": "1)​ \"Uni\" significa 1, por lo\n que una tasa unitaria es\n siempre una tasa sobre\n 1.\n 2)​ POR significa \"por cada\n 1\".",
+    "acceptedAnswersEs": [
+      ["uni significa 1 por lo que una tasa unitaria es siempre una tasa sobre 1", "una tasa unitaria es una tasa para 1"],
+      ["por significa por cada 1", "por significa para cada uno"]
+    ]
   },
   {
     "id": "3D",
@@ -287,11 +439,16 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "images/3D_Q_es.png",
     "answerImageEs": "images/3D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["multiply or divide both terms by the same number", "you multiply or divide both parts of the ratio by the same number"]
+    ],
     "questionReadAloudEn": "​\nAs seen in the table, the ratio of\nsugar to lemons in this\nlemonade is 6 to 8. How can you\ncreate equivalent ratios for this\nrelationship? Explain or show. ​",
     "answerReadAloudEn": "To find equivalent ratios, you\nmultiply or divide both terms by the\nsame number.",
     "questionReadAloudEs": "​\nComo se ve en la tabla, la\nrelación entre azúcar y limones\nen esta limonada es de 6 a 8.\n¿Cómo puedes crear\nproporciones equivalentes para\nesta relación? Explícalo o\ndemuéstralo.",
-    "answerReadAloudEs": "Para crear proporciones\nequivalentes, se multiplica o\ndivide ambos términos por el\nmismo número."
+    "answerReadAloudEs": "Para crear proporciones\nequivalentes, se multiplica o\ndivide ambos términos por el\nmismo número.",
+    "acceptedAnswersEs": [
+      ["se multiplica o divide ambos terminos por el mismo numero", "multiplicas o divides ambas partes de la razon por el mismo numero"]
+    ]
   },
   {
     "id": "4A",
@@ -301,11 +458,18 @@
     "answerImageEn": "images/4A_A_en.png",
     "questionImageEs": "images/4A_Q_es.png",
     "answerImageEs": "images/4A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["3 feet in 1 yard", "3 feet", "there are 3 feet in a yard"],
+      ["12 inches in 1 foot", "12 inches", "there are 12 inches in a foot"]
+    ],
     "questionReadAloudEn": "1.​How many feet are there in\n a yard? ​\n 2.​How many inches are there\n in a foot?​",
     "answerReadAloudEn": "1.​3 feet in 1 yard\n 2.​12 inches in 1 foot",
     "questionReadAloudEs": "1)​¿Cuántos pies hay en\n una yarda ?\n 2)​¿Cuántas pulgadas hay\n en un pie?",
-    "answerReadAloudEs": "1)​3 pies en 1 yarda.​\n ​\n 2)​12 pulgadas en 1 pie."
+    "answerReadAloudEs": "1)​3 pies en 1 yarda.​\n ​\n 2)​12 pulgadas en 1 pie.",
+    "acceptedAnswersEs": [
+      ["3 pies en 1 yarda", "3 pies"],
+      ["12 pulgadas en 1 pie", "12 pulgadas"]
+    ]
   },
   {
     "id": "4B",
@@ -315,11 +479,18 @@
     "answerImageEn": "images/4B_A_en.png",
     "questionImageEs": "images/4B_Q_es.png",
     "answerImageEs": "images/4B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["percent is a fraction out of 100", "a percent is a fraction out of 100", "percent means out of 100"],
+      ["34/100", "34 over 100", "34 out of 100"]
+    ],
     "questionReadAloudEn": "1.​What is the definition of\n percent? ​\n 2.​How do you write 34% as a\n fraction?",
     "answerReadAloudEn": "1.​ Percent is a fraction out of 100​\n 2.​ ​",
     "questionReadAloudEs": "4\n 1)​¿Cuál es la definición de\n porciento?\n 2)​¿Cómo se escribe 34%\n como una fracción?",
-    "answerReadAloudEs": "1)​ Un porciento es una fracción\n de 100.​\n 2)​"
+    "answerReadAloudEs": "1)​ Un porciento es una fracción\n de 100.​\n 2)​",
+    "acceptedAnswersEs": [
+      ["un porciento es una fraccion de 100", "un porcentaje es una fraccion sobre 100"],
+      ["34/100", "34 sobre 100"]
+    ]
   },
   {
     "id": "4C",
@@ -329,11 +500,18 @@
     "answerImageEn": "images/4C_A_en.png",
     "questionImageEs": "images/4C_Q_es.png",
     "answerImageEs": "images/4C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["figure out what fraction represents the situation", "write the situation as a fraction", "find the part over the whole"],
+      ["change that fraction into a percent by making it equal to a fraction out of 100", "convert the fraction to a fraction out of 100", "turn the fraction into a percent"]
+    ],
     "questionReadAloudEn": "What do you do any time a\nquestion asks you: “what\npercent?”\nExample: If there are 50 sixth graders, and 40 of\nthem have brown hair, what percent of sixth\ngraders have brown hair?",
     "answerReadAloudEn": "​\n 1st) Figure out what fraction represents the situation\n 𝑃𝑎𝑟𝑡 40\n Ex) 𝑊ℎ𝑜𝑙𝑒= 50\n2nd) Change that fraction into a percent by making\nit equal to a fraction out of 100.\n 40 80\n Ex) = = 80%​ 50 100",
     "questionReadAloudEs": "¿Qué debes hacer cada\nvez que te preguntan:\n\"¿qué porcentaje?\"\nEjemplo: Si hay 50 alumnos de sexto curso\ny 40 de ellos tienen el pelo castaño, ¿qué\nporcentaje de alumnos de sexto curso\ntienen el pelo castaño?",
-    "answerReadAloudEs": "​\n 1ro) Averiguar qué fracción representa la situación\n Ex) 𝑃𝑎𝑟𝑡𝑒 40 𝐸𝑛𝑡𝑒𝑟𝑜= 50\n 2do) Cambia esa fracción a un porcentaje\n haciéndola igual a una fracción de 100.\n Ex) 40 = 80 = 80%​ 50 100"
+    "answerReadAloudEs": "​\n 1ro) Averiguar qué fracción representa la situación\n Ex) 𝑃𝑎𝑟𝑡𝑒 40 𝐸𝑛𝑡𝑒𝑟𝑜= 50\n 2do) Cambia esa fracción a un porcentaje\n haciéndola igual a una fracción de 100.\n Ex) 40 = 80 = 80%​ 50 100",
+    "acceptedAnswersEs": [
+      ["averiguar que fraccion representa la situacion", "escribe la situacion como una fraccion"],
+      ["cambia esa fraccion a un porcentaje haciendola igual a una fraccion de 100", "convierte la fraccion a una fraccion de 100"]
+    ]
   },
   {
     "id": "4D",
@@ -343,11 +521,18 @@
     "answerImageEn": "images/4D_A_en.png",
     "questionImageEs": "images/4D_Q_es.png",
     "answerImageEs": "images/4D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["find an equivalent fraction with 100 as the denominator", "make an equivalent fraction with a denominator of 100"],
+      ["divide the numerator by the denominator and convert the decimal to a percent", "divide top by bottom and change the decimal to a percent"]
+    ],
     "questionReadAloudEn": "We learned 2 main ways to convert\nfractions into percent. Explain how you\ncould change the fractions below into\npercents.\n 1.​​\n 2.​",
     "answerReadAloudEn": "​\n1. Find an equivalent fraction with 100 as the\n denominator.\n Example:\n2. Divide the\n numerator by the denominator and convert\n the decimal to a percent.\n Example: 3 ÷ 8 = .375 = 37.5%",
     "questionReadAloudEs": "Hemos aprendido 2 formas\nprincipales de convertir fracciones\nen porcientos. Explica cómo\nconvertirías las fracciones siguientes\na porcentajes.\n 1)​​\n 2)​",
-    "answerReadAloudEs": "​\n1) Encuentra una fracción equivalente con 100 como\ndenominador.\n Ejemplo:\n2) Divide el numerador por el denominador y\n convierte el decimal en un porcentaje.\n Ejemplo: 3 ÷ 8 = .375 = 37.5%"
+    "answerReadAloudEs": "​\n1) Encuentra una fracción equivalente con 100 como\ndenominador.\n Ejemplo:\n2) Divide el numerador por el denominador y\n convierte el decimal en un porcentaje.\n Ejemplo: 3 ÷ 8 = .375 = 37.5%",
+    "acceptedAnswersEs": [
+      ["encuentra una fraccion equivalente con 100 como denominador", "haz una fraccion equivalente con denominador 100"],
+      ["divide el numerador por el denominador y convierte el decimal en un porcentaje", "divide el numerador entre el denominador y cambia el decimal a porcentaje"]
+    ]
   },
   {
     "id": "4E",
@@ -357,11 +542,16 @@
     "answerImageEn": "images/4E_A_en.png",
     "questionImageEs": "images/4E_Q_es.png",
     "answerImageEs": "images/4E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["change the percent into a decimal and multiply it by the number", "convert the percent to a decimal then multiply", "turn the percent into a decimal and multiply"]
+    ],
     "questionReadAloudEn": "How would you find a\n percent of a number?\n Ex: Find 20% of $80",
     "answerReadAloudEn": "​\nChange the percent into a decimal\nand multiply it by the number.\nEx: .20 x 80 = 16.00\n or",
     "questionReadAloudEs": "¿Cómo encontrarías\n el porciento de un\n número?\n Ej. Encuentra el 20% de\n $80",
-    "answerReadAloudEs": "​\nCambia el porcentaje a decimal y\nmultiplícalo por el número.\nEj: .20 x 80 = 16.00\nor"
+    "answerReadAloudEs": "​\nCambia el porcentaje a decimal y\nmultiplícalo por el número.\nEj: .20 x 80 = 16.00\nor",
+    "acceptedAnswersEs": [
+      ["cambia el porcentaje a decimal y multiplicalo por el numero", "convierte el porcentaje en decimal y multiplica"]
+    ]
   },
   {
     "id": "5A",
@@ -371,11 +561,20 @@
     "answerImageEn": "images/5A_A_en.png",
     "questionImageEs": "images/5A_Q_es.png",
     "answerImageEs": "images/5A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a fraction is a number representing a part of a whole", "a fraction represents part of a whole"],
+      ["numerator", "how many equal parts you have", "top number"],
+      ["denominator", "how many equal parts make up the whole", "bottom number"]
+    ],
     "questionReadAloudEn": "1.​What is a fraction? ​\n 2.​What is the top called?\n 3.​What is the bottom called?",
     "answerReadAloudEn": "1.​A fraction is a number\n representing a part of a whole\n 2.​Numerator (how many\n equal parts you have)\n 3.​Denominator (how many equal\n parts make up the whole)",
     "questionReadAloudEs": "​\n 1.​¿Qué es una fracción?\n 2.​¿Cómo se llama la parte\n superior?\n 3.​¿Cómo se llama la parte\n inferior?",
-    "answerReadAloudEs": "Una fracción es un número que\nrepresenta una parte de un todo\nNumerador (cuántas\npartes iguales hay)\nDenominador (cuántas partes iguales\n componen el todo)"
+    "answerReadAloudEs": "Una fracción es un número que\nrepresenta una parte de un todo\nNumerador (cuántas\npartes iguales hay)\nDenominador (cuántas partes iguales\n componen el todo)",
+    "acceptedAnswersEs": [
+      ["una fraccion es un numero que representa una parte de un todo", "una fraccion representa una parte de un entero"],
+      ["numerador", "cuantas partes iguales hay"],
+      ["denominador", "cuantas partes iguales componen el todo"]
+    ]
   },
   {
     "id": "5B",
@@ -385,11 +584,18 @@
     "answerImageEn": "images/5B_A_en.png",
     "questionImageEs": "images/5B_Q_es.png",
     "answerImageEs": "images/5B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["divide the numerator and denominator by the same number", "divide top and bottom by the same common factor"],
+      ["divide 6 and 15 by 3", "divide by 3", "6 and 15 divided by 3"]
+    ],
     "questionReadAloudEn": "​\n1. How do we simplify fractions?\n2. How can you simplify ?",
     "answerReadAloudEn": "1.​ Divide the numerator(top) and\n denominator(bottom) by the same\n number (common factor).\n 2.​Divide 6 and 15 by 3 which is a\n common factor.",
     "questionReadAloudEs": "​\n 1. ¿Cómo simplificamos las fracciones?\n 2. ¿Cómo se puede simplificar ?\n Ejemplo: 10 7",
-    "answerReadAloudEs": "1.​ Divide the numerator(top) and\n denominator(bottom) by the same\n number (common factor).\n 2.​Divide 6 and 15 by 3 which is a\n common factor."
+    "answerReadAloudEs": "1.​ Divide the numerator(top) and\n denominator(bottom) by the same\n number (common factor).\n 2.​Divide 6 and 15 by 3 which is a\n common factor.",
+    "acceptedAnswersEs": [
+      ["divide el numerador y el denominador por el mismo numero", "divide arriba y abajo por el mismo factor comun"],
+      ["divide 6 y 15 entre 3", "divide entre 3"]
+    ]
   },
   {
     "id": "5C",
@@ -399,11 +605,18 @@
     "answerImageEn": "images/5C_A_en.png",
     "questionImageEs": "images/5C_Q_es.png",
     "answerImageEs": "images/5C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["multiply the whole number by the denominator then add the numerator and keep the same denominator", "multiply the whole number by the denominator and add the numerator", "multiply whole number times denominator plus numerator"],
+      ["divide the numerator by the denominator and write the remainder as a fraction", "divide top by bottom and write the remainder as a fraction"]
+    ],
     "questionReadAloudEn": "​\n 1.​How do we convert a mixed\n number into an improper fraction?\n Example:\n 2.​How do we change an improper\n fraction into a mixed number?\n Example:\n 10\n 7",
     "answerReadAloudEn": "1.\n ​\n2. Divide the numerator by the\ndenominator. Write your remainder as a\nfraction.",
     "questionReadAloudEs": "¿Cómo convertimos un número mixto\nen una fracción impropia?\nEjemplo:\n¿Cómo convertimos una fracción\nimpropia en un número mixto?\nEjemplo: 10 7",
-    "answerReadAloudEs": "2. Divida el numerador por el denominador.\nEscriba el resto como una fracción."
+    "answerReadAloudEs": "2. Divida el numerador por el denominador.\nEscriba el resto como una fracción.",
+    "acceptedAnswersEs": [
+      ["multiplica el numero entero por el denominador y suma el numerador, mantén el mismo denominador", "multiplica el entero por el denominador y suma el numerador"],
+      ["divide el numerador por el denominador y escribe el resto como una fraccion", "divide el numerador entre el denominador y escribe el residuo como fraccion"]
+    ]
   },
   {
     "id": "5D",
@@ -413,11 +626,16 @@
     "answerImageEn": "images/5D_A_en.png",
     "questionImageEs": "images/5D_Q_es.png",
     "answerImageEs": "images/5D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["multiply straight across", "multiply numerators together and denominators together", "multiply top times top and bottom times bottom"]
+    ],
     "questionReadAloudEn": "",
     "answerReadAloudEn": "Multiply straight across",
     "questionReadAloudEs": "​\n Explica las reglas para\n multiplicar fracciones con\n este ejemplo.",
-    "answerReadAloudEs": "Multiplica en línea recta.\nSimplifica, si es necesario."
+    "answerReadAloudEs": "Multiplica en línea recta.\nSimplifica, si es necesario.",
+    "acceptedAnswersEs": [
+      ["multiplica en linea recta", "multiplica los numeradores entre si y los denominadores entre si"]
+    ]
   },
   {
     "id": "5E",
@@ -427,11 +645,16 @@
     "answerImageEn": "images/5E_A_en.png",
     "questionImageEs": "images/5E_Q_es.png",
     "answerImageEs": "images/5E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["keep change flip", "keep the first fraction change the sign to multiply and flip the second fraction", "multiply by the reciprocal"]
+    ],
     "questionReadAloudEn": "​\nHow do we divide fractions?\n Example:",
     "answerReadAloudEn": "To divide fractions\n 1 3\n ÷ 5 4\n Keep Change Flip\n ↓ ↓ ↓\n 1 4\n × 5 3\n then multiply\n straight across",
     "questionReadAloudEs": "¿Cómo dividimos fracciones?\n Ejemplo:",
-    "answerReadAloudEs": "Para dividir fracciones\n 15 ÷ 34\n Mantener Cambiar Voltear\n 15 × 43\nluego multiplicar\n en línea recta"
+    "answerReadAloudEs": "Para dividir fracciones\n 15 ÷ 34\n Mantener Cambiar Voltear\n 15 × 43\nluego multiplicar\n en línea recta",
+    "acceptedAnswersEs": [
+      ["mantener cambiar voltear", "multiplicar por el reciproco"]
+    ]
   },
   {
     "id": "5F",
@@ -441,11 +664,18 @@
     "answerImageEn": "images/5F_A_en.png",
     "questionImageEs": "images/5F_Q_es.png",
     "answerImageEs": "images/5F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["volume is the number of cubes it takes to fill up a 3d shape", "the number of unit cubes that fill a 3d shape"],
+      ["find the area of the bottom layer and multiply by the height", "length times width times height", "l x w x h", "30 cubes", "30"]
+    ],
     "questionReadAloudEn": "1.​ What is volume?\n 2.​How can you quickly find\n the volume of this figure?",
     "answerReadAloudEn": "1.​ Volume is the number of cubes it takes\n to fill up a 3D shape.\n 2.​Step 1: Find the area of the bottom\n layer.\n Step 2: Multiply the area of the\n bottom layer by the height.\n OR use the formula 𝑉= 𝐿· 𝑊 · 𝐻\n V = 3 · 2 · 5\n V = 30 𝑐𝑢𝑏𝑒𝑠",
     "questionReadAloudEs": "¿Qué es el volumen?\n¿Cómo se puede calcular rápidamente\nel volumen de esta figura?",
-    "answerReadAloudEs": "El volumen es el número de cubos\nque se necesitan para llenar una\nforma tridimensional.\nPaso 1: Calcula el área de la capa\ninferior.\n Paso 2: Multiplica el área del\n número inferior por la altura.\n O utiliza la fórmula\nV= L* W * H\n V = 3 * 2 * 5\n V = 30 cubos"
+    "answerReadAloudEs": "El volumen es el número de cubos\nque se necesitan para llenar una\nforma tridimensional.\nPaso 1: Calcula el área de la capa\ninferior.\n Paso 2: Multiplica el área del\n número inferior por la altura.\n O utiliza la fórmula\nV= L* W * H\n V = 3 * 2 * 5\n V = 30 cubos",
+    "acceptedAnswersEs": [
+      ["el volumen es el numero de cubos que se necesitan para llenar una forma tridimensional", "el numero de cubos que llenan una figura 3d"],
+      ["calcula el area de la capa inferior y multiplica por la altura", "largo por ancho por alto", "30 cubos", "30"]
+    ]
   },
   {
     "id": "6A",
@@ -455,11 +685,16 @@
     "answerImageEn": "images/6A_A_en.png",
     "questionImageEs": "images/6A_Q_es.png",
     "answerImageEs": "images/6A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["5 to the third power means 5 is being multiplied by itself 3 times", "5 x 5 x 5", "5 multiplied by itself 3 times", "125"]
+    ],
     "questionReadAloudEn": "3\n What does 5 mean?",
     "answerReadAloudEn": "3\n 5 means that 5 is being\n multiplied by itself 3 times.\n 5 × 5 × 5 = 125",
     "questionReadAloudEs": "3\n ¿Qué significa 5 ?",
-    "answerReadAloudEs": "3\n 5 significa que 5 se\n multiplica por sí mismo 3\n veces.\n 5 × 5 × 5 = 125"
+    "answerReadAloudEs": "3\n 5 significa que 5 se\n multiplica por sí mismo 3\n veces.\n 5 × 5 × 5 = 125",
+    "acceptedAnswersEs": [
+      ["5 a la tercera potencia significa que 5 se multiplica por si mismo 3 veces", "5 x 5 x 5", "125"]
+    ]
   },
   {
     "id": "6B",
@@ -469,11 +704,24 @@
     "answerImageEn": "images/6B_A_en.png",
     "questionImageEs": "images/6B_Q_es.png",
     "answerImageEs": "images/6B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["parentheses", "pemdas"],
+      ["exponents", "pemdas"],
+      ["multiplication or division left to right", "pemdas"],
+      ["addition or subtraction left to right", "pemdas"],
+      ["you use the order of operations every time a problem has more than one operation", "when a problem has more than one operation"]
+    ],
     "questionReadAloudEn": "​\n ●​List the order of operations:\n ●​When do you use the order of\n operations?",
     "answerReadAloudEn": "1.​Parentheses\n 2.​Exponents\n 3.​Multiplication or Division (from left\n to right)\n 4.​Addition or Subtraction (from left to\n right)\n ●​ You use the order of operations\n every time a problem has more\n than one operation.\n Ex) 5 + 3 x 6",
     "questionReadAloudEs": "​\n ●​Enumera el orden de las\n operaciones:\n ●​¿Cuándo se utiliza el orden\n de las operaciones?",
-    "answerReadAloudEs": "1)​Paréntesis\n 2)​Exponentes\n 3)​Multiplicación o división (de\n izquierda a derecha)\n 4)​Suma o resta (de izquierda a derecha)\n ●​ El orden de las operaciones se\n utiliza cada vez que un problema\n tiene más de una operación.\n Ex) 5 + 3 x 6"
+    "answerReadAloudEs": "1)​Paréntesis\n 2)​Exponentes\n 3)​Multiplicación o división (de\n izquierda a derecha)\n 4)​Suma o resta (de izquierda a derecha)\n ●​ El orden de las operaciones se\n utiliza cada vez que un problema\n tiene más de una operación.\n Ex) 5 + 3 x 6",
+    "acceptedAnswersEs": [
+      ["parentesis", "pemdas"],
+      ["exponentes", "pemdas"],
+      ["multiplicacion o division de izquierda a derecha", "pemdas"],
+      ["suma o resta de izquierda a derecha", "pemdas"],
+      ["se utiliza cada vez que un problema tiene mas de una operacion", "cuando hay mas de una operacion"]
+    ]
   },
   {
     "id": "6C",
@@ -483,11 +731,18 @@
     "answerImageEn": "images/6C_A_en.png",
     "questionImageEs": "images/6C_Q_es.png",
     "answerImageEs": "images/6C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["3 x 6 because you always multiply before you add", "multiply 3 times 6 first because multiplication comes before addition"],
+      ["8 divided by 2 because when there is multiplication and division you do whichever is further to the left first", "8 divided by 2 first because division comes first left to right"]
+    ],
     "questionReadAloudEn": "​\n​\nWhat should you do first in the\nproblems below? Explain why. ​\n 1.​ 5 + 3 × 6\n 2.​ 8 ÷ 2 × 4",
     "answerReadAloudEn": "1.​ 3 × 6; because you always\n multiply before you add\n 2.​ 8 ÷ 2; because when\n there is multiplication and division,\n you always do whichever is further\n to the left first",
     "questionReadAloudEs": "​\n¿Qué debe hacer primero los\nproblemas de abajo? Explica por que.​\n a)​5 + 3 × 6\n b)​8 ÷ 2 × 4",
-    "answerReadAloudEs": "a)​ 3 × 6; porque siempre se\n multiplica antes de sumar\n b)​ 8 ÷ 2; Cuando hay\n multiplicación y división, la que\n está más a la izquierda es la\n primera)"
+    "answerReadAloudEs": "a)​ 3 × 6; porque siempre se\n multiplica antes de sumar\n b)​ 8 ÷ 2; Cuando hay\n multiplicación y división, la que\n está más a la izquierda es la\n primera)",
+    "acceptedAnswersEs": [
+      ["3 x 6 porque siempre se multiplica antes de sumar", "multiplicar 3 por 6 primero"],
+      ["8 entre 2 porque cuando hay multiplicacion y division se hace la que esta mas a la izquierda primero", "8 dividido 2 primero"]
+    ]
   },
   {
     "id": "6D",
@@ -497,11 +752,16 @@
     "answerImageEn": "images/6D_A_en.png",
     "questionImageEs": "images/6D_Q_es.png",
     "answerImageEs": "images/6D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a variable is a letter that represents a number we dont know", "a letter that stands for an unknown number", "a symbol representing an unknown value"]
+    ],
     "questionReadAloudEn": "6\n What is a variable?",
     "answerReadAloudEn": "A variable is a letter that\n represents a number we don’t\n know.",
     "questionReadAloudEs": "¿Qué es una variable?",
-    "answerReadAloudEs": "Una variable es una letra que\nrepresenta un número que\nno conocemos."
+    "answerReadAloudEs": "Una variable es una letra que\nrepresenta un número que\nno conocemos.",
+    "acceptedAnswersEs": [
+      ["una variable es una letra que representa un numero que no conocemos", "una letra que representa un numero desconocido"]
+    ]
   },
   {
     "id": "6E",
@@ -511,11 +771,16 @@
     "answerImageEn": "images/6E_A_en.png",
     "questionImageEs": "images/6E_Q_es.png",
     "answerImageEs": "images/6E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["multiply the number outside the parentheses by everything inside the parentheses", "distribute the outside number to each term inside", "use the distributive property"]
+    ],
     "questionReadAloudEn": "How do you write an equivalent\nexpression when you have a number\ndirectly in front of parentheses?\nLike this: 5(3𝑥 + 2)",
     "answerReadAloudEn": "When a number is directly in front of\nparentheses, multiply the number\noutside the ( ) by everything inside\nthe ( ).​",
     "questionReadAloudEs": "¿Cómo se escribe una expresión\nequivalente cuando se tiene un\nnúmero directamente delante de\nlos paréntesis?\nAsí: 5(3𝑥 + 2)",
-    "answerReadAloudEs": "Cuando un número está\ndirectamente delante de un\nparéntesis, multiplica en numero\nde afuera del ( ) por todo lo que\nhay dentro del ( )."
+    "answerReadAloudEs": "Cuando un número está\ndirectamente delante de un\nparéntesis, multiplica en numero\nde afuera del ( ) por todo lo que\nhay dentro del ( ).",
+    "acceptedAnswersEs": [
+      ["multiplica el numero de afuera del parentesis por todo lo que hay dentro", "distribuye el numero de afuera a cada termino de adentro"]
+    ]
   },
   {
     "id": "7A",
@@ -525,11 +790,18 @@
     "answerImageEn": "images/7A_A_en.png",
     "questionImageEs": "images/7A_Q_es.png",
     "answerImageEs": "images/7A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["solving an equation means finding the value of the variable that will make the left side equal the right side", "finding the value that makes both sides equal"],
+      ["x = 10", "10"]
+    ],
     "questionReadAloudEn": "1.​What does it mean to solve\n an equation?\n 2.​ Solve this equation:\n 𝑥 + 5 = 15",
     "answerReadAloudEn": "1.​Solving an equation means\n finding the value of the\n variable that will make the left\n side equal the right side.\n 2.​ Solve: 𝑥 + 5 = 15\n 10 + 5 = 15 so\n x = 10",
     "questionReadAloudEs": "¿Qué significa resolver una\necuación?\n Resuelve esta ecuación:\nx +5 = 15",
-    "answerReadAloudEs": "Resolver una ecuación significa encontrar\n el valor de la variable que hará que el lado\n izquierdo sea igual al lado derecho.\n Resuelve:\nx +5 = 15\n10 + 5 = 15 por lo tanto\n x = 10"
+    "answerReadAloudEs": "Resolver una ecuación significa encontrar\n el valor de la variable que hará que el lado\n izquierdo sea igual al lado derecho.\n Resuelve:\nx +5 = 15\n10 + 5 = 15 por lo tanto\n x = 10",
+    "acceptedAnswersEs": [
+      ["resolver una ecuacion significa encontrar el valor de la variable que hara que el lado izquierdo sea igual al lado derecho", "encontrar el valor que hace iguales ambos lados"],
+      ["x = 10", "10"]
+    ]
   },
   {
     "id": "7B",
@@ -539,11 +811,18 @@
     "answerImageEn": "images/7B_A_en.png",
     "questionImageEs": "images/7B_Q_es.png",
     "answerImageEs": "images/7B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["substitute each of the numbers for x", "plug in each number for x", "try each number in place of x"],
+      ["simplify until you find the number that makes the equation true", "simplify to see which one makes it true", "x = 5", "5"]
+    ],
     "questionReadAloudEn": "How can you figure out which of\nthese numbers {2, 5, 6} makes\nthe following equation true?\n 3𝑥 + 2 = 17",
     "answerReadAloudEn": "1st) Substitute each of the\n numbers for x\n2nd) Simplify until you find the\n number that makes the\n equation true\n 3(5) + 2 = 17\n 15 + 2 = 17\n 17 = 17 ✔️\n so x = 5",
     "questionReadAloudEs": "¿Cómo puedes averiguar cuál de\nestos números {2, 5, 6} hace que\n la siguiente ecuación sea\n verdadera?\n 3x + 2 = 17",
-    "answerReadAloudEs": "1º) Sustituye cada uno de los\n números por x\n2º) Simplifica hasta encontrar el\n número que hace que la\n ecuación sea verdadera\n3(5) + 2 =17\n 15 + 2 = 17\n 17 = 17 ✔️"
+    "answerReadAloudEs": "1º) Sustituye cada uno de los\n números por x\n2º) Simplifica hasta encontrar el\n número que hace que la\n ecuación sea verdadera\n3(5) + 2 =17\n 15 + 2 = 17\n 17 = 17 ✔️",
+    "acceptedAnswersEs": [
+      ["sustituye cada uno de los numeros por x", "reemplaza cada numero por x"],
+      ["simplifica hasta encontrar el numero que hace que la ecuacion sea verdadera", "x = 5", "5"]
+    ]
   },
   {
     "id": "7C",
@@ -553,11 +832,16 @@
     "answerImageEn": "images/7C_A_en.png",
     "questionImageEs": "images/7C_Q_es.png",
     "answerImageEs": "images/7C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the independent variable causes the dependent variable", "the independent variable affects the dependent variable", "changes in the independent variable cause changes in the dependent variable"]
+    ],
     "questionReadAloudEn": "What is the relationship between an\nindependent and a dependent\nvariable?",
     "answerReadAloudEn": "The independent variable causes\nthe dependent variable",
     "questionReadAloudEs": "¿Cuál es la relación entre\nuna variable independiente\ny una variable\ndependiente?",
-    "answerReadAloudEs": "La variable independiente determina\nla variable dependiente."
+    "answerReadAloudEs": "La variable independiente determina\nla variable dependiente.",
+    "acceptedAnswersEs": [
+      ["la variable independiente determina la variable dependiente", "la variable independiente afecta la variable dependiente"]
+    ]
   },
   {
     "id": "7D",
@@ -567,7 +851,11 @@
     "answerImageEn": "images/7D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["graph"],
+      ["equation"],
+      ["table"]
+    ],
     "questionReadAloudEn": "What are 3 main ways to\nrepresent a relationship in\nalgebra?",
     "answerReadAloudEn": "Graph, Equation, Table",
     "questionReadAloudEs": "",
@@ -581,7 +869,10 @@
     "answerImageEn": "images/7E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["20 160 means for every 20 hours you babysit you earn 160 dollars", "for every 20 hours babysitting you earn $160", "every 20 hours equals $160"],
+      ["5 40 means for every 5 hours you babysit you earn 40 dollars", "for every 5 hours babysitting you earn $40", "every 5 hours equals $40"]
+    ],
     "questionReadAloudEn": "1.​What does the point (20,\n 160) mean on the graph\n below?\n 2.​ What does the point (5,40)\n mean on the graph below?",
     "answerReadAloudEn": "1.​(20,160) means for every 20\n hours you babysit you earn\n $160.\n 2.​(5,40) means for every 5 hours\n you babysit you earn $40",
     "questionReadAloudEs": "",
@@ -595,11 +886,16 @@
     "answerImageEs": "images/7F_A_es.png",
     "questionImageEn": "images/7F_Q_en.png",
     "answerImageEn": "images/7F_A_en.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["5 dollars for every 1 hour", "5 dollars per hour", "$5 an hour", "5 per hour"]
+    ],
     "questionReadAloudEn": "1.​This table is proportional.\n Find the unit rate.\n 2.​Show\n how to\n use the\n unit rate\n to find the\n missing\n values in\n the table.",
     "answerReadAloudEn": "1.​5 dollars for every 1 hour\n 2.​",
     "questionReadAloudEs": "​\nEsta tabla es proporcional. Halla la tasa unitaria.\nMuestra cómo usar la tasa unitaria para hallar los\n valores que faltan en la tabla.",
-    "answerReadAloudEs": "5 dólares por cada hora."
+    "answerReadAloudEs": "5 dólares por cada hora.",
+    "acceptedAnswersEs": [
+      ["5 dolares por cada hora", "5 dolares por hora"]
+    ]
   },
   {
     "id": "7G",
@@ -609,11 +905,18 @@
     "answerImageEs": "images/7G_A_es.png",
     "questionImageEn": "images/7G_Q_en.png",
     "answerImageEn": "images/7G_A_en.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["find the unit rate", "calculate the unit rate"],
+      ["write y equals unit rate times x", "y = unit rate times x", "y = 5x"]
+    ],
     "questionReadAloudEn": "If you are given a proportional table,\nhow do you write an equation?\nFor example:",
     "answerReadAloudEn": "To write an equation from a\nproportional table:\n1st) Find the 𝑢𝑛𝑖𝑡 𝑟𝑎𝑡𝑒\n2nd) Write: 𝑦= 𝑢𝑛𝑖𝑡 𝑟𝑎𝑡𝑒 ∙ 𝑥\nExample: 𝑦 = 5𝑥",
     "questionReadAloudEs": "Si se te da una tabla proporcional, ¿cómo\nse escribe una ecuación?\nPor ejemplo:",
-    "answerReadAloudEs": "Para escribir una ecuación a partir de una\ntabla proporcional:\n1º) Halla la\ntasa unitaria\n2º) Escribe: y=tasa unitaria ∙ x\nEjemplo: y = 5x"
+    "answerReadAloudEs": "Para escribir una ecuación a partir de una\ntabla proporcional:\n1º) Halla la\ntasa unitaria\n2º) Escribe: y=tasa unitaria ∙ x\nEjemplo: y = 5x",
+    "acceptedAnswersEs": [
+      ["halla la tasa unitaria", "calcula la tasa unitaria"],
+      ["escribe y es igual a la tasa unitaria por x", "y = tasa unitaria por x", "y = 5x"]
+    ]
   },
   {
     "id": "8A",
@@ -623,11 +926,16 @@
     "answerImageEn": "images/8A_A_en.png",
     "questionImageEs": "images/8A_Q_es.png",
     "answerImageEs": "images/8A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an integer is a positive or negative whole number or zero", "a whole number that can be positive negative or zero", "positive or negative whole numbers including zero"]
+    ],
     "questionReadAloudEn": "​\nWhat is an integer?\nGive examples and non-examples of\nintegers.",
     "answerReadAloudEn": "An integer is a positive or\nnegative whole number or zero.​\n(Examples: 45, -987, 0, 72)\n(Non-examples: 0.5, ⅔, -46.9)",
     "questionReadAloudEs": "​\n ¿Qué es un número\n entero?\nPon ejemplos y no ejemplos de números enteros.",
-    "answerReadAloudEs": "Un número entero es un\n número entero positivo,\n negativo o cero.\n(Ejemplos: 45, -987, 0, 72)​\n(No-ejemplos: 0.5, ⅔, -46.9)"
+    "answerReadAloudEs": "Un número entero es un\n número entero positivo,\n negativo o cero.\n(Ejemplos: 45, -987, 0, 72)​\n(No-ejemplos: 0.5, ⅔, -46.9)",
+    "acceptedAnswersEs": [
+      ["un numero entero es un numero entero positivo negativo o cero", "un numero entero puede ser positivo negativo o cero"]
+    ]
   },
   {
     "id": "8B",
@@ -637,11 +945,22 @@
     "answerImageEn": "images/8B_A_en.png",
     "questionImageEs": "images/8B_Q_es.png",
     "answerImageEs": "images/8B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["under the water", "below sea level", "underwater"],
+      ["under the ground", "below ground", "underground"],
+      ["temperature", "cold temperatures", "below zero temperature"],
+      ["money", "debt", "owing money"]
+    ],
     "questionReadAloudEn": "​\nGive 4 real life examples where\nnegative numbers make sense.",
     "answerReadAloudEn": "​\n 1.​Under the water\n 2.​Under the ground\n 3.​Temperature\n 4.​Money/Debt​",
     "questionReadAloudEs": "​\n Pon 4 ejemplos de la vida real\n en los que los números\n negativos tengan sentido.",
-    "answerReadAloudEs": "​\n 1)​Debajo del agua\n 2)​Debajo de la tierra\n 3)​Temperatura\n 4)​Dinero/Deuda​"
+    "answerReadAloudEs": "​\n 1)​Debajo del agua\n 2)​Debajo de la tierra\n 3)​Temperatura\n 4)​Dinero/Deuda​",
+    "acceptedAnswersEs": [
+      ["debajo del agua"],
+      ["debajo de la tierra", "bajo tierra"],
+      ["temperatura"],
+      ["dinero", "deuda"]
+    ]
   },
   {
     "id": "8C",
@@ -651,11 +970,20 @@
     "answerImageEn": "images/8C_A_en.png",
     "questionImageEs": "images/8C_Q_es.png",
     "answerImageEs": "images/8C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["absolute value is how far a number is away from zero and it is always positive", "the distance a number is from zero", "always positive distance from zero"],
+      ["8"],
+      ["8"]
+    ],
     "questionReadAloudEn": "c\n |-8|\n 1.​ What are the lines around the -8\n above called, and what do they\n mean?\n 2.​ | −8| = ?\n 3.​ | 8| = ?​",
     "answerReadAloudEn": "c)\n 1.​Absolute value: it is how far a\n number is away from zero. It is\n always positive.\n 2.​ 8\n 3.​ 8",
     "questionReadAloudEs": "|-8|\n1)¿Cómo se llaman las líneas\nalrededor del -8 de arriba y qué\nsignifican?\n2) | 8| = ?\n3) | −8| = ?​",
-    "answerReadAloudEs": "1)​ Valor absoluto: es la distancia\n entre un número y cero.\n Siempre es positivo.\n 2)​ 8\n 3)​ 8"
+    "answerReadAloudEs": "1)​ Valor absoluto: es la distancia\n entre un número y cero.\n Siempre es positivo.\n 2)​ 8\n 3)​ 8",
+    "acceptedAnswersEs": [
+      ["valor absoluto es la distancia entre un numero y cero siempre es positivo", "la distancia de un numero a cero, siempre positiva"],
+      ["8"],
+      ["8"]
+    ]
   },
   {
     "id": "8D",
@@ -665,11 +993,18 @@
     "answerImageEn": "images/8D_A_en.png",
     "questionImageEs": "images/8D_Q_es.png",
     "answerImageEs": "images/8D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["less than", "the less than symbol means less than"],
+      ["greater than", "the greater than symbol means greater than"]
+    ],
     "questionReadAloudEn": "How do you read each of these\nsymbols?\n <\n >",
     "answerReadAloudEn": "< is less than\n > is greater than",
     "questionReadAloudEs": "¿Cómo se lee cada uno de estos\nsímbolos?\n <\n >",
-    "answerReadAloudEs": "< es menor que\n > es mayor que"
+    "answerReadAloudEs": "< es menor que\n > es mayor que",
+    "acceptedAnswersEs": [
+      ["menor que"],
+      ["mayor que"]
+    ]
   },
   {
     "id": "8E",
@@ -679,11 +1014,18 @@
     "answerImageEn": "images/8E_A_en.png",
     "questionImageEs": "images/8E_Q_es.png",
     "answerImageEs": "images/8E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["x greater than 2 means x must be bigger than 2", "x has to be more than 2", "any number greater than 2"],
+      ["b because an open circle is used to represent greater than or less than on a graph", "graph b", "b, open circle"]
+    ],
     "questionReadAloudEn": "​\n 1.​What does x > 2 mean?\n 2.​Which of these graphs represents\n the inequality 𝑥 > 2 ?\n A)​\n​\n B)​ ​",
     "answerReadAloudEn": "​\n​\n 1.​ x > 2 means that 𝑥 must be\n bigger than 2, such as 2½, 3,\n 4,…\n 2.​ B , because an open circle is\n used to represent a greater than\n or less than symbol on a graph.",
     "questionReadAloudEs": "​\n 1)​¿Que significa x > 2?\n 2)​¿¿Cuál de estas gráficas representa\n la desigualdad x > 2 ?\n A)​\n B)​​",
-    "answerReadAloudEs": "​\n 1)​x > 2 significa que x debe ser\n mayor que 2, como 2 ½, 3, 4,…\n 2)​B, porque tiene un círculo\n abierto, que representa que x\n no puede ser 2."
+    "answerReadAloudEs": "​\n 1)​x > 2 significa que x debe ser\n mayor que 2, como 2 ½, 3, 4,…\n 2)​B, porque tiene un círculo\n abierto, que representa que x\n no puede ser 2.",
+    "acceptedAnswersEs": [
+      ["x mayor que 2 significa que x debe ser mayor que 2", "x tiene que ser mas grande que 2"],
+      ["b porque tiene un circulo abierto que representa que x no puede ser 2", "grafica b", "b"]
+    ]
   },
   {
     "id": "8F",
@@ -693,11 +1035,20 @@
     "answerImageEn": "images/8F_A_en.png",
     "questionImageEs": "images/8F_Q_es.png",
     "answerImageEs": "images/8F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["start at 0 0", "start at the origin"],
+      ["move 3 to the left", "move left 3", "go left 3 spaces"],
+      ["move 4 up", "move up 4", "go up 4 spaces"]
+    ],
     "questionReadAloudEn": "How do you plot ​\nthe point (-3,4)?",
     "answerReadAloudEn": "1st) Start at (0,0)​\n2nd) move 3 to the left​\n3rd) move 4 up",
     "questionReadAloudEs": "¿Cómo se traza\nel punto\n(-3,4)?",
-    "answerReadAloudEs": "1st) Comienza en (0,0)\n2nd)mueve 3 a la izquierda\n3rd) sube 4"
+    "answerReadAloudEs": "1st) Comienza en (0,0)\n2nd)mueve 3 a la izquierda\n3rd) sube 4",
+    "acceptedAnswersEs": [
+      ["comienza en 0 0", "empieza en el origen"],
+      ["mueve 3 a la izquierda", "muevete a la izquierda 3"],
+      ["sube 4", "muevete hacia arriba 4"]
+    ]
   },
   {
     "id": "9A",
@@ -707,11 +1058,18 @@
     "answerImageEn": "images/9A_A_en.png",
     "questionImageEs": "images/9A_Q_es.png",
     "answerImageEs": "images/9A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a question that can be answered by collecting data that varies", "a question whose answers vary", "a question that produces a variety of answers"],
+      ["b is a statistical question because you can get a variety of ages when asking the question", "b, because the answers vary", "b"]
+    ],
     "questionReadAloudEn": "1.​What is a statistical question?\n 2.​Which of these is a statistical\n question and why:\n A)​ “How old am I?\n B)​“How old are the students in\n my school?”",
     "answerReadAloudEn": "​\n 1)​A question that can be answered\n by collecting data that varies.\n 2)​ B is a statistical question\n because you can get a variety of\n ages when asking the question.",
     "questionReadAloudEs": "1)​¿Qué es una pregunta de\n estadística?\n 2)​¿Cuál de estas preguntas es\n estadística y por qué:\n A)​ “¿Cuántos años tengo?”​\n B)​“¿Qué edad tienen los\n estudiantes de mi escuela?”",
-    "answerReadAloudEs": "​\n 1)​Una pregunta que puede\n responderse colectando datos\n que varíen.\n 2)​B es una pregunta estadística\n porque puedes obtener una\n variedad de edades al hacer\n la pregunta."
+    "answerReadAloudEs": "​\n 1)​Una pregunta que puede\n responderse colectando datos\n que varíen.\n 2)​B es una pregunta estadística\n porque puedes obtener una\n variedad de edades al hacer\n la pregunta.",
+    "acceptedAnswersEs": [
+      ["una pregunta que puede responderse colectando datos que varien", "una pregunta cuyas respuestas varian"],
+      ["b es una pregunta estadistica porque puedes obtener una variedad de edades", "b"]
+    ]
   },
   {
     "id": "9B",
@@ -721,11 +1079,18 @@
     "answerImageEn": "images/9B_A_en.png",
     "questionImageEs": "images/9B_Q_es.png",
     "answerImageEs": "images/9B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["add all the numbers and divide by how many numbers you have", "sum all the values and divide by the count", "add them up and divide by how many there are"],
+      ["the mean is 4", "4"]
+    ],
     "questionReadAloudEn": "1.​How do you calculate the\n mean(average)?\n 2.​Calculate the mean of this set of\n data: 6, 5, 0, 7, 2",
     "answerReadAloudEn": "1. To calculate Mean(average):\n 1st) Add all the numbers\n 2nd) Divide by how many numbers\n you have\n2. 6 + 5 + 0 + 7 + 2 = 20\n 20 ÷ 5 = 4\n The mean is 4.",
     "questionReadAloudEs": "1)¿Cómo se calcula la\nmedia(promedio)?\n2) Calcula la media de este\nconjunto de datos: 6, 5, 0, 7, 2",
-    "answerReadAloudEs": "1)​ Para calcular la media(promedio):\n 1º) Suma todos los números\n 2º) Divide entre la cantidad de\n números que hay.\n 2)​ 6 + 5 + 0 + 7 + 2 = 20\n 20 ÷ 5 = 4\n La media es 4."
+    "answerReadAloudEs": "1)​ Para calcular la media(promedio):\n 1º) Suma todos los números\n 2º) Divide entre la cantidad de\n números que hay.\n 2)​ 6 + 5 + 0 + 7 + 2 = 20\n 20 ÷ 5 = 4\n La media es 4.",
+    "acceptedAnswersEs": [
+      ["suma todos los numeros y divide entre la cantidad de numeros que hay", "suma los valores y divide entre cuantos hay"],
+      ["la media es 4", "4"]
+    ]
   },
   {
     "id": "9C",
@@ -735,11 +1100,18 @@
     "answerImageEn": "images/9C_A_en.png",
     "questionImageEs": "images/9C_Q_es.png",
     "answerImageEs": "images/9C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["put the numbers in order from least to greatest and choose the middle number", "order the numbers and find the middle one", "sort the data and pick the middle value"],
+      ["median is 5", "5"]
+    ],
     "questionReadAloudEn": "1.​How do you find the median?\n 2.​ Find the median of this set of\n data: 6, 5, 0, 7, 2",
     "answerReadAloudEn": "1.​To find the median:\n 1st) Put the numbers in order from\n least to greatest\n 2nd) Choose the middle number\n(If there are two numbers in the middle, add them and divide by\n2)\n 2.​ 0, 2, 5, 6, 7\n median = 5",
     "questionReadAloudEs": "1)​¿Cómo se calcula la mediana?\n 2)​Encuentra la mediana de este\n conjunto de datos:\n 6, 5, 0, 7, 2",
-    "answerReadAloudEs": "1)​Para encontrar la mediana,\n ordena todos los números de\n menor a mayor y encuentra el\n número del medio.\n(Si hay un empate entre dos números del medio,\nsúmalos y divídelos por 2)\n 2)​ 0, 2, 5, 6, 7\n mediana = 5"
+    "answerReadAloudEs": "1)​Para encontrar la mediana,\n ordena todos los números de\n menor a mayor y encuentra el\n número del medio.\n(Si hay un empate entre dos números del medio,\nsúmalos y divídelos por 2)\n 2)​ 0, 2, 5, 6, 7\n mediana = 5",
+    "acceptedAnswersEs": [
+      ["ordena todos los numeros de menor a mayor y encuentra el numero del medio", "ordena los datos y encuentra el valor del medio"],
+      ["mediana es 5", "5"]
+    ]
   },
   {
     "id": "9D",
@@ -749,11 +1121,18 @@
     "answerImageEn": "images/9D_A_en.png",
     "questionImageEs": "images/9D_Q_es.png",
     "answerImageEs": "images/9D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["find the number that repeats the most", "the value that appears most often", "the most frequent number"],
+      ["mode is 6", "6"]
+    ],
     "questionReadAloudEn": "1.​How do you find the mode?\n 2.​Find the mode of this set of data:\n 6, 5, 0, 7, 6, 0, 6",
     "answerReadAloudEn": "1.​To find the mode: Find the number\n that repeats the most.\n 2.​mode = 6",
     "questionReadAloudEs": "1)​¿Cómo se encuentra el modo?\n 2)​Encuentra el mod0 de este\n conjunto de datos:\n 6, 5, 0, 7, 6, 0, 6",
-    "answerReadAloudEs": "1)​Para encontrar el modo:\n Encuentra el número que más\n se repite.\n 2)​modo = 6"
+    "answerReadAloudEs": "1)​Para encontrar el modo:\n Encuentra el número que más\n se repite.\n 2)​modo = 6",
+    "acceptedAnswersEs": [
+      ["encuentra el numero que mas se repite", "el valor que aparece con mas frecuencia"],
+      ["modo es 6", "6"]
+    ]
   },
   {
     "id": "9E",
@@ -763,11 +1142,18 @@
     "answerImageEn": "images/9E_A_en.png",
     "questionImageEs": "images/9E_Q_es.png",
     "answerImageEs": "images/9E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["subtract the smallest value from the biggest value in a data set", "biggest minus smallest", "subtract the minimum from the maximum"],
+      ["subtract q1 value from the q3 value", "q3 minus q1", "subtract the first quartile from the third quartile"]
+    ],
     "questionReadAloudEn": "1.​How do you find the range?\n 2.​How do you find the\n Interquartile Range (IQR)?",
     "answerReadAloudEn": "1.​To find the range, subtract the\n smallest value from the biggest\n value in a data set.\n 2.​To find the Interquartile Range or\n IQR, subtract Q1 value from the\n Q3 value.",
     "questionReadAloudEs": "1)​¿Cómo se encuentra el rango?\n 2)​¿Cómo se encuentra el rango\n intercuartílico (IQR)?",
-    "answerReadAloudEs": "1)​Para encontrar el rango, resta\n el valor más pequeño del valor\n más grande de un conjunto de\n datos.\n 2)​Para encontrar el rango\n intercuartílico o IQR, resta el\n valor Q1 del valor Q3."
+    "answerReadAloudEs": "1)​Para encontrar el rango, resta\n el valor más pequeño del valor\n más grande de un conjunto de\n datos.\n 2)​Para encontrar el rango\n intercuartílico o IQR, resta el\n valor Q1 del valor Q3.",
+    "acceptedAnswersEs": [
+      ["resta el valor mas pequeño del valor mas grande de un conjunto de datos", "el valor mas grande menos el mas pequeño"],
+      ["resta el valor q1 del valor q3", "q3 menos q1"]
+    ]
   },
   {
     "id": "9F",
@@ -777,11 +1163,18 @@
     "answerImageEn": "images/9F_A_en.png",
     "questionImageEs": "images/9F_Q_es.png",
     "answerImageEs": "images/9F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["measures of center represent the typical value of the data set like mean median mode", "mean median and mode show the typical value", "measures of center are mean median and mode"],
+      ["measures of spread represent how far apart the data is like range and iqr", "range and iqr show how spread out the data is", "measures of spread are range and iqr"]
+    ],
     "questionReadAloudEn": "What is the difference between\nmeasures of center and\nmeasures of spread?\n Give examples of each",
     "answerReadAloudEn": "●​ Measures of center represent\n the typical value of the data set\n Examples: mean, median, mode\n ●​ Measures of spread represent\n how far apart the data is.\n Examples: Range, IQR",
     "questionReadAloudEs": "¿Cuál es la diferencia entre\nmedidas centrales\n y\nlas medidas de variabilidad\n(dispersión)?\nDé ejemplos de cada una",
-    "answerReadAloudEs": "Medidas centrales: Representan el valor\ntípico del conjunto de datos\n Ejemplos: media, mediana, modo\nMedidas de variabilidad (dispersión):\nRepresentan que tan apartada está la\ndata.\n Ejemplos: Rango, IQR"
+    "answerReadAloudEs": "Medidas centrales: Representan el valor\ntípico del conjunto de datos\n Ejemplos: media, mediana, modo\nMedidas de variabilidad (dispersión):\nRepresentan que tan apartada está la\ndata.\n Ejemplos: Rango, IQR",
+    "acceptedAnswersEs": [
+      ["medidas centrales representan el valor tipico del conjunto de datos como media mediana y modo", "media mediana y modo muestran el valor tipico"],
+      ["medidas de variabilidad representan que tan apartada esta la data como rango e iqr", "rango e iqr muestran que tan dispersos estan los datos"]
+    ]
   },
   {
     "id": "CARD4",
