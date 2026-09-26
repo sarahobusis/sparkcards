@@ -196,6 +196,66 @@ button {
 .incorrect { background: var(--red); }
 .not-tested { background: var(--gray); }
 
+.badges-section {
+  margin: 18px 0;
+}
+
+.badges-heading {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.badge-shelf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 96px;
+  padding: 12px 8px;
+  border-radius: 14px;
+  border: 2px solid var(--border);
+  background: #eef1f6;
+  color: var(--muted);
+  text-align: center;
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+
+.badge-tile.earned {
+  border-color: var(--yellow);
+  background: #fff8e1;
+  color: var(--text);
+  filter: none;
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(247, 201, 72, 0.35);
+}
+
+.badge-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.badge-name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-progress {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.badge-tile.earned .badge-progress {
+  color: var(--blue-dark);
+}
+
 .unit-select-label {
   display: flex;
   align-items: center;
