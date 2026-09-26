@@ -7,11 +7,16 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "images/1A_Q_es.png",
     "answerImageEs": "images/1A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the engineering design process is the set of steps engineers follow when creating solutions to solve a problem", "the set of steps engineers use to solve a problem", "steps engineers follow to design a solution"]
+    ],
     "questionReadAloudEn": "What is the engineering design\nprocess?",
     "answerReadAloudEn": "The engineering design process is\nthe set of steps engineers follow\nwhen creating solutions to solve a\nproblem",
     "questionReadAloudEs": "En qué consiste el proceso de\n diseño de ingeniería?",
-    "answerReadAloudEs": "El proceso de diseño de ingeniería\n son los pasos que siguen los\n ingenieros cuando crean\n soluciones para resolver un\n problema"
+    "answerReadAloudEs": "El proceso de diseño de ingeniería\n son los pasos que siguen los\n ingenieros cuando crean\n soluciones para resolver un\n problema",
+    "acceptedAnswersEs": [
+      ["el proceso de diseño de ingenieria son los pasos que siguen los ingenieros cuando crean soluciones para resolver un problema", "los pasos que usan los ingenieros para resolver un problema"]
+    ]
   },
   {
     "id": "1B",
@@ -21,11 +26,18 @@
     "answerImageEn": "images/1B_A_en.png",
     "questionImageEs": "images/1B_Q_es.png",
     "answerImageEs": "images/1B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["criteria are the requirements that make it a good solution", "the requirements that make a solution good"],
+      ["constraints are the limitations you are allowed to work with", "the limitations you must work within"]
+    ],
     "questionReadAloudEn": "When developing possible solutions to a\nproblem, engineers need to consider the\ncriteria and constraints of their design\nsolution.\nWhat are criteria and constraints?",
     "answerReadAloudEn": "Criteria = The requirements that\nmake it a good solution\nConstraints = The limitations you\nare allowed to work with",
     "questionReadAloudEs": "A la hora de desarrollar posibles\nsoluciones a un problema, los\ningenieros deben tener en cuenta\nlos criterios y las limitaciones de su\nsolución de diseño.\n¿Qué son los criterios y las\nrestricciones?",
-    "answerReadAloudEs": "Criterios = Los requisitos que la\nhacen una buena solución\nRestricciones = Las limitaciones\ncon las que puedes trabajar"
+    "answerReadAloudEs": "Criterios = Los requisitos que la\nhacen una buena solución\nRestricciones = Las limitaciones\ncon las que puedes trabajar",
+    "acceptedAnswersEs": [
+      ["criterios son los requisitos que la hacen una buena solucion", "los requisitos que hacen buena la solucion"],
+      ["restricciones son las limitaciones con las que puedes trabajar", "las limitaciones con las que debes trabajar"]
+    ]
   },
   {
     "id": "1C",
@@ -35,11 +47,20 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "images/1C_Q_es.png",
     "answerImageEs": "images/1C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["research is gathering information to develop ideas", "gather information to develop ideas"],
+      ["design is taking the ideas from research and making a drawing", "take the ideas and make a drawing"],
+      ["prototype is taking the drawing and making a physical model", "take the drawing and make a physical model"]
+    ],
     "questionReadAloudEn": "Describe the following steps of the\nEngineering Design Process:\n ●​Research\n ●​Design\n ●​Prototype\n d)",
     "answerReadAloudEn": "●​ Research - gather\n information to develop ideas.\n ●​ Design - take the ideas from\n research and make a drawing.\n ●​ Prototype - take the drawing\n and make a physical model\n )",
     "questionReadAloudEs": "Describa las siguientes etapas del\n proceso de diseño técnico:\n - Investigación\n - Diseño\n - Prototipo\n )",
-    "answerReadAloudEs": "●​Investigación: recopilar\n información para desarrollar\n ideas.\n ●​Diseño: tomar las ideas de la\n investigación y hacer un\n dibujo.\n ●​Prototipo: a partir del dibujo,\n crear un modelo físico."
+    "answerReadAloudEs": "●​Investigación: recopilar\n información para desarrollar\n ideas.\n ●​Diseño: tomar las ideas de la\n investigación y hacer un\n dibujo.\n ●​Prototipo: a partir del dibujo,\n crear un modelo físico.",
+    "acceptedAnswersEs": [
+      ["investigacion es recopilar informacion para desarrollar ideas", "recopilar informacion para desarrollar ideas"],
+      ["diseño es tomar las ideas de la investigacion y hacer un dibujo", "tomar las ideas y hacer un dibujo"],
+      ["prototipo es a partir del dibujo crear un modelo fisico", "hacer un modelo fisico a partir del dibujo"]
+    ]
   },
   {
     "id": "1D",
@@ -49,11 +70,25 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "images/1D_Q_es.png",
     "answerImageEs": "images/1D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["flexibility", "flexible"],
+      ["transparency", "see through", "transparent"],
+      ["waterproof"],
+      ["thermal conductor or insulator", "thermal conductivity", "conducts or insulates heat"],
+      ["electrical conductor or insulator", "electrical conductivity", "conducts or insulates electricity"]
+    ],
     "questionReadAloudEn": "When engineers are deciding which\nmaterials to use in their prototypes, they\nmust consider the material’s properties.\nList at least 3 examples of\nproperties engineers may\nconsider. (*Try all 5!*)",
     "answerReadAloudEn": "●​ Flexibility\n ●​ Transparency (see through)\n ●​ Waterproof\n ●​ Thermal Conductor or\n Insulator\n ●​ Electrical Conductor or\n Insulator",
     "questionReadAloudEs": "Cuando los ingenieros deciden qué\nmateriales utilizar en sus\nprototipos, deben tener en cuenta\nsus propiedades.\nEnumera al menos 3 ejemplos de\npropiedades que los ingenieros\npueden tener en cuenta. (*Bono:\nConsigue las 5*)",
-    "answerReadAloudEs": "●​ Flexibilidad\n ●​ Transparencia (transparente)\n ●​ Impermeabilidad\n ●​ Conductor o aislante térmico\n ●​ Conductor o aislante eléctrico"
+    "answerReadAloudEs": "●​ Flexibilidad\n ●​ Transparencia (transparente)\n ●​ Impermeabilidad\n ●​ Conductor o aislante térmico\n ●​ Conductor o aislante eléctrico",
+    "acceptedAnswersEs": [
+      ["flexibilidad"],
+      ["transparencia", "transparente"],
+      ["impermeabilidad", "impermeable"],
+      ["conductor o aislante termico", "conductividad termica"],
+      ["conductor o aislante electrico", "conductividad electrica"]
+    ],
+    "acceptedAnswersMinMatch": 3
   },
   {
     "id": "2A",
@@ -63,11 +98,16 @@
     "answerImageEn": "images/2A_A_en.png",
     "questionImageEs": "images/2A_Q_es.png",
     "answerImageEs": "images/2A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["our earth is in the solar system which is in the milky way galaxy which is in the universe", "earth is in the solar system, the solar system is in the milky way, the milky way is in the universe"]
+    ],
     "questionReadAloudEn": "Draw AND explain Earth’s place in\nthe Universe.",
     "answerReadAloudEn": "Our Earth is in the Solar System, which is\n in the Milky Way Galaxy, which is in the\n Universe.",
     "questionReadAloudEs": "Dibuja y explica el lugar de la Tierra\nen el Universo.\n )",
-    "answerReadAloudEs": "Nuestra Tierra está en el Sistema Solar,\nque está en la Vía Láctea (Galaxia), que\n está en el Universo.\n )"
+    "answerReadAloudEs": "Nuestra Tierra está en el Sistema Solar,\nque está en la Vía Láctea (Galaxia), que\n está en el Universo.\n )",
+    "acceptedAnswersEs": [
+      ["nuestra tierra esta en el sistema solar que esta en la via lactea que esta en el universo", "la tierra esta en el sistema solar, el sistema solar esta en la via lactea, la via lactea esta en el universo"]
+    ]
   },
   {
     "id": "2B",
@@ -77,11 +117,16 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "images/2B_Q_es.png",
     "answerImageEs": "images/2B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an invisible force that pulls all objects towards each other", "invisible force pulling objects toward each other"]
+    ],
     "questionReadAloudEn": "What is gravity?\n )",
     "answerReadAloudEn": "An invisible force that pulls ALL\n objects towards each other\n )",
     "questionReadAloudEs": "¿Qué es la gravedad?\n )",
-    "answerReadAloudEs": "Una fuerza invisible que atrae\n TODOS los objetos unos hacia\n otros\n )"
+    "answerReadAloudEs": "Una fuerza invisible que atrae\n TODOS los objetos unos hacia\n otros\n )",
+    "acceptedAnswersEs": [
+      ["una fuerza invisible que atrae todos los objetos unos hacia otros", "fuerza invisible que atrae los objetos entre si"]
+    ]
   },
   {
     "id": "2C",
@@ -91,11 +136,18 @@
     "answerImageEn": "images/2C_A_en.png",
     "questionImageEs": "images/2C_Q_es.png",
     "answerImageEs": "images/2C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["an object with more mass will have stronger gravity", "more mass means stronger gravity"],
+      ["the closer two objects are the stronger the gravity", "less distance means stronger gravity"]
+    ],
     "questionReadAloudEn": "1.​Describe how mass\n impacts an object’s gravity.\n 2.​Describe how distance\n impact an object’s gravity.",
     "answerReadAloudEn": "1.​An object with more mass will\n have stronger gravity.\n a.​\n 2.​The closer (less distance) two\n objects are, the stronger the\n gravity.",
     "questionReadAloudEs": "1.​Describe cómo la masa afecta la\n gravedad de un objeto.\n 2.​Describe cómo la distancia afecta\n la gravedad de un objeto.",
-    "answerReadAloudEs": "1.​Un objeto con más masa tendrá\n una gravedad más fuerte.\n 2.​Cuanto más cerca estén dos\n objetos (menor distancia), más\n fuerte será la gravedad."
+    "answerReadAloudEs": "1.​Un objeto con más masa tendrá\n una gravedad más fuerte.\n 2.​Cuanto más cerca estén dos\n objetos (menor distancia), más\n fuerte será la gravedad.",
+    "acceptedAnswersEs": [
+      ["un objeto con mas masa tendra una gravedad mas fuerte", "mas masa significa mas gravedad"],
+      ["cuanto mas cerca esten dos objetos mas fuerte sera la gravedad", "menos distancia significa mas gravedad"]
+    ]
   },
   {
     "id": "2D",
@@ -105,11 +157,16 @@
     "answerImageEn": "images/2D_A_en.png",
     "questionImageEs": "images/2D_Q_es.png",
     "answerImageEs": "images/2D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["as the moon moves around the earth sunlight hits different parts of the moon which is the part we see", "the moon looks different because sunlight hits different parts of it as it orbits earth"]
+    ],
     "questionReadAloudEn": "What causes the moon to look\ndifferent every night?",
     "answerReadAloudEn": "As the Moon moves around the\nEarth, sunlight hits different parts\nof the Moon - which is the part\nthat we see.",
     "questionReadAloudEs": "¿Qué hace que la luna tenga un\naspecto diferente cada noche?",
-    "answerReadAloudEs": "A medida que la Luna se mueve\nalrededor de la Tierra, la luz solar\nincide en diferentes partes de la\nLuna - que es la parte que vemos."
+    "answerReadAloudEs": "A medida que la Luna se mueve\nalrededor de la Tierra, la luz solar\nincide en diferentes partes de la\nLuna - que es la parte que vemos.",
+    "acceptedAnswersEs": [
+      ["a medida que la luna se mueve alrededor de la tierra la luz solar incide en diferentes partes de la luna que es la parte que vemos", "la luna se ve diferente porque la luz solar incide en distintas partes mientras orbita la tierra"]
+    ]
   },
   {
     "id": "2E",
@@ -119,11 +176,16 @@
     "answerImageEn": "images/2E_A_en.png",
     "questionImageEs": "images/2E_Q_es.png",
     "answerImageEs": "images/2E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the moon moves between the sun and earth and blocks the suns light from hitting earth", "the moon gets between the sun and earth and blocks sunlight"]
+    ],
     "questionReadAloudEn": "Draw AND Describe what happens\nduring a solar eclipse.\n )",
     "answerReadAloudEn": "The Moon moves between Sun and\nEarth, and blocks the Sun’s light\nfrom hitting Earth.\n )",
     "questionReadAloudEs": "Dibuja y Describe lo que ocurre\ndurante un eclipse solar.",
-    "answerReadAloudEs": "La Luna se mueve entre el Sol y la\nTierra, y bloquea la luz del Sol para\nque no incida sobre la Tierra."
+    "answerReadAloudEs": "La Luna se mueve entre el Sol y la\nTierra, y bloquea la luz del Sol para\nque no incida sobre la Tierra.",
+    "acceptedAnswersEs": [
+      ["la luna se mueve entre el sol y la tierra y bloquea la luz del sol para que no incida sobre la tierra", "la luna se pone entre el sol y la tierra y bloquea la luz solar"]
+    ]
   },
   {
     "id": "2F",
@@ -133,11 +195,16 @@
     "answerImageEn": "images/2F_A_en.png",
     "questionImageEs": "images/2F_Q_es.png",
     "answerImageEs": "images/2F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the earth moves between the sun and the moon and blocks most of the suns light from hitting the moon", "the earth gets between the sun and moon and blocks sunlight"]
+    ],
     "questionReadAloudEn": "Draw AND Describe what happens\nduring a lunar eclipse",
     "answerReadAloudEn": "The Earth moves between the Sun\nand the Moon and blocks most of\nthe Sun’s light from hitting the\nMoon.",
     "questionReadAloudEs": "Dibuja y Describe lo que ocurre\ndurante un eclipse lunar",
-    "answerReadAloudEs": "La Tierra se mueve entre el Sol y la\nLuna y bloquea la mayor parte de\nlos rayos solares para que no\nincidan en la Luna."
+    "answerReadAloudEs": "La Tierra se mueve entre el Sol y la\nLuna y bloquea la mayor parte de\nlos rayos solares para que no\nincidan en la Luna.",
+    "acceptedAnswersEs": [
+      ["la tierra se mueve entre el sol y la luna y bloquea la mayor parte de los rayos solares para que no incidan en la luna", "la tierra se pone entre el sol y la luna y bloquea la luz solar"]
+    ]
   },
   {
     "id": "3A",
@@ -147,11 +214,18 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "images/3A_Q_es.png",
     "answerImageEs": "images/3A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the idea that the continents were once joined together and have moved apart over time", "continents used to be joined and have drifted apart"],
+      ["the continents look like they would fit together like a puzzle", "fossils of the same organisms have been found on different continents", "continents fit together like puzzle pieces"]
+    ],
     "questionReadAloudEn": "1.​What is the continental drift\n theory?\n 2.​Name at least one piece of\n evidence that supports this\n theory.\n b)",
     "answerReadAloudEn": "1.​The idea that the continents were\n once joined together and have\n moved apart over time.\n 2.​\n The continents look like they\n would fit together like a puzzle.\n OR\n Fossils of the same organisms\n have been found on different\n continents.\n b)",
     "questionReadAloudEs": "1.​¿En qué consiste la teoría de\n la deriva continental?\n 2.​Nombra al menos una\n prueba que apoye esta\n teoría.",
-    "answerReadAloudEs": "●​ La teoría de la deriva continental\n sugiere que los continentes\n estuvieron unidos en el pasado y\n se han ido separando con el\n tiempo.\n ●​ Pruebas:\n1 - Los continentes parecen encajar\ncomo un puzzle.\n2 - Se han encontrado fósiles de los\nmismos organismos en distintos\ncontinentes."
+    "answerReadAloudEs": "●​ La teoría de la deriva continental\n sugiere que los continentes\n estuvieron unidos en el pasado y\n se han ido separando con el\n tiempo.\n ●​ Pruebas:\n1 - Los continentes parecen encajar\ncomo un puzzle.\n2 - Se han encontrado fósiles de los\nmismos organismos en distintos\ncontinentes.",
+    "acceptedAnswersEs": [
+      ["la teoria de la deriva continental sugiere que los continentes estuvieron unidos en el pasado y se han ido separando con el tiempo", "los continentes estuvieron unidos y se separaron con el tiempo"],
+      ["los continentes parecen encajar como un puzzle", "se han encontrado fosiles de los mismos organismos en distintos continentes"]
+    ]
   },
   {
     "id": "3B",
@@ -161,11 +235,16 @@
     "answerImageEn": "images/3B_A_en.png",
     "questionImageEs": "images/3B_Q_es.png",
     "answerImageEs": "images/3B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the oldest rock layers and fossils are on the bottom and the younger rock layers and fossils are on top", "older layers are at the bottom, younger layers are on top"]
+    ],
     "questionReadAloudEn": "What does the Law of Superposition\ntell us about the ages of the rock\nlayers and fossils in those rock layers?",
     "answerReadAloudEn": "The Law of Superposition explains the\noldest rock layers and fossils are on the\nbottom and the younger rock layers and\nfossils are on the top.",
     "questionReadAloudEs": "Las rocas sedimentarias se forman por la\nadición de una capa de roca sobre otra, una y\notra vez.\n¿Qué nos dice la Ley de Superposición sobre\nlas edades de las capas de roca y los fósiles\nde las rocas sedimentarias?\n )",
-    "answerReadAloudEs": "La Ley de Superposición explica que las capas\nrocosas y los fósiles más antiguos se\nencuentran abajo y las capas rocosas y los\nfósiles más jóvenes en la parte arriba\n )"
+    "answerReadAloudEs": "La Ley de Superposición explica que las capas\nrocosas y los fósiles más antiguos se\nencuentran abajo y las capas rocosas y los\nfósiles más jóvenes en la parte arriba\n )",
+    "acceptedAnswersEs": [
+      ["las capas rocosas y los fosiles mas antiguos se encuentran abajo y las capas rocosas y los fosiles mas jovenes en la parte de arriba", "las capas mas antiguas estan abajo y las mas jovenes arriba"]
+    ]
   },
   {
     "id": "3C",
@@ -175,11 +254,18 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "images/3C_Q_es.png",
     "answerImageEs": "images/3C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["fossils are remains or traces of plants and animals that existed long ago", "remains or traces of ancient plants and animals"],
+      ["they provide evidence to show how earth and organisms have changed over time", "evidence of how earth and living things changed over time"]
+    ],
     "questionReadAloudEn": "1.​What is a fossil?\n 2.​What can fossils tell us about\n Earth’s past?\n )",
     "answerReadAloudEn": "1.​Fossils are remains or traces of\n plants and animals that\n existed long ago.\n 2.​They provide evidence to show\n how Earth and organisms\n have changed over time.\n )",
     "questionReadAloudEs": "1) ¿Qué es un fósil?\n2) ¿Qué pueden decirnos los fósiles sobre el\npasado de la Tierra?\n )",
-    "answerReadAloudEs": "1)Los fósiles son restos o huellas de plantas y\nanimales que existieron hace mucho tiempo.\n2)Proporcionan pruebas para mostrar cómo\nla Tierra y los organismos han cambiado con\nel tiempo.\n )"
+    "answerReadAloudEs": "1)Los fósiles son restos o huellas de plantas y\nanimales que existieron hace mucho tiempo.\n2)Proporcionan pruebas para mostrar cómo\nla Tierra y los organismos han cambiado con\nel tiempo.\n )",
+    "acceptedAnswersEs": [
+      ["los fosiles son restos o huellas de plantas y animales que existieron hace mucho tiempo", "restos o huellas de plantas y animales antiguos"],
+      ["proporcionan pruebas para mostrar como la tierra y los organismos han cambiado con el tiempo", "evidencia de como cambiaron la tierra y los organismos"]
+    ]
   },
   {
     "id": "3D",
@@ -189,11 +275,18 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "images/3D_Q_es.png",
     "answerImageEs": "images/3D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["they share a common ancestor in the past", "common ancestor"],
+      ["they adapted in similar ways to live in the same kind of environment", "similar adaptations to the same environment"]
+    ],
     "questionReadAloudEn": "Scientists often look for similarities in body parts\nof fossils and modern animals.\nWhat are the two major things that\nthese similarities can tell us?",
     "answerReadAloudEn": "If animals have similar body parts, it\ncan mean:\n 1.​They share a\n common\n ancestor in the\n past\n or\n 2.​ They adapted\n in similar ways\n to live in the\n same kind of\n environment.",
     "questionReadAloudEs": "Los científicos suelen buscar similitudes entre\nlas partes del cuerpo de los fósiles y los\nanimales modernos.\n¿Cuáles son las dos cosas principales que nos\npueden indicar estas similitudes?",
-    "answerReadAloudEs": "Si los animales tienen partes del cuerpo\nsimilares, esto puede significar:\n 1.​Que comparten un\n antepasado común\n en el pasado.\n O\n 2.​Que se adaptaron\n de manera similar\n para vivir en el\n mismo tipo de\n entorno."
+    "answerReadAloudEs": "Si los animales tienen partes del cuerpo\nsimilares, esto puede significar:\n 1.​Que comparten un\n antepasado común\n en el pasado.\n O\n 2.​Que se adaptaron\n de manera similar\n para vivir en el\n mismo tipo de\n entorno.",
+    "acceptedAnswersEs": [
+      ["comparten un antepasado comun en el pasado", "un antepasado comun"],
+      ["se adaptaron de manera similar para vivir en el mismo tipo de entorno", "adaptaciones similares al mismo ambiente"]
+    ]
   },
   {
     "id": "4A",
@@ -203,11 +296,24 @@
     "answerImageEn": "images/4A_A_en.png",
     "questionImageEs": "images/4A_Q_es.png",
     "answerImageEs": "images/4A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["made of cells"],
+      ["uses energy"],
+      ["responds to surroundings", "responds to its environment"],
+      ["grows and develops"],
+      ["reproduces"]
+    ],
     "questionReadAloudEn": "What are the 5 things ALL\norganisms need to be considered a\nliving thing?",
     "answerReadAloudEn": "1.​Made of cells\n 2.​ Uses energy\n 3.​Responds to surroundings\n 4.​Grows and develops\n 5.​Reproduces",
     "questionReadAloudEs": "¿Cuáles son las 5 cosas que TODOS\nlos organismos necesitan para ser\nconsiderados un ser vivo?",
-    "answerReadAloudEs": "●​ Formado por células\n ●​ Utiliza energía\n ●​ Responde al entorno\n ●​ Crece y se desarrolla\n ●​ Se reproduce"
+    "answerReadAloudEs": "●​ Formado por células\n ●​ Utiliza energía\n ●​ Responde al entorno\n ●​ Crece y se desarrolla\n ●​ Se reproduce",
+    "acceptedAnswersEs": [
+      ["formado por celulas"],
+      ["utiliza energia"],
+      ["responde al entorno"],
+      ["crece y se desarrolla"],
+      ["se reproduce"]
+    ]
   },
   {
     "id": "4B",
@@ -217,11 +323,18 @@
     "answerImageEn": "images/4B_A_en.png",
     "questionImageEs": "images/4B_Q_es.png",
     "answerImageEs": "images/4B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["unicellular organism has just one cell that performs all life functions", "one cell does everything"],
+      ["multicellular organism has many specialized cells that perform specific functions", "many cells each with a specific job"]
+    ],
     "questionReadAloudEn": "1.​Describe a unicellular\n organism.\n 2.​Describe a multicellular\n organism.",
     "answerReadAloudEn": "1. Unicellular organism - has just\nONE cell that performs all life\nfunctions.\n2. Multicellular organism - has\nmany specialized cells that perform\nspecific functions",
     "questionReadAloudEs": "1)​Describir un organismo\n unicelular.\n 2)​Describe un organismo\n pluricelular.",
-    "answerReadAloudEs": "1.​Organismo unicelular: sólo\n tiene UNA célula que realiza\n todas las funciones de la vida\n del organismo.\n 2.​ Organismo pluricelular: tiene\n muchas células especializadas\n que realizan funciones\n específicas."
+    "answerReadAloudEs": "1.​Organismo unicelular: sólo\n tiene UNA célula que realiza\n todas las funciones de la vida\n del organismo.\n 2.​ Organismo pluricelular: tiene\n muchas células especializadas\n que realizan funciones\n específicas.",
+    "acceptedAnswersEs": [
+      ["organismo unicelular solo tiene una celula que realiza todas las funciones de la vida", "una sola celula hace todo"],
+      ["organismo pluricelular tiene muchas celulas especializadas que realizan funciones especificas", "muchas celulas cada una con una funcion especifica"]
+    ]
   },
   {
     "id": "4C",
@@ -231,11 +344,22 @@
     "answerImageEn": "images/4C_A_en.png",
     "questionImageEs": "images/4C_Q_es.png",
     "answerImageEs": "images/4C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["nucleus controls the cell", "controls the cell"],
+      ["cell membrane is a barrier that protects the cell by controlling what comes in and out", "controls what enters and leaves the cell"],
+      ["mitochondria changes food into energy", "converts food into energy", "powerhouse of the cell"],
+      ["vacuoles store important materials for the cell", "stores materials for the cell"]
+    ],
     "questionReadAloudEn": "Cells have different parts called\norganelles that allow them to carry out\nfunctions of life.\nDescribe the function of the\nfollowing organelles:\n 1.​Nucleus\n 2.​Cell Membrane\n 3.​Mitochondria\n 4.​Vacuoles",
     "answerReadAloudEn": "1.​Nucleus: Controls the cell\n 2.​Cell Membrane: A barrier that\n protects the cell by controlling\n what comes in and out of the\n cell\n 3.​Mitochondria: Changes food\n into energy\n 4.​Vacuoles: Stores important\n materials for the cell",
     "questionReadAloudEs": "Las células tienen diferentes partes\nllamadas orgánulos que les permiten\nllevar a cabo las funciones de la vida.\nDescriba la función de los\nsiguientes orgánulos\n ○​Núcleo\n ○​Membrana celular\n ○​Mitocondrias\n ○​Vacuolas",
-    "answerReadAloudEs": "●​Núcleo: Controla la célula\n ●​Membrana celular: Una\n barrera que protege la célula\n controlando lo que entra y\n sale de célula\n ●​Mitocondria: Transforma los\n alimentos en energía.\n ●​Vacuolas: Almacena\n materiales importantes para la\n célula"
+    "answerReadAloudEs": "●​Núcleo: Controla la célula\n ●​Membrana celular: Una\n barrera que protege la célula\n controlando lo que entra y\n sale de célula\n ●​Mitocondria: Transforma los\n alimentos en energía.\n ●​Vacuolas: Almacena\n materiales importantes para la\n célula",
+    "acceptedAnswersEs": [
+      ["nucleo controla la celula", "controla la celula"],
+      ["membrana celular es una barrera que protege la celula controlando lo que entra y sale", "controla lo que entra y sale de la celula"],
+      ["mitocondria transforma los alimentos en energia", "convierte comida en energia"],
+      ["vacuolas almacenan materiales importantes para la celula", "almacena materiales para la celula"]
+    ]
   },
   {
     "id": "4D",
@@ -245,11 +369,20 @@
     "answerImageEn": "images/4D_A_en.png",
     "questionImageEs": "images/4D_Q_es.png",
     "answerImageEs": "images/4D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["cell wall provides structure and support", "provides structure and support"],
+      ["one large vacuole stores water", "stores water"],
+      ["chloroplasts trap sun energy to create sugar food for the cell", "traps sunlight to make sugar for the cell", "makes food using sunlight"]
+    ],
     "questionReadAloudEn": "Plant cells have ALL the same organelles as\nanimal cells but also need 3 additional\norganelles in order to help plants function\nand live.\nDescribe the function of these 3\nadditional organelles that plant cells\nhave\n 1.​Cell Wall\n 2.​One Large Vacuole\n 3.​Chloroplasts",
     "answerReadAloudEn": "1.​Cell Wall: Provides structure\n and support\n 2.​One Large Vacuole: Stores\n water\n a.​\n 3.​ Chloroplasts: traps sun energy\n to create sugar (food) for the\n cell",
     "questionReadAloudEs": "Las células de plantas tienen TODOS los\nmismos orgánulos que las células\nanimales, pero además necesitan 3\norgánulos adicionales para que las\nplantas funcionen y vivan.\nDescriba la función de estos 3\norgánulos adicionales que tienen las\ncélulas de plantas\n ●​Pared celular\n ●​Una gran vacuola\n ●​Cloroplastos",
-    "answerReadAloudEs": "célula\n4d)\n ●​Pared celular: Proporciona\n estructura y soporte\n ●​Una gran vacuola: Almacena\n agua\n ●​Cloroplastos: atrapan la\n energía solar para crear azúcar\n (alimento) para la célula"
+    "answerReadAloudEs": "célula\n4d)\n ●​Pared celular: Proporciona\n estructura y soporte\n ●​Una gran vacuola: Almacena\n agua\n ●​Cloroplastos: atrapan la\n energía solar para crear azúcar\n (alimento) para la célula",
+    "acceptedAnswersEs": [
+      ["pared celular proporciona estructura y soporte", "proporciona estructura y soporte"],
+      ["una gran vacuola almacena agua", "almacena agua"],
+      ["cloroplastos atrapan la energia solar para crear azucar para la celula", "atrapan la luz solar para hacer azucar"]
+    ]
   },
   {
     "id": "5A",
@@ -273,11 +406,20 @@
     "answerImageEn": "images/5B_A_en.png",
     "questionImageEs": "images/5B_Q_es.png",
     "answerImageEs": "images/5B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["skeletal system protects and supports your body", "protects and supports the body"],
+      ["muscular system allows your body and organs to move", "allows the body to move"],
+      ["your muscles pull on your bones to make your body move", "muscles pull bones to create movement"]
+    ],
     "questionReadAloudEn": "1.​ Describe the function of the skeletal\n system.\n 2.​ Describe the function of the muscular\n system.\n 3.​ Explain how they work together to\n make your body move.",
     "answerReadAloudEn": "1.​ Skeletal System: Protects and\n supports your body\n 2.​ Muscular System: Allows your body\n and organs to move\n 3.​ Your muscles from your muscular\n system pull on your bones from your\n skeletal system to make your body\n move",
     "questionReadAloudEs": "1.​ Describir la función del sistema\n esquelético.\n 2.​ Describir la función del sistema\n muscular.\n 3.​ Explica cómo trabajan juntos para que\n tu cuerpo se mueva.",
-    "answerReadAloudEs": "1.​ Sistema esquelético: Proporciona\n estructura y soporte al cuerpo\n 2.​ Sistema muscular: Permite que el\n cuerpo y los órganos se muevan\n 3.​ Los músculos del sistema muscular\n tiran de los huesos del sistema óseo\n para que el cuerpo se mueva."
+    "answerReadAloudEs": "1.​ Sistema esquelético: Proporciona\n estructura y soporte al cuerpo\n 2.​ Sistema muscular: Permite que el\n cuerpo y los órganos se muevan\n 3.​ Los músculos del sistema muscular\n tiran de los huesos del sistema óseo\n para que el cuerpo se mueva.",
+    "acceptedAnswersEs": [
+      ["sistema esqueletico proporciona estructura y soporte al cuerpo", "protege y sostiene el cuerpo"],
+      ["sistema muscular permite que el cuerpo y los organos se muevan", "permite que el cuerpo se mueva"],
+      ["los musculos tiran de los huesos para que el cuerpo se mueva", "los musculos jalan los huesos para crear movimiento"]
+    ]
   },
   {
     "id": "5C",
@@ -287,11 +429,20 @@
     "answerImageEn": "images/5C_A_en.png",
     "questionImageEs": "images/5C_Q_es.png",
     "answerImageEs": "images/5C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["circulatory system moves important things through your body using blood", "moves things through the body with blood"],
+      ["respiratory system allows you to breathe in oxygen and breathe out carbon dioxide", "lets you breathe in oxygen and breathe out carbon dioxide"],
+      ["the respiratory system brings oxygen into your body and the circulatory system moves it through your body", "respiratory brings in oxygen, circulatory moves it around"]
+    ],
     "questionReadAloudEn": "1.​Describe the function of the\n circulatory system\n 2.​Describe the function of the\n respiratory system.\n 3.​Explain how the circulatory\n system and respiratory system\n work together to move oxygen\n through your body.\n )",
     "answerReadAloudEn": "1.​Circulatory System: Moves\n important things through your\n body using blood\n 2.​Respiratory System: Allows you\n to breathe in oxygen and breathe\n out carbon dioxide\n 3.​Your respiratory system brings\n oxygen into your body and your\n circulatory system moves it\n through your body.\n )",
     "questionReadAloudEs": "1.​Describir la función del sistema\n circulatorio\n 2.​Describir la función del sistema\n respiratorio.\n 3.​Explica cómo el sistema\n circulatorio y el sistema\n respiratorio trabajan juntos para\n hacer circular el oxígeno por el\n cuerpo.",
-    "answerReadAloudEs": "1.​Sistema circulatorio: Mueve las\n cosas importantes a través de su\n cuerpo por la sangre\n 2.​Sistema respiratorio: Permite\n inhalar oxígeno y exhalar dióxido\n de carbono.\n 3.​El sistema respiratorio introduce\n oxígeno en el organismo y el\n sistema circulatorio lo desplaza\n por todo el cuerpo."
+    "answerReadAloudEs": "1.​Sistema circulatorio: Mueve las\n cosas importantes a través de su\n cuerpo por la sangre\n 2.​Sistema respiratorio: Permite\n inhalar oxígeno y exhalar dióxido\n de carbono.\n 3.​El sistema respiratorio introduce\n oxígeno en el organismo y el\n sistema circulatorio lo desplaza\n por todo el cuerpo.",
+    "acceptedAnswersEs": [
+      ["sistema circulatorio mueve las cosas importantes a traves de su cuerpo por la sangre", "mueve cosas por el cuerpo usando sangre"],
+      ["sistema respiratorio permite inhalar oxigeno y exhalar dioxido de carbono", "permite respirar oxigeno y exhalar dioxido de carbono"],
+      ["el sistema respiratorio introduce oxigeno en el organismo y el sistema circulatorio lo desplaza por todo el cuerpo", "respiratorio trae oxigeno, circulatorio lo mueve"]
+    ]
   },
   {
     "id": "5D",
@@ -301,11 +452,16 @@
     "answerImageEn": "images/5D_A_en.png",
     "questionImageEs": "images/5D_Q_es.png",
     "answerImageEs": "images/5D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the digestive system breaks down food and absorbs nutrients for your body", "breaks down food and absorbs nutrients"]
+    ],
     "questionReadAloudEn": "Describe the function of digestive\nsystem\n )",
     "answerReadAloudEn": "The digestive system breaks down food\nand absorbs nutrients for your body\n )",
     "questionReadAloudEs": "Describir la función del aparato\ndigestivo\n )",
-    "answerReadAloudEs": "El sistema digestivo descompone los\nalimentos y absorbe los nutrientes\npara el organismo.\n )"
+    "answerReadAloudEs": "El sistema digestivo descompone los\nalimentos y absorbe los nutrientes\npara el organismo.\n )",
+    "acceptedAnswersEs": [
+      ["el sistema digestivo descompone los alimentos y absorbe los nutrientes para el organismo", "descompone la comida y absorbe nutrientes"]
+    ]
   },
   {
     "id": "5E",
@@ -315,11 +471,16 @@
     "answerImageEn": "images/5E_A_en.png",
     "questionImageEs": "images/5E_Q_es.png",
     "answerImageEs": "images/5E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the immune system defends your body from disease", "defends the body from disease", "protects the body from sickness"]
+    ],
     "questionReadAloudEn": "Describe the function of the immune\nsystem.",
     "answerReadAloudEn": "The immune system defends your body\nfrom disease",
     "questionReadAloudEs": "Describir la función del sistema\ninmunitario.\n f)",
-    "answerReadAloudEs": "El sistema inmunitario defiende el\ncuerpo de las enfermedades\n f)"
+    "answerReadAloudEs": "El sistema inmunitario defiende el\ncuerpo de las enfermedades\n f)",
+    "acceptedAnswersEs": [
+      ["el sistema inmunitario defiende el cuerpo de las enfermedades", "defiende el cuerpo de enfermedades"]
+    ]
   },
   {
     "id": "5F",
@@ -329,11 +490,16 @@
     "answerImageEn": "images/5F_A_en.png",
     "questionImageEs": "images/5F_Q_es.png",
     "answerImageEs": "images/5F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the excretory system filters toxic waste and gets rid of it", "filters and removes toxic waste"]
+    ],
     "questionReadAloudEn": "Describe the function of the excretory\nsystem.",
     "answerReadAloudEn": "The excretory system filters toxic waste\nand gets rid of it.",
     "questionReadAloudEs": "Describir la función del sistema\nexcretor.",
-    "answerReadAloudEs": "El sistema excretor filtra los residuos\ntóxicos y se deshace de ellos"
+    "answerReadAloudEs": "El sistema excretor filtra los residuos\ntóxicos y se deshace de ellos",
+    "acceptedAnswersEs": [
+      ["el sistema excretor filtra los residuos toxicos y se deshace de ellos", "filtra y elimina residuos toxicos"]
+    ]
   },
   {
     "id": "6A",
@@ -343,11 +509,18 @@
     "answerImageEn": "images/6A_A_en.png",
     "questionImageEs": "images/6A_Q_es.png",
     "answerImageEs": "images/6A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["density is how many particles are packed into a certain space", "how tightly packed the particles are"],
+      ["materials that are less dense will float on top of materials that are more dense", "less dense materials float on denser materials"]
+    ],
     "questionReadAloudEn": "1.​What is density?\n 2.​How can we\n determine the\n relative density of\n different materials?",
     "answerReadAloudEn": "1.​Density is how many\n particles are packed into\n a certain space.\n 2.​Materials that are less\n dense will float on top\n of materials that are\n more dense.",
     "questionReadAloudEs": "1.​¿Qué es la\n densidad?\n 2.​¿Cómo podemos\n determinar la\n densidad relativa de\n distintos materiales?",
-    "answerReadAloudEs": "1.​La densidad es el\n número de moléculas\n que caben en un\n espacio determinado.\n 2.​Los materiales menos\n densos flotarán sobre\n los más densos."
+    "answerReadAloudEs": "1.​La densidad es el\n número de moléculas\n que caben en un\n espacio determinado.\n 2.​Los materiales menos\n densos flotarán sobre\n los más densos.",
+    "acceptedAnswersEs": [
+      ["la densidad es el numero de moleculas que caben en un espacio determinado", "que tan compactas estan las particulas"],
+      ["los materiales menos densos flotaran sobre los mas densos", "lo menos denso flota sobre lo mas denso"]
+    ]
   },
   {
     "id": "6B",
@@ -357,11 +530,16 @@
     "answerImageEn": "images/6B_A_en.png",
     "questionImageEs": "images/6B_Q_es.png",
     "answerImageEs": "images/6B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["density equals mass divided by volume", "mass divided by volume", "d = m / v"]
+    ],
     "questionReadAloudEn": "How do we calculate the\ndensity of an object?",
     "answerReadAloudEn": "Density = Mass ÷ Volume",
     "questionReadAloudEs": "¿Cómo se calcula la\ndensidad de un objeto?",
-    "answerReadAloudEs": "Densidad = Masa ÷\nVolumen"
+    "answerReadAloudEs": "Densidad = Masa ÷\nVolumen",
+    "acceptedAnswersEs": [
+      ["densidad es igual a masa dividida entre volumen", "masa dividida entre volumen"]
+    ]
   },
   {
     "id": "6C",
@@ -371,11 +549,18 @@
     "answerImageEn": "images/6C_A_en.png",
     "questionImageEs": "images/6C_Q_es.png",
     "answerImageEs": "images/6C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a substance that cannot be separated into simpler parts", "cannot be broken down into simpler parts"],
+      ["gold", "oxygen", "salt", "water"]
+    ],
     "questionReadAloudEn": "1.​What is a pure\n substance?\n 2.​Give one example of a\n pure substance.",
     "answerReadAloudEn": "1.​A substance that cannot\n be separated into\n simpler parts.\n 2.​Examples:\n ○​ Gold (Au)\n ○​ Oxygen (O)\n ○​ Salt (NaCl)\n ○​ Water (H20)",
     "questionReadAloudEs": "1.​¿Qué es una\n sustancia pura?\n 2.​Pon un ejemplo de\n sustancia pura.",
-    "answerReadAloudEs": "1.​Una sustancia pura no\n puede separarse en\n partes más simples.\n 2.​Ejemplos:\n ○​ Oro (Au)\n ○​ Oxígeno (O)\n ○​ Sal (NaCl)\n ○​ Agua (H2 0)"
+    "answerReadAloudEs": "1.​Una sustancia pura no\n puede separarse en\n partes más simples.\n 2.​Ejemplos:\n ○​ Oro (Au)\n ○​ Oxígeno (O)\n ○​ Sal (NaCl)\n ○​ Agua (H2 0)",
+    "acceptedAnswersEs": [
+      ["una sustancia pura no puede separarse en partes mas simples", "no se puede separar en partes mas simples"],
+      ["oro", "oxigeno", "sal", "agua"]
+    ]
   },
   {
     "id": "6D",
@@ -385,11 +570,18 @@
     "answerImageEn": "images/6D_A_en.png",
     "questionImageEs": "images/6D_Q_es.png",
     "answerImageEs": "images/6D_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a mixture is 2 or more substances combined that can be separated", "two or more substances combined that can be separated"],
+      ["salt water", "air", "milk"]
+    ],
     "questionReadAloudEn": "1.​What is a mixture?\n 2.​Give one example\n of a mixture.",
     "answerReadAloudEn": "1.​A mixture is 2 or more\n substances combined\n that can be separated.\n 2.​Examples of Mixtures:\n ○​ Salt Water (H20 + NaCl)\n ○​ Air\n ○​ Milk",
     "questionReadAloudEs": "1.​¿Qué es una\n mezcla?\n ●​Pon un ejemplo de\n mezcla.",
-    "answerReadAloudEs": "1.​Una mezcla son 2 o más\n sustancias puras\n combinadas que\n pueden separarse.\n ●​Ejemplos de mezclas:\n - Agua salada (H2 0 + NaCl)\n - Aire\n -Leche"
+    "answerReadAloudEs": "1.​Una mezcla son 2 o más\n sustancias puras\n combinadas que\n pueden separarse.\n ●​Ejemplos de mezclas:\n - Agua salada (H2 0 + NaCl)\n - Aire\n -Leche",
+    "acceptedAnswersEs": [
+      ["una mezcla son 2 o mas sustancias puras combinadas que pueden separarse", "dos o mas sustancias combinadas que se pueden separar"],
+      ["agua salada", "aire", "leche"]
+    ]
   },
   {
     "id": "7A",
@@ -399,11 +591,16 @@
     "answerImageEn": "images/7A_A_en.png",
     "questionImageEs": "images/7A_Q_es.png",
     "answerImageEs": "images/7A_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a wave transfers energy from one place to another", "transfers energy from one place to another"]
+    ],
     "questionReadAloudEn": "What does a wave do?\n b)",
     "answerReadAloudEn": "A wave transfers energy\nfrom one place to another\n b)",
     "questionReadAloudEs": "¿Qué es una onda?\n b)",
-    "answerReadAloudEs": "Una onda transfiere energía de\nun lugar a otro\n b)"
+    "answerReadAloudEs": "Una onda transfiere energía de\nun lugar a otro\n b)",
+    "acceptedAnswersEs": [
+      ["una onda transfiere energia de un lugar a otro", "transfiere energia de un lugar a otro"]
+    ]
   },
   {
     "id": "7B",
@@ -413,11 +610,29 @@
     "answerImageEn": "images/7B_A_en.png",
     "questionImageEs": "images/7B_Q_es.png",
     "answerImageEs": "images/7B_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["electromagnetic waves are invisible energy waves that travel through empty space", "invisible energy waves that can travel through empty space"],
+      ["light waves"],
+      ["radio waves"],
+      ["microwaves"],
+      ["ultraviolet waves"],
+      ["x-rays"],
+      ["gamma rays"]
+    ],
     "questionReadAloudEn": "1.​What are\n electromagnetic waves?\n 2.​Give at least 3 examples\n of electromagnetic\n waves.",
     "answerReadAloudEn": "1.​ Electromagnetic waves are invisible\n energy waves that travel through\n empty space on our planet and\n outer space.\n 2.​ Examples:\n ●​ light waves\n ●​ radio waves\n ●​ microwaves\n ●​ ultraviolet waves\n ●​ x-rays\n ●​ gamma rays",
     "questionReadAloudEs": "1.​¿Qué son las ondas\n electromagnéticas?\n 2.​Pon al menos 3\n ejemplos de ondas\n electromagnéticas.\n )",
-    "answerReadAloudEs": "1.​ Las ondas electromagnéticas son\n ondas de energía invisibles que\n viajan por el espacio vacío de\n nuestro planeta y el espacio\n exterior.\n 2.​ Ejemplos:\n ●​ ondas luminosas\n ●​ ondas de radio\n ●​ microondas\n ●​ ondas ultravioletas\n ●​ radiografías\n ●​ rayos gamma\n )"
+    "answerReadAloudEs": "1.​ Las ondas electromagnéticas son\n ondas de energía invisibles que\n viajan por el espacio vacío de\n nuestro planeta y el espacio\n exterior.\n 2.​ Ejemplos:\n ●​ ondas luminosas\n ●​ ondas de radio\n ●​ microondas\n ●​ ondas ultravioletas\n ●​ radiografías\n ●​ rayos gamma\n )",
+    "acceptedAnswersEs": [
+      ["las ondas electromagneticas son ondas de energia invisibles que viajan por el espacio vacio", "ondas de energia invisibles que viajan por el espacio"],
+      ["ondas luminosas"],
+      ["ondas de radio"],
+      ["microondas"],
+      ["ondas ultravioletas"],
+      ["radiografias", "rayos x"],
+      ["rayos gamma"]
+    ],
+    "acceptedAnswersMinMatch": 4
   },
   {
     "id": "7C",
@@ -427,11 +642,18 @@
     "answerImageEn": "images/7C_A_en.png",
     "questionImageEs": "images/7C_Q_es.png",
     "answerImageEs": "images/7C_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["mechanical waves transfer energy through a substance", "waves that need a medium to travel through"],
+      ["sound waves", "water waves"]
+    ],
     "questionReadAloudEn": "1.​What are mechanical\n waves?\n 2.​Give an example of a\n mechanical wave.",
     "answerReadAloudEn": "1.​Mechanical are waves that\n transfer energy through a\n substance\n 2.​Examples:\n ○​ Sound waves\n ○​ Water waves",
     "questionReadAloudEs": "1.​¿Qué es una onda\n mecánica?\n 2.​Pon un ejemplo de\n onda mecánica.",
-    "answerReadAloudEs": "●​ rayos gamma\n7c)\n 1.​Las ondas mecánicas transfieren\n energía a través de una\n sustancia\n 2.​Ejemplos:\n ○​ Ondas sonoras\n ○​ Olas de agua"
+    "answerReadAloudEs": "●​ rayos gamma\n7c)\n 1.​Las ondas mecánicas transfieren\n energía a través de una\n sustancia\n 2.​Ejemplos:\n ○​ Ondas sonoras\n ○​ Olas de agua",
+    "acceptedAnswersEs": [
+      ["las ondas mecanicas transfieren energia a traves de una sustancia", "ondas que necesitan un medio para viajar"],
+      ["ondas sonoras", "olas de agua"]
+    ]
   },
   {
     "id": "7D",
@@ -455,11 +677,20 @@
     "answerImageEn": "images/7E_A_en.png",
     "questionImageEs": "images/7E_Q_es.png",
     "answerImageEs": "images/7E_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["amplitude measures the strength of the waves energy", "how strong the wave's energy is"],
+      ["frequency is the speed of the wave", "how many waves pass a point per second"],
+      ["wavelength measures the distance between waves", "distance from crest to crest"]
+    ],
     "questionReadAloudEn": "Amplitude , frequency and\nwavelength are wave features that\ndescribe the energy traveling through\nthe wave.\nDefine these 3 wave\nproperties.\n f)",
     "answerReadAloudEn": "1.​ Amplitude measures the strength of\n the wave’s energy.\n 2.​ Frequency is the speed of the wave\n 3.​ Wavelength measures the distance\n between waves\n f)",
     "questionReadAloudEs": "La amplitud, la frecuencia y la\nlongitud de onda son características de\nlas ondas que describen la energía que\nviaja a través de ellas.\nDefina cada una de estas\npropiedades de las ondas.",
-    "answerReadAloudEs": "La amplitud es la altura de la ola que mide\nla fuerza de la energía de la ola .\nLa frecuencia es el número de ondas que\npasan por un punto en 1 segundo.\nLa longitud de onda mide la distancia\nentre las olas de cresta a cresta"
+    "answerReadAloudEs": "La amplitud es la altura de la ola que mide\nla fuerza de la energía de la ola .\nLa frecuencia es el número de ondas que\npasan por un punto en 1 segundo.\nLa longitud de onda mide la distancia\nentre las olas de cresta a cresta",
+    "acceptedAnswersEs": [
+      ["la amplitud es la altura de la ola que mide la fuerza de la energia de la ola", "que tan fuerte es la energia de la onda"],
+      ["la frecuencia es el numero de ondas que pasan por un punto en 1 segundo", "cuantas ondas pasan por un punto por segundo"],
+      ["la longitud de onda mide la distancia entre las olas de cresta a cresta", "distancia de cresta a cresta"]
+    ]
   },
   {
     "id": "7F",
@@ -469,11 +700,16 @@
     "answerImageEn": "images/7F_A_en.png",
     "questionImageEs": "images/7F_Q_es.png",
     "answerImageEs": "images/7F_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["when a wave is reflected it bounces off a new substance", "the wave bounces off a new medium"]
+    ],
     "questionReadAloudEn": "What happens when a wave is\nreflected?\n )",
     "answerReadAloudEn": "When a wave is reflected it bounces off a\nnew substance (medium)\n )",
     "questionReadAloudEs": "¿Qué ocurre cuando una onda se\nrefleja?",
-    "answerReadAloudEs": "La reflexión se produce cuando una onda\nrebota en una nueva sustancia (medio)."
+    "answerReadAloudEs": "La reflexión se produce cuando una onda\nrebota en una nueva sustancia (medio).",
+    "acceptedAnswersEs": [
+      ["la reflexion se produce cuando una onda rebota en una nueva sustancia", "la onda rebota en un nuevo medio"]
+    ]
   },
   {
     "id": "7G",
@@ -483,11 +719,16 @@
     "answerImageEn": "images/7G_A_en.png",
     "questionImageEs": "images/7G_Q_es.png",
     "answerImageEs": "images/7G_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["when a wave is absorbed its energy gets taken in by the material it hits", "the energy is taken in by the material"]
+    ],
     "questionReadAloudEn": "​\nWhat happens when a wave is\nabsorbed?\n h)",
     "answerReadAloudEn": "When a wave is absorbed, its energy gets\ntaken in by the material it hits.\n h)",
     "questionReadAloudEs": "​\n¿Qué ocurre cuando se absorbe\nuna onda?",
-    "answerReadAloudEs": "Cuando una onda es absorbida, su energía\nes tomada por el material contra el que\nchoca."
+    "answerReadAloudEs": "Cuando una onda es absorbida, su energía\nes tomada por el material contra el que\nchoca.",
+    "acceptedAnswersEs": [
+      ["cuando una onda es absorbida su energia es tomada por el material contra el que choca", "la energia es absorbida por el material"]
+    ]
   },
   {
     "id": "7H",
@@ -497,10 +738,15 @@
     "answerImageEn": "images/7H_A_en.png",
     "questionImageEs": "images/7H_Q_es.png",
     "answerImageEs": "images/7H_A_es.png",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["when a wave is transmitted the wave passes through a substance and continues to travel", "the wave passes through the medium and keeps going"]
+    ],
     "questionReadAloudEn": "What happens when a wave is\ntransmitted?",
     "answerReadAloudEn": "When a wave is transmitted; the wave\npasses through a substance (medium) and\ncontinues to travel",
     "questionReadAloudEs": "¿Qué ocurre cuando se transmite\nuna onda?",
-    "answerReadAloudEs": "Cuando se transmite una onda, ésta\natraviesa una sustancia (medio) y\ncontinúa su recorrido."
+    "answerReadAloudEs": "Cuando se transmite una onda, ésta\natraviesa una sustancia (medio) y\ncontinúa su recorrido.",
+    "acceptedAnswersEs": [
+      ["cuando se transmite una onda esta atraviesa una sustancia y continua su recorrido", "la onda atraviesa el medio y sigue viajando"]
+    ]
   }
 ]

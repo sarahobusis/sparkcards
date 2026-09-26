@@ -7,7 +7,14 @@
     "answerImageEn": "images/1A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["geography"],
+      ["religion"],
+      ["achievement", "achievements"],
+      ["politics"],
+      ["economy", "economics"],
+      ["social structures", "social structure"]
+    ],
     "questionReadAloudEn": "We use “GRAPES” to help us remember\n the six features of civilizations.\n What does each letter of GRAPES\n stand for?",
     "answerReadAloudEn": "GRAPES stands for:\n Geography\n Religion\n Achievement\n Politics\n Economy\n Social Structures.",
     "questionReadAloudEs": "",
@@ -21,7 +28,9 @@
     "answerImageEn": "images/1B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["geography is the land water and weather of a place and how they impact people", "the land water and weather of a place and how it affects people"]
+    ],
     "questionReadAloudEn": "What is Geography?",
     "answerReadAloudEn": "Geography is the land, water, and\nweather of a place and how they\nimpact people.",
     "questionReadAloudEs": "",
@@ -35,7 +44,9 @@
     "answerImageEn": "images/1C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["religion is a set of beliefs and traditions about how to behave and often includes belief in gods", "a set of beliefs and traditions about how to behave"]
+    ],
     "questionReadAloudEn": "What is Religion?",
     "answerReadAloudEn": "Religion is a set of beliefs and\ntraditions about how to behave and\noften includes the belief in god(s).",
     "questionReadAloudEs": "",
@@ -49,7 +60,9 @@
     "answerImageEn": "images/1D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["achievements are the important things a society created or accomplished", "important things a society created or accomplished"]
+    ],
     "questionReadAloudEn": "What are Achievements?",
     "answerReadAloudEn": "Achievements are the important\nthings a society created or\naccomplished.",
     "questionReadAloudEs": "",
@@ -63,7 +76,9 @@
     "answerImageEn": "images/1E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["politics is the government and how decisions are made", "the government and how decisions are made"]
+    ],
     "questionReadAloudEn": "What is Politics?",
     "answerReadAloudEn": "Politics is the government and how\ndecisions are made.",
     "questionReadAloudEs": "",
@@ -77,7 +92,9 @@
     "answerImageEn": "images/1F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["economy is how people make buy and sell resources", "how people make buy and sell resources"]
+    ],
     "questionReadAloudEn": "What is Economy?",
     "answerReadAloudEn": "Economy is how people make, buy,\n and sell resources.",
     "questionReadAloudEs": "",
@@ -91,7 +108,9 @@
     "answerImageEn": "images/1G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["social structure is how people are organized into levels and classes", "how people are organized into levels and classes"]
+    ],
     "questionReadAloudEn": "What is Social Structure?",
     "answerReadAloudEn": "Social Structure is how people are\norganized into levels and classes.",
     "questionReadAloudEs": "",
@@ -119,7 +138,9 @@
     "answerImageEn": "images/2B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["it is how humans changed over millions of years starting from early relatives that looked like apes to how we look now", "how humans changed over millions of years from ape-like ancestors to modern humans"]
+    ],
     "questionReadAloudEn": "What is human evolution?",
     "answerReadAloudEn": "It is how humans changed over millions of\nyears starting from early relatives that\nlooked like apes to how we look now.",
     "questionReadAloudEs": "",
@@ -133,7 +154,9 @@
     "answerImageEn": "images/2C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["it was when early humans first used tools discovered fire and learned how to hunt and gather food", "early humans used tools, discovered fire, and learned to hunt and gather"]
+    ],
     "questionReadAloudEn": "The Paleolithic Era started around 2.6 million years\nago.\nWhy is the Paleolithic Era important in\nhuman evolution?",
     "answerReadAloudEn": "It was when early humans first used\ntools, discovered fire, and learned how\nto hunt and gather food.",
     "questionReadAloudEs": "",
@@ -147,7 +170,9 @@
     "answerImageEn": "images/2D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["nomadic means moving from place to place instead of settling in one place", "moving from place to place instead of settling down"]
+    ],
     "questionReadAloudEn": "What does nomadic mean?",
     "answerReadAloudEn": "Nomadic means moving from place to\nplace instead of settling in one place.",
     "questionReadAloudEs": "",
@@ -161,7 +186,9 @@
     "answerImageEn": "images/2E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["it was important because it was when people first started farming and living in settled communities", "when people started farming and living in settled communities"]
+    ],
     "questionReadAloudEn": "The Neolithic Era started around 10,000 BC.\nWhat was so important about the\nNeolithic Era?",
     "answerReadAloudEn": "It was important because it was when\npeople first started farming and living\nin settled communities.",
     "questionReadAloudEs": "",
@@ -175,7 +202,12 @@
     "answerImageEn": "images/2F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["fresh water"],
+      ["good soil"],
+      ["natural barriers"],
+      ["good weather"]
+    ],
     "questionReadAloudEn": "What are the four things people\nlook for in a place that is good to\nsettle in?",
     "answerReadAloudEn": "They look for:\n 1.​ Fresh water\n 2.​Good soil\n 3.​Natural barriers\n 4.​Good weather",
     "questionReadAloudEs": "",
@@ -189,7 +221,9 @@
     "answerImageEn": "images/3A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a civilization is a society that has the different parts of grapes", "a society with geography religion achievements politics economics and social structure"]
+    ],
     "questionReadAloudEn": "What is a civilization?",
     "answerReadAloudEn": "A civilization is a society that has the\ndifferent parts of GRAPES.\n(Geography, Religion, Achievements, Politics,\nEconomics, and Social Structure).",
     "questionReadAloudEs": "",
@@ -217,7 +251,12 @@
     "answerImageEn": "images/3C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["invented the wheel", "the wheel"],
+      ["invented the plow", "the plow"],
+      ["invented the first form of writing called cuneiform", "cuneiform", "writing"],
+      ["invented irrigation", "irrigation"]
+    ],
     "questionReadAloudEn": "Name the 4 main achievements\nfrom the Mesopotamian\ncivilization.",
     "answerReadAloudEn": "1. Invented the wheel\n2. Invented the plow\n3. Invented the\nfirst form of writing\ncalled cuneiform\n4. Invented irrigation",
     "questionReadAloudEs": "",
@@ -231,7 +270,9 @@
     "answerImageEn": "images/3D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["hammurabis code is one of the oldest written laws in history", "one of the oldest written sets of laws"]
+    ],
     "questionReadAloudEn": "What was Hammurabi’s Code?",
     "answerReadAloudEn": "Hammurabi's Code is one of the\noldest written laws in history.",
     "questionReadAloudEs": "",
@@ -245,7 +286,11 @@
     "answerImageEn": "images/4A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["irrigation"],
+      ["travel"],
+      ["trade"]
+    ],
     "questionReadAloudEn": "What were three important ways\nAncient Egyptians used the Nile River?",
     "answerReadAloudEn": "They used water for:\n 1.​irrigation\n 2.​travel\n 3.​trade",
     "questionReadAloudEs": "",
@@ -273,7 +318,9 @@
     "answerImageEn": "images/4C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["polytheism is the belief in more than one god", "belief in more than one god"]
+    ],
     "questionReadAloudEn": "What is polytheism?",
     "answerReadAloudEn": "Polytheism is the belief in more\n than one god.",
     "questionReadAloudEs": "",
@@ -287,7 +334,11 @@
     "answerImageEn": "images/4D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["political leader leading the government", "political leader"],
+      ["military leader leading the army", "military leader"],
+      ["religious leader being a god on earth", "religious leader"]
+    ],
     "questionReadAloudEn": "List and describe the three roles of a\nPharaoh.",
     "answerReadAloudEn": "1.​Political leader - leading the\n government\n 2.​Military leader - leading the army\n 3.​Religious leader - being a god on\n earth",
     "questionReadAloudEs": "",
@@ -301,7 +352,11 @@
     "answerImageEn": "images/4E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["pyramids tombs for pharaohs", "pyramids"],
+      ["hieroglyphs the writing system", "hieroglyphs", "hieroglyphics"],
+      ["papyrus a material for writing like paper", "papyrus"]
+    ],
     "questionReadAloudEn": "List and define the three major\nachievements of the Ancient Egyptians.",
     "answerReadAloudEn": "1.​Pyramids - tombs for Pharaohs\n 2.​Hieroglyphs - the writing system\n 3.​Papyrus - a material for writing,\n like paper",
     "questionReadAloudEs": "",
@@ -315,7 +370,9 @@
     "answerImageEn": "images/4F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["ancient egyptians believed that people made into mummies would live on in the afterlife forever", "they believed mummies would live forever in the afterlife"]
+    ],
     "questionReadAloudEn": "Why were mummies\nimportant to the Egyptians?",
     "answerReadAloudEn": "Ancient Egyptians believed that people\nthat were made into mummies would\nlive on in the afterlife forever.",
     "questionReadAloudEs": "",
@@ -343,7 +400,9 @@
     "answerImageEn": "images/5A_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["a prophet is a person who speaks or interprets the words of god", "someone who speaks or interprets god's words"]
+    ],
     "questionReadAloudEn": "What is a prophet?",
     "answerReadAloudEn": "A prophet is a person who speaks or\ninterprets the words of God",
     "questionReadAloudEs": "",
@@ -357,7 +416,12 @@
     "answerImageEn": "images/5B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["around 2000 bce", "2000 bce", "2000 bc"],
+      ["a man named abraham claimed that god told him to worship only one god", "abraham said god told him to worship one god"],
+      ["jewish people", "jewish"],
+      ["the torah", "torah"]
+    ],
     "questionReadAloudEn": "1.​When did Judaism\n begin?\n 2.​How did Judaism begin?\n 3.​What are people who practice\n Judaism called?\n 4.​What is their holy book called?",
     "answerReadAloudEn": "1.​Around 2,000 BCE\n 2.​A man named Abraham claimed\n that God told him to worship\n only one God.\n 3.​People who follow this religion\n are known as Jewish people.\n 4.​The Torah",
     "questionReadAloudEs": "",
@@ -371,7 +435,9 @@
     "answerImageEn": "images/5C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["monotheism is the belief that there is only one god", "belief in only one god"]
+    ],
     "questionReadAloudEn": "What does monotheism mean?",
     "answerReadAloudEn": "Monotheism is the belief that there is\nonly one God",
     "questionReadAloudEs": "",
@@ -385,7 +451,9 @@
     "answerImageEn": "images/5D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the ten commandments are the ten laws and teachings given to moses by god about what is right and wrong", "ten laws given to moses by god about right and wrong"]
+    ],
     "questionReadAloudEn": "Why are the Ten Commandments\nimportant to Judaism?",
     "answerReadAloudEn": "The Ten Commandments are the ten\nlaws and teachings given to Moses by\nGod about what is right and wrong.",
     "questionReadAloudEs": "",
@@ -399,7 +467,12 @@
     "answerImageEn": "images/5E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["around 25 ce", "25 ce", "25 ad"],
+      ["a jewish man named jesus taught people how to live and his life and teachings formed christianity", "jesus taught people how to live and his teachings formed christianity"],
+      ["christian", "christians"],
+      ["the bible", "bible"]
+    ],
     "questionReadAloudEn": "1.​When did Christianity begin?\n 2.​How did Christianity begin?\n 3.​What are people who practice\n Christianity called?\n 4.​What is the holy book of\n christianity called?",
     "answerReadAloudEn": "1.​Around 25 CE\n 2.​A Jewish man named Jesus taught\n people how to live and his life\n and teachings formed Christianity.\n 3.​People who follow this religion\n are known as Christian.\n 4.​The Bible - which has two parts,\n the Old and New testament.",
     "questionReadAloudEs": "",
@@ -413,7 +486,12 @@
     "answerImageEn": "images/5F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["around 610 ce", "610 ce", "610 ad"],
+      ["a man named muhammad claimed that god told him to worship only one god", "muhammad said god told him to worship one god"],
+      ["muslim", "muslims"],
+      ["the quran", "quran", "koran"]
+    ],
     "questionReadAloudEn": "1.​When did Islam begin?\n 2.​How did Islam begin?\n 3.​What are people who practice\n Islam called?\n 4.​What is the holy book of Islam\n called?",
     "answerReadAloudEn": "1.​Around 610 CE\n 2.​A man named Muhammad\n claimed that God told him to\n worship only one God.\n 3.​People who follow this religion\n are known as Muslim.\n 4.​The Qur’an",
     "questionReadAloudEs": "",
@@ -427,7 +505,13 @@
     "answerImageEn": "images/5G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["faith", "monotheism"],
+      ["prayer"],
+      ["charity", "giving to the poor"],
+      ["fasting", "ramadan"],
+      ["pilgrimage to mecca", "pilgrimage", "hajj"]
+    ],
     "questionReadAloudEn": "Name the five pillars of Islam (five\nimportant beliefs of Islam).",
     "answerReadAloudEn": "The five pillars of Islam are:\n 1. Faith (Monotheism)\n 2. Prayer (5 times a day)\n 3. Charity (Giving to the Poor)\n 4. Fasting (Ramadan)\n 5. Pilgrimage to Mecca (Muhammad’s\nbirthplace)",
     "questionReadAloudEs": "",
@@ -455,7 +539,9 @@
     "answerImageEn": "images/6B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the deserts and mountains in africa made trade hard but people used the water near where they lived to trade anyway", "deserts and mountains made trade difficult so people used nearby water to trade"]
+    ],
     "questionReadAloudEn": "How did geography affect trade in early\nAfrican civilizations?",
     "answerReadAloudEn": "The deserts and mountains in Africa\nmade trade hard, but people used the\nwater near where they lived to trade\nanyway.",
     "questionReadAloudEs": "",
@@ -469,7 +555,12 @@
     "answerImageEn": "images/6C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["gold"],
+      ["salt"],
+      ["ivory"],
+      ["religion", "christianity and islam", "christianity", "islam"]
+    ],
     "questionReadAloudEn": "The Trans-Saharan trade route\nconnected the lower part of Africa to North Africa\nand the Middle East.\n 1.​What three goods were traded?\n 2.​What big idea was traded?",
     "answerReadAloudEn": "1.​Goods traded were:\n 1.​Gold\n 2.​Salt\n 3.​Ivory\n2. Religion: Christianity and Islam",
     "questionReadAloudEs": "",
@@ -483,7 +574,10 @@
     "answerImageEn": "images/6D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["helped spread christianity to sub saharan africa", "spread christianity to sub-saharan africa"],
+      ["connected africa to the middle east and india"]
+    ],
     "questionReadAloudEn": "What two important things did the\nKingdom of Axum do in African history?",
     "answerReadAloudEn": "The Kingdom of Axum:\n 1.​ helped spread Christianity to\n sub-Saharan Africa\n 2.​ connected Africa to the Middle East\n and India",
     "questionReadAloudEs": "",
@@ -497,7 +591,9 @@
     "answerImageEn": "images/6E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the swahili coast societies were a center for trade on the water and connected africa to china and asia", "swahili coast was a trade center connecting africa to china and asia"]
+    ],
     "questionReadAloudEn": "How did the Swahili Coast societies\nimpact trade in sub-Saharan Africa?",
     "answerReadAloudEn": "The Swahili coast societies were a center for\ntrade on the water and connected Africa to\nChina and Asia",
     "questionReadAloudEs": "",
@@ -511,7 +607,9 @@
     "answerImageEn": "images/6F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["they controlled the gold salt trade", "controlled the gold-salt trade"]
+    ],
     "questionReadAloudEn": "How did Ancient Ghana\nbecome powerful?",
     "answerReadAloudEn": "They controlled the gold-salt trade.",
     "questionReadAloudEs": "",
@@ -525,7 +623,9 @@
     "answerImageEn": "images/6G_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["timbuktu was a major trading center which helped spread islam to the rest of africa", "a major trading center that helped spread islam"]
+    ],
     "questionReadAloudEn": "What important thing did the city of\nTimbuktu do in African history?",
     "answerReadAloudEn": "Timbuktu was a major trading center\nwhich helped spread Islam to the rest of\nAfrica.",
     "questionReadAloudEs": "",
@@ -553,7 +653,9 @@
     "answerImageEn": "images/7B_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["the religions in this area were polytheistic and deeply connected to nature", "polytheistic and connected to nature"]
+    ],
     "questionReadAloudEn": "What were the religions like in ancient\nCentral America, South America and\nthe Caribbean?",
     "answerReadAloudEn": "The religions in this area were\npolytheistic and deeply connected to\nnature",
     "questionReadAloudEs": "",
@@ -567,7 +669,12 @@
     "answerImageEn": "images/7C_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["sustainable agriculture"],
+      ["city village design", "city design", "village design"],
+      ["medicine"],
+      ["solar calendar"]
+    ],
     "questionReadAloudEn": "What are the 4 major achievements of\nthe early Latin American Societies?",
     "answerReadAloudEn": "1.​Sustainable agriculture\n 2.​City/Village design\n 3.​Medicine\n 4.​Solar Calendar",
     "questionReadAloudEs": "",
@@ -581,7 +688,10 @@
     "answerImageEn": "images/7D_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["agriculture"],
+      ["trade"]
+    ],
     "questionReadAloudEn": "What were the 2 major parts of the\neconomies of Ancient Latin America?",
     "answerReadAloudEn": "1.​Agriculture\n 2.​Trade",
     "questionReadAloudEs": "",
@@ -595,7 +705,13 @@
     "answerImageEn": "images/7E_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["jade"],
+      ["obsidian"],
+      ["gold"],
+      ["cacao", "cocoa"],
+      ["maize", "corn"]
+    ],
     "questionReadAloudEn": "What were the 5 main resources in\nAncient Latin America?",
     "answerReadAloudEn": "●​ Jade\n ●​ Obsidian\n ●​ Gold\n ●​ Cacao\n ●​ Maize (Corn) and other\n specialized crops",
     "questionReadAloudEs": "",
@@ -609,7 +725,10 @@
     "answerImageEn": "images/7F_A_en.png",
     "questionImageEs": "",
     "answerImageEs": "",
-    "acceptedAnswers": [],
+    "acceptedAnswers": [
+      ["ancient central america had a strict social pyramid ruled by a king", "central america had a strict hierarchy ruled by a king"],
+      ["ancient south america and the caribbean had collectivism ruled by a chief with shared resources", "south america had collectivism with a chief and shared resources"]
+    ],
     "questionReadAloudEn": "How were the Social Structures of\nAncient Central America and Ancient\nSouth America different?",
     "answerReadAloudEn": "Ancient Central America had a strict\nsocial pyramid ruled by a king,\nwhile Ancient South America and the\nCaribbean had Collectivism, ruled by a\nchief with shared resources",
     "questionReadAloudEs": "",
