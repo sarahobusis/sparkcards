@@ -7,6 +7,7 @@ const state = {
   grade: "5",
   subject: "Math",
   dashboard: null,
+  badges: null,
   cardsMeta: [],
   hiddenCardIds: [],
   activeCardId: null,
@@ -28,6 +29,8 @@ const els = {
   dashboardContext: document.getElementById("dashboardContext"),
   percentMastered: document.getElementById("percentMastered"),
   totalMastered: document.getElementById("totalMastered"),
+  badgesSection: document.getElementById("badgesSection"),
+  badgeShelf: document.getElementById("badgeShelf"),
   chipGrid: document.getElementById("chipGrid"),
   backButton: document.getElementById("backButton"),
   studyAllButton: document.getElementById("studyAllButton"),
@@ -164,9 +167,10 @@ async function loadDashboard() {
   setMessage(els.lookupMessage, "Loading dashboard...", "");
 
   try {
-    const [cardsMeta, gradeSubjectSettings] = await Promise.all([
+    const [cardsMeta, gradeSubjectSettings, badgeData] = await Promise.all([
       fetchCardsMeta(),
-      fetchGradeSubjectSettings(state.grade, state.subject)
+      fetchGradeSubjectSettings(state.grade, state.subject),
+      isGuestMode() ? Promise.resolve({ found: false }) : fetchBadgeData()
     ]);
 
     let dashboardData;
@@ -185,6 +189,8 @@ async function loadDashboard() {
     state.cardsMeta = cardsMeta;
     state.hiddenCardIds = gradeSubjectSettings.hiddenCardIds;
     state.checkingEnabled = gradeSubjectSettings.checkingEnabled;
+    // Badges are supplementary — a failed fetch shouldn't block the dashboard.
+    state.badges = badgeData && badgeData.found ? badgeData : null;
 
     renderDashboard();
 
@@ -211,6 +217,22 @@ async function fetchDashboardData() {
   }
 
   return response.json();
+}
+
+async function fetchBadgeData() {
+  const params = new URLSearchParams({
+    action: "badges",
+    starCardId: state.starCardId,
+    grade: state.grade
+  });
+
+  try {
+    const response = await fetch(`${API_URL}?${params.toString()}`);
+    if (!response.ok) return { found: false };
+    return await response.json();
+  } catch (error) {
+    return { found: false };
+  }
 }
 
 async function fetchCardsMeta() {
@@ -289,6 +311,7 @@ function renderDashboard() {
 
   renderUnitSelect();
   renderChips(getDisplayCardIds());
+  renderBadgeShelf();
 }
 
 function renderChips(cardIds) {
@@ -307,6 +330,84 @@ function renderChips(cardIds) {
     button.addEventListener("click", () => openPracticeCard(normalizedId));
 
     els.chipGrid.appendChild(button);
+  });
+}
+
+/***** BADGES *****/
+//
+// Thresholds/copy live here rather than in Code.gs so they can be tuned
+// without redeploying the Apps Script backend — the "badges" action there
+// only ever returns raw counters (see getBadgeData in Code.gs).
+
+const BADGE_DEFINITIONS = [
+  { id: "attempts-10", icon: "🌱", name: "Getting Started", metric: "totalAttempts", threshold: 10 },
+  { id: "attempts-50", icon: "📗", name: "Regular Practicer", metric: "totalAttempts", threshold: 50 },
+  { id: "attempts-100", icon: "📘", name: "Practice Pro", metric: "totalAttempts", threshold: 100 },
+  { id: "attempts-250", icon: "📙", name: "Practice All-Star", metric: "totalAttempts", threshold: 250 },
+  { id: "attempts-500", icon: "🏆", name: "Practice Legend", metric: "totalAttempts", threshold: 500 },
+
+  { id: "correct-25", icon: "✅", name: "Sharp Shooter", metric: "totalCorrect", threshold: 25 },
+  { id: "correct-100", icon: "🎯", name: "Bullseye", metric: "totalCorrect", threshold: 100 },
+  { id: "correct-250", icon: "💯", name: "Answer Machine", metric: "totalCorrect", threshold: 250 },
+
+  { id: "mastered-1", icon: "⭐", name: "First Star", metric: "masteredCount", threshold: 1 },
+  { id: "mastered-5", icon: "🌟", name: "Rising Star", metric: "masteredCount", threshold: 5 },
+  { id: "mastered-10", icon: "✨", name: "Star Collector", metric: "masteredCount", threshold: 10 },
+  { id: "mastered-25", icon: "🌠", name: "Star Squad", metric: "masteredCount", threshold: 25 },
+  { id: "mastered-50", icon: "🏅", name: "Star Champion", metric: "masteredCount", threshold: 50 },
+
+  // Based on bestDayStreak (not the live current streak) so a badge, once
+  // earned, isn't taken away just because a streak later lapsed.
+  { id: "streak-3", icon: "🔥", name: "3-Day Streak", metric: "bestDayStreak", threshold: 3 },
+  { id: "streak-7", icon: "🔥", name: "1-Week Streak", metric: "bestDayStreak", threshold: 7 },
+  { id: "streak-14", icon: "🔥", name: "2-Week Streak", metric: "bestDayStreak", threshold: 14 },
+  { id: "streak-30", icon: "🔥", name: "1-Month Streak", metric: "bestDayStreak", threshold: 30 }
+];
+
+function badgeDescription(badge) {
+  switch (badge.metric) {
+    case "totalAttempts": return `Practice ${badge.threshold} times`;
+    case "totalCorrect": return `Get ${badge.threshold} answers right`;
+    case "masteredCount": return `Master ${badge.threshold} card${badge.threshold === 1 ? "" : "s"} (right 3 times in a row)`;
+    case "bestDayStreak": return `Practice ${badge.threshold} days in a row`;
+    default: return "";
+  }
+}
+
+function renderBadgeShelf() {
+  if (!els.badgeShelf || !els.badgesSection) return;
+
+  if (!state.badges) {
+    els.badgesSection.classList.add("hidden");
+    els.badgeShelf.innerHTML = "";
+    return;
+  }
+
+  els.badgesSection.classList.remove("hidden");
+  els.badgeShelf.innerHTML = "";
+
+  BADGE_DEFINITIONS.forEach(badge => {
+    const progress = Number(state.badges[badge.metric]) || 0;
+    const earned = progress >= badge.threshold;
+
+    const tile = document.createElement("div");
+    tile.className = `badge-tile${earned ? " earned" : ""}`;
+    tile.title = `${badge.name}: ${badgeDescription(badge)}${earned ? " — Earned!" : ` (${Math.min(progress, badge.threshold)}/${badge.threshold})`}`;
+
+    const icon = document.createElement("span");
+    icon.className = "badge-icon";
+    icon.textContent = badge.icon;
+
+    const name = document.createElement("span");
+    name.className = "badge-name";
+    name.textContent = badge.name;
+
+    const progressEl = document.createElement("span");
+    progressEl.className = "badge-progress";
+    progressEl.textContent = earned ? "Earned!" : `${Math.min(progress, badge.threshold)}/${badge.threshold}`;
+
+    tile.append(icon, name, progressEl);
+    els.badgeShelf.appendChild(tile);
   });
 }
 
