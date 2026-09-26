@@ -628,6 +628,27 @@ async function checkStudentAnswer() {
   if (state.activeCardId !== cardId) return;
 
   renderAnswerFeedback(gradeResult.result, gradeResult.matchedCount, gradeResult.totalCount);
+  logAnswerAttempt(cardId, gradeResult.result);
+}
+
+// Sends each graded attempt to the sheet backend so badges (practice volume,
+// same-card correct streaks, daily streaks) can be tracked across devices,
+// not just in this browser's localStorage. Best-effort: a logging failure
+// should never block or interrupt practice.
+function logAnswerAttempt(cardId, result) {
+  if (isGuestMode()) return; // don't pollute stats with the shared guest login
+
+  fetch(API_URL, {
+    method: "POST",
+    body: JSON.stringify({
+      action: "logPracticeAttempt",
+      starCardId: state.starCardId,
+      grade: state.grade,
+      subject: state.subject,
+      cardId: cardId,
+      result: result
+    })
+  }).catch(() => {});
 }
 
 function renderAnswerFeedback(result, matchedCount, totalCount) {
