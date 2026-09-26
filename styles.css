@@ -364,6 +364,21 @@ button {
   max-width: 720px;
 }
 
+#answerInputGroup.locked textarea {
+  background: #eef1f6;
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+#answerInputGroup.locked::after {
+  content: "Locked — click \"Try Again\" to edit your answer";
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
 @media (max-width: 800px) {
   .lookup-form,
   .stats-grid {
