@@ -696,8 +696,8 @@
         "31.4"
       ]
     ],
-    "questionReadAloudEn": "What are two ways you\n can write your answer\n with pi?",
-    "answerReadAloudEn": "1.​By using the symbol π\n ex) 10π\n 2.​Estimated with 3.14\n ex) 10 x 3. 14 = 31. 4",
+    "questionReadAloudEn": "What are two ways you can\n write your answer with pi?",
+    "answerReadAloudEn": "1.​ By using the symbol π\n ex) 10π\n 2.​ Estimated with 3.14\n ex) 10 x 3. 14 = 31. 4",
     "questionReadAloudEs": "¿De qué dos formas\n puedes escribir tu\n respuesta con pi?",
     "answerReadAloudEs": "●​Utilizando el símbolo π\n ex) 10π\n ●​Estimado con 3.14\n ex) 10 x 3. 14 = 31. 4",
     "acceptedAnswersEs": [
@@ -727,8 +727,8 @@
         "8.56"
       ]
     ],
-    "questionReadAloudEn": "Explain how you round\n a number to the\n hundredths place\n 8.562",
-    "answerReadAloudEn": "1st: Find the hundredths place\n2nd: Look one digit to the right\n3rd: If that digits 5 or more up\nthe score, 4 or less let it rest\n ↓\n 8.562\n Rounded = 8.56",
+    "questionReadAloudEn": "Explain how you round a\nnumber to the hundredths place\n 8.562",
+    "answerReadAloudEn": "1st: Find the hundredths place\n2nd: Look one digit to the right\n3rd: If that digits 5 or more up the\nscore, 4 or less let it rest\n ↓\n 8.562\n Rounded = 8.56",
     "questionReadAloudEs": "Explica cómo se redondea un\n número a la centésima.\n 8.562",
     "answerReadAloudEs": "1: Busca el lugar de las centésimas.\n2: Mira un dígito a la derecha.\n3: Si ese dígito es 5 o más, suma\nesa cifra a la puntuación; si es 4 o\nmenos, déjala tal cual.\n ↓​\n8.562\nRedondeado = 8.56",
     "acceptedAnswersEs": [
@@ -785,7 +785,7 @@
         "80 divided by cop equals x"
       ]
     ],
-    "questionReadAloudEn": "The table below is proportional.\n How do you find the\n Constant Of Proportionality\n in a table?\n How do you\n find the\n missing y\n value in this\n table?\n How do you\n find the\n missing x value in this\n table?",
+    "questionReadAloudEn": "The table below is proportional.\n 1.​ How do you find the\n Constant Of Proportionality\n in a table?\n 2.​ How do you\n find the\n missing y\n value in this\n Table?\n 3.​How do you\n find the\n missing x\n value in this table?",
     "answerReadAloudEn": "𝑦\n 1.​ To find the C.O.P, divide\n 𝑥\n 2.​ 6 x C.O.P = y\n 3.​ 80 ÷ C.O.P = x",
     "questionReadAloudEs": "La tabla siguiente es proporcional.\n 1.​¿Cómo se calcula la constante\n de proporcionalidad en una\n tabla?\n 2.​¿Cómo se calcula el valor de y\n que falta en esta tabla?\n‘\n 3.​¿Cómo se calcula el valor de x\n que falta en esta tabla?",
     "answerReadAloudEs": "1.​ Para hallar la tarifa\n 𝑦\n unitaria divida\n 𝑥\n 2.​",
@@ -1152,8 +1152,8 @@
         "the sum of the two shorter sides must be greater than the longest side"
       ]
     ],
-    "questionReadAloudEn": "How can you tell if\nthree lines can form a triangle?\nLike these lines:\n _____\n ________\n _____________",
-    "answerReadAloudEn": "The two smallest sides added\ntogether have to be bigger than\nthe longest side.\nThese lines would form a triangle!\n_____\n________\n_____________",
+    "questionReadAloudEn": "How can you tell if three\nlines can form a triangle?\nLike these lines:\n _____\n ________\n _____________",
+    "answerReadAloudEn": "The two smallest sides added together\nhave to be bigger than the longest\nside.\nThese lines would form a triangle!\n_____\n________\n_____________",
     "questionReadAloudEs": "¿Cómo se puede saber si\ntres rectas pueden formar\n un triángulo?\n Como estas rectas:",
     "answerReadAloudEs": "The two smallest sides added\ntogether have to be bigger than\nthe longest side.",
     "acceptedAnswersEs": [
@@ -1353,7 +1353,7 @@
         "randomly selected"
       ]
     ],
-    "questionReadAloudEn": "What makes a sample\n representative and not\n biased?",
+    "questionReadAloudEn": "p p\n8d)\n What makes a sample\n representative and not\n biased?",
     "answerReadAloudEn": "Representative samples:\n 1.​ Sample is FROM the population\n 2.​ Sample is as BIG as possible\n 3.​ Sample is RANDOM\nBiased samples are not fair or favor one group",
     "questionReadAloudEs": "¿Qué hace que una muestra\n sea representativa y no\n sesgada?",
     "answerReadAloudEs": "Muestras representativas:\n 1.​ La muestra procede de la población\n 2.​ La muestra es lo más amplia posible\n 3.​ La muestra es ALEATORIA\nLas muestras sesgadas no son justas o\nfavorecen a un grupo",
@@ -1391,7 +1391,7 @@
       ]
     ],
     "questionReadAloudEn": "1)​What is a measure of center?\n Give 2 examples\n2)​What is a measure of variability?\n Give 2 examples",
-    "answerReadAloudEn": "p g p\n8e)\n1)​Measures of center: represent\n the typical value of the data\n set\n Examples: mean, median, mode\n2)​Measure of variability:\n measures how spread out your\n data is.\n Examples: Range, MAD, IQR",
+    "answerReadAloudEn": "1)​Measures of center: represent\n the typical value of the data\n set\n Examples: mean, median, mode\n2)​Measure of variability:\n measures how spread out your\n data is.\n Examples: Range, MAD, IQR",
     "questionReadAloudEs": "1)​¿Qué es una medida de centro?\n Dé 2 ejemplos\n2)​¿Qué es una medida de\n variabilidad? Dé 2 ejemplos",
     "answerReadAloudEs": "1)​Medidas de centro: Representan\n un valor típico del conjunto de\n datos Ejemplos: media, mediana, moda\n2)​Medidas de variabilidad\n (dispersión): Representan la\n distancia entre los datos. Ejemplos:\n Rango, MAD, IQR",
     "acceptedAnswersEs": [
@@ -1423,8 +1423,8 @@
         "sort the numbers and find the middle one"
       ]
     ],
-    "questionReadAloudEn": "",
-    "answerReadAloudEn": "1) To calculate Mean(average):\n 1st) Add all the numbers\n 2nd) Divide by how many numbers\n you have\n2) To calculate median:\n 1st) Put the numbers in order from\n least to greatest\n 2nd) Choose the middle number\n If there is a tie between two numbers in the\n middle, add them and divide by 2",
+    "questionReadAloudEn": "How do you calculate\nMean/Average?",
+    "answerReadAloudEn": "To calculate Mean/Average\n 1st) Add all the numbers\n 2nd) Divide by how many numbers\n you have",
     "questionReadAloudEs": "¿Cómo se calcula la media?",
     "answerReadAloudEs": "Para calcular la media\n 1st) Suma todos los números\n 2nd) Divide entre cuántos números\n tienes",
     "acceptedAnswersEs": [
@@ -1449,8 +1449,8 @@
         "8"
       ]
     ],
-    "questionReadAloudEn": "You win a game if you:\n ●​ Flip a coin to heads\n ●​ Spin this spinner and land on A\nSketch a tree diagram and write how\nmany possible outcomes there are\nin this situation.",
-    "answerReadAloudEn": "There are 8 possible outcomes",
+    "questionReadAloudEn": "How do you calculate Median?",
+    "answerReadAloudEn": "To calculate median:\n 1st) Put the numbers in order from\n least to greatest\n 2nd) Choose the middle number\n If there is a tie between two numbers in the\n middle, add them and divide by 2",
     "questionReadAloudEs": "¿Cómo se calcula la mediana?",
     "answerReadAloudEs": "Para calcular la mediana:\n 1st) Ordena los números de menor\n a mayor\n 2nd) Elige el número del medio\n Si hay empate entre dos números del medio,\n sumalos y divide por 2",
     "acceptedAnswersEs": [
@@ -1466,11 +1466,11 @@
     "title": "",
     "questionImageEs": "images/8H_Q_es.png",
     "answerImageEs": "images/8H_A_es.png",
-    "questionImageEn": "",
-    "answerImageEn": "",
+    "questionImageEn": "images/8H_Q_en.png",
+    "answerImageEn": "images/8H_A_en.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "",
-    "answerReadAloudEn": "",
+    "questionReadAloudEn": "You win a game if you:\n ●​ Flip a coin to heads\n ●​ Spin this spinner and land on A\nSketch a tree diagram and write how\nmany possible outcomes there are\nin this situation.",
+    "answerReadAloudEn": "There are 8 possible outcomes",
     "questionReadAloudEs": "Ganas una partida si\n ●​ Lanza una moneda a cara\n ●​ Gira esta ruleta y\n cae en A\nDibuja un diagrama de árbol y escribe\ncuántos resultados posibles hay en esta\nsituación. ​",
     "answerReadAloudEs": "Hay 8 resultados posibles",
     "acceptedAnswersEs": [
