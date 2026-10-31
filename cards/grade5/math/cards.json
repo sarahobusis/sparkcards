@@ -43,7 +43,7 @@
         "hallar la diferencia"
       ]
     ],
-    "questionReadAloudEn": "",
+    "questionReadAloudEn": "1. What is addition?\n2. What is subtraction?",
     "answerReadAloudEn": "1.​ Addition means putting together\n two amounts to find the total\n 2. Subtraction means taking away or\n`\n finding the difference",
     "questionReadAloudEs": "1.​¿Qué es la suma?\n 2.​¿Qué es la resta?",
     "answerReadAloudEs": "1.​ La suma consiste en juntar dos\n cantidades para hallar el total.\n 2. La resta significa quitar o\ncalcular la diferencia."
@@ -108,8 +108,8 @@
     "questionImageEs": "images/1C_Q_es.png",
     "answerImageEs": "images/1C_A_es.png",
     "acceptedAnswers": [],
-    "questionReadAloudEn": "",
-    "answerReadAloudEn": "",
+    "questionReadAloudEn": "1. What is division?\n2. What symbols show division?",
+    "answerReadAloudEn": "1. Breaking a total into equal groups\n2. A division sign, a slash, and a fraction like a over b",
     "questionReadAloudEs": "1.​¿Qué es la\n división?\n 2.​¿Qué símbolos indican la\n división?",
     "answerReadAloudEs": "1.​dividir un total en grupos\n iguales.\n 2.​ , /,"
   },
