@@ -296,18 +296,18 @@
     "title": "",
     "questionImageEn": "images/3A_Q_en.png",
     "answerImageEn": "images/3A_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3A_Q_es.png",
+    "answerImageEs": "images/3A_A_es.png",
     "acceptedAnswers": [
       [
         "a set of written rules that states how the government works and what power it has",
         "the rules for how the government works and its powers"
       ]
     ],
-    "questionReadAloudEn": "The Constitution is the supreme law of the land.\nWhat does that mean?",
-    "answerReadAloudEn": "A set of written rules that states\nhow the government works and\nwhat power it has",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "What are the three branches\nof government and what are their\njobs?",
+    "answerReadAloudEn": "1.​Legislative: writes laws\n 2.​Executive: enforces laws\n 3.​Judicial: interprets laws",
+    "questionReadAloudEs": "¿Cuáles son lastres ramas del\ngobierno y ¿Cuáles son sus trabajos?",
+    "answerReadAloudEs": "1.​Legislativo: escribe leyes\n 2.​Ejecutivo: hace cumplir las leyes\n 3.​Judicial:interpreta leyes"
   },
   {
     "id": "3B",
@@ -315,18 +315,18 @@
     "title": "",
     "questionImageEn": "images/3B_Q_en.png",
     "answerImageEn": "images/3B_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3B_Q_es.png",
+    "answerImageEs": "images/3B_A_es.png",
     "acceptedAnswers": [
       [
         "the three branches of government",
         "three branches of government"
       ]
     ],
-    "questionReadAloudEn": "What do articles 1-3 of the Constitution\ncreate?",
-    "answerReadAloudEn": "The three branches of government.",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "What is the purpose of checks and\nbalances?",
+    "answerReadAloudEn": "Checks and balances makes sure that\none branch of government doesn’t have\nall the power.\nExample: The president can veto laws passed by Congress.",
+    "questionReadAloudEs": "Qué es el propósito de cheques y\nequilibrios¿",
+    "answerReadAloudEs": "Esos Cheques y balances marca Es\ncierto que ninguna rama del gobierno\ntiene todo el poder.\nEjemplo: El presidente puede vetar las leyes aprobadas por el\nCongreso."
   },
   {
     "id": "3C",
@@ -346,8 +346,8 @@
         "27"
       ]
     ],
-    "questionReadAloudEn": "1.​What is an Amendment?\n 2.​How many Amendments are\n there?",
-    "answerReadAloudEn": "1.​An Amendment is a change to the\n Constitution\n 2.​27 Amendments",
+    "questionReadAloudEn": "1.​What do we call the\n legislative branch of the Federal\n Government?\n 2.​What are the two parts?",
+    "answerReadAloudEn": "p p p y g\n3c)\n 1.​Congress\n 2.​The Senate and the House of\n Representatives",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -357,8 +357,8 @@
     "title": "",
     "questionImageEn": "images/3D_Q_en.png",
     "answerImageEn": "images/3D_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3D_Q_es.png",
+    "answerImageEs": "images/3D_A_es.png",
     "acceptedAnswers": [
       [
         "the first 10 amendments to the constitution",
@@ -369,10 +369,24 @@
         "protects rights and freedoms of people in the us"
       ]
     ],
-    "questionReadAloudEn": "1.​What is the Bill of Rights?\n 2.​What does the Bill of Rights\n protect?",
-    "answerReadAloudEn": "1.​The first 10 Amendments to the\n Constitution\n 2.​The Bill of Rights protects rights\n and freedoms for people in the US",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "1.​Who is the leader of the\n executive branch of the Federal\n Government?\n 2.​Who advises this leader?",
+    "answerReadAloudEn": "1.​The President\n 2.​The “Cabinet” of advisors who are\n called Secretaries\nExamples: Secretary of Education, Secretary of Defense",
+    "questionReadAloudEs": "1.​¿Quién es el?líder del\n ejecutivo¿Rama del Gobierno\n Federal?\n 2.​¿Quién asesora a este líder?",
+    "answerReadAloudEs": "1.​El Presidente\n 2.​El \"Gabinete\" de asesores quienes\n se llaman Secretarias\nEjemplos: Secretario de Educación, Secretario de Defensa"
+  },
+  {
+    "id": "3DO",
+    "unit": "Unit 3",
+    "title": "",
+    "questionImageEs": "images/3DO_Q_es.png",
+    "answerImageEs": "images/3DO_A_es.png",
+    "questionImageEn": "",
+    "answerImageEn": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "",
+    "answerReadAloudEn": "",
+    "questionReadAloudEs": "1.​¿Cómo llamamos al\n poder legislativo del Gobierno\n Federal?\n 2.​¿Cuáles son lasdos partes¿",
+    "answerReadAloudEs": "g\n3do)\n 1.​Congreso\n 2.​El Senado y la Cámara de\n Representantes"
   },
   {
     "id": "3E",
@@ -399,8 +413,8 @@
         "speech"
       ]
     ],
-    "questionReadAloudEn": "What are the five freedoms guaranteed\nin the First Amendment?",
-    "answerReadAloudEn": "1.​Religion\n 2.​Assembly\n 3.​Press\n 4.​Petition\n 5.​Speech",
+    "questionReadAloudEn": "The judicial branch is made up\nof many different courts.\nWhat is the highest court in the\njudicial branch?",
+    "answerReadAloudEn": "The Supreme Court",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -410,18 +424,18 @@
     "title": "",
     "questionImageEn": "images/3F_Q_en.png",
     "answerImageEn": "images/3F_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3F_Q_es.png",
+    "answerImageEs": "images/3F_A_es.png",
     "acceptedAnswers": [
       [
         "the right to bear arms",
         "the right to own a gun"
       ]
     ],
-    "questionReadAloudEn": "What right is guaranteed in the\n Second Amendment?",
-    "answerReadAloudEn": "The right to bear arms (own a gun)",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "1.​What are the two major political\n parties?\n 2.​What are the two key differences\n between the parties?",
+    "answerReadAloudEn": "1.​Democrats and Republicans\n 2.​Democrats believe the\n government should have a lot of\n control and should help people.\n Republicans believe the\n government should have less\n control and people should rely\n more on themselves.",
+    "questionReadAloudEs": "1.​¿Cuáles son los dos principales\n partidos políticos?\n 2.​¿Cuáles son las dos diferencias\n clave entre los partidos?",
+    "answerReadAloudEs": "1.​Demócratas y republicanos\n 2.​Demócratas Cree que el gobierno\n debería tener mucho control y\n debería ayudar a la gente.\n 3.​republicanos cree en El gobierno\n debería tener menos control y la\n gente debería confiar más en sí\n misma."
   },
   {
     "id": "3G",
@@ -429,18 +443,18 @@
     "title": "",
     "questionImageEn": "images/3G_Q_en.png",
     "answerImageEn": "images/3G_A_en.png",
-    "questionImageEs": "",
-    "answerImageEs": "",
+    "questionImageEs": "images/3G_Q_es.png",
+    "answerImageEs": "images/3G_A_es.png",
     "acceptedAnswers": [
       [
         "the police cannot search or take your property without a reason supported by evidence or legal permission from a judge",
         "protection from unreasonable searches without probable cause or a warrant"
       ]
     ],
-    "questionReadAloudEn": "The Fourth Amendment protects\nagainst unreasonable search and\nseizure.\n Explain this right.",
-    "answerReadAloudEn": "Except in some emergencies, the police\ncannot search or take your property\nwithout:\n1. a reason supported by evidence\n(probable cause)\n2. legal permission from a judge (a\nwarrant)",
-    "questionReadAloudEs": "",
-    "answerReadAloudEs": ""
+    "questionReadAloudEn": "Explain how elections work in each\nbranch by completing this chart:\n Term Term Who\n Length Limit decides?\n Representative\n Senator\n President\n Supreme Court\n Justice",
+    "answerReadAloudEn": "Term Term Who\n Length Limit decides?\n Representative 2 None People in the\n years District vote\n Senator 6 None People in the\n years State vote\n President 4 2 People in the\n years Nation vote\n Supreme Court For None President\n Justice life chooses,\n Senate\n confirms",
+    "questionReadAloudEs": "Explique cómoeleccionesTrabaje en\ncada rama completando este cuadro:\n Duració Límite ¿Quién\n n del de decide?\n mandat plazo\n o\n Representante",
+    "answerReadAloudEs": "Duraci Límit OMS decide¿\n ón del e de\n manda\n plazo to\n Representante 2 Ningu La gente en el\n años no Distrito votar\n Senador 6 Ningu La gente en\n años no elEstado votar"
   },
   {
     "id": "3H",
@@ -464,6 +478,20 @@
     "answerReadAloudEn": "1.​Due process:\n The government must follow fair\n rules before it can punish you\n2.​Protection against self incrimination: You\n don’t have to say anything or provide\n evidence that would make you look\n guilty.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
+  },
+  {
+    "id": "3Y",
+    "unit": "Unit 3",
+    "title": "",
+    "questionImageEs": "images/3Y_Q_es.png",
+    "answerImageEs": "images/3Y_A_es.png",
+    "questionImageEn": "",
+    "answerImageEn": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "",
+    "answerReadAloudEn": "",
+    "questionReadAloudEs": "El poder judicial está compuesto\npor muchos tribunales diferentes.\n¿Qué es el?tribunal supremo¿En el\npoder judicial?",
+    "answerReadAloudEs": "El Tribunal Supremo"
   },
   {
     "id": "4A",
@@ -1065,5 +1093,19 @@
     "answerReadAloudEn": "Political cartoons use pictures and\nhumor to show ideas and criticize\nthe government in an interesting\nway.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
+  },
+  {
+    "id": "CARD8",
+    "unit": "Unit",
+    "title": "",
+    "questionImageEs": "images/CARD8_Q_es.png",
+    "answerImageEs": "images/CARD8_A_es.png",
+    "questionImageEn": "",
+    "answerImageEn": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "",
+    "answerReadAloudEn": "",
+    "questionReadAloudEs": "Senador\n Presidente\n Juez de la\nCorte Suprema",
+    "answerReadAloudEs": "Presidente 4 2 La gente en el\n años Nación votar\nJuez de la Corte Para Ningu Presidente\n Suprema toda no elige El\n la Senado lo\n confirma vida"
   }
 ]
