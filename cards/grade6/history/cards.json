@@ -375,6 +375,20 @@
     "answerReadAloudEs": ""
   },
   {
+    "id": "4A_2",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4A_2_Q_en.png",
+    "answerImageEn": "images/4A_2_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "¿Cuáles fueron tres maneras\nimportantes en que los antiguos\negipcios usaron el río Nilo?",
+    "answerReadAloudEn": "Usaban el agua para:\n 4.​riego\n 5.​viajes\n 6.​comercio",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
     "id": "4B",
     "unit": "Unit 4",
     "title": "",
@@ -384,6 +398,20 @@
     "answerImageEs": "",
     "acceptedAnswers": [],
     "questionReadAloudEn": "Label the map below with the\nfollowing:\n 1.​Sahara Desert\n 2.​Nile River\n 3.​Ancient Egypt\n 4.​Mediterranean Sea\n 5.​Red Sea",
+    "answerReadAloudEn": "",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "4B_2",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4B_2_Q_en.png",
+    "answerImageEn": "images/4B_2_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Rotula el mapa de abajo con lo\nsiguiente:\n 6.​Desierto del Sahara\n 7.​Río Nilo\n 8.​Antiguo Egipto\n 9.​Mar Mediterráneo\n 10.​ Mar Rojo",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
@@ -404,6 +432,20 @@
     ],
     "questionReadAloudEn": "What is polytheism?",
     "answerReadAloudEn": "Polytheism is the belief in more\n than one god.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "4C_2",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4C_2_Q_en.png",
+    "answerImageEn": "images/4C_2_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "¿Qué es el politeísmo?",
+    "answerReadAloudEn": "El politeísmo es la creencia en\n más de un dios.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -431,6 +473,20 @@
     ],
     "questionReadAloudEn": "List and describe the three roles of a\nPharaoh.",
     "answerReadAloudEn": "1.​Political leader - leading the\n government\n 2.​Military leader - leading the army\n 3.​Religious leader - being a god on\n earth",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "4D_2",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4D_2_Q_en.png",
+    "answerImageEn": "images/4D_2_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Enumera y describe los tres papeles de\nun faraón.",
+    "answerReadAloudEn": "4.​Líder político: dirigir el\n gobierno\n 5.​Líder militar: dirigir el\n ejército\n 6.​Líder religioso: ser un dios\n en la tierra",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -463,6 +519,20 @@
     "answerReadAloudEs": ""
   },
   {
+    "id": "4E_2",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4E_2_Q_en.png",
+    "answerImageEn": "images/4E_2_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Enumera y define los tres grandes\nlogros de los antiguos egipcios.",
+    "answerReadAloudEn": "4.​Pirámides: tumbas para los\n faraones\n 5.​Jeroglíficos: el sistema de\n escritura\n 6.​Papiro: un material para escribir,\n como el papel",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
     "id": "4F",
     "unit": "Unit 4",
     "title": "",
@@ -482,6 +552,20 @@
     "answerReadAloudEs": ""
   },
   {
+    "id": "4F_2",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4F_2_Q_en.png",
+    "answerImageEn": "images/4F_2_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "¿Por qué eran importantes\nlas momias para los egipcios?",
+    "answerReadAloudEn": "Los antiguos egipcios creían que las\npersonas convertidas en momias\nvivirían en el más allá para siempre.",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
     "id": "4G",
     "unit": "Unit 4",
     "title": "",
@@ -491,6 +575,20 @@
     "answerImageEs": "",
     "acceptedAnswers": [],
     "questionReadAloudEn": "Label and describe the\nlevels of the social structure in Ancient\nEgypt.",
+    "answerReadAloudEn": "",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "4G_2",
+    "unit": "Unit 4",
+    "title": "",
+    "questionImageEn": "images/4G_2_Q_en.png",
+    "answerImageEn": "images/4G_2_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Identifica y describe los\nniveles de la estructura social en el\nAntiguo\nEgipto.",
     "answerReadAloudEn": "",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
