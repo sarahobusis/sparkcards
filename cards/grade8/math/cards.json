@@ -340,8 +340,8 @@
         "infinite solutions"
       ]
     ],
-    "questionReadAloudEn": "Most equations have one solution, but some\nequations have no solutions, or more than\none solution.\nMr. Cox solved three different equations\nand each of his last lines of work are below.\nIdentify: 1) the number of solution(s)\n 2) explain why\n Mr. Cox got: # of Explain solutions\n X = 0\n 5 = -5\n 9 = 9",
-    "answerReadAloudEn": "Mr. Cox got: # of Explain\n solutions\n X = 0 ONE because x equals\n only one number SOLUTION\n 5 = -5 NO Because it’s never\n true. 5 does not =\n SOLUTION -5.\n 9 = 9 INFINITE because it’s\n always true. 9\n SOLUTIONS always equals 9.",
+    "questionReadAloudEn": "Most equations have one solution, but some\nequations have no solutions, or more than\none solution.\nMr. Cox solved three different equations\nand each of his last lines of work are below.\nIdentify: 1) the number of solution(s)",
+    "answerReadAloudEn": "Mr. Cox got: # of Explain\n solutions\n X = 0 ONE because x equals\n only one number SOLUTION",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
@@ -397,7 +397,7 @@
         "substitute the expression for b into the first equation"
       ]
     ],
-    "questionReadAloudEn": "What is a good first step to ●\n ●solve this system of equations? Explain.\n C + B = 55\n B = 2C - 41",
+    "questionReadAloudEn": "What is a good first step to solve this ●\n ●system of equations? Explain.\n C + B = 55\n B = 2C - 41",
     "answerReadAloudEn": "●​ Since the 2nd equation says, B equals 2C - 41\n●​ You can replace the “B” in the first\n equation with “2C – 41”\nNow you can solve:\n C + 2C - 41 = 55",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
@@ -420,7 +420,7 @@
         "the lines intersect at that point"
       ]
     ],
-    "questionReadAloudEn": "For the system below:\n y + 2x = 5\n y = 4x - 7\nThe solution is x = 2 and y = 1\n 1) How would you express this answer as a\ncoordinate pair?\n2) For this system of equations, what would\nbe happening at this coordinate pair?",
+    "questionReadAloudEn": "For the system below:\n y + 2x = 5\n y = 4x - 7\nThe solution is x = 2 and y = 1\n 1) How would you express this answer as a\ncoordinate pair?\n2) If we graphed this system of equations,\nwhat would happen at this coordinate point?",
     "answerReadAloudEn": "1)​ (2,1)\n 2)​The two lines would intersect\n at the point (2,1) on the graph",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
@@ -1081,6 +1081,20 @@
     ],
     "questionReadAloudEn": "Explain how you would draw a\nline of best fit for this graph.",
     "answerReadAloudEn": "Draw a line that:\n ●​ goes through the middle of the\n data",
+    "questionReadAloudEs": "",
+    "answerReadAloudEs": ""
+  },
+  {
+    "id": "CARD3",
+    "unit": "Unit",
+    "title": "",
+    "questionImageEn": "images/CARD3_Q_en.png",
+    "answerImageEn": "images/CARD3_A_en.png",
+    "questionImageEs": "",
+    "answerImageEs": "",
+    "acceptedAnswers": [],
+    "questionReadAloudEn": "Identify: 1) the number of solution(s)\n 2) explain why\n Mr. Cox got: # of Explain solutions\n X = 0\n 5 = -5\n 9 = 9",
+    "answerReadAloudEn": "5 = -5 NO Because it’s never\n true. 5 does not =\n SOLUTION -5.\n 9 = 9 INFINITE because it’s\n always true. 9\n SOLUTIONS always equals 9.",
     "questionReadAloudEs": "",
     "answerReadAloudEs": ""
   },
